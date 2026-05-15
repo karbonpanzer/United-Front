@@ -6,7 +6,8 @@ using Verse.Sound;
 
 namespace EOTF.Core.DecalSystem
 {
-    // Trying my best to actually have good documentation for my materials for future references in my other projects.
+    // Layout modeled after vanilla Dialog_StylingStation:
+    // Left ~30% is pawn portrait, right ~70% is tabbed content, footer spans full width
     public sealed class DialogEditDecals : Window
     {
         private readonly Pawn _pawn;
@@ -15,12 +16,14 @@ namespace EOTF.Core.DecalSystem
         private readonly List<DecalSymbolDef> _symbols;
 
         private int _selectedHelmetIndex, _selectedArmorIndex;
-        
+
         private bool _committed;
         private List<Color>? _allColors;
 
         // Per-slot scroll positions for symbol grids
         private Vector2 _armorGridScroll, _helmetGridScroll;
+        // Per-tab scroll for the entire tab content
+        private Vector2 _armorTabScroll, _helmetTabScroll;
 
         // Texture cache for symbol thumbnails
         private Dictionary<string, Texture2D>? _thumbCache;
@@ -29,21 +32,21 @@ namespace EOTF.Core.DecalSystem
         private DecalSlot _activeTab = DecalSlot.Armor;
         private List<TabRecord>? _tabs;
 
-        // Layout
-        private const float GridHeight = 260f;
+        // Layout — matching vanilla styling station proportions
+        private const float LeftRectPercent = 0.35f;
         private const float TileSize = 48f;
         private const float TilePad = 4f;
-        private const float InnerPad = 8f;
 
-        // Pawn preview — same approach as vanilla's Dialog_StylingStation
+        // Pawn preview
         private static readonly Vector3 PortraitOffset = new Vector3(0f, 0f, 0.15f);
-        private const float PortraitZoom = 1.1f;
-        private const float PreviewWidth = 280f;
-        private const float PreviewGap = 12f;
+        private const float PortraitZoom = 1.3f;
         private Rot4 _previewRot = Rot4.South;
         private bool _showClothes = true;
 
-        public override Vector2 InitialSize => new Vector2(560f + PreviewWidth + PreviewGap, 780f);
+        // Button sizes matching vanilla
+        private static readonly Vector2 ButSize = new Vector2(200f, 40f);
+
+        public override Vector2 InitialSize => new Vector2(750f, 760f);
 
         public DialogEditDecals(Pawn pawn)
         {
@@ -74,38 +77,36 @@ namespace EOTF.Core.DecalSystem
         {
             if (_pawn.Destroyed) { Close(false); return; }
 
-            float pad = 14f;
+            // Footer buttons at the very bottom
+            float footerY = inRect.yMax - ButSize.y;
+            Rect footerRect = new Rect(inRect.x, footerY, inRect.width, ButSize.y);
 
-            // Split into preview (left) and editor (right)
-            Rect previewRect = new Rect(inRect.x + pad, inRect.y, PreviewWidth, inRect.height);
-            Rect editorRect = new Rect(previewRect.xMax + PreviewGap, inRect.y, 
-                inRect.width - PreviewWidth - PreviewGap - pad * 2f, inRect.height);
+            // Main content area above footer
+            Rect contentRect = new Rect(inRect.x, inRect.y, inRect.width, footerY - inRect.y - 10f);
 
-            DrawPawnPreview(previewRect);
-            DrawEditorPanel(editorRect);
+            // Split into left (portrait) and right (tabs) — same as vanilla styling station
+            Rect leftRect = new Rect(contentRect.x, contentRect.y, 
+                contentRect.width * LeftRectPercent, contentRect.height);
+            Rect rightRect = new Rect(leftRect.xMax + 10f, contentRect.y, 
+                contentRect.width - leftRect.width - 10f, contentRect.height);
+
+            DrawPawnPreview(leftRect);
+            DrawRightPanel(rightRect);
+            DrawFooterButtons(footerRect);
         }
 
-        // Left side — pawn portrait with rotation and clothes toggle
+        // ═══════════════════════════════════════════════════════════════
+        // LEFT — pawn portrait with rotation and clothes toggle
+        // Vanilla styling station style: portrait fills most of the column
+        // ═══════════════════════════════════════════════════════════════
         private void DrawPawnPreview(Rect rect)
         {
-            float curY = rect.y;
-
-            // Pawn name as header
-            Text.Font = GameFont.Medium;
-            Rect nameRect = new Rect(rect.x, curY, rect.width, 35f);
-            Text.Anchor = TextAnchor.UpperCenter;
-            Widgets.Label(nameRect, _pawn.Name.ToStringShort);
-            Text.Anchor = TextAnchor.UpperLeft;
-            Text.Font = GameFont.Small;
-            curY = nameRect.yMax + 6f;
-
-            // Portrait area — square, centered in the available width
-            float portraitSize = Mathf.Min(rect.width, rect.width);
-            Rect portraitOuter = new Rect(rect.x, curY, rect.width, portraitSize);
+            // Portrait — as tall as width to keep it square
+            float portraitSize = rect.width;
+            Rect portraitOuter = new Rect(rect.x, rect.y, rect.width, portraitSize);
             Widgets.DrawMenuSection(portraitOuter);
             Rect portraitInner = portraitOuter.ContractedBy(6f);
 
-            // Render the pawn portrait using PortraitsCache, same as vanilla styling station
             RenderTexture portrait = PortraitsCache.Get(
                 _pawn,
                 new Vector2(portraitInner.width, portraitInner.height),
@@ -116,52 +117,45 @@ namespace EOTF.Core.DecalSystem
                 renderHeadgear: _showClothes);
             GUI.DrawTexture(portraitInner, portrait);
 
-            curY = portraitOuter.yMax + 8f;
+            float curY = portraitOuter.yMax + 8f;
 
-            // Rotation buttons — < Rotate > 
-            float rotBtnW = 40f;
-            float rotCenterW = rect.width - rotBtnW * 2f - 12f;
-            Rect rotLeft = new Rect(rect.x, curY, rotBtnW, 28f);
-            Rect rotCenter = new Rect(rotLeft.xMax + 6f, curY, rotCenterW, 28f);
-            Rect rotRight = new Rect(rotCenter.xMax + 6f, curY, rotBtnW, 28f);
+            // Rotation: < [Reset] >
+            float rotBtnW = 36f;
+            float rotGap = 4f;
+            float rotCenterW = rect.width - rotBtnW * 2f - rotGap * 2f;
 
-            if (Widgets.ButtonText(rotLeft, "<"))
+            if (Widgets.ButtonText(new Rect(rect.x, curY, rotBtnW, 28f), "<"))
             {
                 _previewRot.Rotate(RotationDirection.Counterclockwise);
                 SoundDefOf.Tick_Tiny.PlayOneShotOnCamera();
             }
-            Text.Anchor = TextAnchor.MiddleCenter;
-            Widgets.Label(rotCenter, "EOTF_Decals_Rotate".Translate());
-            Text.Anchor = TextAnchor.UpperLeft;
-            if (Widgets.ButtonText(rotRight, ">"))
+            if (Widgets.ButtonText(new Rect(rect.x + rotBtnW + rotGap, curY, rotCenterW, 28f),
+                "EOTF_Decals_Rotate".Translate()))
+            {
+                _previewRot = Rot4.South;
+                SoundDefOf.Tick_Tiny.PlayOneShotOnCamera();
+            }
+            if (Widgets.ButtonText(new Rect(rect.xMax - rotBtnW, curY, rotBtnW, 28f), ">"))
             {
                 _previewRot.Rotate(RotationDirection.Clockwise);
                 SoundDefOf.Tick_Tiny.PlayOneShotOnCamera();
             }
-            curY = rotLeft.yMax + 6f;
+            curY += 34f;
 
-            // Show/hide clothes checkbox
-            Rect clothesRect = new Rect(rect.x, curY, rect.width, 24f);
-            Widgets.CheckboxLabeled(clothesRect, "EOTF_Decals_ShowClothes".Translate(), ref _showClothes);
+            // Show clothes
+            Widgets.CheckboxLabeled(new Rect(rect.x, curY, rect.width, 24f),
+                "EOTF_Decals_ShowClothes".Translate(), ref _showClothes);
         }
 
-        // Right side — the existing editor panel (title, tabs, slot sections, footer)
-        private void DrawEditorPanel(Rect rect)
+        // ═══════════════════════════════════════════════════════════════
+        // RIGHT — tabbed panel, each tab is self-contained
+        // ═══════════════════════════════════════════════════════════════
+        private void DrawRightPanel(Rect rect)
         {
-            float curY = rect.y;
-
-            // Title
-            Text.Font = GameFont.Medium;
-            Rect titleRect = new Rect(rect.x, curY, rect.width, 35f);
-            Widgets.Label(titleRect, "EOTF_StyleDecalsTitle".Translate(_pawn.Name.ToStringShort));
-            Text.Font = GameFont.Small;
-            curY = titleRect.yMax + 10f;
-
-            // Tab content area — DrawTabs renders above this rect
-            Rect tabContentRect = new Rect(rect.x, curY + 32f, rect.width, rect.yMax - curY - 32f - 56f);
+            float tabH = 32f;
+            Rect tabContentRect = new Rect(rect.x, rect.y + tabH, rect.width, rect.height - tabH);
             Widgets.DrawMenuSection(tabContentRect);
 
-            // Tabs auto-size to label width, not much we can do about that
             _tabs ??= new List<TabRecord>
             {
                 new TabRecord("EOTF_Decals_Armor".Translate(), () => _activeTab = DecalSlot.Armor, _activeTab == DecalSlot.Armor),
@@ -171,26 +165,35 @@ namespace EOTF.Core.DecalSystem
             _tabs[1].selected = (_activeTab == DecalSlot.Helmet);
             TabDrawer.DrawTabs(tabContentRect, _tabs);
 
-            // Draw whichever slot is active
-            Rect innerRect = tabContentRect.ContractedBy(InnerPad);
-            DrawSlotSection(innerRect, _activeTab);
-
-            // Footer
-            DrawBottomButtons(new Rect(rect.x, rect.yMax - 50f, rect.width, 44f));
+            Rect innerRect = tabContentRect.ContractedBy(10f);
+            DrawTabContent(innerRect, _activeTab);
         }
 
-        // Everything stacked vertically: enable row, symbol grid, then colors underneath
-        private void DrawSlotSection(Rect rect, DecalSlot slot)
+        // Each tab contains everything for that slot: enabled, symbol grid, color palette, color buttons
+        private void DrawTabContent(Rect rect, DecalSlot slot)
         {
             bool isArmor = (slot == DecalSlot.Armor);
-            float curY = rect.y;
+            Vector2 tabScroll = isArmor ? _armorTabScroll : _helmetTabScroll;
 
-            // Enable checkbox + Random button
-            Rect enableRow = new Rect(rect.x, curY, rect.width, 24f);
+            // Calculate how tall the content actually is so we know if we need to scroll
+            // Enabled row (28) + gap (6) + grid section + gap (8) + symbol label (22) + gap (12) 
+            // + color label (22) + gap (4) + palette (~80) + gap (8) + color buttons (28)
+            float gridH = CalcGridHeight(rect.width);
+            float totalH = 28f + 6f + gridH + 8f + 22f + 12f + 22f + 4f + 80f + 8f + 28f;
+
+            Rect viewRect = new Rect(0f, 0f, rect.width - (totalH > rect.height ? 16f : 0f), Mathf.Max(totalH, rect.height));
+            Widgets.BeginScrollView(rect, ref tabScroll, viewRect);
+
+            if (isArmor) _armorTabScroll = tabScroll;
+            else _helmetTabScroll = tabScroll;
+
+            float curY = 0f;
+            float contentW = viewRect.width;
+
+            // ── Enabled + Random Symbol ──
             bool active = isArmor ? _profileSet.Armor.Active : _profileSet.Helmet.Active;
             bool wasActive = active;
-            Widgets.CheckboxLabeled(new Rect(enableRow.x, enableRow.y, 160f, enableRow.height),
-                "Enabled".Translate(), ref active);
+            Widgets.CheckboxLabeled(new Rect(0f, curY, 160f, 28f), "Enabled".Translate(), ref active);
 
             if (wasActive != active)
             {
@@ -199,7 +202,7 @@ namespace EOTF.Core.DecalSystem
                 PushLive();
             }
 
-            if (Widgets.ButtonText(new Rect(enableRow.xMax - 130f, enableRow.y, 130f, enableRow.height),
+            if (Widgets.ButtonText(new Rect(contentW - 130f, curY, 130f, 28f),
                 "EOTF_Decals_RandomSymbol".Translate()) && _symbols.Count > 0)
             {
                 if (isArmor) _selectedArmorIndex = Rand.Range(0, _symbols.Count);
@@ -207,31 +210,94 @@ namespace EOTF.Core.DecalSystem
                 SyncSelection();
                 PushLive();
             }
+            curY += 34f;
 
-            curY = enableRow.yMax + 6f;
+            // ── Symbol grid ──
+            Rect gridOuter = new Rect(0f, curY, contentW, gridH);
+            Widgets.DrawMenuSection(gridOuter);
+            Rect gridInner = gridOuter.ContractedBy(4f);
+            DrawSymbolGrid(gridInner, slot);
+            curY = gridOuter.yMax + 8f;
 
-            // Symbol grid — fills full width, scroll only inside
-            Rect gridRect = new Rect(rect.x, curY, rect.width, GridHeight);
-            DrawSymbolGrid(gridRect, slot);
-            curY = gridRect.yMax + 26f;
+            // ── Selected symbol name ──
+            int selectedIdx = isArmor ? _selectedArmorIndex : _selectedHelmetIndex;
+            string symName = (_symbols.Count > 0 && selectedIdx >= 0 && selectedIdx < _symbols.Count)
+                ? _symbols[selectedIdx].LabelCap.ToString() : "-";
+            Text.Anchor = TextAnchor.UpperCenter;
+            Widgets.Label(new Rect(0f, curY, contentW, 22f), symName);
+            Text.Anchor = TextAnchor.UpperLeft;
+            curY += 34f;
 
-            // Color picker fills the remaining width and height
-            float colorH = rect.yMax - curY;
-            Rect colorRect = new Rect(rect.x, curY, rect.width, colorH);
-            DrawColorSection(colorRect, slot);
+            // ── Color section ──
+            Widgets.Label(new Rect(0f, curY, contentW, 22f), "EOTF_Decals_Color".Translate());
+            curY += 24f;
+
+            Color color = isArmor ? _profileSet.Armor.SymbolColor : _profileSet.Helmet.SymbolColor;
+            Color original = color;
+
+            Widgets.ColorSelector(new Rect(0f, curY, contentW, 1000f),
+                ref color, AllColors(), out float usedHeight, null, 22, 2);
+            curY += usedHeight + 8f;
+
+            // Color shortcut buttons
+            float btnH = 28f;
+            float gap = 6f;
+            float btnW = (contentW - gap * 2f) / 3f;
+
+            if (Widgets.ButtonText(new Rect(0f, curY, btnW, btnH), "EOTF_Decals_IdeoColor".Translate()))
+            {
+                if (TryGetIdeoColor(_pawn, out Color c))
+                {
+                    color = c;
+                    SoundDefOf.Tick_Low.PlayOneShotOnCamera();
+                }
+            }
+            if (Widgets.ButtonText(new Rect(btnW + gap, curY, btnW, btnH), "EOTF_Decals_FavColor".Translate()))
+            {
+                if (TryGetFavoriteColor(_pawn, out Color c))
+                {
+                    color = c;
+                    SoundDefOf.Tick_Low.PlayOneShotOnCamera();
+                }
+            }
+            if (Widgets.ButtonText(new Rect((btnW + gap) * 2f, curY, btnW, btnH), "EOTF_Decals_RandomColor".Translate()))
+            {
+                var p = AllColors();
+                if (p.Count > 0)
+                {
+                    color = p[Rand.Range(0, p.Count)];
+                    SoundDefOf.Tick_Low.PlayOneShotOnCamera();
+                }
+            }
+
+            if (!original.IndistinguishableFrom(color))
+            {
+                if (isArmor) _profileSet.Armor.SymbolColor = color;
+                else _profileSet.Helmet.SymbolColor = color;
+                PushLive();
+            }
+
+            Widgets.EndScrollView();
         }
 
-        // Scrollable symbol grid a la the vanilla hair menu — only eats scrollbar width when it actually needs to scroll
-        private void DrawSymbolGrid(Rect outerRect, DecalSlot slot)
+        // Calculate grid height based on available width and symbol count
+        private float CalcGridHeight(float availableWidth)
+        {
+            float innerW = availableWidth - 8f; // ContractedBy(4f) on each side
+            int columns = Mathf.Max(1, Mathf.FloorToInt((innerW + TilePad) / (TileSize + TilePad)));
+            int rows = (_symbols.Count > 0) ? Mathf.CeilToInt((float)_symbols.Count / columns) : 1;
+            // Cap grid height so it doesn't dominate the tab
+            float naturalH = rows * (TileSize + TilePad) - TilePad + 8f;
+            return Mathf.Min(naturalH, 280f);
+        }
+
+        // Scrollable symbol grid — renders inside whatever rect it's given
+        private void DrawSymbolGrid(Rect innerRect, DecalSlot slot)
         {
             bool isArmor = (slot == DecalSlot.Armor);
             int selectedIdx = isArmor ? _selectedArmorIndex : _selectedHelmetIndex;
             Vector2 scrollPos = isArmor ? _armorGridScroll : _helmetGridScroll;
 
-            Widgets.DrawMenuSection(outerRect);
-            Rect innerRect = outerRect.ContractedBy(4f);
-
-            // Two-pass layout: figure out if we need a scrollbar before committing to column count
             float fullW = innerRect.width;
             int colsFull = Mathf.Max(1, Mathf.FloorToInt((fullW + TilePad) / (TileSize + TilePad)));
             int rowsFull = (_symbols.Count > 0) ? Mathf.CeilToInt((float)_symbols.Count / colsFull) : 1;
@@ -243,7 +309,6 @@ namespace EOTF.Core.DecalSystem
             int rowCount = (_symbols.Count > 0) ? Mathf.CeilToInt((float)_symbols.Count / columns) : 1;
             float gridH = rowCount * (TileSize + TilePad) - TilePad;
 
-            // Spread tiles across full width so there's no dead space on the right
             float strideX = (columns > 1) ? (usableW - TileSize) / (columns - 1) : 0f;
             float strideY = TileSize + TilePad;
 
@@ -257,15 +322,12 @@ namespace EOTF.Core.DecalSystem
             {
                 int col = i % columns;
                 int row = i / columns;
-                float x = col * strideX;
-                float y = row * strideY;
-                Rect tileRect = new Rect(x, y, TileSize, TileSize);
+                Rect tileRect = new Rect(col * strideX, row * strideY, TileSize, TileSize);
 
                 bool isSelected = (i == selectedIdx);
 
                 Widgets.DrawBoxSolid(tileRect, new Color(0.12f, 0.12f, 0.12f, 0.6f));
 
-                // Double highlight so selected tiles actually stand out
                 if (isSelected)
                 {
                     Widgets.DrawHighlight(tileRect);
@@ -279,8 +341,7 @@ namespace EOTF.Core.DecalSystem
                 Texture2D? thumb = GetThumb(_symbols[i]);
                 if (thumb != null)
                 {
-                    Rect iconRect = tileRect.ContractedBy(3f);
-                    GUI.DrawTexture(iconRect, thumb, ScaleMode.ScaleToFit);
+                    GUI.DrawTexture(tileRect.ContractedBy(3f), thumb, ScaleMode.ScaleToFit);
                 }
 
                 if (Widgets.ButtonInvisible(tileRect))
@@ -297,73 +358,44 @@ namespace EOTF.Core.DecalSystem
             }
 
             Widgets.EndScrollView();
-
-            // Selected symbol name below the grid
-            Rect labelRect = new Rect(outerRect.x, outerRect.yMax + 2f, outerRect.width, 22f);
-            string symName = (_symbols.Count > 0 && selectedIdx >= 0 && selectedIdx < _symbols.Count)
-                ? _symbols[selectedIdx].LabelCap.ToString() : "-";
-            Text.Anchor = TextAnchor.UpperCenter;
-            Widgets.Label(labelRect, symName);
-            Text.Anchor = TextAnchor.UpperLeft;
         }
 
-        // Color picker and shortcut buttons — fills full width
-        private void DrawColorSection(Rect rect, DecalSlot slot)
+        // ═══════════════════════════════════════════════════════════════
+        // FOOTER — Reset / Apply / Close, same layout as vanilla
+        // ═══════════════════════════════════════════════════════════════
+        private void DrawFooterButtons(Rect rect)
         {
-            bool isArmor = (slot == DecalSlot.Armor);
-            float curY = rect.y;
+            // Three buttons right-aligned, matching vanilla button sizing
+            float w = ButSize.x * 0.55f; // ~110px
+            float h = ButSize.y * 0.8f;  // ~32px
+            float gap = 10f;
+            float totalW = w * 3f + gap * 2f;
+            float startX = rect.x + (rect.width - totalW) / 2f; // Center the button group
 
-            Widgets.Label(new Rect(rect.x, curY, rect.width, 22f), "EOTF_Decals_Color".Translate());
-            curY += 26f;
-
-            Color color = isArmor ? _profileSet.Armor.SymbolColor : _profileSet.Helmet.SymbolColor;
-            Color original = color;
-
-            // Color selector fills the full width of the panel
-            Widgets.ColorSelector(new Rect(rect.x, curY, rect.width, 1000f),
-                ref color, AllColors(), out float usedHeight, null, 22, 2);
-            curY += usedHeight + 10f;
-
-            // Three shortcut buttons in a single row spanning full width
-            float btnH = 28f;
-            float gap = 8f;
-            float btnW = (rect.width - gap * 2f) / 3f;
-
-            if (Widgets.ButtonText(new Rect(rect.x, curY, btnW, btnH), "EOTF_Decals_IdeoColor".Translate()))
+            if (Widgets.ButtonText(new Rect(startX, rect.y, w, h), "EOTF_Decals_Reset".Translate()))
             {
-                if (TryGetIdeoColor(_pawn, out Color c))
-                {
-                    color = c;
-                    SoundDefOf.Tick_Low.PlayOneShotOnCamera();
-                }
-            }
-            if (Widgets.ButtonText(new Rect(rect.x + btnW + gap, curY, btnW, btnH), "EOTF_Decals_FavColor".Translate()))
-            {
-                if (TryGetFavoriteColor(_pawn, out Color c))
-                {
-                    color = c;
-                    SoundDefOf.Tick_Low.PlayOneShotOnCamera();
-                }
-            }
-            if (Widgets.ButtonText(new Rect(rect.x + (btnW + gap) * 2f, curY, btnW, btnH), "EOTF_Decals_RandomColor".Translate()))
-            {
-                var p = AllColors();
-                if (p.Count > 0)
-                {
-                    color = p[Rand.Range(0, p.Count)];
-                    SoundDefOf.Tick_Low.PlayOneShotOnCamera();
-                }
-            }
-
-            if (!original.IndistinguishableFrom(color))
-            {
-                if (isArmor) _profileSet.Armor.SymbolColor = color;
-                else _profileSet.Helmet.SymbolColor = color;
+                _profileSet = _original;
+                _selectedHelmetIndex = FindSymbolIndex(_profileSet.Helmet.SymbolPath);
+                _selectedArmorIndex = FindSymbolIndex(_profileSet.Armor.SymbolPath);
+                SyncSelection();
                 PushLive();
             }
+            if (Widgets.ButtonText(new Rect(startX + w + gap, rect.y, w, h), "EOTF_Decals_Apply".Translate()))
+            {
+                _committed = true;
+                Close();
+            }
+            if (Widgets.ButtonText(new Rect(startX + (w + gap) * 2f, rect.y, w, h), "Close".Translate()))
+            {
+                _committed = false;
+                Close();
+            }
         }
 
-        // Caches south-facing textures for grid thumbnails
+        // ═══════════════════════════════════════════════════════════════
+        // Helpers
+        // ═══════════════════════════════════════════════════════════════
+
         private Texture2D? GetThumb(DecalSymbolDef def)
         {
             if (def.Path.NullOrEmpty()) return null;
@@ -374,33 +406,6 @@ namespace EOTF.Core.DecalSystem
             if (tex == null) tex = ContentFinder<Texture2D>.Get(def.Path, false);
             _thumbCache[def.Path] = tex;
             return tex;
-        }
-
-        // Footer buttons
-        private void DrawBottomButtons(Rect rect)
-        {
-            float w = 110f;
-            float btnY = rect.y + 6f;
-            float x = rect.xMax - (w * 3 + 20f);
-
-            if (Widgets.ButtonText(new Rect(x, btnY, w, 32f), "EOTF_Decals_Reset".Translate()))
-            {
-                _profileSet = _original;
-                _selectedHelmetIndex = FindSymbolIndex(_profileSet.Helmet.SymbolPath);
-                _selectedArmorIndex = FindSymbolIndex(_profileSet.Armor.SymbolPath);
-                SyncSelection();
-                PushLive();
-            }
-            if (Widgets.ButtonText(new Rect(x + w + 10f, btnY, w, 32f), "EOTF_Decals_Apply".Translate()))
-            {
-                _committed = true;
-                Close();
-            }
-            if (Widgets.ButtonText(new Rect(rect.xMax - w, btnY, w, 32f), "Close".Translate()))
-            {
-                _committed = false;
-                Close();
-            }
         }
 
         private int FindSymbolIndex(string path)
