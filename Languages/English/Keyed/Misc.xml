@@ -22,6 +22,10 @@
   <EOTF_Decals_RandomColor>Random Color</EOTF_Decals_RandomColor>
   <EOTF_Decals_FavColor>Favorite Color</EOTF_Decals_FavColor>
  
+  <!-- Pawn preview -->
+  <EOTF_Decals_Rotate>Rotate</EOTF_Decals_Rotate>
+  <EOTF_Decals_ShowClothes>Show Clothes</EOTF_Decals_ShowClothes>
+ 
   <!-- Bottom buttons -->
   <EOTF_Decals_Reset>Reset</EOTF_Decals_Reset>
   <EOTF_Decals_Apply>Apply</EOTF_Decals_Apply>

@@ -1,4 +1,5 @@
 using System.Collections.Generic;
+using RimWorld;
 using Verse;
 
 namespace EOTF.Core.DecalSystem
@@ -29,6 +30,7 @@ namespace EOTF.Core.DecalSystem
         {
             WriteProfileSetTo(pawn, profileSet);
             pawn.Drawer.renderer?.SetAllGraphicsDirty();
+            PortraitsCache.SetDirty(pawn);
         }
 
         public static void EndLiveEdit(Pawn pawn, bool commit, DecalProfileSet original) 
@@ -38,6 +40,7 @@ namespace EOTF.Core.DecalSystem
                 WriteProfileSetTo(pawn, original);
             }
             pawn.Drawer.renderer?.SetAllGraphicsDirty();
+            PortraitsCache.SetDirty(pawn);
         }
 
         //Tries WorldComponent cache first, falls back to brute force apparel scan if that's fucked

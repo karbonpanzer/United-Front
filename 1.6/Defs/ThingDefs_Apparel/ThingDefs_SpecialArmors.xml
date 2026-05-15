@@ -90,7 +90,7 @@
               <flip>true</flip>
             </defaultData>
             <dataNorth>
-              <layer>23.655</layer>
+              <layer>92</layer>
               <offset>(0,0,-0.148)</offset>
             </dataNorth>
             <bodyTypeScales>
@@ -205,7 +205,7 @@
               <flip>true</flip>
             </defaultData>
             <dataNorth>
-              <layer>23.655</layer>
+              <layer>92</layer>
               <offset>(0,0,-0.148)</offset>
             </dataNorth>
             <bodyTypeScales>
@@ -319,7 +319,7 @@
               <flip>true</flip>
             </defaultData>
             <dataNorth>
-              <layer>23.655</layer>
+              <layer>92</layer>
               <offset>(0,0,-0.148)</offset>
             </dataNorth>
             <bodyTypeScales>
@@ -435,7 +435,7 @@
               <flip>true</flip>
             </defaultData>
             <dataNorth>
-              <layer>23.655</layer>
+              <layer>92</layer>
               <offset>(0,0,-0.148)</offset>
             </dataNorth>
             <bodyTypeScales>
