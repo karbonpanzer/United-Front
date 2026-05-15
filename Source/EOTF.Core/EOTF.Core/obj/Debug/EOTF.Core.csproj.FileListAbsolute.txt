@@ -4,3 +4,9 @@ C:\Program Files (x86)\Steam\steamapps\common\RimWorld\Mods\End of the Frontier 
 C:\Program Files (x86)\Steam\steamapps\common\RimWorld\Mods\End of the Frontier Testing Branch\Source\EOTF.Core\EOTF.Core\obj\Debug\EOTF.Core.sourcelink.json
 C:\Program Files (x86)\Steam\steamapps\common\RimWorld\Mods\End of the Frontier Testing Branch\Assemblies\EOTF.Core.dll
 C:\Program Files (x86)\Steam\steamapps\common\RimWorld\Mods\End of the Frontier Testing Branch\Source\EOTF.Core\EOTF.Core\obj\Debug\EOTF.Core.dll
+C:\Program Files (x86)\Steam\steamapps\common\RimWorld\Mods\The Ringer Faction\Assemblies\EOTF.Core.dll
+C:\Program Files (x86)\Steam\steamapps\common\RimWorld\Mods\The Ringer Faction\Source\EOTF.Core\EOTF.Core\obj\Debug\EOTF.Core.csproj.AssemblyReference.cache
+C:\Program Files (x86)\Steam\steamapps\common\RimWorld\Mods\The Ringer Faction\Source\EOTF.Core\EOTF.Core\obj\Debug\EOTF.Core.GeneratedMSBuildEditorConfig.editorconfig
+C:\Program Files (x86)\Steam\steamapps\common\RimWorld\Mods\The Ringer Faction\Source\EOTF.Core\EOTF.Core\obj\Debug\EOTF.Core.csproj.CoreCompileInputs.cache
+C:\Program Files (x86)\Steam\steamapps\common\RimWorld\Mods\The Ringer Faction\Source\EOTF.Core\EOTF.Core\obj\Debug\EOTF.Core.sourcelink.json
+C:\Program Files (x86)\Steam\steamapps\common\RimWorld\Mods\The Ringer Faction\Source\EOTF.Core\EOTF.Core\obj\Debug\EOTF.Core.dll

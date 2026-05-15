@@ -1,6 +1,6 @@
 is_global = true
 build_property.RootNamespace = EOTF.Core
-build_property.ProjectDir = C:\Program Files (x86)\Steam\steamapps\common\RimWorld\Mods\End of the Frontier Testing Branch\Source\EOTF.Core\EOTF.Core\
+build_property.ProjectDir = C:\Program Files (x86)\Steam\steamapps\common\RimWorld\Mods\The Ringer Faction\Source\EOTF.Core\EOTF.Core\
 build_property.EnableComHosting = 
 build_property.EnableGeneratedComInterfaceComImportInterop = 
 build_property.CsWinRTUseWindowsUIXamlProjections = false

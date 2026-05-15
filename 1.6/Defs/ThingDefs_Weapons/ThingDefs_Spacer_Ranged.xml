@@ -126,7 +126,7 @@
 		<graphicData>
 			<graphicClass>Graphic_Single</graphicClass>
 			<texPath>Things/Item/Equipment/WeaponRanged/frontierpistol</texPath>
-			<drawSize>1.2</drawSize>
+			<drawSize>1.0</drawSize>
 		</graphicData>
 		<techLevel>Spacer</techLevel>
 		<soundInteract>Interact_Autopistol</soundInteract>
@@ -226,8 +226,8 @@
 		<description>A state of the art sub-machinegun built with lightweight polymers and advanced alloys. Light, accurate, and easy to use, it has found usage in hundreds of colonies now for security.</description>
 		<graphicData>
 			<graphicClass>Graphic_Single</graphicClass>
-			<texPath>Things/Item/Equipment/WeaponRanged/compactpdw</texPath>
-			<drawSize>1.0</drawSize>
+			<texPath>Things/Item/Equipment/WeaponRanged/advancedsmg</texPath>
+			<drawSize>0.9</drawSize>
 		</graphicData>
 		<techLevel>Spacer</techLevel>
 		<soundInteract>Interact_SMG</soundInteract>
@@ -328,8 +328,8 @@
 		<description>A large frame revolver often seen with mercenaries. Despite its size, it is light and powerful, thanks to its advanced manufacturing and specialized high power ammunition.</description>
 		<graphicData>
 			<graphicClass>Graphic_Single</graphicClass>
-			<texPath>Things/Item/Equipment/WeaponRanged/bigiron</texPath>
-			<drawSize>0.9</drawSize>
+			<texPath>Things/Item/Equipment/WeaponRanged/stampederevolver</texPath>
+			<drawSize>1.0</drawSize>
 		</graphicData>
 		<techLevel>Spacer</techLevel>
 		<soundInteract>Interact_Revolver</soundInteract>
@@ -430,7 +430,7 @@
 		<graphicData>
 			<graphicClass>Graphic_Single</graphicClass>
 			<texPath>Things/Item/Equipment/WeaponRanged/combatrifle</texPath>
-			<drawSize>1.2</drawSize>
+			<drawSize>1.0</drawSize>
 		</graphicData>
 		<techLevel>Spacer</techLevel>
 		<soundInteract>Interact_Rifle</soundInteract>
@@ -531,7 +531,7 @@
 		<graphicData>
 			<graphicClass>Graphic_Single</graphicClass>
 			<texPath>Things/Item/Equipment/WeaponRanged/combatcarbine</texPath>
-			<drawSize>1.1</drawSize>
+			<drawSize>1.0</drawSize>
 		</graphicData>
 		<techLevel>Spacer</techLevel>
 		<soundInteract>Interact_Rifle</soundInteract>
@@ -733,7 +733,7 @@
 		<graphicData>
 			<graphicClass>Graphic_Single</graphicClass>
 			<texPath>Things/Item/Equipment/WeaponRanged/lawbringershotgun</texPath>
-			<drawSize>1.2</drawSize>
+			<drawSize>1.0</drawSize>
 		</graphicData>
 		<techLevel>Spacer</techLevel>
 		<soundInteract>Interact_Shotgun</soundInteract>

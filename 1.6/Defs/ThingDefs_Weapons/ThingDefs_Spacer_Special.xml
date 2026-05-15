@@ -27,7 +27,7 @@
 		<graphicData>
 			<graphicClass>Graphic_Single</graphicClass>
 			<texPath>Things/Item/Equipment/WeaponRanged/combatlmg</texPath>
-			<drawSize>1.3</drawSize>
+			<drawSize>1.2</drawSize>
 		</graphicData>
 		<techLevel>Spacer</techLevel>
 		<soundInteract>Interact_Rifle</soundInteract>

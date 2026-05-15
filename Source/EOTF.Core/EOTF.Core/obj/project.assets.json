@@ -308,11 +308,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Program Files (x86)\\Steam\\steamapps\\common\\RimWorld\\Mods\\End of the Frontier Testing Branch\\Source\\EOTF.Core\\EOTF.Core\\EOTF.Core.csproj",
+      "projectUniqueName": "C:\\Program Files (x86)\\Steam\\steamapps\\common\\RimWorld\\Mods\\The Ringer Faction\\Source\\EOTF.Core\\EOTF.Core\\EOTF.Core.csproj",
       "projectName": "EOTF.Core",
-      "projectPath": "C:\\Program Files (x86)\\Steam\\steamapps\\common\\RimWorld\\Mods\\End of the Frontier Testing Branch\\Source\\EOTF.Core\\EOTF.Core\\EOTF.Core.csproj",
+      "projectPath": "C:\\Program Files (x86)\\Steam\\steamapps\\common\\RimWorld\\Mods\\The Ringer Faction\\Source\\EOTF.Core\\EOTF.Core\\EOTF.Core.csproj",
       "packagesPath": "C:\\Users\\Scott\\.nuget\\packages\\",
-      "outputPath": "C:\\Program Files (x86)\\Steam\\steamapps\\common\\RimWorld\\Mods\\End of the Frontier Testing Branch\\Source\\EOTF.Core\\EOTF.Core\\obj\\",
+      "outputPath": "C:\\Program Files (x86)\\Steam\\steamapps\\common\\RimWorld\\Mods\\The Ringer Faction\\Source\\EOTF.Core\\EOTF.Core\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -361,7 +361,7 @@
             "version": "[2.3.1.1, )"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\10.0.203\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\10.0.204\\RuntimeIdentifierGraph.json"
       }
     }
   }
