@@ -2,32 +2,28 @@
 <LanguageData>
  
   <!-- Gizmo -->
-  <EOTF_StyleDecalsGizmo>Style Decals: {0}</EOTF_StyleDecalsGizmo>
+  <EOTF_StyleDecalsGizmo>Edit Decals: {0}</EOTF_StyleDecalsGizmo>
   <EOTF_StyleDecalsDesc>Customize the decal markings on this pawn's armor and helmet.</EOTF_StyleDecalsDesc>
  
   <!-- Dialog title -->
-  <EOTF_StyleDecalsTitle>Style Decals: {0}</EOTF_StyleDecalsTitle>
+  <EOTF_StyleDecalsTitle>Edit Decals: {0}</EOTF_StyleDecalsTitle>
  
-  <!-- Section headers -->
+  <!-- Tab headers -->
   <EOTF_Decals_Armor>Armor</EOTF_Decals_Armor>
   <EOTF_Decals_Helmet>Helmet</EOTF_Decals_Helmet>
  
-  <!-- Symbol picker -->
+  <!-- Controls -->
+  <EOTF_Decals_Enabled>Enable Decals</EOTF_Decals_Enabled>
   <EOTF_Decals_RandomSymbol>Random Symbol</EOTF_Decals_RandomSymbol>
-  <EOTF_Decals_NoSelection>No Symbol Selected</EOTF_Decals_NoSelection>
  
-  <!-- Color section -->
-  <EOTF_Decals_Color>Color</EOTF_Decals_Color>
+  <!-- Color buttons -->
   <EOTF_Decals_IdeoColor>Ideo Color</EOTF_Decals_IdeoColor>
   <EOTF_Decals_RandomColor>Random Color</EOTF_Decals_RandomColor>
   <EOTF_Decals_FavColor>Favorite Color</EOTF_Decals_FavColor>
  
-  <!-- Pawn preview -->
-  <EOTF_Decals_Rotate>Rotate</EOTF_Decals_Rotate>
-  <EOTF_Decals_ShowClothes>Show Clothes</EOTF_Decals_ShowClothes>
- 
-  <!-- Bottom buttons -->
+  <!-- Footer buttons -->
+  <EOTF_Decals_Cancel>Cancel</EOTF_Decals_Cancel>
   <EOTF_Decals_Reset>Reset</EOTF_Decals_Reset>
-  <EOTF_Decals_Apply>Apply</EOTF_Decals_Apply>
+  <EOTF_Decals_Accept>Accept</EOTF_Decals_Accept>
  
 </LanguageData>

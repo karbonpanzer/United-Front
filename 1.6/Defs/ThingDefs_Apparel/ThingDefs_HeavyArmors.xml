@@ -87,7 +87,7 @@
           <drawData>
             <scale>0.120</scale>
             <defaultData>
-              <layer>23.555</layer>
+              <layer>92</layer>
               <offset>(0,0,-0.155)</offset>
               <flip>true</flip>
             </defaultData>
@@ -208,7 +208,7 @@ This variant is marked for usage by Medical staff.</description>
           <drawData>
             <scale>0.120</scale>
             <defaultData>
-              <layer>23.555</layer>
+              <layer>92</layer>
               <offset>(0,0,-0.155)</offset>
               <flip>true</flip>
             </defaultData>
@@ -329,7 +329,7 @@ This variant is marked for usage by Engineers.</description>
           <drawData>
             <scale>0.120</scale>
             <defaultData>
-              <layer>23.555</layer>
+              <layer>92</layer>
               <offset>(0,0,-0.155)</offset>
               <flip>true</flip>
             </defaultData>
@@ -425,7 +425,7 @@ This variant is marked for usage by Engineers.</description>
           <nodeClass>EOTF.Core.DecalSystem.PawnRenderNodeDecal</nodeClass>
           <workerClass>EOTF.Core.DecalSystem.PawnRenderNodeWorkerHeadware</workerClass>
           <parentTagDef>ApparelHead</parentTagDef>
-          <baseLayer>55</baseLayer>
+          <baseLayer>92</baseLayer>
           <texPaths>
             <li>Things/Decals/Infantry/None</li>
           </texPaths>
@@ -524,7 +524,7 @@ This variant is marked for usage by Medical staff.</description>
           <nodeClass>EOTF.Core.DecalSystem.PawnRenderNodeDecal</nodeClass>
           <workerClass>EOTF.Core.DecalSystem.PawnRenderNodeWorkerHeadware</workerClass>
           <parentTagDef>ApparelHead</parentTagDef>
-          <baseLayer>55</baseLayer>
+          <baseLayer>92</baseLayer>
           <texPaths>
             <li>Things/Decals/Medical/CrossCircle</li>
           </texPaths>
@@ -623,7 +623,7 @@ This variant is marked for usage by Engineers.</description>
           <nodeClass>EOTF.Core.DecalSystem.PawnRenderNodeDecal</nodeClass>
           <workerClass>EOTF.Core.DecalSystem.PawnRenderNodeWorkerHeadware</workerClass>
           <parentTagDef>ApparelHead</parentTagDef>
-          <baseLayer>55</baseLayer>
+          <baseLayer>92</baseLayer>
           <texPaths>
             <li>Things/Decals/Engineer/Cog</li>
           </texPaths>
@@ -722,7 +722,7 @@ This variant is marked for usage by Officers.</description>
           <nodeClass>EOTF.Core.DecalSystem.PawnRenderNodeDecal</nodeClass>
           <workerClass>EOTF.Core.DecalSystem.PawnRenderNodeWorkerHeadware</workerClass>
           <parentTagDef>ApparelHead</parentTagDef>
-          <baseLayer>55</baseLayer>
+          <baseLayer>92</baseLayer>
           <texPaths>
             <li>Things/Decals/Officer/OfficerStar</li>
           </texPaths>
@@ -819,7 +819,7 @@ This variant is marked for usage by Officers.</description>
           <nodeClass>EOTF.Core.DecalSystem.PawnRenderNodeDecal</nodeClass>
           <workerClass>EOTF.Core.DecalSystem.PawnRenderNodeWorkerHeadware</workerClass>
           <parentTagDef>ApparelHead</parentTagDef>
-          <baseLayer>55</baseLayer>
+          <baseLayer>92</baseLayer>
           <texPaths>
             <li>Things/Decals/Infantry/None</li>
           </texPaths>
@@ -921,7 +921,7 @@ This variant is marked for usage by Officers.</description>
           <nodeClass>EOTF.Core.DecalSystem.PawnRenderNodeDecal</nodeClass>
           <workerClass>EOTF.Core.DecalSystem.PawnRenderNodeWorkerHeadware</workerClass>
           <parentTagDef>ApparelHead</parentTagDef>
-          <baseLayer>55</baseLayer>
+          <baseLayer>92</baseLayer>
           <texPaths>
             <li>Things/Decals/Infantry/None</li>
           </texPaths>
@@ -1023,7 +1023,7 @@ This variant is marked for usage by Officers.</description>
           <nodeClass>EOTF.Core.DecalSystem.PawnRenderNodeDecal</nodeClass>
           <workerClass>EOTF.Core.DecalSystem.PawnRenderNodeWorkerHeadware</workerClass>
           <parentTagDef>ApparelHead</parentTagDef>
-          <baseLayer>55</baseLayer>
+          <baseLayer>92</baseLayer>
           <texPaths>
             <li>Things/Decals/Infantry/None</li>
           </texPaths>

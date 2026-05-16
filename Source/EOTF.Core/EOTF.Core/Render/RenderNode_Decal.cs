@@ -15,18 +15,17 @@ namespace EOTF.Core.DecalSystem
         public PawnRenderNodeDecal(Pawn pawn, PawnRenderNodeProperties props, PawnRenderTree tree)
             : base(pawn, props, tree)
         {
-            _slot = DetermineSlot(props as PawnRenderNodePropertiesOmni);
+            _slot = DetermineSlot(props);
         }
 
         //Graphic lookup with caching so we're not hammering GraphicDatabase every goddamn frame
         public override Graphic? GraphicFor(Pawn pawn)
         {
             var eotfProps = Props as PawnRenderNodePropertiesOmni;
-            if (eotfProps == null) return null;
 
             DecalProfile profile   = DecalUtil.ReadProfileFrom(pawn, _slot);
-            string       path      = profile.Active ? profile.SymbolPath : GetDefaultPath(pawn, eotfProps);
-            Color        finalColor = profile.Active ? profile.SymbolColor : eotfProps.Color;
+            string       path      = profile.Active ? profile.SymbolPath : GetDefaultPath(pawn);
+            Color        finalColor = profile.Active ? profile.SymbolColor : (eotfProps?.Color ?? new Color(0.2f, 0.2f, 0.2f));
 
             if (path.NullOrEmpty()) return null;
 
@@ -41,14 +40,14 @@ namespace EOTF.Core.DecalSystem
         }
 
         //Figures out if this is helmet or armor, defaults to armor if XML doesn't specify
-        private static DecalSlot DetermineSlot(PawnRenderNodePropertiesOmni? eotfProps)
+        private static DecalSlot DetermineSlot(PawnRenderNodeProperties props)
         {
-            if (eotfProps?.ExplicitSlot.HasValue == true)
+            if (props is PawnRenderNodePropertiesOmni eotfProps && eotfProps.ExplicitSlot.HasValue)
                 return eotfProps.ExplicitSlot.Value;
 
-            if (eotfProps?.parentTagDef != null)
+            if (props.parentTagDef != null)
             {
-                string tagName = eotfProps.parentTagDef.defName;
+                string tagName = props.parentTagDef.defName;
                 if (tagName.Contains("Head") || tagName.Contains("Headgear") || tagName.Contains("Helmet"))
                     return DecalSlot.Helmet;
             }
@@ -57,9 +56,9 @@ namespace EOTF.Core.DecalSystem
         }
 
         //Default texture path when nobody's picked a decal, falls back to whatever's in the XML texPaths
-        private string GetDefaultPath(Pawn pawn, PawnRenderNodePropertiesOmni eotfProps)
+        private string GetDefaultPath(Pawn pawn)
         {
-            if (eotfProps.texPaths != null && eotfProps.texPaths.Count > 0)
+            if (Props is PawnRenderNodePropertiesOmni eotfProps && eotfProps.texPaths.Count > 0)
             {
                 int seed = pawn.Faction?.loadID ?? pawn.thingIDNumber;
                 return eotfProps.texPaths[seed % eotfProps.texPaths.Count];

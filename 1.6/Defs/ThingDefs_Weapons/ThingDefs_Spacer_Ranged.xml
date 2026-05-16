@@ -465,8 +465,8 @@
 				<hasStandardCommand>true</hasStandardCommand>
 				<defaultProjectile>TRG_Bullet_ServiceRifle</defaultProjectile>
 				<warmupTime>1.0</warmupTime>
-				<range>34.0</range>
-				<burstShotCount>2</burstShotCount>
+				<range>35.0</range>
+				<burstShotCount>3</burstShotCount>
 				<ticksBetweenBurstShots>3</ticksBetweenBurstShots>
 				<soundCast>Shot_AssaultRifle</soundCast>
 				<soundCastTail>GunTail_Medium</soundCastTail>
@@ -565,8 +565,8 @@
 				<verbClass>Verb_Shoot</verbClass>
 				<hasStandardCommand>true</hasStandardCommand>
 				<defaultProjectile>TRG_Bullet_ServiceCarbine</defaultProjectile>
-				<warmupTime>0.9</warmupTime>
-				<range>30.0</range>
+				<warmupTime>0.8</warmupTime>
+				<range>28.0</range>
 				<soundCast>Shot_AssaultRifle</soundCast>
 				<soundCastTail>GunTail_Medium</soundCastTail>
 				<muzzleFlashScale>9</muzzleFlashScale>
@@ -630,8 +630,8 @@
 		<description>An ancient design for a multi-purpose automatic shotgun favored by mercenaries. Firing high-power shells via a drum magazine, it easily shreds flesh and can even damage armor.</description>
 		<graphicData>
 			<graphicClass>Graphic_Single</graphicClass>
-			<texPath>Things/Item/Equipment/WeaponRanged/coreburner</texPath>
-			<drawSize>1.25</drawSize>
+			<texPath>Things/Item/Equipment/WeaponRanged/jackhammershotgun</texPath>
+			<drawSize>1.0</drawSize>
 		</graphicData>
 		<techLevel>Spacer</techLevel>
 		<soundInteract>Interact_Shotgun</soundInteract>

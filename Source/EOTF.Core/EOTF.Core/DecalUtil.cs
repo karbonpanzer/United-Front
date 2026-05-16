@@ -19,7 +19,7 @@ namespace EOTF.Core.DecalSystem
             return (slot == DecalSlot.Helmet) ? comp.ProfileSet.Helmet : comp.ProfileSet.Armor;
         }
 
-        public static void WriteProfileSetTo(Pawn pawn, DecalProfileSet profileSet)
+        private static void WriteProfileSetTo(Pawn pawn, DecalProfileSet profileSet)
         {
             var comp = GetMarker(pawn);
             if (comp != null) comp.ProfileSet = profileSet;

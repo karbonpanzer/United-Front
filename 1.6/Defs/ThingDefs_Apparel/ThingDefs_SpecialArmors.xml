@@ -74,7 +74,7 @@
           <nodeClass>EOTF.Core.DecalSystem.PawnRenderNodeDecal</nodeClass>
           <workerClass>EOTF.Core.DecalSystem.PawnRenderNodeWorkerApparel</workerClass>
           <parentTagDef>ApparelBody</parentTagDef>
-          <baseLayer>16</baseLayer>
+          <baseLayer>92</baseLayer>
           <texPaths>
             <li>Things/Decals/Officer/OfficerStar</li>
           </texPaths>
@@ -85,7 +85,7 @@
           <drawData>
             <scale>0.120</scale>
             <defaultData>
-              <layer>23.555</layer>
+              <layer>92</layer>
               <offset>(0,0,-0.155)</offset>
               <flip>true</flip>
             </defaultData>
@@ -189,7 +189,7 @@
           <nodeClass>EOTF.Core.DecalSystem.PawnRenderNodeDecal</nodeClass>
           <workerClass>EOTF.Core.DecalSystem.PawnRenderNodeWorkerApparel</workerClass>
           <parentTagDef>ApparelBody</parentTagDef>
-          <baseLayer>16</baseLayer>
+          <baseLayer>92</baseLayer>
           <texPaths>
             <li>Things/Decals/Officer/OfficerStar</li>
           </texPaths>
@@ -200,7 +200,7 @@
           <drawData>
             <scale>0.120</scale>
             <defaultData>
-              <layer>23.555</layer>
+              <layer>92</layer>
               <offset>(0,0,-0.155)</offset>
               <flip>true</flip>
             </defaultData>
@@ -303,7 +303,7 @@
           <nodeClass>EOTF.Core.DecalSystem.PawnRenderNodeDecal</nodeClass>
           <workerClass>EOTF.Core.DecalSystem.PawnRenderNodeWorkerApparel</workerClass>
           <parentTagDef>ApparelBody</parentTagDef>
-          <baseLayer>16</baseLayer>
+          <baseLayer>92</baseLayer>
           <texPaths>
             <li>Things/Decals/Infantry/None</li>
           </texPaths>
@@ -314,7 +314,7 @@
           <drawData>
             <scale>0.120</scale>
             <defaultData>
-              <layer>23.555</layer>
+              <layer>92</layer>
               <offset>(0,0,-0.155)</offset>
               <flip>true</flip>
             </defaultData>
@@ -419,7 +419,7 @@
           <nodeClass>EOTF.Core.DecalSystem.PawnRenderNodeDecal</nodeClass>
           <workerClass>EOTF.Core.DecalSystem.PawnRenderNodeWorkerApparel</workerClass>
           <parentTagDef>ApparelBody</parentTagDef>
-          <baseLayer>16</baseLayer>
+          <baseLayer>92</baseLayer>
           <texPaths>
             <li>Things/Decals/Police/TinStar</li>
           </texPaths>
@@ -430,7 +430,7 @@
           <drawData>
             <scale>0.120</scale>
             <defaultData>
-              <layer>23.555</layer>
+              <layer>92</layer>
               <offset>(0,0,-0.155)</offset>
               <flip>true</flip>
             </defaultData>
