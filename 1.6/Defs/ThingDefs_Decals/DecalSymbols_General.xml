@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+
+  <EOTF.Core.DecalSystem.DecalSymbolDef>
+    <defName>TRG_Decal_None</defName>
+    <label>None</label>
+    <Path>Things/Decals/None</Path>
+  </EOTF.Core.DecalSystem.DecalSymbolDef>
+
+</Defs>

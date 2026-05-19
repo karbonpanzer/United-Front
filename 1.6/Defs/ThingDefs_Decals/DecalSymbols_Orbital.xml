@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+
+  <EOTF.Core.DecalSystem.DecalSymbolDef>
+    <defName>TRG_Decal_Bliss</defName>
+    <label>Bliss</label>
+    <Path>Things/Decals/Orbital/bliss</Path>
+    <role>Orbital</role>
+  </EOTF.Core.DecalSystem.DecalSymbolDef>
+
+  <EOTF.Core.DecalSystem.DecalSymbolDef>
+    <defName>TRG_Decal_Excellence</defName>
+    <label>Excellence</label>
+    <Path>Things/Decals/Orbital/excellence</Path>
+    <role>Orbital</role>
+  </EOTF.Core.DecalSystem.DecalSymbolDef>
+
+  <EOTF.Core.DecalSystem.DecalSymbolDef>
+    <defName>TRG_Decal_Harmony</defName>
+    <label>Harmony</label>
+    <Path>Things/Decals/Orbital/harmony</Path>
+    <role>Orbital</role>
+  </EOTF.Core.DecalSystem.DecalSymbolDef>
+
+  <EOTF.Core.DecalSystem.DecalSymbolDef>
+    <defName>TRG_Decal_Spartan</defName>
+    <label>Spartan</label>
+    <Path>Things/Decals/Orbital/spartan</Path>
+    <role>Orbital</role>
+  </EOTF.Core.DecalSystem.DecalSymbolDef>
+
+  <EOTF.Core.DecalSystem.DecalSymbolDef>
+    <defName>TRG_Decal_Starshot</defName>
+    <label>Starshot</label>
+    <Path>Things/Decals/Orbital/starshot</Path>
+    <role>Orbital</role>
+  </EOTF.Core.DecalSystem.DecalSymbolDef>
+
+  <EOTF.Core.DecalSystem.DecalSymbolDef>
+    <defName>TRG_Decal_Vigilance</defName>
+    <label>Vigilance</label>
+    <Path>Things/Decals/Orbital/vigilance</Path>
+    <role>Orbital</role>
+  </EOTF.Core.DecalSystem.DecalSymbolDef>
+
+</Defs>

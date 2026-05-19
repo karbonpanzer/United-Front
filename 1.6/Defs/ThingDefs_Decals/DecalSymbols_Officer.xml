@@ -1,58 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
 <Defs>
 
   <EOTF.Core.DecalSystem.DecalSymbolDef>
-    <defName>BNF_Decal_OfficerStar</defName>
-    <label>Officer Star</label>
-    <Path>Things/Decals/Officer/OfficerStar</Path>
+    <defName>TRG_Decal_Griffin</defName>
+    <label>Griffin</label>
+    <Path>Things/Decals/Officer/griffin</Path>
     <role>Officer</role>
   </EOTF.Core.DecalSystem.DecalSymbolDef>
 
   <EOTF.Core.DecalSystem.DecalSymbolDef>
-    <defName>BNF_Decal_Wreath</defName>
-    <label>Wreath</label>
-    <Path>Things/Decals/Officer/Wreath</Path>
+    <defName>TRG_Decal_PenPusher</defName>
+    <label>Pen Pusher</label>
+    <Path>Things/Decals/Officer/penpusher</Path>
     <role>Officer</role>
   </EOTF.Core.DecalSystem.DecalSymbolDef>
 
   <EOTF.Core.DecalSystem.DecalSymbolDef>
-    <defName>BNF_Decal_Starburst</defName>
-    <label>Starburst</label>
-    <Path>Things/Decals/Officer/Starburst</Path>
+    <defName>TRG_Decal_Phoenix</defName>
+    <label>Phoenix</label>
+    <Path>Things/Decals/Officer/phoenix</Path>
     <role>Officer</role>
   </EOTF.Core.DecalSystem.DecalSymbolDef>
 
   <EOTF.Core.DecalSystem.DecalSymbolDef>
-    <defName>BNF_Decal_Hawk</defName>
-    <label>Hawk</label>
-    <Path>Things/Decals/Officer/Hawk</Path>
+    <defName>TRG_Decal_SkyDragon</defName>
+    <label>Sky Dragon</label>
+    <Path>Things/Decals/Officer/skydragon</Path>
     <role>Officer</role>
   </EOTF.Core.DecalSystem.DecalSymbolDef>
 
   <EOTF.Core.DecalSystem.DecalSymbolDef>
-    <defName>BNF_Decal_Crown</defName>
-    <label>Crown</label>
-    <Path>Things/Decals/Officer/Crown</Path>
+    <defName>TRG_Decal_Star</defName>
+    <label>Star</label>
+    <Path>Things/Decals/Officer/star</Path>
     <role>Officer</role>
   </EOTF.Core.DecalSystem.DecalSymbolDef>
 
   <EOTF.Core.DecalSystem.DecalSymbolDef>
-    <defName>BNF_Decal_Captain</defName>
-    <label>Captain</label>
-    <Path>Things/Decals/Officer/Captain</Path>
-    <role>Officer</role>
-  </EOTF.Core.DecalSystem.DecalSymbolDef>
-
-  <EOTF.Core.DecalSystem.DecalSymbolDef>
-    <defName>BNF_Decal_Cluster</defName>
-    <label>Leaf Cluster</label>
-    <Path>Things/Decals/Officer/Leaf Cluster</Path>
-    <role>Officer</role>
-  </EOTF.Core.DecalSystem.DecalSymbolDef>
-
-  <EOTF.Core.DecalSystem.DecalSymbolDef>
-    <defName>BNF_Decal_Lionhead</defName>
-    <label>Lionhead</label>
-    <Path>Things/Decals/Officer/Lionhead</Path>
+    <defName>TRG_Decal_Sword</defName>
+    <label>Sword</label>
+    <Path>Things/Decals/Officer/sword</Path>
     <role>Officer</role>
   </EOTF.Core.DecalSystem.DecalSymbolDef>
 

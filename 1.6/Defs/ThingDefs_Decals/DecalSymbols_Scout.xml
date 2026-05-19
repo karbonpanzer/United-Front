@@ -2,65 +2,58 @@
 <Defs>
 
   <EOTF.Core.DecalSystem.DecalSymbolDef>
-    <defName>BNF_Decal_22Inf_Scout</defName>
-    <label>22Inf</label>
-    <Path>Things/Decals/Scout/22inf</Path>
+    <defName>TRG_Decal_BuffaloSoldier</defName>
+    <label>Buffalo Soldier</label>
+    <Path>Things/Decals/Scout/buffalosoldier</Path>
     <role>Scout</role>
   </EOTF.Core.DecalSystem.DecalSymbolDef>
 
   <EOTF.Core.DecalSystem.DecalSymbolDef>
-    <defName>BNF_Decal_32Inf_Scout</defName>
-    <label>32Inf</label>
-    <Path>Things/Decals/Scout/32Inf</Path>
+    <defName>TRG_Decal_Forward</defName>
+    <label>Forward</label>
+    <Path>Things/Decals/Scout/forward</Path>
     <role>Scout</role>
   </EOTF.Core.DecalSystem.DecalSymbolDef>
 
   <EOTF.Core.DecalSystem.DecalSymbolDef>
-    <defName>BNF_Decal_40Inf_Scout</defName>
-    <label>40Inf</label>
-    <Path>Things/Decals/Scout/40Inf</Path>
+    <defName>TRG_Decal_Mountain</defName>
+    <label>Mountain</label>
+    <Path>Things/Decals/Scout/mountain</Path>
     <role>Scout</role>
   </EOTF.Core.DecalSystem.DecalSymbolDef>
 
   <EOTF.Core.DecalSystem.DecalSymbolDef>
-    <defName>BNF_Decal_50Inf_Scout</defName>
-    <label>50Inf</label>
-    <Path>Things/Decals/Scout/50Inf</Path>
+    <defName>TRG_Decal_Serpent</defName>
+    <label>Serpent</label>
+    <Path>Things/Decals/Scout/serpent</Path>
     <role>Scout</role>
   </EOTF.Core.DecalSystem.DecalSymbolDef>
 
   <EOTF.Core.DecalSystem.DecalSymbolDef>
-    <defName>BNF_Decal_79Inf_Scout</defName>
-    <label>79Inf</label>
-    <Path>Things/Decals/Scout/79Inf</Path>
+    <defName>TRG_Decal_Speed</defName>
+    <label>Speed</label>
+    <Path>Things/Decals/Scout/speed</Path>
     <role>Scout</role>
   </EOTF.Core.DecalSystem.DecalSymbolDef>
 
   <EOTF.Core.DecalSystem.DecalSymbolDef>
-    <defName>BNF_Decal_116Inf_Scout</defName>
-    <label>116Inf</label>
-    <Path>Things/Decals/Scout/116Inf</Path>
+    <defName>TRG_Decal_Talon</defName>
+    <label>Talon</label>
+    <Path>Things/Decals/Scout/talon</Path>
     <role>Scout</role>
   </EOTF.Core.DecalSystem.DecalSymbolDef>
 
   <EOTF.Core.DecalSystem.DecalSymbolDef>
-    <defName>BNF_Decal_135Air_Scout</defName>
-    <label>135Air</label>
-    <Path>Things/Decals/Scout/135Air</Path>
+    <defName>TRG_Decal_Wagonmaster</defName>
+    <label>Wagonmaster</label>
+    <Path>Things/Decals/Scout/wagonmaster</Path>
     <role>Scout</role>
   </EOTF.Core.DecalSystem.DecalSymbolDef>
 
   <EOTF.Core.DecalSystem.DecalSymbolDef>
-    <defName>BNF_Decal_460Chem_Scout</defName>
-    <label>460Chem</label>
-    <Path>Things/Decals/Scout/460Chem</Path>
-    <role>Scout</role>
-  </EOTF.Core.DecalSystem.DecalSymbolDef>
-
-  <EOTF.Core.DecalSystem.DecalSymbolDef>
-    <defName>BNF_Decal_Thunderbird</defName>
-    <label>Thunderbird</label>
-    <Path>Things/Decals/Scout/Thunderbird</Path>
+    <defName>TRG_Decal_Wildcat</defName>
+    <label>Wildcat</label>
+    <Path>Things/Decals/Scout/wildcat</Path>
     <role>Scout</role>
   </EOTF.Core.DecalSystem.DecalSymbolDef>
 

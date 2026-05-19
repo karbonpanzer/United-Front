@@ -2,72 +2,37 @@
 <Defs>
 
   <EOTF.Core.DecalSystem.DecalSymbolDef>
-    <defName>BNF_Decal_Police</defName>
-    <label>Star Crest</label>
-    <Path>Things/Decals/Police/Police</Path>
+    <defName>TRG_Decal_Command</defName>
+    <label>Command</label>
+    <Path>Things/Decals/Police/command</Path>
     <role>Police</role>
   </EOTF.Core.DecalSystem.DecalSymbolDef>
 
   <EOTF.Core.DecalSystem.DecalSymbolDef>
-    <defName>BNF_Decal_Shield</defName>
-    <label>Shield</label>
-    <Path>Things/Decals/Police/Shield</Path>
+    <defName>TRG_Decal_Key</defName>
+    <label>Key</label>
+    <Path>Things/Decals/Police/key</Path>
     <role>Police</role>
   </EOTF.Core.DecalSystem.DecalSymbolDef>
 
   <EOTF.Core.DecalSystem.DecalSymbolDef>
-    <defName>BNF_Decal_Scales</defName>
-    <label>Scales</label>
-    <Path>Things/Decals/Police/Scales</Path>
+    <defName>TRG_Decal_Preserve</defName>
+    <label>Preserve</label>
+    <Path>Things/Decals/Police/preserve</Path>
     <role>Police</role>
   </EOTF.Core.DecalSystem.DecalSymbolDef>
 
   <EOTF.Core.DecalSystem.DecalSymbolDef>
-    <defName>BNF_Decal_Dredd</defName>
-    <label>Badge</label>
-    <Path>Things/Decals/Police/Dredd</Path>
+    <defName>TRG_Decal_Pride</defName>
+    <label>Pride</label>
+    <Path>Things/Decals/Police/pride</Path>
     <role>Police</role>
   </EOTF.Core.DecalSystem.DecalSymbolDef>
 
   <EOTF.Core.DecalSystem.DecalSymbolDef>
-    <defName>BNF_Decal_Torch</defName>
-    <label>Torch</label>
-    <Path>Things/Decals/Police/Torch</Path>
-    <role>Police</role>
-  </EOTF.Core.DecalSystem.DecalSymbolDef>
-
-  <EOTF.Core.DecalSystem.DecalSymbolDef>
-    <defName>BNF_Decal_Column</defName>
-    <label>Column</label>
-    <Path>Things/Decals/Police/Column</Path>
-    <role>Police</role>
-  </EOTF.Core.DecalSystem.DecalSymbolDef>
-
-  <EOTF.Core.DecalSystem.DecalSymbolDef>
-    <defName>BNF_Decal_TinStar</defName>
-    <label>Tin Star</label>
-    <Path>Things/Decals/Police/TinStar</Path>
-    <role>Police</role>
-  </EOTF.Core.DecalSystem.DecalSymbolDef>
-
-  <EOTF.Core.DecalSystem.DecalSymbolDef>
-    <defName>BNF_Decal_Gavel</defName>
-    <label>Gavel</label>
-    <Path>Things/Decals/Police/Gavel</Path>
-    <role>Police</role>
-  </EOTF.Core.DecalSystem.DecalSymbolDef>
-
-  <EOTF.Core.DecalSystem.DecalSymbolDef>
-    <defName>BNF_Decal_142MP</defName>
-    <label>142MP</label>
-    <Path>Things/Decals/Police/142MP</Path>
-    <role>Police</role>
-  </EOTF.Core.DecalSystem.DecalSymbolDef>
-
-  <EOTF.Core.DecalSystem.DecalSymbolDef>
-    <defName>BNF_Decal_300MP</defName>
-    <label>300MP</label>
-    <Path>Things/Decals/Police/300MP</Path>
+    <defName>TRG_Decal_Right</defName>
+    <label>Right</label>
+    <Path>Things/Decals/Police/right</Path>
     <role>Police</role>
   </EOTF.Core.DecalSystem.DecalSymbolDef>
 

@@ -2,79 +2,51 @@
 <Defs>
 
   <EOTF.Core.DecalSystem.DecalSymbolDef>
-    <defName>BNF_Decal_Engineer</defName>
+    <defName>TRG_Decal_Cog</defName>
     <label>Cog</label>
-    <Path>Things/Decals/Engineer/Cog</Path>
+    <Path>Things/Decals/Engineer/cog</Path>
     <role>Engineer</role>
   </EOTF.Core.DecalSystem.DecalSymbolDef>
 
   <EOTF.Core.DecalSystem.DecalSymbolDef>
-    <defName>BNF_Decal_Clockwork</defName>
-    <label>Clockwork</label>
-    <Path>Things/Decals/Engineer/Clockwork</Path>
+    <defName>TRG_Decal_Corner</defName>
+    <label>Corner</label>
+    <Path>Things/Decals/Engineer/corner</Path>
     <role>Engineer</role>
   </EOTF.Core.DecalSystem.DecalSymbolDef>
 
   <EOTF.Core.DecalSystem.DecalSymbolDef>
-    <defName>BNF_Decal_Hammer_Wrench</defName>
-    <label>Hammer and Wrench</label>
-    <Path>Things/Decals/Engineer/HammerWrench</Path>
+    <defName>TRG_Decal_Initiator</defName>
+    <label>Initiator</label>
+    <Path>Things/Decals/Engineer/initiator</Path>
     <role>Engineer</role>
   </EOTF.Core.DecalSystem.DecalSymbolDef>
 
   <EOTF.Core.DecalSystem.DecalSymbolDef>
-    <defName>BNF_Decal_Rook</defName>
-    <label>Rook</label>
-    <Path>Things/Decals/Engineer/Rook</Path>
+    <defName>TRG_Decal_IronCastle</defName>
+    <label>Iron Castle</label>
+    <Path>Things/Decals/Engineer/ironcastle</Path>
     <role>Engineer</role>
   </EOTF.Core.DecalSystem.DecalSymbolDef>
 
   <EOTF.Core.DecalSystem.DecalSymbolDef>
-    <defName>BNF_Decal_Wrenches</defName>
-    <label>Wrenches</label>
-    <Path>Things/Decals/Engineer/Wrenches</Path>
+    <defName>TRG_Decal_Pentafort</defName>
+    <label>Pentafort</label>
+    <Path>Things/Decals/Engineer/pentafort</Path>
     <role>Engineer</role>
   </EOTF.Core.DecalSystem.DecalSymbolDef>
 
   <EOTF.Core.DecalSystem.DecalSymbolDef>
-    <defName>BNF_Decal_Wrench</defName>
-    <label>Wrench</label>
-    <Path>Things/Decals/Engineer/Wrench</Path>
+    <defName>TRG_Decal_Sapper</defName>
+    <label>Sapper</label>
+    <Path>Things/Decals/Engineer/sapper</Path>
     <role>Engineer</role>
   </EOTF.Core.DecalSystem.DecalSymbolDef>
 
   <EOTF.Core.DecalSystem.DecalSymbolDef>
-    <defName>BNF_Decal_Hammer</defName>
-    <label>Hammer</label>
-    <Path>Things/Decals/Engineer/Hammer</Path>
-    <role>Engineer</role>
-  </EOTF.Core.DecalSystem.DecalSymbolDef>
-
-  <EOTF.Core.DecalSystem.DecalSymbolDef>
-    <defName>BNF_Decal_Anvil</defName>
-    <label>Anvil</label>
-    <Path>Things/Decals/Engineer/Anvil</Path>
-    <role>Engineer</role>
-  </EOTF.Core.DecalSystem.DecalSymbolDef>
-
-  <EOTF.Core.DecalSystem.DecalSymbolDef>
-    <defName>BNF_Decal_16Eng</defName>
-    <label>16Eng</label>
-    <Path>Things/Decals/Engineer/16Eng</Path>
-    <role>Engineer</role>
-  </EOTF.Core.DecalSystem.DecalSymbolDef>
-
-  <EOTF.Core.DecalSystem.DecalSymbolDef>
-    <defName>BNF_Decal_20Eng</defName>
-    <label>20Eng</label>
-    <Path>Things/Decals/Engineer/20Eng</Path>
-    <role>Engineer</role>
-  </EOTF.Core.DecalSystem.DecalSymbolDef>
-
-  <EOTF.Core.DecalSystem.DecalSymbolDef>
-    <defName>BNF_Decal_176Eng</defName>
-    <label>176Eng</label>
-    <Path>Things/Decals/Engineer/176Eng</Path>
+    <defName>TRG_Decal_Tasker</defName>
+    <label>Tasker</label>
+    <Path>Things/Decals/Engineer/tasker</Path>
     <role>Engineer</role>
   </EOTF.Core.DecalSystem.DecalSymbolDef>
 

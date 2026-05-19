@@ -2,114 +2,58 @@
 <Defs>
 
   <EOTF.Core.DecalSystem.DecalSymbolDef>
-    <defName>BNF_Decal_Sword</defName>
-    <label>Sword</label>
-    <Path>Things/Decals/Infantry/Sword</Path>
+    <defName>TRG_Decal_Armipotent</defName>
+    <label>Armipotent</label>
+    <Path>Things/Decals/Infantry/armipotent</Path>
     <role>Infantry</role>
   </EOTF.Core.DecalSystem.DecalSymbolDef>
 
   <EOTF.Core.DecalSystem.DecalSymbolDef>
-    <defName>BNF_Decal_6Cav</defName>
-    <label>6Cav</label>
-    <Path>Things/Decals/Infantry/6Cav</Path>
+    <defName>TRG_Decal_FallingLoneStar</defName>
+    <label>Falling Lone Star</label>
+    <Path>Things/Decals/Infantry/fallinglonestar</Path>
     <role>Infantry</role>
   </EOTF.Core.DecalSystem.DecalSymbolDef>
 
   <EOTF.Core.DecalSystem.DecalSymbolDef>
-    <defName>BNF_Decal_12Inf</defName>
-    <label>12Inf</label>
-    <Path>Things/Decals/Infantry/12Inf</Path>
+    <defName>TRG_Decal_Lightning</defName>
+    <label>Lightning</label>
+    <Path>Things/Decals/Infantry/lightning</Path>
     <role>Infantry</role>
   </EOTF.Core.DecalSystem.DecalSymbolDef>
 
   <EOTF.Core.DecalSystem.DecalSymbolDef>
-    <defName>BNF_Decal_20Inf</defName>
-    <label>20Inf</label>
-    <Path>Things/Decals/Infantry/20Inf</Path>
+    <defName>TRG_Decal_Pentomic</defName>
+    <label>Pentomic</label>
+    <Path>Things/Decals/Infantry/pentomic</Path>
     <role>Infantry</role>
   </EOTF.Core.DecalSystem.DecalSymbolDef>
 
   <EOTF.Core.DecalSystem.DecalSymbolDef>
-    <defName>BNF_Decal_Arrowhead</defName>
-    <label>Arrowhead</label>
-    <Path>Things/Decals/Infantry/Arrowhead</Path>
+    <defName>TRG_Decal_Pike</defName>
+    <label>Pike</label>
+    <Path>Things/Decals/Infantry/pike</Path>
     <role>Infantry</role>
   </EOTF.Core.DecalSystem.DecalSymbolDef>
 
   <EOTF.Core.DecalSystem.DecalSymbolDef>
-    <defName>BNF_Decal_Club</defName>
-    <label>Club</label>
-    <Path>Things/Decals/Infantry/Club</Path>
+    <defName>TRG_Decal_Ringer</defName>
+    <label>Ringer</label>
+    <Path>Things/Decals/Infantry/Ringer</Path>
     <role>Infantry</role>
   </EOTF.Core.DecalSystem.DecalSymbolDef>
 
   <EOTF.Core.DecalSystem.DecalSymbolDef>
-    <defName>BNF_Decal_CrossedRifles</defName>
-    <label>Crossed Rifles</label>
-    <Path>Things/Decals/Infantry/CrossedRifles</Path>
+    <defName>TRG_Decal_Strike</defName>
+    <label>Strike</label>
+    <Path>Things/Decals/Infantry/strike</Path>
     <role>Infantry</role>
   </EOTF.Core.DecalSystem.DecalSymbolDef>
 
   <EOTF.Core.DecalSystem.DecalSymbolDef>
-    <defName>BNF_Decal_CrossedSabers</defName>
-    <label>Crossed Sabers</label>
-    <Path>Things/Decals/Infantry/CrossedSabers</Path>
-    <role>Infantry</role>
-  </EOTF.Core.DecalSystem.DecalSymbolDef>
-
-  <EOTF.Core.DecalSystem.DecalSymbolDef>
-    <defName>BNF_Decal_CrossedSwords</defName>
-    <label>Crossed Swords</label>
-    <Path>Things/Decals/Infantry/CrossedSwords</Path>
-    <role>Infantry</role>
-  </EOTF.Core.DecalSystem.DecalSymbolDef>
-
-  <EOTF.Core.DecalSystem.DecalSymbolDef>
-    <defName>BNF_Decal_Diamond</defName>
-    <label>Diamond</label>
-    <Path>Things/Decals/Infantry/Diamond</Path>
-    <role>Infantry</role>
-  </EOTF.Core.DecalSystem.DecalSymbolDef>
-
-  <EOTF.Core.DecalSystem.DecalSymbolDef>
-    <defName>BNF_Decal_Exoduster</defName>
-    <label>Exoduster</label>
-    <Path>Things/Decals/Infantry/Exoduster</Path>
-    <role>Infantry</role>
-  </EOTF.Core.DecalSystem.DecalSymbolDef>
-
-  <EOTF.Core.DecalSystem.DecalSymbolDef>
-    <defName>BNF_Decal_Heart</defName>
-    <label>Heart</label>
-    <Path>Things/Decals/Infantry/Heart</Path>
-    <role>Infantry</role>
-  </EOTF.Core.DecalSystem.DecalSymbolDef>
-
-  <EOTF.Core.DecalSystem.DecalSymbolDef>
-    <defName>BNF_Decal_Keystone</defName>
-    <label>Keystone</label>
-    <Path>Things/Decals/Infantry/Keystone</Path>
-    <role>Infantry</role>
-  </EOTF.Core.DecalSystem.DecalSymbolDef>
-
-  <EOTF.Core.DecalSystem.DecalSymbolDef>
-    <defName>BNF_Decal_Lambda</defName>
-    <label>Lambda</label>
-    <Path>Things/Decals/Infantry/Lambda</Path>
-    <role>Infantry</role>
-  </EOTF.Core.DecalSystem.DecalSymbolDef>
-
-  <EOTF.Core.DecalSystem.DecalSymbolDef>
-    <defName>BNF_Decal_Skull</defName>
-    <label>Cracked Skull</label>
-    <Path>Things/Decals/Infantry/Skull</Path>
-    <role>Infantry</role>
-  </EOTF.Core.DecalSystem.DecalSymbolDef>
-
-  <EOTF.Core.DecalSystem.DecalSymbolDef>
-    <defName>BNF_Decal_Spade</defName>
-    <label>Spade</label>
-    <Path>Things/Decals/Infantry/Spade</Path>
+    <defName>TRG_Decal_Trident</defName>
+    <label>Trident</label>
+    <Path>Things/Decals/Infantry/trident</Path>
     <role>Infantry</role>
   </EOTF.Core.DecalSystem.DecalSymbolDef>
 
