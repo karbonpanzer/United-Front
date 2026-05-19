@@ -1,17 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
 <Defs>
 
   <EOTF.Core.DecalSystem.DecalSymbolDef>
-    <defName>BNF_Decal_Psycher</defName>
+    <defName>TRG_Decal_Psycher</defName>
     <label>Psycher</label>
     <Path>Things/Decals/Special/Psycher</Path>
-    <role>Special</role>
+    <role>Psycaster</role>
   </EOTF.Core.DecalSystem.DecalSymbolDef>
-
   <EOTF.Core.DecalSystem.DecalSymbolDef>
-    <defName>BNF_Decal_Psycorp</defName>
+    <defName>TRG_Decal_Psycorp</defName>
     <label>Psycorp</label>
     <Path>Things/Decals/Special/Psycorp</Path>
-    <role>Special</role>
+    <role>Psycaster</role>
   </EOTF.Core.DecalSystem.DecalSymbolDef>
-
 </Defs>

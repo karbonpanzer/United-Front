@@ -2,45 +2,39 @@
 <Defs>
 
   <EOTF.Core.DecalSystem.DecalSymbolDef>
-    <defName>TRG_Decal_Griffin</defName>
-    <label>Griffin</label>
-    <Path>Things/Decals/Officer/griffin</Path>
+    <defName>TRG_Decal_Crown</defName>
+    <label>Crown</label>
+    <Path>Things/Decals/Officer/Crown</Path>
     <role>Officer</role>
   </EOTF.Core.DecalSystem.DecalSymbolDef>
-
   <EOTF.Core.DecalSystem.DecalSymbolDef>
-    <defName>TRG_Decal_PenPusher</defName>
-    <label>Pen Pusher</label>
-    <Path>Things/Decals/Officer/penpusher</Path>
+    <defName>TRG_Decal_Intelligence</defName>
+    <label>Intelligence</label>
+    <Path>Things/Decals/Officer/intelligence</Path>
     <role>Officer</role>
   </EOTF.Core.DecalSystem.DecalSymbolDef>
-
   <EOTF.Core.DecalSystem.DecalSymbolDef>
-    <defName>TRG_Decal_Phoenix</defName>
-    <label>Phoenix</label>
-    <Path>Things/Decals/Officer/phoenix</Path>
+    <defName>TRG_Decal_Pen</defName>
+    <label>Pen</label>
+    <Path>Things/Decals/Officer/pen</Path>
     <role>Officer</role>
   </EOTF.Core.DecalSystem.DecalSymbolDef>
-
   <EOTF.Core.DecalSystem.DecalSymbolDef>
-    <defName>TRG_Decal_SkyDragon</defName>
-    <label>Sky Dragon</label>
-    <Path>Things/Decals/Officer/skydragon</Path>
+    <defName>TRG_Decal_Scroll</defName>
+    <label>Scroll</label>
+    <Path>Things/Decals/Officer/scroll</Path>
     <role>Officer</role>
   </EOTF.Core.DecalSystem.DecalSymbolDef>
-
   <EOTF.Core.DecalSystem.DecalSymbolDef>
     <defName>TRG_Decal_Star</defName>
     <label>Star</label>
     <Path>Things/Decals/Officer/star</Path>
     <role>Officer</role>
   </EOTF.Core.DecalSystem.DecalSymbolDef>
-
   <EOTF.Core.DecalSystem.DecalSymbolDef>
-    <defName>TRG_Decal_Sword</defName>
-    <label>Sword</label>
-    <Path>Things/Decals/Officer/sword</Path>
+    <defName>TRG_Decal_Torch</defName>
+    <label>Torch</label>
+    <Path>Things/Decals/Officer/torch</Path>
     <role>Officer</role>
   </EOTF.Core.DecalSystem.DecalSymbolDef>
-
 </Defs>

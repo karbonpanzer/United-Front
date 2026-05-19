@@ -2,59 +2,27 @@
 <Defs>
 
   <EOTF.Core.DecalSystem.DecalSymbolDef>
-    <defName>TRG_Decal_BuffaloSoldier</defName>
-    <label>Buffalo Soldier</label>
-    <Path>Things/Decals/Scout/buffalosoldier</Path>
+    <defName>TRG_Decal_Arrowhead</defName>
+    <label>Arrowhead</label>
+    <Path>Things/Decals/Scout/arrowhead</Path>
     <role>Scout</role>
   </EOTF.Core.DecalSystem.DecalSymbolDef>
-
+  <EOTF.Core.DecalSystem.DecalSymbolDef>
+    <defName>TRG_Decal_BurningArrow</defName>
+    <label>Burning Arrow</label>
+    <Path>Things/Decals/Scout/burningarrow</Path>
+    <role>Scout</role>
+  </EOTF.Core.DecalSystem.DecalSymbolDef>
+  <EOTF.Core.DecalSystem.DecalSymbolDef>
+    <defName>TRG_Decal_Compass</defName>
+    <label>Compass</label>
+    <Path>Things/Decals/Scout/compass</Path>
+    <role>Scout</role>
+  </EOTF.Core.DecalSystem.DecalSymbolDef>
   <EOTF.Core.DecalSystem.DecalSymbolDef>
     <defName>TRG_Decal_Forward</defName>
     <label>Forward</label>
     <Path>Things/Decals/Scout/forward</Path>
     <role>Scout</role>
   </EOTF.Core.DecalSystem.DecalSymbolDef>
-
-  <EOTF.Core.DecalSystem.DecalSymbolDef>
-    <defName>TRG_Decal_Mountain</defName>
-    <label>Mountain</label>
-    <Path>Things/Decals/Scout/mountain</Path>
-    <role>Scout</role>
-  </EOTF.Core.DecalSystem.DecalSymbolDef>
-
-  <EOTF.Core.DecalSystem.DecalSymbolDef>
-    <defName>TRG_Decal_Serpent</defName>
-    <label>Serpent</label>
-    <Path>Things/Decals/Scout/serpent</Path>
-    <role>Scout</role>
-  </EOTF.Core.DecalSystem.DecalSymbolDef>
-
-  <EOTF.Core.DecalSystem.DecalSymbolDef>
-    <defName>TRG_Decal_Speed</defName>
-    <label>Speed</label>
-    <Path>Things/Decals/Scout/speed</Path>
-    <role>Scout</role>
-  </EOTF.Core.DecalSystem.DecalSymbolDef>
-
-  <EOTF.Core.DecalSystem.DecalSymbolDef>
-    <defName>TRG_Decal_Talon</defName>
-    <label>Talon</label>
-    <Path>Things/Decals/Scout/talon</Path>
-    <role>Scout</role>
-  </EOTF.Core.DecalSystem.DecalSymbolDef>
-
-  <EOTF.Core.DecalSystem.DecalSymbolDef>
-    <defName>TRG_Decal_Wagonmaster</defName>
-    <label>Wagonmaster</label>
-    <Path>Things/Decals/Scout/wagonmaster</Path>
-    <role>Scout</role>
-  </EOTF.Core.DecalSystem.DecalSymbolDef>
-
-  <EOTF.Core.DecalSystem.DecalSymbolDef>
-    <defName>TRG_Decal_Wildcat</defName>
-    <label>Wildcat</label>
-    <Path>Things/Decals/Scout/wildcat</Path>
-    <role>Scout</role>
-  </EOTF.Core.DecalSystem.DecalSymbolDef>
-
 </Defs>

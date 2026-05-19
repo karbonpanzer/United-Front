@@ -2,52 +2,93 @@
 <Defs>
 
   <EOTF.Core.DecalSystem.DecalSymbolDef>
+    <defName>TRG_Decal_Anvil</defName>
+    <label>Anvil</label>
+    <Path>Things/Decals/Engineer/Anvil</Path>
+    <role>Engineer</role>
+  </EOTF.Core.DecalSystem.DecalSymbolDef>
+  <EOTF.Core.DecalSystem.DecalSymbolDef>
+    <defName>TRG_Decal_BoxedTurret</defName>
+    <label>Boxed Turret</label>
+    <Path>Things/Decals/Engineer/boxedturret</Path>
+    <role>Engineer</role>
+  </EOTF.Core.DecalSystem.DecalSymbolDef>
+  <EOTF.Core.DecalSystem.DecalSymbolDef>
+    <defName>TRG_Decal_Clockwork</defName>
+    <label>Clockwork</label>
+    <Path>Things/Decals/Engineer/Clockwork</Path>
+    <role>Engineer</role>
+  </EOTF.Core.DecalSystem.DecalSymbolDef>
+  <EOTF.Core.DecalSystem.DecalSymbolDef>
     <defName>TRG_Decal_Cog</defName>
     <label>Cog</label>
     <Path>Things/Decals/Engineer/cog</Path>
     <role>Engineer</role>
   </EOTF.Core.DecalSystem.DecalSymbolDef>
-
+  <EOTF.Core.DecalSystem.DecalSymbolDef>
+    <defName>TRG_Decal_Coggish</defName>
+    <label>Coggish</label>
+    <Path>Things/Decals/Engineer/coggish</Path>
+    <role>Engineer</role>
+  </EOTF.Core.DecalSystem.DecalSymbolDef>
   <EOTF.Core.DecalSystem.DecalSymbolDef>
     <defName>TRG_Decal_Corner</defName>
     <label>Corner</label>
     <Path>Things/Decals/Engineer/corner</Path>
     <role>Engineer</role>
   </EOTF.Core.DecalSystem.DecalSymbolDef>
-
+  <EOTF.Core.DecalSystem.DecalSymbolDef>
+    <defName>TRG_Decal_CrossTurrets</defName>
+    <label>Cross Turrets</label>
+    <Path>Things/Decals/Engineer/crossturrets</Path>
+    <role>Engineer</role>
+  </EOTF.Core.DecalSystem.DecalSymbolDef>
+  <EOTF.Core.DecalSystem.DecalSymbolDef>
+    <defName>TRG_Decal_FortSword</defName>
+    <label>Fort Sword</label>
+    <Path>Things/Decals/Engineer/fortsword</Path>
+    <role>Engineer</role>
+  </EOTF.Core.DecalSystem.DecalSymbolDef>
+  <EOTF.Core.DecalSystem.DecalSymbolDef>
+    <defName>TRG_Decal_French</defName>
+    <label>French</label>
+    <Path>Things/Decals/Engineer/french</Path>
+    <role>Engineer</role>
+  </EOTF.Core.DecalSystem.DecalSymbolDef>
   <EOTF.Core.DecalSystem.DecalSymbolDef>
     <defName>TRG_Decal_Initiator</defName>
     <label>Initiator</label>
     <Path>Things/Decals/Engineer/initiator</Path>
     <role>Engineer</role>
   </EOTF.Core.DecalSystem.DecalSymbolDef>
-
   <EOTF.Core.DecalSystem.DecalSymbolDef>
     <defName>TRG_Decal_IronCastle</defName>
     <label>Iron Castle</label>
     <Path>Things/Decals/Engineer/ironcastle</Path>
     <role>Engineer</role>
   </EOTF.Core.DecalSystem.DecalSymbolDef>
-
   <EOTF.Core.DecalSystem.DecalSymbolDef>
     <defName>TRG_Decal_Pentafort</defName>
     <label>Pentafort</label>
     <Path>Things/Decals/Engineer/pentafort</Path>
     <role>Engineer</role>
   </EOTF.Core.DecalSystem.DecalSymbolDef>
-
   <EOTF.Core.DecalSystem.DecalSymbolDef>
-    <defName>TRG_Decal_Sapper</defName>
-    <label>Sapper</label>
-    <Path>Things/Decals/Engineer/sapper</Path>
+    <defName>TRG_Decal_Rook</defName>
+    <label>Rook</label>
+    <Path>Things/Decals/Engineer/Rook</Path>
     <role>Engineer</role>
   </EOTF.Core.DecalSystem.DecalSymbolDef>
-
   <EOTF.Core.DecalSystem.DecalSymbolDef>
     <defName>TRG_Decal_Tasker</defName>
     <label>Tasker</label>
     <Path>Things/Decals/Engineer/tasker</Path>
     <role>Engineer</role>
   </EOTF.Core.DecalSystem.DecalSymbolDef>
-
+  <EOTF.Core.DecalSystem.DecalSymbolDef>
+    <defName>TRG_Decal_Tower</defName>
+    <label>Tower</label>
+    <Path>Things/Decals/Engineer/tower</Path>
+    <role>Engineer</role>
+  </EOTF.Core.DecalSystem.DecalSymbolDef>
 </Defs>

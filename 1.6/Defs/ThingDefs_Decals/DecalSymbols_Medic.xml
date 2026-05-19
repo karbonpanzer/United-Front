@@ -2,52 +2,81 @@
 <Defs>
 
   <EOTF.Core.DecalSystem.DecalSymbolDef>
-    <defName>TRG_Decal_Discovery</defName>
-    <label>Discovery</label>
-    <Path>Things/Decals/Medic/discovery</Path>
+    <defName>TRG_Decal_Cadeseus</defName>
+    <label>Cadeseus</label>
+    <Path>Things/Decals/Medic/cadeseus</Path>
     <role>Medic</role>
   </EOTF.Core.DecalSystem.DecalSymbolDef>
-
+  <EOTF.Core.DecalSystem.DecalSymbolDef>
+    <defName>TRG_Decal_Caduceus</defName>
+    <label>Caduceus</label>
+    <Path>Things/Decals/Medic/Caduceus</Path>
+    <role>Medic</role>
+  </EOTF.Core.DecalSystem.DecalSymbolDef>
+  <EOTF.Core.DecalSystem.DecalSymbolDef>
+    <defName>TRG_Decal_Chalice</defName>
+    <label>Chalice</label>
+    <Path>Things/Decals/Medic/Chalice</Path>
+    <role>Medic</role>
+  </EOTF.Core.DecalSystem.DecalSymbolDef>
+  <EOTF.Core.DecalSystem.DecalSymbolDef>
+    <defName>TRG_Decal_Cross</defName>
+    <label>Cross</label>
+    <Path>Things/Decals/Medic/cross</Path>
+    <role>Medic</role>
+  </EOTF.Core.DecalSystem.DecalSymbolDef>
+  <EOTF.Core.DecalSystem.DecalSymbolDef>
+    <defName>TRG_Decal_CrossCircle</defName>
+    <label>Cross Circle</label>
+    <Path>Things/Decals/Medic/CrossCircle</Path>
+    <role>Medic</role>
+  </EOTF.Core.DecalSystem.DecalSymbolDef>
   <EOTF.Core.DecalSystem.DecalSymbolDef>
     <defName>TRG_Decal_GreekCross</defName>
     <label>Greek Cross</label>
     <Path>Things/Decals/Medic/greekcross</Path>
     <role>Medic</role>
   </EOTF.Core.DecalSystem.DecalSymbolDef>
-
   <EOTF.Core.DecalSystem.DecalSymbolDef>
-    <defName>TRG_Decal_Knowledge</defName>
-    <label>Knowledge</label>
-    <Path>Things/Decals/Medic/knowledge</Path>
+    <defName>TRG_Decal_MedCom</defName>
+    <label>Med Com</label>
+    <Path>Things/Decals/Medic/medcom</Path>
     <role>Medic</role>
   </EOTF.Core.DecalSystem.DecalSymbolDef>
-
   <EOTF.Core.DecalSystem.DecalSymbolDef>
     <defName>TRG_Decal_Mercy</defName>
     <label>Mercy</label>
     <Path>Things/Decals/Medic/mercy</Path>
     <role>Medic</role>
   </EOTF.Core.DecalSystem.DecalSymbolDef>
-
   <EOTF.Core.DecalSystem.DecalSymbolDef>
-    <defName>TRG_Decal_SilverKnight</defName>
-    <label>Silver Knight</label>
-    <Path>Things/Decals/Medic/silverknight</Path>
+    <defName>TRG_Decal_RoundCross</defName>
+    <label>Round Cross</label>
+    <Path>Things/Decals/Medic/roundcross</Path>
     <role>Medic</role>
   </EOTF.Core.DecalSystem.DecalSymbolDef>
-
   <EOTF.Core.DecalSystem.DecalSymbolDef>
-    <defName>TRG_Decal_Volunteer</defName>
-    <label>Volunteer</label>
-    <Path>Things/Decals/Medic/volunteer</Path>
+    <defName>TRG_Decal_Staff</defName>
+    <label>Staff</label>
+    <Path>Things/Decals/Medic/staff</Path>
     <role>Medic</role>
   </EOTF.Core.DecalSystem.DecalSymbolDef>
-
+  <EOTF.Core.DecalSystem.DecalSymbolDef>
+    <defName>TRG_Decal_StaffOfAsclepius</defName>
+    <label>Staff of Asclepius</label>
+    <Path>Things/Decals/Medic/StaffofAsclepius</Path>
+    <role>Medic</role>
+  </EOTF.Core.DecalSystem.DecalSymbolDef>
+  <EOTF.Core.DecalSystem.DecalSymbolDef>
+    <defName>TRG_Decal_StarOfLife</defName>
+    <label>Star of Life</label>
+    <Path>Things/Decals/Medic/StarofLife</Path>
+    <role>Medic</role>
+  </EOTF.Core.DecalSystem.DecalSymbolDef>
   <EOTF.Core.DecalSystem.DecalSymbolDef>
     <defName>TRG_Decal_Wisdom</defName>
     <label>Wisdom</label>
     <Path>Things/Decals/Medic/wisdom</Path>
     <role>Medic</role>
   </EOTF.Core.DecalSystem.DecalSymbolDef>
-
 </Defs>

@@ -2,59 +2,81 @@
 <Defs>
 
   <EOTF.Core.DecalSystem.DecalSymbolDef>
+    <defName>TRG_Decal_8Umbrella</defName>
+    <label>8th Umbrella</label>
+    <Path>Things/Decals/Infantry/8umbrella</Path>
+    <role>Infantry</role>
+  </EOTF.Core.DecalSystem.DecalSymbolDef>
+  <EOTF.Core.DecalSystem.DecalSymbolDef>
     <defName>TRG_Decal_Armipotent</defName>
     <label>Armipotent</label>
     <Path>Things/Decals/Infantry/armipotent</Path>
     <role>Infantry</role>
   </EOTF.Core.DecalSystem.DecalSymbolDef>
-
+  <EOTF.Core.DecalSystem.DecalSymbolDef>
+    <defName>TRG_Decal_Ballantine</defName>
+    <label>Ballantine</label>
+    <Path>Things/Decals/Infantry/ballantine</Path>
+    <role>Infantry</role>
+  </EOTF.Core.DecalSystem.DecalSymbolDef>
+  <EOTF.Core.DecalSystem.DecalSymbolDef>
+    <defName>TRG_Decal_Empire</defName>
+    <label>Empire</label>
+    <Path>Things/Decals/Infantry/empire</Path>
+    <role>Infantry</role>
+  </EOTF.Core.DecalSystem.DecalSymbolDef>
   <EOTF.Core.DecalSystem.DecalSymbolDef>
     <defName>TRG_Decal_FallingLoneStar</defName>
     <label>Falling Lone Star</label>
     <Path>Things/Decals/Infantry/fallinglonestar</Path>
     <role>Infantry</role>
   </EOTF.Core.DecalSystem.DecalSymbolDef>
-
+  <EOTF.Core.DecalSystem.DecalSymbolDef>
+    <defName>TRG_Decal_Keystone</defName>
+    <label>Keystone</label>
+    <Path>Things/Decals/Infantry/Keystone</Path>
+    <role>Infantry</role>
+  </EOTF.Core.DecalSystem.DecalSymbolDef>
   <EOTF.Core.DecalSystem.DecalSymbolDef>
     <defName>TRG_Decal_Lightning</defName>
     <label>Lightning</label>
     <Path>Things/Decals/Infantry/lightning</Path>
     <role>Infantry</role>
   </EOTF.Core.DecalSystem.DecalSymbolDef>
-
   <EOTF.Core.DecalSystem.DecalSymbolDef>
-    <defName>TRG_Decal_Pentomic</defName>
-    <label>Pentomic</label>
-    <Path>Things/Decals/Infantry/pentomic</Path>
+    <defName>TRG_Decal_InfNone</defName>
+    <label>None</label>
+    <Path>Things/Decals/Infantry/None</Path>
     <role>Infantry</role>
   </EOTF.Core.DecalSystem.DecalSymbolDef>
-
-  <EOTF.Core.DecalSystem.DecalSymbolDef>
-    <defName>TRG_Decal_Pike</defName>
-    <label>Pike</label>
-    <Path>Things/Decals/Infantry/pike</Path>
-    <role>Infantry</role>
-  </EOTF.Core.DecalSystem.DecalSymbolDef>
-
   <EOTF.Core.DecalSystem.DecalSymbolDef>
     <defName>TRG_Decal_Ringer</defName>
     <label>Ringer</label>
     <Path>Things/Decals/Infantry/Ringer</Path>
     <role>Infantry</role>
   </EOTF.Core.DecalSystem.DecalSymbolDef>
-
+  <EOTF.Core.DecalSystem.DecalSymbolDef>
+    <defName>TRG_Decal_Skull</defName>
+    <label>Skull</label>
+    <Path>Things/Decals/Infantry/Skull</Path>
+    <role>Infantry</role>
+  </EOTF.Core.DecalSystem.DecalSymbolDef>
+  <EOTF.Core.DecalSystem.DecalSymbolDef>
+    <defName>TRG_Decal_Starburst</defName>
+    <label>Starburst</label>
+    <Path>Things/Decals/Infantry/starburst</Path>
+    <role>Infantry</role>
+  </EOTF.Core.DecalSystem.DecalSymbolDef>
+  <EOTF.Core.DecalSystem.DecalSymbolDef>
+    <defName>TRG_Decal_Starstruck</defName>
+    <label>Starstruck</label>
+    <Path>Things/Decals/Infantry/starstruck</Path>
+    <role>Infantry</role>
+  </EOTF.Core.DecalSystem.DecalSymbolDef>
   <EOTF.Core.DecalSystem.DecalSymbolDef>
     <defName>TRG_Decal_Strike</defName>
     <label>Strike</label>
     <Path>Things/Decals/Infantry/strike</Path>
     <role>Infantry</role>
   </EOTF.Core.DecalSystem.DecalSymbolDef>
-
-  <EOTF.Core.DecalSystem.DecalSymbolDef>
-    <defName>TRG_Decal_Trident</defName>
-    <label>Trident</label>
-    <Path>Things/Decals/Infantry/trident</Path>
-    <role>Infantry</role>
-  </EOTF.Core.DecalSystem.DecalSymbolDef>
-
 </Defs>

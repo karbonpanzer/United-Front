@@ -7,40 +7,28 @@
     <Path>Things/Decals/Orbital/bliss</Path>
     <role>Orbital</role>
   </EOTF.Core.DecalSystem.DecalSymbolDef>
-
   <EOTF.Core.DecalSystem.DecalSymbolDef>
-    <defName>TRG_Decal_Excellence</defName>
-    <label>Excellence</label>
-    <Path>Things/Decals/Orbital/excellence</Path>
+    <defName>TRG_Decal_Shocker</defName>
+    <label>Shocker</label>
+    <Path>Things/Decals/Orbital/shocker</Path>
     <role>Orbital</role>
   </EOTF.Core.DecalSystem.DecalSymbolDef>
-
   <EOTF.Core.DecalSystem.DecalSymbolDef>
-    <defName>TRG_Decal_Harmony</defName>
-    <label>Harmony</label>
-    <Path>Things/Decals/Orbital/harmony</Path>
+    <defName>TRG_Decal_Skytrooper</defName>
+    <label>Skytrooper</label>
+    <Path>Things/Decals/Orbital/skytrooper</Path>
     <role>Orbital</role>
   </EOTF.Core.DecalSystem.DecalSymbolDef>
-
   <EOTF.Core.DecalSystem.DecalSymbolDef>
-    <defName>TRG_Decal_Spartan</defName>
-    <label>Spartan</label>
-    <Path>Things/Decals/Orbital/spartan</Path>
+    <defName>TRG_Decal_OrbitalStarburst</defName>
+    <label>Starburst</label>
+    <Path>Things/Decals/Orbital/starburst</Path>
     <role>Orbital</role>
   </EOTF.Core.DecalSystem.DecalSymbolDef>
-
   <EOTF.Core.DecalSystem.DecalSymbolDef>
-    <defName>TRG_Decal_Starshot</defName>
-    <label>Starshot</label>
-    <Path>Things/Decals/Orbital/starshot</Path>
+    <defName>TRG_Decal_World</defName>
+    <label>World</label>
+    <Path>Things/Decals/Orbital/world</Path>
     <role>Orbital</role>
   </EOTF.Core.DecalSystem.DecalSymbolDef>
-
-  <EOTF.Core.DecalSystem.DecalSymbolDef>
-    <defName>TRG_Decal_Vigilance</defName>
-    <label>Vigilance</label>
-    <Path>Things/Decals/Orbital/vigilance</Path>
-    <role>Orbital</role>
-  </EOTF.Core.DecalSystem.DecalSymbolDef>
-
 </Defs>

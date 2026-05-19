@@ -2,59 +2,28 @@
 <Defs>
 
   <EOTF.Core.DecalSystem.DecalSymbolDef>
-    <defName>TRG_Decal_Bataan</defName>
-    <label>Bataan</label>
-    <Path>Things/Decals/Shocktrooper/bataan</Path>
-    <role>Shocktrooper</role>
-  </EOTF.Core.DecalSystem.DecalSymbolDef>
-
-  <EOTF.Core.DecalSystem.DecalSymbolDef>
     <defName>TRG_Decal_Dragon</defName>
-    <label>Dragon</label>
+    <label>Dragonspear</label>
     <Path>Things/Decals/Shocktrooper/dragon</Path>
     <role>Shocktrooper</role>
   </EOTF.Core.DecalSystem.DecalSymbolDef>
-
   <EOTF.Core.DecalSystem.DecalSymbolDef>
-    <defName>TRG_Decal_Ferdinand</defName>
-    <label>Ferdinand</label>
-    <Path>Things/Decals/Shocktrooper/ferdinand</Path>
+    <defName>TRG_Decal_ShockFist</defName>
+    <label>Fist</label>
+    <Path>Things/Decals/Shocktrooper/fist</Path>
     <role>Shocktrooper</role>
   </EOTF.Core.DecalSystem.DecalSymbolDef>
-
-  <EOTF.Core.DecalSystem.DecalSymbolDef>
-    <defName>TRG_Decal_First</defName>
-    <label>First</label>
-    <Path>Things/Decals/Shocktrooper/first</Path>
-    <role>Shocktrooper</role>
-  </EOTF.Core.DecalSystem.DecalSymbolDef>
-
-  <EOTF.Core.DecalSystem.DecalSymbolDef>
-    <defName>TRG_Decal_Gator</defName>
-    <label>Gator</label>
-    <Path>Things/Decals/Shocktrooper/gator</Path>
-    <role>Shocktrooper</role>
-  </EOTF.Core.DecalSystem.DecalSymbolDef>
-
   <EOTF.Core.DecalSystem.DecalSymbolDef>
     <defName>TRG_Decal_SteelWarrior</defName>
     <label>Steel Warrior</label>
     <Path>Things/Decals/Shocktrooper/steelwarrior</Path>
     <role>Shocktrooper</role>
   </EOTF.Core.DecalSystem.DecalSymbolDef>
-
   <EOTF.Core.DecalSystem.DecalSymbolDef>
-    <defName>TRG_Decal_Timberwolf</defName>
-    <label>Timberwolf</label>
-    <Path>Things/Decals/Shocktrooper/timberwolf</Path>
+    <defName>TRG_Decal_ShockStrike</defName>
+    <label>Strike</label>
+    <Path>Things/Decals/Shocktrooper/strike</Path>
     <role>Shocktrooper</role>
   </EOTF.Core.DecalSystem.DecalSymbolDef>
-
-  <EOTF.Core.DecalSystem.DecalSymbolDef>
-    <defName>TRG_Decal_ShockTrident</defName>
-    <label>Trident</label>
-    <Path>Things/Decals/Shocktrooper/trident</Path>
-    <role>Shocktrooper</role>
-  </EOTF.Core.DecalSystem.DecalSymbolDef>
-
+  
 </Defs>

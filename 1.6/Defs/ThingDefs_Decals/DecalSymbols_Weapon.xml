@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+
+  <EOTF.Core.DecalSystem.DecalSymbolDef>
+    <defName>TRG_Decal_WeaponPike</defName>
+    <label>Pike</label>
+    <Path>Things/Decals/Weapon/pike</Path>
+    <role>Weapon</role>
+  </EOTF.Core.DecalSystem.DecalSymbolDef>
+  <EOTF.Core.DecalSystem.DecalSymbolDef>
+    <defName>TRG_Decal_RoundTrident</defName>
+    <label>Round Trident</label>
+    <Path>Things/Decals/Weapon/roundtrident</Path>
+    <role>Weapon</role>
+  </EOTF.Core.DecalSystem.DecalSymbolDef>
+  <EOTF.Core.DecalSystem.DecalSymbolDef>
+    <defName>TRG_Decal_StarAxe</defName>
+    <label>Star Axe</label>
+    <Path>Things/Decals/Weapon/staraxe</Path>
+    <role>Weapon</role>
+  </EOTF.Core.DecalSystem.DecalSymbolDef>
+  <EOTF.Core.DecalSystem.DecalSymbolDef>
+    <defName>TRG_Decal_WeaponSword</defName>
+    <label>Sword</label>
+    <Path>Things/Decals/Weapon/sword</Path>
+    <role>Weapon</role>
+  </EOTF.Core.DecalSystem.DecalSymbolDef>
+  <EOTF.Core.DecalSystem.DecalSymbolDef>
+    <defName>TRG_Decal_WeaponTrident</defName>
+    <label>Trident</label>
+    <Path>Things/Decals/Weapon/trident</Path>
+    <role>Weapon</role>
+  </EOTF.Core.DecalSystem.DecalSymbolDef>
+</Defs>
