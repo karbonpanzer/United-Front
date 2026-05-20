@@ -14,42 +14,6 @@
     <role>Infantry</role>
   </EOTF.Core.DecalSystem.DecalSymbolDef>
   <EOTF.Core.DecalSystem.DecalSymbolDef>
-    <defName>TRG_Decal_Ballantine</defName>
-    <label>Ballantine</label>
-    <Path>Things/Decals/Infantry/ballantine</Path>
-    <role>Infantry</role>
-  </EOTF.Core.DecalSystem.DecalSymbolDef>
-  <EOTF.Core.DecalSystem.DecalSymbolDef>
-    <defName>TRG_Decal_Empire</defName>
-    <label>Empire</label>
-    <Path>Things/Decals/Infantry/empire</Path>
-    <role>Infantry</role>
-  </EOTF.Core.DecalSystem.DecalSymbolDef>
-  <EOTF.Core.DecalSystem.DecalSymbolDef>
-    <defName>TRG_Decal_FallingLoneStar</defName>
-    <label>Falling Lone Star</label>
-    <Path>Things/Decals/Infantry/fallinglonestar</Path>
-    <role>Infantry</role>
-  </EOTF.Core.DecalSystem.DecalSymbolDef>
-  <EOTF.Core.DecalSystem.DecalSymbolDef>
-    <defName>TRG_Decal_Keystone</defName>
-    <label>Keystone</label>
-    <Path>Things/Decals/Infantry/Keystone</Path>
-    <role>Infantry</role>
-  </EOTF.Core.DecalSystem.DecalSymbolDef>
-  <EOTF.Core.DecalSystem.DecalSymbolDef>
-    <defName>TRG_Decal_Lightning</defName>
-    <label>Lightning</label>
-    <Path>Things/Decals/Infantry/lightning</Path>
-    <role>Infantry</role>
-  </EOTF.Core.DecalSystem.DecalSymbolDef>
-  <EOTF.Core.DecalSystem.DecalSymbolDef>
-    <defName>TRG_Decal_InfNone</defName>
-    <label>None</label>
-    <Path>Things/Decals/Infantry/None</Path>
-    <role>Infantry</role>
-  </EOTF.Core.DecalSystem.DecalSymbolDef>
-  <EOTF.Core.DecalSystem.DecalSymbolDef>
     <defName>TRG_Decal_Ringer</defName>
     <label>Ringer</label>
     <Path>Things/Decals/Infantry/Ringer</Path>

@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+
+  <EOTF.Core.DecalSystem.DecalSymbolDef>
+    <defName>TRG_Decal_Cube</defName>
+    <label>Cube</label>
+    <Path>Things/Decals/Anomaly/cube</Path>
+    <role>Anomaly</role>
+  </EOTF.Core.DecalSystem.DecalSymbolDef>
+  <EOTF.Core.DecalSystem.DecalSymbolDef>
+    <defName>TRG_Decal_Horuxalt</defName>
+    <label>Horuxalt</label>
+    <Path>Things/Decals/Anomaly/horuxalt</Path>
+    <role>Anomaly</role>
+  </EOTF.Core.DecalSystem.DecalSymbolDef>
+  <EOTF.Core.DecalSystem.DecalSymbolDef>
+    <defName>TRG_Decal_Obelisk</defName>
+    <label>Obelisk</label>
+    <Path>Things/Decals/Anomaly/obelisk</Path>
+    <role>Anomaly</role>
+  </EOTF.Core.DecalSystem.DecalSymbolDef>
+</Defs>

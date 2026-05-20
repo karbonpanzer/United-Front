@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+
+  <EOTF.Core.DecalSystem.DecalSymbolDef>
+    <defName>TRG_Decal_Corepng</defName>
+    <label>Core</label>
+    <Path>Things/Decals/Mechinator/corepng</Path>
+    <role>Mechinator</role>
+  </EOTF.Core.DecalSystem.DecalSymbolDef>
+  <EOTF.Core.DecalSystem.DecalSymbolDef>
+    <defName>TRG_Decal_Hexinator</defName>
+    <label>Hexinator</label>
+    <Path>Things/Decals/Mechinator/hexinator</Path>
+    <role>Mechinator</role>
+  </EOTF.Core.DecalSystem.DecalSymbolDef>
+  <EOTF.Core.DecalSystem.DecalSymbolDef>
+    <defName>TRG_Decal_Sentinel</defName>
+    <label>Sentinel</label>
+    <Path>Things/Decals/Mechinator/sentinel</Path>
+    <role>Mechinator</role>
+  </EOTF.Core.DecalSystem.DecalSymbolDef>
+    <EOTF.Core.DecalSystem.DecalSymbolDef>
+    <defName>TRG_Decal_Pentoptimum</defName>
+    <label>Pentoptimum</label>
+    <Path>Things/Decals/Mechinator/pentoptimum</Path>
+    <role>Mechinator</role>
+  </EOTF.Core.DecalSystem.DecalSymbolDef>
+</Defs>

@@ -32,12 +32,6 @@
     <role>Animal</role>
   </EOTF.Core.DecalSystem.DecalSymbolDef>
   <EOTF.Core.DecalSystem.DecalSymbolDef>
-    <defName>TRG_Decal_AnimalDragon</defName>
-    <label>Dragon</label>
-    <Path>Things/Decals/Animal/dragon</Path>
-    <role>Animal</role>
-  </EOTF.Core.DecalSystem.DecalSymbolDef>
-  <EOTF.Core.DecalSystem.DecalSymbolDef>
     <defName>TRG_Decal_Eagle</defName>
     <label>Eagle</label>
     <Path>Things/Decals/Animal/eagle</Path>
@@ -101,12 +95,6 @@
     <defName>TRG_Decal_AnimalPhoenix</defName>
     <label>Phoenix</label>
     <Path>Things/Decals/Animal/phoenix</Path>
-    <role>Animal</role>
-  </EOTF.Core.DecalSystem.DecalSymbolDef>
-  <EOTF.Core.DecalSystem.DecalSymbolDef>
-    <defName>TRG_Decal_RamSkull</defName>
-    <label>Ram Skull</label>
-    <Path>Things/Decals/Animal/ramskull</Path>
     <role>Animal</role>
   </EOTF.Core.DecalSystem.DecalSymbolDef>
   <EOTF.Core.DecalSystem.DecalSymbolDef>

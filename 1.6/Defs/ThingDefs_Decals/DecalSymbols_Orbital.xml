@@ -2,33 +2,21 @@
 <Defs>
 
   <EOTF.Core.DecalSystem.DecalSymbolDef>
-    <defName>TRG_Decal_Bliss</defName>
-    <label>Bliss</label>
-    <Path>Things/Decals/Orbital/bliss</Path>
+    <defName>TRG_Decal_10Star</defName>
+    <label>10 Star</label>
+    <Path>Things/Decals/Orbital/10star</Path>
     <role>Orbital</role>
   </EOTF.Core.DecalSystem.DecalSymbolDef>
   <EOTF.Core.DecalSystem.DecalSymbolDef>
-    <defName>TRG_Decal_Shocker</defName>
-    <label>Shocker</label>
-    <Path>Things/Decals/Orbital/shocker</Path>
+    <defName>TRG_Decal_LinedWorld</defName>
+    <label>Lined World</label>
+    <Path>Things/Decals/Orbital/linedworld</Path>
     <role>Orbital</role>
   </EOTF.Core.DecalSystem.DecalSymbolDef>
   <EOTF.Core.DecalSystem.DecalSymbolDef>
-    <defName>TRG_Decal_Skytrooper</defName>
-    <label>Skytrooper</label>
-    <Path>Things/Decals/Orbital/skytrooper</Path>
-    <role>Orbital</role>
-  </EOTF.Core.DecalSystem.DecalSymbolDef>
-  <EOTF.Core.DecalSystem.DecalSymbolDef>
-    <defName>TRG_Decal_OrbitalStarburst</defName>
-    <label>Starburst</label>
-    <Path>Things/Decals/Orbital/starburst</Path>
-    <role>Orbital</role>
-  </EOTF.Core.DecalSystem.DecalSymbolDef>
-  <EOTF.Core.DecalSystem.DecalSymbolDef>
-    <defName>TRG_Decal_World</defName>
-    <label>World</label>
-    <Path>Things/Decals/Orbital/world</Path>
+    <defName>TRG_Decal_ShootingStar</defName>
+    <label>Shooting Star</label>
+    <Path>Things/Decals/Orbital/shootingstar</Path>
     <role>Orbital</role>
   </EOTF.Core.DecalSystem.DecalSymbolDef>
 </Defs>

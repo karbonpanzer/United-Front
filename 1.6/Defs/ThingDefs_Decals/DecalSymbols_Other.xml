@@ -4,25 +4,31 @@
   <EOTF.Core.DecalSystem.DecalSymbolDef>
     <defName>TRG_Decal_Club</defName>
     <label>Club</label>
-    <Path>Things/Decals/Suite/club</Path>
-    <role>Suite</role>
+    <Path>Things/Decals/Other/club</Path>
+    <role>Other</role>
   </EOTF.Core.DecalSystem.DecalSymbolDef>
   <EOTF.Core.DecalSystem.DecalSymbolDef>
     <defName>TRG_Decal_Diamond</defName>
     <label>Diamond</label>
-    <Path>Things/Decals/Suite/diamond</Path>
-    <role>Suite</role>
+    <Path>Things/Decals/Other/diamond</Path>
+    <role>Other</role>
   </EOTF.Core.DecalSystem.DecalSymbolDef>
   <EOTF.Core.DecalSystem.DecalSymbolDef>
     <defName>TRG_Decal_Heart</defName>
     <label>Heart</label>
-    <Path>Things/Decals/Suite/heart</Path>
-    <role>Suite</role>
+    <Path>Things/Decals/Other/heart</Path>
+    <role>Other</role>
+  </EOTF.Core.DecalSystem.DecalSymbolDef>
+  <EOTF.Core.DecalSystem.DecalSymbolDef>
+    <defName>TRG_Decal_None</defName>
+    <label>None</label>
+    <Path>Things/Decals/Other/None</Path>
+    <role>Other</role>
   </EOTF.Core.DecalSystem.DecalSymbolDef>
   <EOTF.Core.DecalSystem.DecalSymbolDef>
     <defName>TRG_Decal_Spade</defName>
     <label>Spade</label>
-    <Path>Things/Decals/Suite/spade</Path>
-    <role>Suite</role>
+    <Path>Things/Decals/Other/spade</Path>
+    <role>Other</role>
   </EOTF.Core.DecalSystem.DecalSymbolDef>
 </Defs>

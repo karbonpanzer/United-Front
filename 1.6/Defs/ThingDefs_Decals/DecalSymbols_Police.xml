@@ -2,39 +2,9 @@
 <Defs>
 
   <EOTF.Core.DecalSystem.DecalSymbolDef>
-    <defName>TRG_Decal_Command</defName>
-    <label>Command</label>
-    <Path>Things/Decals/Police/command</Path>
-    <role>Police</role>
-  </EOTF.Core.DecalSystem.DecalSymbolDef>
-  <EOTF.Core.DecalSystem.DecalSymbolDef>
-    <defName>TRG_Decal_Key</defName>
-    <label>Key</label>
-    <Path>Things/Decals/Police/key</Path>
-    <role>Police</role>
-  </EOTF.Core.DecalSystem.DecalSymbolDef>
-  <EOTF.Core.DecalSystem.DecalSymbolDef>
-    <defName>TRG_Decal_PapalKey</defName>
-    <label>Papal Key</label>
-    <Path>Things/Decals/Police/papalkey</Path>
-    <role>Police</role>
-  </EOTF.Core.DecalSystem.DecalSymbolDef>
-  <EOTF.Core.DecalSystem.DecalSymbolDef>
     <defName>TRG_Decal_Police</defName>
     <label>Police</label>
     <Path>Things/Decals/Police/Police</Path>
-    <role>Police</role>
-  </EOTF.Core.DecalSystem.DecalSymbolDef>
-  <EOTF.Core.DecalSystem.DecalSymbolDef>
-    <defName>TRG_Decal_Preserve</defName>
-    <label>Preserve</label>
-    <Path>Things/Decals/Police/preserve</Path>
-    <role>Police</role>
-  </EOTF.Core.DecalSystem.DecalSymbolDef>
-  <EOTF.Core.DecalSystem.DecalSymbolDef>
-    <defName>TRG_Decal_Pride</defName>
-    <label>Pride</label>
-    <Path>Things/Decals/Police/pride</Path>
     <role>Police</role>
   </EOTF.Core.DecalSystem.DecalSymbolDef>
   <EOTF.Core.DecalSystem.DecalSymbolDef>

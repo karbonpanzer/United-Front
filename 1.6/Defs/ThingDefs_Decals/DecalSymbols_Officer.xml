@@ -2,18 +2,6 @@
 <Defs>
 
   <EOTF.Core.DecalSystem.DecalSymbolDef>
-    <defName>TRG_Decal_Crown</defName>
-    <label>Crown</label>
-    <Path>Things/Decals/Officer/Crown</Path>
-    <role>Officer</role>
-  </EOTF.Core.DecalSystem.DecalSymbolDef>
-  <EOTF.Core.DecalSystem.DecalSymbolDef>
-    <defName>TRG_Decal_Intelligence</defName>
-    <label>Intelligence</label>
-    <Path>Things/Decals/Officer/intelligence</Path>
-    <role>Officer</role>
-  </EOTF.Core.DecalSystem.DecalSymbolDef>
-  <EOTF.Core.DecalSystem.DecalSymbolDef>
     <defName>TRG_Decal_Pen</defName>
     <label>Pen</label>
     <Path>Things/Decals/Officer/pen</Path>
@@ -23,12 +11,6 @@
     <defName>TRG_Decal_Scroll</defName>
     <label>Scroll</label>
     <Path>Things/Decals/Officer/scroll</Path>
-    <role>Officer</role>
-  </EOTF.Core.DecalSystem.DecalSymbolDef>
-  <EOTF.Core.DecalSystem.DecalSymbolDef>
-    <defName>TRG_Decal_Star</defName>
-    <label>Star</label>
-    <Path>Things/Decals/Officer/star</Path>
     <role>Officer</role>
   </EOTF.Core.DecalSystem.DecalSymbolDef>
   <EOTF.Core.DecalSystem.DecalSymbolDef>

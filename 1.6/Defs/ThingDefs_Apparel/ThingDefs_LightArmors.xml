@@ -75,7 +75,7 @@
           <parentTagDef>ApparelBody</parentTagDef>
           <baseLayer>92</baseLayer>
           <texPaths>
-            <li>Things/Decals/Infantry/None</li>
+            <li>Things/Decals/Infantry/Ringer</li>
           </texPaths>
           <visibleFacing>
             <li>South</li>
@@ -193,7 +193,7 @@ This variant is marked for usage by Medical staff.</description>
           <parentTagDef>ApparelBody</parentTagDef>
           <baseLayer>92</baseLayer>
           <texPaths>
-            <li>Things/Decals/Medical/CrossCircle</li>
+            <li>Things/Decals/Medic/mercy</li>
           </texPaths>
           <visibleFacing>
             <li>South</li>
@@ -418,7 +418,7 @@ This variant is marked for usage by Engineers.</description>
           <parentTagDef>ApparelHead</parentTagDef>
           <baseLayer>55</baseLayer>
           <texPaths>
-            <li>Things/Decals/Infantry/None</li>
+            <li>Things/Decals/Infantry/Ringer</li>
           </texPaths>
           <visibleFacing>
             <li>South</li>
@@ -517,7 +517,7 @@ This variant is marked for usage by Medical staff.</description>
           <parentTagDef>ApparelHead</parentTagDef>
           <baseLayer>55</baseLayer>
           <texPaths>
-            <li>Things/Decals/Medical/CrossCircle</li>
+            <li>Things/Decals/Medic/mercy</li>
           </texPaths>
           <visibleFacing>
             <li>South</li>
@@ -713,7 +713,7 @@ This variant is marked for usage by Engineers.</description>
           <parentTagDef>ApparelHead</parentTagDef>
           <baseLayer>55</baseLayer>
           <texPaths>
-            <li>Things/Decals/Officer/OfficerStar</li>
+            <li>Things/Decals/Officer/scroll</li>
           </texPaths>
           <visibleFacing>
             <li>South</li>
@@ -810,7 +810,7 @@ This variant is marked for usage by Engineers.</description>
           <parentTagDef>ApparelHead</parentTagDef>
           <baseLayer>55</baseLayer>
           <texPaths>
-            <li>Things/Decals/Infantry/None</li>
+            <li>Things/Decals/Infantry/Ringer</li>
           </texPaths>
           <visibleFacing>
             <li>South</li>
@@ -912,7 +912,7 @@ This variant is marked for usage by Engineers.</description>
           <parentTagDef>ApparelHead</parentTagDef>
           <baseLayer>55</baseLayer>
           <texPaths>
-            <li>Things/Decals/Infantry/None</li>
+            <li>Things/Decals/Infantry/Ringer</li>
           </texPaths>
           <visibleFacing>
             <li>South</li>
@@ -1011,7 +1011,7 @@ This variant is marked for usage by Engineers.</description>
           <parentTagDef>ApparelHead</parentTagDef>
           <baseLayer>55</baseLayer>
           <texPaths>
-            <li>Things/Decals/Infantry/None</li>
+            <li>Things/Decals/Infantry/Ringer</li>
           </texPaths>
           <visibleFacing>
             <li>South</li>

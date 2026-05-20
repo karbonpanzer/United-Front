@@ -2,15 +2,21 @@
 <Defs>
 
   <EOTF.Core.DecalSystem.DecalSymbolDef>
-    <defName>TRG_Decal_Psycher</defName>
-    <label>Psycher</label>
-    <Path>Things/Decals/Special/Psycher</Path>
+    <defName>TRG_Decal_Column</defName>
+    <label>Column</label>
+    <Path>Things/Decals/Psycaster/column</Path>
     <role>Psycaster</role>
   </EOTF.Core.DecalSystem.DecalSymbolDef>
   <EOTF.Core.DecalSystem.DecalSymbolDef>
-    <defName>TRG_Decal_Psycorp</defName>
-    <label>Psycorp</label>
-    <Path>Things/Decals/Special/Psycorp</Path>
+    <defName>TRG_Decal_Eye</defName>
+    <label>Eye</label>
+    <Path>Things/Decals/Psycaster/eye</Path>
+    <role>Psycaster</role>
+  </EOTF.Core.DecalSystem.DecalSymbolDef>
+  <EOTF.Core.DecalSystem.DecalSymbolDef>
+    <defName>TRG_Decal_Psi</defName>
+    <label>Psi</label>
+    <Path>Things/Decals/Psycaster/psi</Path>
     <role>Psycaster</role>
   </EOTF.Core.DecalSystem.DecalSymbolDef>
 </Defs>
