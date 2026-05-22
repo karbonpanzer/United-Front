@@ -1,4 +1,5 @@
 using System.Collections.Generic;
+using RimWorld;
 using RimWorld.Planet;
 using Verse;
 
@@ -15,6 +16,7 @@ namespace EOTF.Core.DecalSystem
         //Tracks which pawns have decal gear, persists across saves
         public WorldComponentDecalPawns(World world) : base(world) => Instance = this;
 
+        //Vanilla WorldPawns pattern — strip nulls and corrupted defs on load
         public override void ExposeData()
         {
             base.ExposeData();
@@ -46,9 +48,8 @@ namespace EOTF.Core.DecalSystem
             foreach (var pawn in _pawns)
             {
                 if (pawn == null || pawn.Destroyed || pawn.apparel == null)
-                {
-                    if (pawn != null) TMPToRemove.Add(pawn);
-                }
+                    if (pawn != null)
+                        TMPToRemove.Add(pawn);
             }
             for (int i = 0; i < TMPToRemove.Count; i++)
             {
@@ -66,9 +67,10 @@ namespace EOTF.Core.DecalSystem
         public CompEditDecalMarker? GetComp(Pawn pawn)
         {
             if (!_pawns.Contains(pawn) || pawn.apparel == null) return null;
-            foreach (var apparel in pawn.apparel.WornApparel)
+            List<Apparel> wornApparel = pawn.apparel.WornApparel;
+            for (int i = 0; i < wornApparel.Count; i++)
             {
-                var comp = apparel.TryGetComp<CompEditDecalMarker>();
+                var comp = wornApparel[i].TryGetComp<CompEditDecalMarker>();
                 if (comp != null) return comp;
             }
             return null;

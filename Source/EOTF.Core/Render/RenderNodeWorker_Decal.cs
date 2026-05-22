@@ -4,13 +4,15 @@ namespace EOTF.Core.DecalSystem
 {
     public class PawnRenderNodeWorkerApparel : PawnRenderNodeWorker
     {
-        //Gate so decals don't fucking render on pawns without the right gear
+        //Gate like VEF does it — base check plus clothes visibility flag
         public override bool CanDrawNow(PawnRenderNode node, PawnDrawParms parms)
         {
-            return base.CanDrawNow(node, parms) && DecalUtil.PawnHasAnyDecalApparel(parms.pawn);
+            if (!base.CanDrawNow(node, parms)) return false;
+            if (!parms.flags.FlagSet(PawnRenderFlags.Clothes)) return false;
+            return DecalUtil.PawnHasAnyDecalApparel(parms.pawn);
         }
     }
 
-    // Same shit as body apparel worker, just needs ApparelHead in the XML
+    //Same as body apparel worker, just needs ApparelHead in the XML
     public class PawnRenderNodeWorkerHeadware : PawnRenderNodeWorkerApparel { }
 }

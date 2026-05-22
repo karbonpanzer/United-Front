@@ -1,4 +1,3 @@
-using System.Collections.Generic;
 using UnityEngine;
 using Verse;
 
@@ -6,16 +5,18 @@ namespace EOTF.Core.DecalSystem
 {
     public class PawnRenderNodePropertiesOmni : PawnRenderNodeProperties
     {
-        //The actual shit that gets read from XML at runtime
+        //Default decal color if nothing is picked
         public Color Color = new Color(0.2f, 0.2f, 0.2f);
 
+        //Explicit slot override, otherwise determined by parentTagDef
         public DecalSlot? ExplicitSlot = null;
 
-        public new List<string> texPaths = new List<string>();
+        //Auto-concat body type to texture path like VEF's autoBodyTypePaths
+        public bool autoBodyTypePaths = false;
 
         public PawnRenderNodePropertiesOmni()
         {
-            nodeClass   = typeof(PawnRenderNodeDecal);
+            nodeClass = typeof(PawnRenderNodeDecal);
             workerClass = typeof(PawnRenderNodeWorkerApparel);
         }
     }
