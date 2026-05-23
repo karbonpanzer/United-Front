@@ -756,8 +756,8 @@
         <initialResistanceRange>25~35</initialResistanceRange>
         <modExtensions>
             <li Class="EOTF.Core.DecalSystem.DecalKindExtension">
-                <armorDecalPath>Things/Decals/Infantry/Ringer</armorDecalPath>
-                <helmetDecalPath>Things/Decals/Infantry/Ringer</helmetDecalPath>
+                <armorDecalPath>Things/Decals/private</armorDecalPath>
+                <helmetDecalPath>Things/Decals/private</helmetDecalPath>
             </li>
         </modExtensions>
     </PawnKindDef>
@@ -780,8 +780,8 @@
         <initialResistanceRange>25~35</initialResistanceRange>
         <modExtensions>
             <li Class="EOTF.Core.DecalSystem.DecalKindExtension">
-                <armorDecalPath>Things/Decals/Infantry/Ringer</armorDecalPath>
-                <helmetDecalPath>Things/Decals/Infantry/Ringer</helmetDecalPath>
+                <armorDecalPath>Things/Decals/private</armorDecalPath>
+                <helmetDecalPath>Things/Decals/private</helmetDecalPath>
             </li>
         </modExtensions>
     </PawnKindDef>
@@ -801,8 +801,8 @@
 		</apparelRequired>
         <modExtensions>
             <li Class="EOTF.Core.DecalSystem.DecalKindExtension">
-                <armorDecalPath>Things/Decals/Infantry/starburst</armorDecalPath>
-                <helmetDecalPath>Things/Decals/Infantry/starburst</helmetDecalPath>
+                <armorDecalPath>Things/Decals/corporal</armorDecalPath>
+                <helmetDecalPath>Things/Decals/corporal</helmetDecalPath>
             </li>
         </modExtensions>
     </PawnKindDef>
@@ -822,8 +822,8 @@
 		</apparelRequired>
         <modExtensions>
             <li Class="EOTF.Core.DecalSystem.DecalKindExtension">
-                <armorDecalPath>Things/Decals/Infantry/strike</armorDecalPath>
-                <helmetDecalPath>Things/Decals/Infantry/strike</helmetDecalPath>
+                <armorDecalPath>Things/Decals/corporal</armorDecalPath>
+                <helmetDecalPath>Things/Decals/corporal</helmetDecalPath>
             </li>
         </modExtensions>
     </PawnKindDef>
@@ -847,8 +847,8 @@
         <initialResistanceRange>35~45</initialResistanceRange>
         <modExtensions>
             <li Class="EOTF.Core.DecalSystem.DecalKindExtension">
-                <armorDecalPath>Things/Decals/Infantry/Skull</armorDecalPath>
-                <helmetDecalPath>Things/Decals/Infantry/Skull</helmetDecalPath>
+                <armorDecalPath>Things/Decals/skull</armorDecalPath>
+                <helmetDecalPath>Things/Decals/skull</helmetDecalPath>
             </li>
         </modExtensions>
     </PawnKindDef>
@@ -868,8 +868,8 @@
 		</apparelRequired>
         <modExtensions>
             <li Class="EOTF.Core.DecalSystem.DecalKindExtension">
-                <armorDecalPath>Things/Decals/Infantry/armipotent</armorDecalPath>
-                <helmetDecalPath>Things/Decals/Infantry/armipotent</helmetDecalPath>
+                <armorDecalPath>Things/Decals/sgt</armorDecalPath>
+                <helmetDecalPath>Things/Decals/sgt</helmetDecalPath>
             </li>
         </modExtensions>
     </PawnKindDef>
@@ -894,8 +894,8 @@
 		</apparelRequired>
         <modExtensions>
             <li Class="EOTF.Core.DecalSystem.DecalKindExtension">
-                <armorDecalPath>Things/Decals/Infantry/starstruck</armorDecalPath>
-                <helmetDecalPath>Things/Decals/Infantry/starstruck</helmetDecalPath>
+                <armorDecalPath>Things/Decals/skullrifle</armorDecalPath>
+                <helmetDecalPath>Things/Decals/skullrifle</helmetDecalPath>
             </li>
         </modExtensions>
     </PawnKindDef>
@@ -920,8 +920,8 @@
 		</apparelRequired>
         <modExtensions>
             <li Class="EOTF.Core.DecalSystem.DecalKindExtension">
-                <armorDecalPath>Things/Decals/Infantry/strike</armorDecalPath>
-                <helmetDecalPath>Things/Decals/Infantry/strike</helmetDecalPath>
+                <armorDecalPath>Things/Decals/skullsword</armorDecalPath>
+                <helmetDecalPath>Things/Decals/skullsword</helmetDecalPath>
             </li>
         </modExtensions>
     </PawnKindDef>
@@ -956,8 +956,8 @@
         </skills>
         <modExtensions>
             <li Class="EOTF.Core.DecalSystem.DecalKindExtension">
-                <armorDecalPath>Things/Decals/Infantry/Ringer</armorDecalPath>
-                <helmetDecalPath>Things/Decals/Infantry/Ringer</helmetDecalPath>
+                <armorDecalPath>Things/Decals/arrowhead</armorDecalPath>
+                <helmetDecalPath>Things/Decals/arrowhead</helmetDecalPath>
             </li>
         </modExtensions>
     </PawnKindDef>
@@ -1001,8 +1001,8 @@
         </skills>
         <modExtensions>
             <li Class="EOTF.Core.DecalSystem.DecalKindExtension">
-                <armorDecalPath>Things/Decals/Medic/cross</armorDecalPath>
-                <helmetDecalPath>Things/Decals/Medic/cross</helmetDecalPath>
+                <armorDecalPath>Things/Decals/cross</armorDecalPath>
+                <helmetDecalPath>Things/Decals/cross</helmetDecalPath>
             </li>
         </modExtensions>
     </PawnKindDef>
@@ -1037,8 +1037,8 @@
         </skills>
         <modExtensions>
             <li Class="EOTF.Core.DecalSystem.DecalKindExtension">
-                <armorDecalPath>Things/Decals/Engineer/cog</armorDecalPath>
-                <helmetDecalPath>Things/Decals/Engineer/cog</helmetDecalPath>
+                <armorDecalPath>Things/Decals/cog</armorDecalPath>
+                <helmetDecalPath>Things/Decals/cog</helmetDecalPath>
             </li>
         </modExtensions>
     </PawnKindDef>
@@ -1062,8 +1062,8 @@
 		</apparelRequired>
         <modExtensions>
             <li Class="EOTF.Core.DecalSystem.DecalKindExtension">
-                <armorDecalPath>Things/Decals/Infantry/starburst</armorDecalPath>
-                <helmetDecalPath>Things/Decals/Infantry/starburst</helmetDecalPath>
+                <armorDecalPath>Things/Decals/battleaxe</armorDecalPath>
+                <helmetDecalPath>Things/Decals/battleaxe</helmetDecalPath>
             </li>
         </modExtensions>
     </PawnKindDef>
@@ -1087,8 +1087,8 @@
 		</apparelRequired>
         <modExtensions>
             <li Class="EOTF.Core.DecalSystem.DecalKindExtension">
-                <armorDecalPath>Things/Decals/Infantry/starburst</armorDecalPath>
-                <helmetDecalPath>Things/Decals/Infantry/starburst</helmetDecalPath>
+                <armorDecalPath>Things/Decals/battleaxe</armorDecalPath>
+                <helmetDecalPath>Things/Decals/battleaxe</helmetDecalPath>
             </li>
         </modExtensions>
     </PawnKindDef>
@@ -1112,8 +1112,8 @@
 		</apparelRequired>
         <modExtensions>
             <li Class="EOTF.Core.DecalSystem.DecalKindExtension">
-                <armorDecalPath>Things/Decals/Infantry/starburst</armorDecalPath>
-                <helmetDecalPath>Things/Decals/Infantry/starburst</helmetDecalPath>
+                <armorDecalPath>Things/Decals/battleaxe</armorDecalPath>
+                <helmetDecalPath>Things/Decals/battleaxe</helmetDecalPath>
             </li>
         </modExtensions>
     </PawnKindDef>   
@@ -1137,8 +1137,8 @@
 		</apparelRequired>
         <modExtensions>
             <li Class="EOTF.Core.DecalSystem.DecalKindExtension">
-                <armorDecalPath>Things/Decals/Infantry/starburst</armorDecalPath>
-                <helmetDecalPath>Things/Decals/Infantry/starburst</helmetDecalPath>
+                <armorDecalPath>Things/Decals/battleaxe</armorDecalPath>
+                <helmetDecalPath>Things/Decals/battleaxe</helmetDecalPath>
             </li>
         </modExtensions>
     </PawnKindDef> 
@@ -1163,8 +1163,8 @@
 		</apparelRequired>
         <modExtensions>
             <li Class="EOTF.Core.DecalSystem.DecalKindExtension">
-                <armorDecalPath>Things/Decals/Infantry/8umbrella</armorDecalPath>
-                <helmetDecalPath>Things/Decals/Infantry/8umbrella</helmetDecalPath>
+                <armorDecalPath>Things/Decals/skullspear</armorDecalPath>
+                <helmetDecalPath>Things/Decals/skullspear</helmetDecalPath>
             </li>
         </modExtensions>
     </PawnKindDef>
@@ -1182,8 +1182,8 @@
 		</apparelRequired>
         <modExtensions>
             <li Class="EOTF.Core.DecalSystem.DecalKindExtension">
-                <armorDecalPath>Things/Decals/Police/Police</armorDecalPath>
-                <helmetDecalPath>Things/Decals/Police/Police</helmetDecalPath>
+                <armorDecalPath>Things/Decals/police</armorDecalPath>
+                <helmetDecalPath>Things/Decals/police</helmetDecalPath>
             </li>
         </modExtensions>
     </PawnKindDef>
@@ -1226,8 +1226,8 @@
         </skills>
         <modExtensions>
             <li Class="EOTF.Core.DecalSystem.DecalKindExtension">
-                <armorDecalPath>Things/Decals/Officer/scroll</armorDecalPath>
-                <helmetDecalPath>Things/Decals/Officer/scroll</helmetDecalPath>
+                <armorDecalPath>Things/Decals/commander</armorDecalPath>
+                <helmetDecalPath>Things/Decals/commander</helmetDecalPath>
             </li>
         </modExtensions>
     </PawnKindDef>

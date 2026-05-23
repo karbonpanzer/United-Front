@@ -77,7 +77,7 @@
           <parentTagDef>ApparelBody</parentTagDef>
           <baseLayer>92</baseLayer>
           <texPaths>
-            <li>Things/Decals/scroll</li>
+            <li>Things/Decals/commander</li>
           </texPaths>
           <visibleFacing>
             <li>South</li>
@@ -193,7 +193,7 @@
           <parentTagDef>ApparelBody</parentTagDef>
           <baseLayer>92</baseLayer>
           <texPaths>
-            <li>Things/Decals/scroll</li>
+            <li>Things/Decals/commander</li>
           </texPaths>
           <visibleFacing>
             <li>South</li>

@@ -13,7 +13,7 @@ namespace EOTF.Core.DecalSystem
             _slot = DetermineSlot(props);
         }
 
-        //Let GraphicDatabase handle caching like VEF does, no custom cache needed
+        //Let GraphicDatabase handle caching, logs an error if the texture path is fucked
         public override Graphic? GraphicFor(Pawn pawn)
         {
             var eotfProps = Props as PawnRenderNodePropertiesOmni;
@@ -24,9 +24,18 @@ namespace EOTF.Core.DecalSystem
 
             if (path.NullOrEmpty()) return null;
 
-            //Body type path concat like VEF's GetBodyTypedPath, no ContentFinder check
+            //Body type path concat like VEF, no ContentFinder check
             if (eotfProps?.autoBodyTypePaths == true && pawn.story?.bodyType != null)
                 path = path + "_" + pawn.story.bodyType.defName;
+
+            //Validate the texture exists before handing it to GraphicDatabase
+            if (ContentFinder<Texture2D>.Get(path + "_south", false) == null
+                && ContentFinder<Texture2D>.Get(path, false) == null)
+            {
+                Log.ErrorOnce("[EOTF] Missing decal texture at path: " + path + " on pawn " + pawn.LabelShort,
+                    path.GetHashCode() ^ pawn.thingIDNumber);
+                return null;
+            }
 
             return GraphicDatabase.Get<Graphic_Multi>(path, ShaderDatabase.Cutout, Vector2.one, color);
         }
