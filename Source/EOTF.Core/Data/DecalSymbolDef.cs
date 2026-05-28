@@ -3,13 +3,13 @@ using Verse;
 
 namespace EOTF.Core.DecalSystem
 {
-    //Shared between Helmet and Armor, they just get scaled and offset differently
     public sealed class DecalSymbolDef : Def
     {
         public string Path = "";
-        
-        //Groups symbols under dividers in the UI, i.e. "Engineer", "Medic"
-        public string role = "";
+
+        //Slot restrictions, both false means available everywhere
+        public bool armorOnly = false;
+        public bool helmetOnly = false;
     }
 
     public enum DecalSlot { Helmet, Armor }

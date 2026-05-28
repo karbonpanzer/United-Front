@@ -66,6 +66,21 @@ namespace EOTF.Core.DecalSystem
         }
 
         public static List<DecalSymbolDef> AllSymbols() => DefDatabase<DecalSymbolDef>.AllDefsListForReading;
+
+        //Filters symbols by slot — armorOnly decals hidden from helmet tab, helmetOnly hidden from armor tab
+        public static List<DecalSymbolDef> SymbolsForSlot(DecalSlot slot)
+        {
+            var all = AllSymbols();
+            var filtered = new List<DecalSymbolDef>(all.Count);
+            for (int i = 0; i < all.Count; i++)
+            {
+                if (slot == DecalSlot.Armor && all[i].helmetOnly) continue;
+                if (slot == DecalSlot.Helmet && all[i].armorOnly) continue;
+                filtered.Add(all[i]);
+            }
+            return filtered;
+        }
+
         public static bool PawnHasAnyDecalApparel(Pawn pawn) => GetMarker(pawn) != null;
     }
 }

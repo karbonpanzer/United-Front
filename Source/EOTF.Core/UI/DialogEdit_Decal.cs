@@ -13,7 +13,7 @@ namespace EOTF.Core.DecalSystem
         private readonly Pawn _pawn;
         private DecalProfileSet _profileSet;
         private readonly DecalProfileSet _original;
-        private readonly List<DecalSymbolDef> _symbols;
+        private List<DecalSymbolDef> _symbols;
 
         private int _selectedHelmetIndex, _selectedArmorIndex;
 
@@ -52,14 +52,12 @@ namespace EOTF.Core.DecalSystem
 
             _profileSet = DecalUtil.ReadProfileSetFrom(_pawn);
             _original = _profileSet;
-            
-            //Sort by role so they group together, empty roles go last
-            _symbols = DecalUtil.AllSymbols()
-                .OrderBy(s => s.role.NullOrEmpty() ? 1 : 0)
-                .ThenBy(s => s.role)
-                .ThenBy(s => s.LabelCap.ToString())
+
+            //Alpha sort filtered by current tab slot
+            _symbols = DecalUtil.SymbolsForSlot(_curTab)
+                .OrderBy(s => s.LabelCap.ToString())
                 .ToList();
-            
+
             _selectedHelmetIndex = FindSymbolIndex(_profileSet.Helmet.SymbolPath);
             _selectedArmorIndex = FindSymbolIndex(_profileSet.Armor.SymbolPath);
             SyncSelection();
@@ -120,8 +118,8 @@ namespace EOTF.Core.DecalSystem
         {
             var tabs = new List<TabRecord>
             {
-                new TabRecord("EOTF_Decals_Armor".Translate(), () => _curTab = DecalSlot.Armor, _curTab == DecalSlot.Armor),
-                new TabRecord("EOTF_Decals_Helmet".Translate(), () => _curTab = DecalSlot.Helmet, _curTab == DecalSlot.Helmet)
+                new TabRecord("EOTF_Decals_Armor".Translate(), () => SetTab(DecalSlot.Armor), _curTab == DecalSlot.Armor),
+                new TabRecord("EOTF_Decals_Helmet".Translate(), () => SetTab(DecalSlot.Helmet), _curTab == DecalSlot.Helmet)
             };
 
             Widgets.DrawMenuSection(rect);
@@ -165,7 +163,19 @@ namespace EOTF.Core.DecalSystem
             DrawColors(new Rect(rect.x, rect.yMax + 10f, rect.width, _colorsHeight));
         }
 
-        //Symbol grid with role dividers, sorted by role in the constructor
+        //Rebuilds the symbol list when switching tabs so slot restrictions apply
+        private void SetTab(DecalSlot slot)
+        {
+            if (_curTab == slot) return;
+            _curTab = slot;
+            _symbols = DecalUtil.SymbolsForSlot(_curTab)
+                .OrderBy(s => s.LabelCap.ToString())
+                .ToList();
+            _selectedHelmetIndex = FindSymbolIndex(_profileSet.Helmet.SymbolPath);
+            _selectedArmorIndex = FindSymbolIndex(_profileSet.Armor.SymbolPath);
+        }
+
+        //Flat symbol grid, alpha sorted
         private void DrawSymbolGrid(Rect rect, ref Vector2 scrollPosition)
         {
             bool isArmor = (_curTab == DecalSlot.Armor);
@@ -186,27 +196,9 @@ namespace EOTF.Core.DecalSystem
 
             float curY = 0f;
             int col = 0;
-            string? lastRole = null;
 
             for (int i = 0; i < _symbols.Count; i++)
             {
-                string thisRole = _symbols[i].role.NullOrEmpty() ? "" : _symbols[i].role;
-
-                //Divider when role changes
-                if (lastRole == null || thisRole != lastRole)
-                {
-                    if (col > 0)
-                    {
-                        curY += IconSize + 10f;
-                        col = 0;
-                    }
-
-                    string dividerLabel = thisRole.NullOrEmpty() ? "EOTF_Decals_RoleOther".Translate().ToString() : thisRole;
-                    Widgets.ListSeparator(ref curY, viewRect.width, dividerLabel);
-                    
-                    lastRole = thisRole;
-                }
-
                 if (col >= columns)
                 {
                     col = 0;
@@ -298,7 +290,7 @@ namespace EOTF.Core.DecalSystem
                 }
                 btnX += btnW + totalGap;
             }
-            
+
             if (Widgets.ButtonText(new Rect(btnX, curY, btnW, btnH), "EOTF_Decals_RandomColor".Translate()))
             {
                 var colors = AllColors();
@@ -308,8 +300,8 @@ namespace EOTF.Core.DecalSystem
                     SoundDefOf.Tick_Low.PlayOneShotOnCamera();
                 }
             }
-            btnX += btnW + totalGap;   
-            
+            btnX += btnW + totalGap;
+
             if (showFav)
             {
                 if (Widgets.ButtonText(new Rect(btnX, curY, btnW, btnH), "EOTF_Decals_FavColor".Translate()))
@@ -317,7 +309,7 @@ namespace EOTF.Core.DecalSystem
                     color = favColor;
                     SoundDefOf.Tick_Low.PlayOneShotOnCamera();
                 }
-            }            
+            }
 
             if (!original.IndistinguishableFrom(color))
             {
@@ -384,7 +376,7 @@ namespace EOTF.Core.DecalSystem
         private List<Color> AllColors()
         {
             if (_allColors != null) return _allColors;
-            
+
             HashSet<Color> colorSet = new HashSet<Color>();
 
             if (ModsConfig.IdeologyActive && _pawn.Ideo != null && !Find.IdeoManager.classicMode)
@@ -403,26 +395,26 @@ namespace EOTF.Core.DecalSystem
             }
 
             _allColors = new List<Color>(colorSet);
-            
-            _allColors.Sort((a, b) => 
-            { 
-                Color.RGBToHSV(a, out float hA, out float sA, out _); 
-                Color.RGBToHSV(b, out float hB, out float sB, out _); 
-                int c = hA.CompareTo(hB); 
-                return (c != 0) ? c : sA.CompareTo(sB); 
+
+            _allColors.Sort((a, b) =>
+            {
+                Color.RGBToHSV(a, out float hA, out float sA, out _);
+                Color.RGBToHSV(b, out float hB, out float sB, out _);
+                int c = hA.CompareTo(hB);
+                return (c != 0) ? c : sA.CompareTo(sB);
             });
 
             return _allColors;
         }
 
-        private static bool TryGetFavoriteColor(Pawn? pawn, out Color c) 
-        { 
-            c = Color.white; 
-            if (!ModsConfig.IdeologyActive || pawn?.story == null || pawn.DevelopmentalStage.Baby()) return false; 
-            ColorDef def = pawn.story.favoriteColor; 
-            if (def == null) return false; 
-            c = def.color; 
-            return true; 
+        private static bool TryGetFavoriteColor(Pawn? pawn, out Color c)
+        {
+            c = Color.white;
+            if (!ModsConfig.IdeologyActive || pawn?.story == null || pawn.DevelopmentalStage.Baby()) return false;
+            ColorDef def = pawn.story.favoriteColor;
+            if (def == null) return false;
+            c = def.color;
+            return true;
         }
 
         private void PushLive() => DecalUtil.SetLiveEditFull(_pawn, _profileSet);
