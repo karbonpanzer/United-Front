@@ -47,12 +47,12 @@
     </comps>
     <altitudeLayer>Building</altitudeLayer>
     <statBases>
-      <MarketValue>1800</MarketValue>
+      <MarketValue>9000</MarketValue>
       <MaxHitPoints>200</MaxHitPoints>
       <Flammability>0.5</Flammability>
       <Beauty>-5</Beauty>
       <Mass>40</Mass>
-      <WorkToBuild>15000</WorkToBuild>
+      <WorkToBuild>25000</WorkToBuild>
     </statBases>
     <thingSetMakerTags>
       <li>RewardStandardCore</li>

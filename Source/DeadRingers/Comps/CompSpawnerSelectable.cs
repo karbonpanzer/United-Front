@@ -7,15 +7,18 @@ namespace FoodSynthesizer
 {
     public class CompSpawnerSelectable : ThingComp
     {
-        private int _ticksUntilSpawn;
-        private int _selectedIndex;
+        private int ticksUntilSpawn;
+
+        //Tracking which option the player picked from the gizmo
+        private int selectedIndex;
 
         public CompProperties_SpawnerSelectable Props
             => (CompProperties_SpawnerSelectable)props;
 
-        private ThingDefCountClass? CurrentOption
-            => Props.spawnOptions?[_selectedIndex];
+        private ThingDefCountClass CurrentOption
+            => Props.spawnOptions[selectedIndex];
 
+        //Carryover from CompSpawner, same init/tick/spawn logic
         public override void PostSpawnSetup(bool respawningAfterLoad)
         {
             base.PostSpawnSetup(respawningAfterLoad);
@@ -27,7 +30,7 @@ namespace FoodSynthesizer
 
         private void ResetTimer()
         {
-            _ticksUntilSpawn = Props.spawnIntervalRange.RandomInRange;
+            ticksUntilSpawn = Props.spawnIntervalRange.RandomInRange;
         }
 
         public override void CompTick()
@@ -41,18 +44,17 @@ namespace FoodSynthesizer
                 }
             }
 
-            _ticksUntilSpawn--;
-            if (_ticksUntilSpawn <= 0)
+            ticksUntilSpawn--;
+            if (ticksUntilSpawn <= 0)
             {
                 TryDoSpawn();
                 ResetTimer();
             }
         }
 
-        private void TryDoSpawn()
+        private bool TryDoSpawn()
         {
-            ThingDefCountClass? option = CurrentOption;
-            if (option?.thingDef == null) return;
+            ThingDefCountClass option = CurrentOption;
 
             if (Props.spawnMaxAdjacent >= 0)
             {
@@ -73,7 +75,7 @@ namespace FoodSynthesizer
                 }
                 if (adjacent >= Props.spawnMaxAdjacent)
                 {
-                    return;
+                    return false;
                 }
             }
 
@@ -94,7 +96,7 @@ namespace FoodSynthesizer
                 ThingPlaceMode.Near))
             {
                 thing.Destroy();
-                return;
+                return false;
             }
 
             if (Props.showMessageIfOwned && parent.Faction == Faction.OfPlayer)
@@ -105,12 +107,14 @@ namespace FoodSynthesizer
                     thing,
                     MessageTypeDefOf.PositiveEvent);
             }
+
+            return true;
         }
 
+        //Gizmo button when clicked opens a float menu
         public override IEnumerable<Gizmo> CompGetGizmosExtra()
         {
-            ThingDefCountClass? option = CurrentOption;
-            if (option?.thingDef == null) yield break;
+            ThingDefCountClass option = CurrentOption;
 
             yield return new Command_Action
             {
@@ -123,47 +127,48 @@ namespace FoodSynthesizer
                 action = delegate
                 {
                     List<FloatMenuOption> menuOptions = new List<FloatMenuOption>();
-                    if (Props.spawnOptions != null)
-                        for (int i = 0; i < Props.spawnOptions.Count; i++)
+                    for (int i = 0; i < Props.spawnOptions.Count; i++)
+                    {
+                        //I capture this or every option points to the last index
+                        int localIndex = i;
+                        ThingDefCountClass opt = Props.spawnOptions[i];
+                        string label;
+                        if (i == selectedIndex)
                         {
-                            int localIndex = i;
-                            ThingDefCountClass opt = Props.spawnOptions[i];
-                            string label;
-                            if (i == _selectedIndex)
-                            {
-                                label = "FoodSynth_CurrentMarker".Translate(
-                                    opt.thingDef.LabelCap,
-                                    opt.count);
-                            }
-                            else
-                            {
-                                label = "FoodSynth_MenuOption".Translate(
-                                    opt.thingDef.LabelCap,
-                                    opt.count);
-                            }
-
-                            menuOptions.Add(new FloatMenuOption(label, delegate { _selectedIndex = localIndex; }));
+                            label = "FoodSynth_CurrentMarker".Translate(
+                                opt.thingDef.LabelCap,
+                                opt.count);
                         }
-
+                        else
+                        {
+                            label = "FoodSynth_MenuOption".Translate(
+                                opt.thingDef.LabelCap,
+                                opt.count);
+                        }
+                        menuOptions.Add(new FloatMenuOption(label, delegate
+                        {
+                            selectedIndex = localIndex;
+                        }));
+                    }
                     Find.WindowStack.Add(new FloatMenu(menuOptions));
                 }
             };
         }
 
-        private static Texture2D GetOptionIcon(ThingDefCountClass? option)
+        //Fall back to the pink error square if the texture is missing, hard to miss
+        private static Texture2D GetOptionIcon(ThingDefCountClass option)
         {
-            if (option?.thingDef?.uiIcon != null)
+            if (option.thingDef.uiIcon != null)
             {
                 return option.thingDef.uiIcon;
             }
             return BaseContent.BadTex;
         }
 
+        //What's being made and the countdown, carryover pattern but I swap in the selected option
         public override string CompInspectStringExtra()
         {
-            ThingDefCountClass? option = CurrentOption;
-            if (option?.thingDef == null) return "";
-
+            ThingDefCountClass option = CurrentOption;
             string text = "FoodSynth_Producing".Translate(
                 option.thingDef.LabelCap,
                 option.count);
@@ -171,20 +176,21 @@ namespace FoodSynthesizer
             if (Props.writeTimeLeftToSpawn)
             {
                 text += "\n" + "NextSpawnedItemIn".Translate(
-                    GenDate.ToStringTicksToPeriod(_ticksUntilSpawn));
+                    GenDate.ToStringTicksToPeriod(ticksUntilSpawn));
             }
 
             return text;
         }
 
+        //Carryover save/load pattern, I just add selectedIndex on top of the timer
         public override void PostExposeData()
         {
             base.PostExposeData();
             string prefix = Props.saveKeysPrefix ?? "selectable";
-            Scribe_Values.Look(ref _ticksUntilSpawn,
-                prefix + "_ticksUntilSpawn");
-            Scribe_Values.Look(ref _selectedIndex,
-                prefix + "_selectedIndex");
+            Scribe_Values.Look(ref ticksUntilSpawn,
+                prefix + "_ticksUntilSpawn", 0);
+            Scribe_Values.Look(ref selectedIndex,
+                prefix + "_selectedIndex", 0);
         }
     }
 }

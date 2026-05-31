@@ -5,7 +5,10 @@ namespace FoodSynthesizer
 {
     public class CompProperties_SpawnerSelectable : CompProperties
     {
-        public List<ThingDefCountClass>? spawnOptions;
+        //My addition — replaces the single thingToSpawn with a selectable list
+        public List<ThingDefCountClass> spawnOptions;
+
+        //Carryover from CompProperties_Spawner
         public IntRange spawnIntervalRange = new IntRange(600000, 600000);
         public int spawnMaxAdjacent = -1;
         public bool spawnForbidden;
@@ -13,15 +16,15 @@ namespace FoodSynthesizer
         public bool writeTimeLeftToSpawn = true;
         public bool showMessageIfOwned = true;
         public bool inheritFaction;
-
         [NoTranslate]
-        public string? saveKeysPrefix;
+        public string saveKeysPrefix;
 
         public CompProperties_SpawnerSelectable()
         {
             compClass = typeof(CompSpawnerSelectable);
         }
 
+        //I validate that spawnOptions isn't empty so I don't get null refs at runtime
         public override IEnumerable<string> ConfigErrors(ThingDef parentDef)
         {
             foreach (string error in base.ConfigErrors(parentDef))
