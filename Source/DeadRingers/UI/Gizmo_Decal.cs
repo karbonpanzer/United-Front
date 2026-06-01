@@ -16,7 +16,7 @@ namespace DeadRinger
             try
             {
                 new Harmony("DeadRinger.Decals").PatchAll();
-                Log.Message("[DeadRinger] Decal System loaded successfully.");
+                Log.Message("[DeadRinger] loaded successfully.");
             }
             catch (Exception e)
             {

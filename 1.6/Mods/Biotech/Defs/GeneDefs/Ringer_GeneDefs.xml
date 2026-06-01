@@ -12,15 +12,15 @@
       <li Class="PawnRenderNodeProperties_Eye">
         <texPath>Things/Pawn/Humanlike/HeadAttachments/GoldEyes/GoldEyes_Male</texPath>
         <texPathFemale>Things/Pawn/Humanlike/HeadAttachments/GoldEyes/GoldEyes_Female</texPathFemale>
-				<rotDrawMode>Fresh, Rotting</rotDrawMode>
-				<parentTagDef>Head</parentTagDef>
-				<drawSize>1.0</drawSize>
-				<drawData>
-					<defaultData>
-						<layer>54</layer>
-						<offset>(0, 0, 0)</offset>
-					</defaultData>
-				</drawData>
+        <rotDrawMode>Fresh, Rotting</rotDrawMode>
+        <parentTagDef>Head</parentTagDef>
+        <drawSize>1.0</drawSize>
+        <drawData>
+          <defaultData>
+            <layer>54</layer>
+            <offset>(0, 0, 0)</offset>
+          </defaultData>
+        </drawData>
       </li>
     </renderNodeProperties>
   </GeneDef>
@@ -108,9 +108,9 @@
     <biostatCpx>2</biostatCpx>
     <biostatMet>-2</biostatMet>
     <customEffectDescriptions>
-      <li>At biological age 40, triggers a period of extraordinary capability lasting 3 days.</li>
-      <li>During final clarity: work speed, melee damage, and move speed are greatly increased.</li>
-      <li>During final clarity: pain is suppressed and consciousness is elevated.</li>
+      <li>At biological age 40, triggers a permanent state of extraordinary capability.</li>
+      <li>Work speed, melee damage, move speed, and social ability are greatly increased.</li>
+      <li>Pain is suppressed and consciousness is elevated.</li>
       <li>This triggers only once.</li>
     </customEffectDescriptions>
     <symbolPack>
@@ -120,5 +120,67 @@
       </wholeNameSymbols>
     </symbolPack>
   </GeneDef>
+
+  <GeneDef>
+    <defName>DRG_Replicant_TemperatureResilience</defName>
+    <label>temperature resilience</label>
+    <labelShortAdj>resilient</labelShortAdj>
+    <description>Carriers of this gene have modified thermoregulatory systems that allow them to function in environments that would incapacitate unmodified humans. They are comfortable in both extreme heat and extreme cold.</description>
+    <displayCategory>Temperature</displayCategory>
+    <displayOrderInCategory>103</displayOrderInCategory>
+    <iconPath>UI/Icons/Genes/Gene_TemperatureResilience</iconPath>
+    <statOffsets>
+      <ComfyTemperatureMin>-10</ComfyTemperatureMin>
+      <ComfyTemperatureMax>10</ComfyTemperatureMax>
+    </statOffsets>
+    <biostatCpx>2</biostatCpx>
+    <biostatMet>-2</biostatMet>
+    <customEffectDescriptions>
+      <li>Comfortable temperature minimum reduced by 10 degrees.</li>
+      <li>Comfortable temperature maximum increased by 10 degrees.</li>
+    </customEffectDescriptions>
+    <symbolPack>
+      <prefixSymbols>
+        <li><symbol>hardy</symbol></li>
+        <li><symbol>dura</symbol></li>
+        <li><symbol>temper</symbol></li>
+      </prefixSymbols>
+    </symbolPack>
+  </GeneDef>
+
+  <GeneDef ParentName="FertilityBase">
+    <defName>DRG_Replicant_LowFertility</defName>
+    <label>low fertility</label>
+    <labelShortAdj>infertile</labelShortAdj>
+    <description>Carriers of this gene have a greatly reduced capacity for natural reproduction. Conception is possible but deeply unlikely without intervention.</description>
+    <iconPath>UI/Icons/Genes/Gene_LowFertility</iconPath>
+    <displayCategory>Reproduction</displayCategory>
+    <displayOrderInCategory>105</displayOrderInCategory>
+    <statFactors>
+      <Fertility>0.2</Fertility>
+    </statFactors>
+    <biostatMet>2</biostatMet>
+    <symbolPack>
+      <prefixSymbols>
+        <li><symbol>barren</symbol></li>
+        <li><symbol>sparse</symbol></li>
+      </prefixSymbols>
+    </symbolPack>
+  </GeneDef>
+
+<GeneDef ParentName="CellInstabilityBase">
+    <defName>DRG_Replicant_CellInstability</defName>
+    <label>accelerated cell instability</label>
+    <labelShortAdj>unstable</labelShortAdj>
+    <description>Carriers of this gene have deeply unstable cell replication machinery, a consequence of the rapid growth matrix embedded in their genetics from inception. The body runs fast and it runs poorly. Eventually it runs out.</description>
+    <iconPath>UI/Icons/Genes/Gene_MajorCellInstability</iconPath>
+    <displayOrderInCategory>104</displayOrderInCategory>
+    <biostatMet>4</biostatMet>
+    <statFactors>
+      <LifespanFactor>0.6</LifespanFactor>
+      <CancerRate>8</CancerRate>
+      <ImmunityGainSpeed>0.92</ImmunityGainSpeed>
+    </statFactors>
+  </GeneDef>  
 
 </Defs>

@@ -3,7 +3,7 @@
 
   <!-- ===================== SQUARELOAF ===================== -->
   <ThingDef ParentName="FoodCubeBase">
-    <defName>Squareloaf</defName>
+    <defName>DRG_Squareloaf</defName>
     <label>squareloaf</label>
     <description>A pale, dense cube of synthesized grain starch. Functionally identical to flour for baking purposes, though no wheat was harmed in its production. Has the texture of stale bread and the personality to match.</description>
     <graphicData>
@@ -33,7 +33,7 @@
 
   <!-- ===================== SEASONCUBE ===================== -->
   <ThingDef ParentName="FoodCubeBase">
-    <defName>Seasoncube</defName>
+    <defName>DRG_Seasoncube</defName>
     <label>seasoncube</label>
     <description>A tiny, potent cube of synthesized spices and flavoring compounds. Adds complexity to cooked meals. Eating one raw is an experience most colonists prefer not to repeat.</description>
     <graphicData>

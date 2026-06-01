@@ -50,7 +50,7 @@
   </ThingDef>
 
   <ThingDef ParentName="FoodCubeBase">
-    <defName>Meatcube</defName>
+    <defName>DRG_Meatcube</defName>
     <label>meatcube</label>
     <description>A dense, pinkish cube of synthesized protein. Technically edible raw, but really meant to be cooked. Tastes vaguely of everything and nothing at the same time.</description>
     <graphicData>
@@ -72,7 +72,7 @@
   </ThingDef>
 
   <ThingDef ParentName="FoodCubeBase">
-    <defName>Vegblock</defName>
+    <defName>DRG_Vegblock</defName>
     <label>vegblock</label>
     <description>A firm green cube of compressed plant matter. All the nutrition of vegetables, none of the flavor. Colonists will eat it, but they won't be happy about it.</description>
     <graphicData>
@@ -93,7 +93,7 @@
   </ThingDef>
 
   <ThingDef ParentName="FoodCubeBase">
-    <defName>Fruitblock</defName>
+    <defName>DRG_Fruitblock</defName>
     <label>fruitblock</label>
     <description>A soft, slightly sweet cube of synthesized fruit compounds. The most tolerable of the food cubes when eaten raw. Still unmistakably artificial.</description>
     <graphicData>
@@ -116,7 +116,7 @@
   </ThingDef>
 
   <ThingDef ParentName="FoodCubeBase">
-    <defName>Chocoblock</defName>
+    <defName>DRG_Chocoblock</defName>
     <label>chocoblock</label>
     <description>A dark brown cube of synthesized cocoa compounds. Sweet enough to eat on its own and useful as a cooking ingredient. A small luxury from a machine.</description>
     <graphicData>

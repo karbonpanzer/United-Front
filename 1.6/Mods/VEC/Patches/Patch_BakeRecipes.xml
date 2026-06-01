@@ -4,28 +4,28 @@
   <Operation Class="PatchOperationAdd">
     <xpath>/Defs/RecipeDef[@Name="VCE_CookBakeMealBase"]/fixedIngredientFilter/thingDefs</xpath>
     <value>
-      <li>Squareloaf</li>
+      <li>DRG_Squareloaf</li>
     </value>
   </Operation>
 
   <Operation Class="PatchOperationAdd">
     <xpath>/Defs/RecipeDef[@Name="VCE_CookBakeMealBase"]/defaultIngredientFilter/thingDefs</xpath>
     <value>
-      <li>Squareloaf</li>
+      <li>DRG_Squareloaf</li>
     </value>
   </Operation>
 
   <Operation Class="PatchOperationAdd">
     <xpath>/Defs/RecipeDef[@Name="VCE_CookGourmetBakeMealBase"]/fixedIngredientFilter/thingDefs</xpath>
     <value>
-      <li>Squareloaf</li>
+      <li>DRG_Squareloaf</li>
     </value>
   </Operation>
 
   <Operation Class="PatchOperationAdd">
     <xpath>/Defs/RecipeDef[@Name="VCE_CookGourmetBakeMealBase"]/defaultIngredientFilter/thingDefs</xpath>
     <value>
-      <li>Squareloaf</li>
+      <li>DRG_Squareloaf</li>
     </value>
   </Operation>
 

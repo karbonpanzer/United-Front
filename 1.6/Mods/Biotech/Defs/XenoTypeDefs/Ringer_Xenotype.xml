@@ -4,22 +4,26 @@
   <XenotypeDef>
     <defName>DRG_Replicant</defName>
     <label>replicant</label>
-    <description>Replicants are a mass produced clone strain, engineered as a cheap labor solution across the Rim. Physically robust, psychically acute, and cheap to grow, they were designed to fill the roles nobody else wanted. Heavy labor, hazardous construction, and dangerous colonial work are their inheritance.\n\nTheir rapid growth matrix produces a body that is tough but heals poorly and fights off illness badly. Unlike some engineered xenotypes, they do not suffer from accelerated biological aging in the way most would expect. Their bodies are built to last. Their minds are another matter.\n\nThe same psychic sensitivity that makes them responsive workers also makes them volatile. They are prone to erratic emotional episodes, sudden mood breaks, and in some cases deep psychological instability that no amount of conditioning fully suppresses.\n\nMost labor contractors consider this an acceptable tradeoff. They are rarely asked.</description>
-    <descriptionShort>A mass produced clone strain used as cheap labor across the Rim. Physically tough but psychically volatile, built to last though their minds rarely keep pace with their bodies.</descriptionShort>
+    <description>Replicants are a mass produced clone strain, engineered as a cheap labor solution across the Rim. Physically robust, resistant to disease, and cheap to grow, they were designed to fill the roles nobody else wanted. Heavy labor, hazardous construction, and dangerous colonial work are their inheritance.\n\nTheir rapid growth matrix produces a body that is tough and resilient but carries a hidden cost. The cell replication machinery that builds them so efficiently begins to fail from within, accumulating damage that no medicine can address and no surgery can reach. The body runs fast. Eventually it runs out.\n\nDead to psychic influence and prone to sudden aggression, they struggle to integrate with unmodified humans. Most labor contractors consider this acceptable. They are rarely asked.\n\nIn their final years something changes. The failing mind opens briefly into something extraordinary. Whatever time remains is lived in full.</description>
+    <descriptionShort>A mass produced clone strain used as cheap labor across the Rim. Physically tough and disease resistant, built to work hard and die young.</descriptionShort>
     <iconPath>UI/Icons/Xenotypes/Replicant</iconPath>
     <inheritable>true</inheritable>
     <genes>
-      <li>DRG_Eyes_Gold</li>
       <li>WoundHealing_Slow</li>
-      <li>Immunity_Weak</li>
+      <li>Immunity_Strong</li>
       <li>Robust</li>
       <li>Pain_Reduced</li>
       <li>MeleeDamage_Strong</li>
-      <li>Aggression_HyperAggressive</li>
+      <li>Aggression_Aggressive</li>
       <li>ToxResist_Partial</li>
+      <li>PsychicAbility_Deaf</li>
+      <li>DRG_Eyes_Gold</li>      
       <li>DRG_Replicant_AcceleratedAging</li>
       <li>DRG_Replicant_Conditioning</li>
       <li>DRG_Replicant_FinalClarity</li>
+      <li>DRG_Replicant_TemperatureResilience</li>
+      <li>DRG_Replicant_LowFertility</li>
+      <li>DRG_Replicant_CellInstability</li>
     </genes>
   </XenotypeDef>
 

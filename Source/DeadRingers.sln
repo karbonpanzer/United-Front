@@ -2,6 +2,8 @@
 Microsoft Visual Studio Solution File, Format Version 12.00
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DeadRingers", "DeadRingers\DeadRingers.csproj", "{94AA2BAA-8DA9-444B-B25B-1D7611117FFF}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Replicants", "Replicants\Replicants.csproj", "{5C0F67F6-8206-4325-B8D4-29279102A6CA}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -12,5 +14,9 @@ Global
 		{94AA2BAA-8DA9-444B-B25B-1D7611117FFF}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{94AA2BAA-8DA9-444B-B25B-1D7611117FFF}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{94AA2BAA-8DA9-444B-B25B-1D7611117FFF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5C0F67F6-8206-4325-B8D4-29279102A6CA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5C0F67F6-8206-4325-B8D4-29279102A6CA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5C0F67F6-8206-4325-B8D4-29279102A6CA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5C0F67F6-8206-4325-B8D4-29279102A6CA}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal

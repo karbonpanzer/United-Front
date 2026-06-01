@@ -2,10 +2,10 @@
 <Patch>
 
   <Operation Class="PatchOperationAdd">
-    <xpath>/Defs/ThingDef[defName="FoodSynthesizer"]/comps/li[@Class="FoodSynthesizer.CompProperties_SpawnerSelectable"]/spawnOptions</xpath>
+    <xpath>/Defs/ThingDef[defName="DRG_FoodSynthesizer"]/comps/li[@Class="FoodSynthesizer.CompProperties_SpawnerSelectable"]/spawnOptions</xpath>
     <value>
-      <Squareloaf>75</Squareloaf>
-      <Seasoncube>50</Seasoncube>
+      <DRG_Squareloaf>75</DRG_Squareloaf>
+      <DRG_Seasoncube>50</DRG_Seasoncube>
     </value>
   </Operation>
 

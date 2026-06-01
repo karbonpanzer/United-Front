@@ -32,10 +32,10 @@
       </li>
       <li Class="FoodSynthesizer.CompProperties_SpawnerSelectable">
         <spawnOptions>                                  
-          <Meatcube>75</Meatcube>
-          <Vegblock>75</Vegblock>
-          <Fruitblock>75</Fruitblock>
-          <Chocoblock>50</Chocoblock>
+          <DRG_Meatcube>75</DRG_Meatcube>
+          <DRG_Vegblock>75</DRG_Vegblock>
+          <DRG_Fruitblock>75</DRG_Fruitblock>
+          <DRG_Chocoblock>50</DRG_Chocoblock>
         </spawnOptions>
         <spawnIntervalRange>100000~100000</spawnIntervalRange>
         <spawnMaxAdjacent>-1</spawnMaxAdjacent>
