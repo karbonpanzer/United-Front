@@ -1,0 +1,124 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+  <GeneDef ParentName="GeneEyeColor">
+    <defName>DRG_Eyes_Gold</defName>
+    <label>gold eyes</label>
+    <labelShortAdj>gold-eyed</labelShortAdj>
+    <description>Carriers of this gene have striking amber gold eyes.</description>
+    <iconPath>UI/Icons/Genes/Gene_GoldEyes</iconPath>
+    <displayOrderInCategory>2</displayOrderInCategory>
+    <renderNodeProperties>
+      <li Class="PawnRenderNodeProperties_Eye">
+        <texPath>Things/Pawn/Humanlike/HeadAttachments/GoldEyes/GoldEyes_Male</texPath>
+        <texPathFemale>Things/Pawn/Humanlike/HeadAttachments/GoldEyes/GoldEyes_Female</texPathFemale>
+				<rotDrawMode>Fresh, Rotting</rotDrawMode>
+				<parentTagDef>Head</parentTagDef>
+				<drawSize>1.0</drawSize>
+				<drawData>
+					<defaultData>
+						<layer>54</layer>
+						<offset>(0, 0, 0)</offset>
+					</defaultData>
+				</drawData>
+      </li>
+    </renderNodeProperties>
+  </GeneDef>
+
+  <GeneDef ParentName="GeneSkinColorOverride">
+    <defName>DRG_Skin_PaperWhite</defName>
+    <label>paper white skin</label>
+    <labelShortAdj>pallid</labelShortAdj>
+    <description>Carriers of this gene have extremely pale and near translucent skin, a cosmetic side effect of an accelerated growth matrix.</description>
+    <skinColorOverride>(224, 213, 205)</skinColorOverride>
+    <displayOrderInCategory>69</displayOrderInCategory>
+    <symbolPack>
+      <prefixSymbols>
+        <li>
+          <symbol>pale</symbol>
+        </li>
+        <li>
+          <symbol>pallid</symbol>
+        </li>
+      </prefixSymbols>
+    </symbolPack>
+  </GeneDef>
+
+  <GeneDef>
+    <defName>DRG_Replicant_AcceleratedAging</defName>
+    <label>rapid senescence</label>
+    <labelShortAdj>fast-aging</labelShortAdj>
+    <description>Carriers of this gene age at a normal rate through early life. Past thirty the body begins to outpace itself, burning through remaining biological years at an accelerating rate.</description>
+    <iconPath>UI/Icons/Genes/Gene_RapidSenescence</iconPath>
+    <displayCategory>Miscellaneous</displayCategory>
+    <displayOrderInCategory>100</displayOrderInCategory>
+    <biologicalAgeTickFactorFromAgeCurve>
+      <points>
+        <li>(0, 2)</li>
+        <li>(20, 3)</li>
+        <li>(40, 4)</li>
+      </points>
+    </biologicalAgeTickFactorFromAgeCurve>
+    <biostatCpx>2</biostatCpx>
+    <biostatMet>4</biostatMet>
+    <customEffectDescriptions>
+      <li>Twice the aging from birth to 20.</li>
+      <li>Thrice the aging rate to 40.</li>
+      <li>Four times the aging rate after 40.</li>
+    </customEffectDescriptions>
+    <symbolPack>
+      <wholeNameSymbols>
+        <li><symbol>fast-lifer</symbol></li>
+        <li><symbol>brief-lifer</symbol></li>
+      </wholeNameSymbols>
+    </symbolPack>
+  </GeneDef>
+
+  <GeneDef ParentName="GeneLearningBase">
+    <defName>DRG_Replicant_Conditioning</defName>
+    <label>accelerated conditioning</label>
+    <labelShortAdj>conditioned</labelShortAdj>
+    <description>Carriers of this gene have neural pathways optimized from birth through an intensive conditioning program. They absorb and retain skills at a considerably faster rate than others. It does not make them smarter. It makes them efficient.</description>
+    <iconPath>UI/Icons/Genes/Gene_Conditioning</iconPath>
+    <displayCategory>Miscellaneous</displayCategory>
+    <displayOrderInCategory>101</displayOrderInCategory>
+    <statOffsets>
+      <GlobalLearningFactor>1.5</GlobalLearningFactor>
+    </statOffsets>
+    <biostatCpx>3</biostatCpx>
+    <biostatMet>-5</biostatMet>
+    <symbolPack>
+      <prefixSymbols>
+        <li><symbol>conditioned</symbol></li>
+        <li><symbol>primed</symbol></li>
+        <li><symbol>trained</symbol></li>
+      </prefixSymbols>
+    </symbolPack>
+  </GeneDef>
+
+  <GeneDef>
+    <defName>DRG_Replicant_FinalClarity</defName>
+    <label>final clarity</label>
+    <labelShortAdj>clarity-bound</labelShortAdj>
+    <description>At the end of their biological life, carriers of this gene experience a profound mental opening. For however long remains to them they become extraordinary at everything they do. The phenomenon has no accepted scientific explanation.</description>
+    <iconPath>UI/Icons/Genes/Gene_FinalClarity</iconPath>
+    <displayCategory>Miscellaneous</displayCategory>
+    <displayOrderInCategory>102</displayOrderInCategory>
+    <geneClass>ReplicantXenotype.Gene_FinalClarity</geneClass>
+    <biostatCpx>2</biostatCpx>
+    <biostatMet>-2</biostatMet>
+    <customEffectDescriptions>
+      <li>At biological age 40, triggers a period of extraordinary capability lasting 3 days.</li>
+      <li>During final clarity: work speed, melee damage, and move speed are greatly increased.</li>
+      <li>During final clarity: pain is suppressed and consciousness is elevated.</li>
+      <li>This triggers only once.</li>
+    </customEffectDescriptions>
+    <symbolPack>
+      <wholeNameSymbols>
+        <li><symbol>clarity</symbol></li>
+        <li><symbol>lastlight</symbol></li>
+      </wholeNameSymbols>
+    </symbolPack>
+  </GeneDef>
+
+</Defs>

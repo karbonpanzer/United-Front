@@ -6,7 +6,7 @@ namespace FoodSynthesizer
     public class CompProperties_SpawnerSelectable : CompProperties
     {
         //My addition — replaces the single thingToSpawn with a selectable list
-        public List<ThingDefCountClass> spawnOptions;
+        public List<ThingDefCountClass> spawnOptions = null!;
 
         //Carryover from CompProperties_Spawner
         public IntRange spawnIntervalRange = new IntRange(600000, 600000);
@@ -17,7 +17,7 @@ namespace FoodSynthesizer
         public bool showMessageIfOwned = true;
         public bool inheritFaction;
         [NoTranslate]
-        public string saveKeysPrefix;
+        public string saveKeysPrefix = null!;
 
         public CompProperties_SpawnerSelectable()
         {

@@ -2,7 +2,7 @@
 <Defs>
 
   <ThingDef ParentName="BuildingBase">
-    <defName>FoodSynthesizer</defName>
+    <defName>DRG_FoodSynthesizer</defName>
     <label>food synthesizer</label>
     <description>An advanced molecular assembly unit that synthesizes edible food cubes from atmospheric compounds. A selection dial allows the operator to choose the output type. The machine hums with quiet purpose — utilitarian, reliable, and deeply unappetizing.</description>
     <thingClass>Building</thingClass>
@@ -31,7 +31,7 @@
         <basePowerConsumption>350</basePowerConsumption>
       </li>
       <li Class="FoodSynthesizer.CompProperties_SpawnerSelectable">
-        <spawnOptions>
+        <spawnOptions>                                  
           <Meatcube>75</Meatcube>
           <Vegblock>75</Vegblock>
           <Fruitblock>75</Fruitblock>

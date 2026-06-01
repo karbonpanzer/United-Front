@@ -1,0 +1,6 @@
+C:\Program Files (x86)\Steam\steamapps\common\RimWorld\Mods\Dead Ringers\Source\Replicants\obj\Debug\Replicants.csproj.AssemblyReference.cache
+C:\Program Files (x86)\Steam\steamapps\common\RimWorld\Mods\Dead Ringers\Source\Replicants\obj\Debug\Replicants.GeneratedMSBuildEditorConfig.editorconfig
+C:\Program Files (x86)\Steam\steamapps\common\RimWorld\Mods\Dead Ringers\Source\Replicants\obj\Debug\Replicants.csproj.CoreCompileInputs.cache
+C:\Program Files (x86)\Steam\steamapps\common\RimWorld\Mods\Dead Ringers\Source\Replicants\obj\Debug\Replicants.sourcelink.json
+C:\Program Files (x86)\Steam\steamapps\common\RimWorld\Mods\Dead Ringers\1.6\Mods\Biotech\Assemblies\Replicant.dll
+C:\Program Files (x86)\Steam\steamapps\common\RimWorld\Mods\Dead Ringers\Source\Replicants\obj\Debug\Replicant.dll

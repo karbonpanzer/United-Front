@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+  <HediffDef>
+    <defName>DRG_Replicant_FinalClarity</defName>
+    <label>final clarity</label>
+    <labelNoun>a moment of final clarity</labelNoun>
+    <description>The mind opens at the end. Everything experienced, every sensation, every cruelty and beauty of a life compressed into too few years, crystallizes into something vast and quiet. Whatever remains of that life is lived in full.</description>
+    <hediffClass>HediffWithComps</hediffClass>
+    <isBad>false</isBad>
+    <stages>
+      <li>
+        <label>final clarity</label>
+        <statFactors>
+          <WorkSpeedGlobal>1.5</WorkSpeedGlobal>
+          <MeleeDamageFactor>1.5</MeleeDamageFactor>
+          <MeleeCooldownFactor>0.75</MeleeCooldownFactor>
+          <MeleeHitChance>1.25</MeleeHitChance>
+          <MoveSpeed>1.3</MoveSpeed>
+          <GlobalLearningFactor>2.0</GlobalLearningFactor>
+          <SocialImpact>1.5</SocialImpact>
+          <NegotiationAbility>1.5</NegotiationAbility>
+          <TradePriceImprovement>1.25</TradePriceImprovement>
+          <InjuryHealingFactor>1.5</InjuryHealingFactor>
+          <ImmunityGainSpeed>1.5</ImmunityGainSpeed>
+          <PsychicSensitivity>1.5</PsychicSensitivity>
+          <ShootingAccuracyPawn>1.25</ShootingAccuracyPawn>
+          <AimingDelayFactor>0.75</AimingDelayFactor>
+        </statFactors>
+        <capMods>
+          <li>
+            <capacity>Consciousness</capacity>
+            <offset>0.25</offset>
+          </li>
+        </capMods>
+        <painFactor>0</painFactor>
+      </li>
+    </stages>
+  </HediffDef>
+
+  <ThoughtDef>
+    <defName>DRG_Replicant_FinalClarityThought</defName>
+    <thoughtClass>Thought_Memory</thoughtClass>
+    <developmentalStageFilter>Adult</developmentalStageFilter>
+    <durationDays>999</durationDays>
+    <stages>
+      <li>
+        <label>final clarity</label>
+        <description>I have seen things you people would not believe. All those moments will be lost in time, like tears in rain. But not yet.</description>
+        <baseMoodEffect>50</baseMoodEffect>
+      </li>
+    </stages>
+  </ThoughtDef>
+
+</Defs>
