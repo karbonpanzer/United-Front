@@ -89,7 +89,7 @@
 		</backstoryFilters>
 		<xenotypeSet>
 			<xenotypeChances>
-				<DRG_Replicant MayRequire="Ludeon.RimWorld.Biotech">0.12</DRG_Replicant>
+				<Hussar MayRequire="Ludeon.RimWorld.Biotech">0.12</Hussar>
 				<Dirtmole MayRequire="Ludeon.RimWorld.Biotech">0.06</Dirtmole>
 				<Impid MayRequire="Ludeon.RimWorld.Biotech">0.02</Impid>
 				<Genie MayRequire="Ludeon.RimWorld.Biotech">0.08</Genie>
@@ -295,7 +295,7 @@
 		</backstoryFilters>
 		<xenotypeSet>
 			<xenotypeChances>
-				<DRG_Replicant MayRequire="Ludeon.RimWorld.Biotech">0.12</DRG_Replicant>
+				<Hussar MayRequire="Ludeon.RimWorld.Biotech">0.12</Hussar>
 				<Pigskin MayRequire="Ludeon.RimWorld.Biotech">0.08</Pigskin>
 				<Impid MayRequire="Ludeon.RimWorld.Biotech">0.08</Impid>
 				<Waster MayRequire="Ludeon.RimWorld.Biotech">0.10</Waster>

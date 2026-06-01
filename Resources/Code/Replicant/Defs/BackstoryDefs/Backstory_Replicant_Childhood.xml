@@ -1,0 +1,681 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+  <BackstoryDef>
+    <defName>DRG_VatChild_Melee</defName>
+    <title>combat batch</title>
+    <titleShort>combat vat</titleShort>
+    <description>[PAWN_nameDef] has no childhood in any meaningful sense. [PAWN_pronoun] was grown for a purpose and trained for it from the first coherent thought [PAWN_pronoun] can recall. Combat drills, pain thresholds, weapons familiarization. [PAWN_possessive] earliest real memory is being told to hit harder.</description>
+    <slot>Childhood</slot>
+    <skillGains>
+      <Melee>4</Melee>
+      <Shooting>2</Shooting>
+    </skillGains>
+    <workDisables>
+      <li>Social</li>
+    </workDisables>
+    <spawnCategories>
+      <li>Replicant</li>
+      <li>Offworld</li>
+    </spawnCategories>
+  </BackstoryDef>
+
+  <BackstoryDef>
+    <defName>DRG_ImplantChild_MeleeStreet</defName>
+    <title>fabricated street childhood</title>
+    <titleShort>implanted</titleShort>
+    <description>[PAWN_nameDef] remembers growing up rough in an urbworld slum. Daily fights to keep [PAWN_possessive] possessions, an older brother who taught [PAWN_objective] how to throw a punch, a scar above [PAWN_possessive] eyebrow earned at thirteen.\n\nNone of it happened. The memories were implanted before activation to give [PAWN_objective] the appearance of a normal upbringing. The scar is real. The fight that put it there was not. The hands still remember how to fight.</description>
+    <slot>Childhood</slot>
+    <skillGains>
+      <Melee>4</Melee>
+      <Social>1</Social>
+    </skillGains>
+    <forcedTraits>
+      <Neurotic>1</Neurotic>
+    </forcedTraits>
+    <spawnCategories>
+      <li>Replicant</li>
+      <li>Offworld</li>
+    </spawnCategories>
+  </BackstoryDef>
+
+  <BackstoryDef>
+    <defName>DRG_ImplantChild_MeleeMartial</defName>
+    <title>fabricated dojo childhood</title>
+    <titleShort>implanted</titleShort>
+    <description>[PAWN_nameDef] remembers years of martial training under a patient instructor. Cold mornings, repetition drills, the smell of mat dust. [PAWN_pronoun] remembers earning a black sash at sixteen.\n\nThe instructor never existed. The dojo never existed. The training never happened. [PAWN_possessive] body remembers all of it perfectly. [PAWN_pronoun] has tried to find the school in records and confirmed multiple times that it was never real. The discipline remains.</description>
+    <slot>Childhood</slot>
+    <skillGains>
+      <Melee>5</Melee>
+      <Intellectual>1</Intellectual>
+    </skillGains>
+    <forcedTraits>
+      <Neurotic>1</Neurotic>
+    </forcedTraits>
+    <spawnCategories>
+      <li>Replicant</li>
+      <li>Offworld</li>
+    </spawnCategories>
+  </BackstoryDef>
+
+  <BackstoryDef>
+    <defName>DRG_VatChild_Shooting</defName>
+    <title>marksmanship batch</title>
+    <titleShort>marksman vat</titleShort>
+    <description>[PAWN_nameDef] was grown for ranged combat. [PAWN_possessive] accelerated development was structured around firing drills, optics calibration, and weapons familiarity across dozens of platforms. By the time [PAWN_pronoun] reached the standard activation age [PAWN_pronoun] could hit a moving target at four hundred meters.</description>
+    <slot>Childhood</slot>
+    <skillGains>
+      <Shooting>5</Shooting>
+      <Intellectual>2</Intellectual>
+    </skillGains>
+    <workDisables>
+      <li>Social</li>
+    </workDisables>
+    <spawnCategories>
+      <li>Replicant</li>
+      <li>Offworld</li>
+    </spawnCategories>
+  </BackstoryDef>
+
+  <BackstoryDef>
+    <defName>DRG_ImplantChild_ShootingHunter</defName>
+    <title>fabricated hunter childhood</title>
+    <titleShort>implanted</titleShort>
+    <description>[PAWN_nameDef] remembers a frontier upbringing. Hunting trips with an uncle, the weight of a rifle, the patience of waiting in a blind for hours before the perfect shot.\n\nThe uncle never existed. The frontier was a fabrication. The blind, the rifle, the patience are not. [PAWN_pronoun] can still feel the cold of those mornings that never happened. [PAWN_possessive] hands still know the work.</description>
+    <slot>Childhood</slot>
+    <skillGains>
+      <Shooting>4</Shooting>
+      <Plants>1</Plants>
+    </skillGains>
+    <forcedTraits>
+      <Neurotic>1</Neurotic>
+    </forcedTraits>
+    <spawnCategories>
+      <li>Replicant</li>
+      <li>Offworld</li>
+    </spawnCategories>
+  </BackstoryDef>
+
+  <BackstoryDef>
+    <defName>DRG_ImplantChild_ShootingMilitary</defName>
+    <title>fabricated military family</title>
+    <titleShort>implanted</titleShort>
+    <description>[PAWN_nameDef] remembers a father who served in the colonial wars and brought home an antique sidearm that [PAWN_pronoun] was allowed to clean every Sunday. [PAWN_pronoun] remembers learning to shoot at twelve. [PAWN_pronoun] remembers the smell of the cleaning solvent.\n\nNo such father existed. The medals were never earned. The wars were not [PAWN_possessive] wars. The skill is real and [PAWN_pronoun] does not know what to do with that.</description>
+    <slot>Childhood</slot>
+    <skillGains>
+      <Shooting>5</Shooting>
+      <Crafting>1</Crafting>
+    </skillGains>
+    <forcedTraits>
+      <Neurotic>1</Neurotic>
+    </forcedTraits>
+    <spawnCategories>
+      <li>Replicant</li>
+      <li>Offworld</li>
+    </spawnCategories>
+  </BackstoryDef>
+
+  <BackstoryDef>
+    <defName>DRG_VatChild_Construction</defName>
+    <title>labor batch</title>
+    <titleShort>labor vat</titleShort>
+    <description>[PAWN_nameDef] was grown and conditioned for heavy industry. [PAWN_possessive] accelerated development was structured around load tolerances, equipment operation, and output quotas. [PAWN_pronoun] understood what [PAWN_pronoun] was before [PAWN_pronoun] understood much else.</description>
+    <slot>Childhood</slot>
+    <skillGains>
+      <Construction>4</Construction>
+      <Crafting>2</Crafting>
+    </skillGains>
+    <workDisables>
+      <li>Social</li>
+    </workDisables>
+    <spawnCategories>
+      <li>Replicant</li>
+      <li>Offworld</li>
+    </spawnCategories>
+  </BackstoryDef>
+
+  <BackstoryDef>
+    <defName>DRG_ImplantChild_ConstructionFamily</defName>
+    <title>fabricated construction family</title>
+    <titleShort>implanted</titleShort>
+    <description>[PAWN_nameDef] remembers a father who ran a small construction firm. Saturdays on job sites learning to use a level. The smell of sawn lumber. The pride of a finished structure that [PAWN_pronoun] had helped build.\n\nNone of those memories belong to [PAWN_objective]. They were implanted to give [PAWN_objective] a plausible reason for [PAWN_possessive] skill. The pride [PAWN_pronoun] feels looking at a well built wall is real even though the lessons that taught [PAWN_objective] never happened.</description>
+    <slot>Childhood</slot>
+    <skillGains>
+      <Construction>4</Construction>
+      <Crafting>2</Crafting>
+    </skillGains>
+    <forcedTraits>
+      <Neurotic>1</Neurotic>
+    </forcedTraits>
+    <spawnCategories>
+      <li>Replicant</li>
+      <li>Offworld</li>
+    </spawnCategories>
+  </BackstoryDef>
+
+  <BackstoryDef>
+    <defName>DRG_ImplantChild_ConstructionApprentice</defName>
+    <title>fabricated apprentice childhood</title>
+    <titleShort>implanted</titleShort>
+    <description>[PAWN_nameDef] remembers apprenticing to a stonemason in [PAWN_possessive] early teens. Long hot summers learning to shape blocks by hand. A mentor who was patient with [PAWN_objective] in a way nobody else has been since.\n\nThe mentor was never real. [PAWN_pronoun] has tried to find them in census records and concluded long ago that they never existed. [PAWN_possessive] hands still know exactly how to shape a block. [PAWN_pronoun] still misses someone [PAWN_pronoun] never met.</description>
+    <slot>Childhood</slot>
+    <skillGains>
+      <Construction>5</Construction>
+      <Mining>1</Mining>
+    </skillGains>
+    <forcedTraits>
+      <Neurotic>1</Neurotic>
+    </forcedTraits>
+    <spawnCategories>
+      <li>Replicant</li>
+      <li>Offworld</li>
+    </spawnCategories>
+  </BackstoryDef>
+
+  <BackstoryDef>
+    <defName>DRG_VatChild_Mining</defName>
+    <title>extraction batch</title>
+    <titleShort>extraction vat</titleShort>
+    <description>[PAWN_nameDef] was grown underground. [PAWN_possessive] conditioning facility was a converted deep mine and [PAWN_pronoun] did not see daylight until late in [PAWN_possessive] development. The dim red lighting and the smell of stone are [PAWN_possessive] first sensory memories. [PAWN_pronoun] still finds them comforting.</description>
+    <slot>Childhood</slot>
+    <skillGains>
+      <Mining>5</Mining>
+      <Construction>2</Construction>
+    </skillGains>
+    <workDisables>
+      <li>Social</li>
+    </workDisables>
+    <spawnCategories>
+      <li>Replicant</li>
+      <li>Offworld</li>
+    </spawnCategories>
+  </BackstoryDef>
+
+  <BackstoryDef>
+    <defName>DRG_ImplantChild_MiningTown</defName>
+    <title>fabricated mining town</title>
+    <titleShort>implanted</titleShort>
+    <description>[PAWN_nameDef] remembers growing up in a mining town. The whistle that signaled the shift change, the soot on [PAWN_possessive] father's collar, the constant low rumble underfoot.\n\nNone of it happened. The town does not exist on any map [PAWN_pronoun] has searched. The whistle [PAWN_pronoun] hears in dreams was constructed by someone who has never been there either. The skill in [PAWN_possessive] hands is genuine despite the absence of the people who supposedly taught it.</description>
+    <slot>Childhood</slot>
+    <skillGains>
+      <Mining>4</Mining>
+      <Construction>1</Construction>
+    </skillGains>
+    <forcedTraits>
+      <Neurotic>1</Neurotic>
+    </forcedTraits>
+    <spawnCategories>
+      <li>Replicant</li>
+      <li>Offworld</li>
+    </spawnCategories>
+  </BackstoryDef>
+
+  <BackstoryDef>
+    <defName>DRG_ImplantChild_MiningCaver</defName>
+    <title>fabricated caver childhood</title>
+    <titleShort>implanted</titleShort>
+    <description>[PAWN_nameDef] remembers a childhood spent exploring caves on [PAWN_possessive] home world. A rebellious teenage hobby that turned into expertise. [PAWN_pronoun] remembers the first time [PAWN_pronoun] mapped an unmarked passage.\n\nThere is no home world. There were no caves. [PAWN_pronoun] knows this and yet the muscle memory of squeezing through tight spaces, the instinct for reading rock formations, all of it persists. [PAWN_pronoun] has stopped trying to reconcile it.</description>
+    <slot>Childhood</slot>
+    <skillGains>
+      <Mining>5</Mining>
+      <Plants>1</Plants>
+    </skillGains>
+    <forcedTraits>
+      <Neurotic>1</Neurotic>
+    </forcedTraits>
+    <spawnCategories>
+      <li>Replicant</li>
+      <li>Offworld</li>
+    </spawnCategories>
+  </BackstoryDef>
+
+  <BackstoryDef>
+    <defName>DRG_VatChild_Plants</defName>
+    <title>agricultural batch</title>
+    <titleShort>agri vat</titleShort>
+    <description>[PAWN_nameDef] was grown for colony agricultural work. [PAWN_possessive] conditioning facility had a greenhouse wing and [PAWN_pronoun] spent [PAWN_possessive] formative years tending crops under controlled light. [PAWN_pronoun] still finds the smell of damp soil more familiar than most human faces.</description>
+    <slot>Childhood</slot>
+    <skillGains>
+      <Plants>5</Plants>
+      <Cooking>2</Cooking>
+    </skillGains>
+    <workDisables>
+      <li>Social</li>
+    </workDisables>
+    <spawnCategories>
+      <li>Replicant</li>
+      <li>Offworld</li>
+    </spawnCategories>
+  </BackstoryDef>
+
+  <BackstoryDef>
+    <defName>DRG_ImplantChild_PlantsFarm</defName>
+    <title>fabricated farm childhood</title>
+    <titleShort>implanted</titleShort>
+    <description>[PAWN_nameDef] remembers a childhood on a farm world. Long summers tending crops with someone who may or may not have been [PAWN_possessive] father. The taste of well water. A dog [PAWN_pronoun] loved.\n\nThe memories are vivid and warm. [PAWN_nameDef] knows now that none of it happened. The farm is not on any registry, the dog has no records, the man [PAWN_pronoun] called father was constructed by a memory designer [PAWN_pronoun] will never meet. The skill in [PAWN_possessive] hands is real regardless.</description>
+    <slot>Childhood</slot>
+    <skillGains>
+      <Plants>5</Plants>
+      <Animals>1</Animals>
+    </skillGains>
+    <forcedTraits>
+      <Neurotic>1</Neurotic>
+    </forcedTraits>
+    <spawnCategories>
+      <li>Replicant</li>
+      <li>Offworld</li>
+    </spawnCategories>
+  </BackstoryDef>
+
+  <BackstoryDef>
+    <defName>DRG_ImplantChild_PlantsGarden</defName>
+    <title>fabricated gardener childhood</title>
+    <titleShort>implanted</titleShort>
+    <description>[PAWN_nameDef] remembers a grandmother with a community garden plot. Weekends helping her weed and water. The pride of harvesting tomatoes [PAWN_pronoun] had grown [PAWN_objective]self.\n\nThe grandmother was a fabrication. [PAWN_pronoun] has confirmed this twice. The garden plot is not on any community records. The pride [PAWN_pronoun] feels when a plant [PAWN_pronoun] grew produces fruit is real. The grief of a grandmother [PAWN_pronoun] never met is also real and that troubles [PAWN_objective] more than the rest of it.</description>
+    <slot>Childhood</slot>
+    <skillGains>
+      <Plants>4</Plants>
+      <Cooking>2</Cooking>
+    </skillGains>
+    <forcedTraits>
+      <Neurotic>1</Neurotic>
+    </forcedTraits>
+    <spawnCategories>
+      <li>Replicant</li>
+      <li>Offworld</li>
+    </spawnCategories>
+  </BackstoryDef>
+
+  <BackstoryDef>
+    <defName>DRG_VatChild_Animals</defName>
+    <title>livestock batch</title>
+    <titleShort>livestock vat</titleShort>
+    <description>[PAWN_nameDef] was grown for animal husbandry on agricultural colonies. [PAWN_possessive] conditioning facility kept livestock for training purposes. The animals responded to [PAWN_objective] the same way they responded to anyone who fed them consistently. This was the first relationship in [PAWN_possessive] life that felt uncomplicated.</description>
+    <slot>Childhood</slot>
+    <skillGains>
+      <Animals>5</Animals>
+      <Plants>2</Plants>
+    </skillGains>
+    <workDisables>
+      <li>Social</li>
+    </workDisables>
+    <spawnCategories>
+      <li>Replicant</li>
+      <li>Offworld</li>
+    </spawnCategories>
+  </BackstoryDef>
+
+  <BackstoryDef>
+    <defName>DRG_ImplantChild_AnimalsPets</defName>
+    <title>fabricated pet shop childhood</title>
+    <titleShort>implanted</titleShort>
+    <description>[PAWN_nameDef] remembers a childhood working in [PAWN_possessive] family's pet shop. Feeding the animals before school, learning their illnesses, the first time a customer cried when an old dog had to be put down.\n\nThe shop does not exist. The family does not exist. Animals respond to [PAWN_objective] anyway, the way they would to anyone who had spent a real childhood learning them. [PAWN_pronoun] does not know how to feel about the fact that the animals do not know the difference.</description>
+    <slot>Childhood</slot>
+    <skillGains>
+      <Animals>5</Animals>
+      <Medicine>1</Medicine>
+    </skillGains>
+    <forcedTraits>
+      <Neurotic>1</Neurotic>
+    </forcedTraits>
+    <spawnCategories>
+      <li>Replicant</li>
+      <li>Offworld</li>
+    </spawnCategories>
+  </BackstoryDef>
+
+  <BackstoryDef>
+    <defName>DRG_ImplantChild_AnimalsRanch</defName>
+    <title>fabricated ranch childhood</title>
+    <titleShort>implanted</titleShort>
+    <description>[PAWN_nameDef] remembers learning to ride before [PAWN_pronoun] could read. A grandfather who taught [PAWN_objective] how to read a horse's mood from the set of its ears. The grief of losing the first one [PAWN_pronoun] loved.\n\nNo grandfather. No ranch. No horse. The grief is real, which troubles [PAWN_objective] more than anything else about the implanted past. Grief for a creature that never lived feels like the most damning evidence that [PAWN_pronoun] is not who [PAWN_pronoun] was made to think [PAWN_pronoun] was.</description>
+    <slot>Childhood</slot>
+    <skillGains>
+      <Animals>5</Animals>
+      <Plants>1</Plants>
+    </skillGains>
+    <forcedTraits>
+      <Neurotic>1</Neurotic>
+    </forcedTraits>
+    <spawnCategories>
+      <li>Replicant</li>
+      <li>Offworld</li>
+    </spawnCategories>
+  </BackstoryDef>
+
+  <BackstoryDef>
+    <defName>DRG_VatChild_Crafting</defName>
+    <title>assembly batch</title>
+    <titleShort>assembly vat</titleShort>
+    <description>[PAWN_nameDef] was grown for precision manufacturing work. [PAWN_possessive] conditioning involved fine motor drills, component identification, and tolerance assessment from the earliest stages of cognition. [PAWN_pronoun] can still close [PAWN_possessive] eyes and assemble small machines by feel alone.</description>
+    <slot>Childhood</slot>
+    <skillGains>
+      <Crafting>5</Crafting>
+      <Intellectual>2</Intellectual>
+    </skillGains>
+    <workDisables>
+      <li>Social</li>
+    </workDisables>
+    <spawnCategories>
+      <li>Replicant</li>
+      <li>Offworld</li>
+    </spawnCategories>
+  </BackstoryDef>
+
+  <BackstoryDef>
+    <defName>DRG_ImplantChild_CraftingWorkshop</defName>
+    <title>fabricated workshop childhood</title>
+    <titleShort>implanted</titleShort>
+    <description>[PAWN_nameDef] remembers an uncle who ran a clockmaker's workshop. After-school afternoons watching him repair antique mechanisms. The patience [PAWN_pronoun] learned. The first watch [PAWN_pronoun] ever rebuilt successfully at age fifteen.\n\nThe uncle was a memory designer's invention. The watch [PAWN_pronoun] remembers rebuilding never existed. The hands that learned the work are [PAWN_possessive] own, and the work they can do is real. [PAWN_pronoun] tries not to think about the rest.</description>
+    <slot>Childhood</slot>
+    <skillGains>
+      <Crafting>5</Crafting>
+      <Intellectual>1</Intellectual>
+    </skillGains>
+    <forcedTraits>
+      <Neurotic>1</Neurotic>
+    </forcedTraits>
+    <spawnCategories>
+      <li>Replicant</li>
+      <li>Offworld</li>
+    </spawnCategories>
+  </BackstoryDef>
+
+  <BackstoryDef>
+    <defName>DRG_ImplantChild_CraftingFactory</defName>
+    <title>fabricated factory childhood</title>
+    <titleShort>implanted</titleShort>
+    <description>[PAWN_nameDef] remembers growing up near an industrial assembly plant. Touring it with school groups. An older sister who worked there and brought home defective parts for [PAWN_objective] to play with. The exact sound of the shift bell.\n\nNo sister. No school groups. No tours. The bell that wakes [PAWN_objective] sometimes is the construction of a stranger. [PAWN_possessive] competence with assembly work is genuine. [PAWN_possessive] homesickness for a place that never existed is also genuine.</description>
+    <slot>Childhood</slot>
+    <skillGains>
+      <Crafting>4</Crafting>
+      <Construction>2</Construction>
+    </skillGains>
+    <forcedTraits>
+      <Neurotic>1</Neurotic>
+    </forcedTraits>
+    <spawnCategories>
+      <li>Replicant</li>
+      <li>Offworld</li>
+    </spawnCategories>
+  </BackstoryDef>
+
+  <BackstoryDef>
+    <defName>DRG_VatChild_Cooking</defName>
+    <title>domestic batch</title>
+    <titleShort>domestic vat</titleShort>
+    <description>[PAWN_nameDef] was grown for household service. [PAWN_possessive] conditioning emphasized food preparation across dozens of culinary traditions. [PAWN_pronoun] could prepare a seven course meal before [PAWN_pronoun] could carry on a conversation. The kitchen still feels safer to [PAWN_objective] than any other room.</description>
+    <slot>Childhood</slot>
+    <skillGains>
+      <Cooking>5</Cooking>
+      <Plants>2</Plants>
+      <Social>-2</Social>
+    </skillGains>
+    <spawnCategories>
+      <li>Replicant</li>
+      <li>Offworld</li>
+    </spawnCategories>
+  </BackstoryDef>
+
+  <BackstoryDef>
+    <defName>DRG_ImplantChild_CookingFamilyKitchen</defName>
+    <title>fabricated family kitchen</title>
+    <titleShort>implanted</titleShort>
+    <description>[PAWN_nameDef] remembers a mother who cooked from scratch every night. Standing on a stool to stir pots [PAWN_pronoun] could barely reach. The smell of bread on Sundays. The specific way she chopped onions.\n\nThere was no mother. The kitchen was an architect's concept. [PAWN_pronoun] still cooks the way she taught [PAWN_objective], the way nobody taught [PAWN_objective], and people enjoy the food. [PAWN_pronoun] does not tell them where the recipes came from.</description>
+    <slot>Childhood</slot>
+    <skillGains>
+      <Cooking>5</Cooking>
+      <Social>1</Social>
+    </skillGains>
+    <forcedTraits>
+      <Neurotic>1</Neurotic>
+    </forcedTraits>
+    <spawnCategories>
+      <li>Replicant</li>
+      <li>Offworld</li>
+    </spawnCategories>
+  </BackstoryDef>
+
+  <BackstoryDef>
+    <defName>DRG_ImplantChild_CookingStreetFood</defName>
+    <title>fabricated street food childhood</title>
+    <titleShort>implanted</titleShort>
+    <description>[PAWN_nameDef] remembers growing up around a street food stall run by [PAWN_possessive] family. The crowds, the constant motion, learning to gauge oil temperature by sound. The pride of [PAWN_possessive] first paying customer.\n\nThe stall was placed into [PAWN_possessive] memory by someone who had never run one. The pride is real. The skill is real. The phantom limb sensation of having had a family is the part that does not go away.</description>
+    <slot>Childhood</slot>
+    <skillGains>
+      <Cooking>4</Cooking>
+      <Social>2</Social>
+    </skillGains>
+    <forcedTraits>
+      <Neurotic>1</Neurotic>
+    </forcedTraits>
+    <spawnCategories>
+      <li>Replicant</li>
+      <li>Offworld</li>
+    </spawnCategories>
+  </BackstoryDef>
+
+  <BackstoryDef>
+    <defName>DRG_VatChild_Medicine</defName>
+    <title>medical support batch</title>
+    <titleShort>medical vat</titleShort>
+    <description>[PAWN_nameDef] was grown for medical support work. [PAWN_possessive] conditioning involved anatomical study, triage protocols, and pharmaceutical handling from the earliest cognitive stages. [PAWN_pronoun] understood the body as a system long before [PAWN_pronoun] understood it as a thing [PAWN_pronoun] possessed.</description>
+    <slot>Childhood</slot>
+    <skillGains>
+      <Medicine>5</Medicine>
+      <Intellectual>2</Intellectual>
+      <Social>-2</Social>
+    </skillGains>
+    <spawnCategories>
+      <li>Replicant</li>
+      <li>Offworld</li>
+    </spawnCategories>
+  </BackstoryDef>
+
+  <BackstoryDef>
+    <defName>DRG_ImplantChild_MedicineDoctorParent</defName>
+    <title>fabricated doctor parent</title>
+    <titleShort>implanted</titleShort>
+    <description>[PAWN_nameDef] remembers a mother who was a country doctor. Evenings watching her treat neighbors at the kitchen table. The smell of antiseptic. Her patient way of explaining what was wrong with each person.\n\nThe mother was a fabrication. The neighbors were a fabrication. The smell still triggers a flash of grief when [PAWN_pronoun] encounters it unexpectedly. The medicine [PAWN_pronoun] practices is real and good and saves lives. [PAWN_pronoun] does not know what to do with the rest.</description>
+    <slot>Childhood</slot>
+    <skillGains>
+      <Medicine>5</Medicine>
+      <Intellectual>1</Intellectual>
+    </skillGains>
+    <forcedTraits>
+      <Neurotic>1</Neurotic>
+    </forcedTraits>
+    <spawnCategories>
+      <li>Replicant</li>
+      <li>Offworld</li>
+    </spawnCategories>
+  </BackstoryDef>
+
+  <BackstoryDef>
+    <defName>DRG_ImplantChild_MedicineSickChild</defName>
+    <title>fabricated sick child childhood</title>
+    <titleShort>implanted</titleShort>
+    <description>[PAWN_nameDef] remembers spending years in pediatric wards as a chronically ill child. The doctors who became more familiar than [PAWN_possessive] own family. Learning the names of [PAWN_possessive] medications before [PAWN_pronoun] could spell [PAWN_possessive] own name.\n\nThe illness was never real. The wards were a designer's compositions of memories taken from a dozen real children. The knowledge of medicine remains. The wariness around hospitals is what bothers [PAWN_objective] most because [PAWN_pronoun] cannot trace it to anything that actually happened.</description>
+    <slot>Childhood</slot>
+    <skillGains>
+      <Medicine>5</Medicine>
+      <Intellectual>2</Intellectual>
+      <Melee>-2</Melee>
+    </skillGains>
+    <forcedTraits>
+      <Neurotic>1</Neurotic>
+    </forcedTraits>
+    <spawnCategories>
+      <li>Replicant</li>
+      <li>Offworld</li>
+    </spawnCategories>
+  </BackstoryDef>
+
+  <BackstoryDef>
+    <defName>DRG_VatChild_Intellectual</defName>
+    <title>research batch</title>
+    <titleShort>research vat</titleShort>
+    <description>[PAWN_nameDef] was grown for analytical work. [PAWN_possessive] conditioning emphasized data processing, pattern recognition, and complex problem solving from the earliest stages of cognition. [PAWN_pronoun] could solve mathematical proofs before [PAWN_pronoun] understood what mathematics was for.</description>
+    <slot>Childhood</slot>
+    <skillGains>
+      <Intellectual>5</Intellectual>
+      <Crafting>2</Crafting>
+      <Social>-2</Social>
+    </skillGains>
+    <spawnCategories>
+      <li>Replicant</li>
+      <li>Offworld</li>
+    </spawnCategories>
+  </BackstoryDef>
+
+  <BackstoryDef>
+    <defName>DRG_ImplantChild_IntellectualLibrary</defName>
+    <title>fabricated library childhood</title>
+    <titleShort>implanted</titleShort>
+    <description>[PAWN_nameDef] remembers a librarian aunt who let [PAWN_objective] spend long afternoons in the stacks. The smell of old paper. The first novel that [PAWN_pronoun] read alone all the way through.\n\nThe aunt was a designer's invention. The library is not on any registry [PAWN_pronoun] can find. The love of reading remains. [PAWN_pronoun] has wondered whether that itself was an intended feature of the implant. [PAWN_pronoun] has stopped wondering. The reading is what matters.</description>
+    <slot>Childhood</slot>
+    <skillGains>
+      <Intellectual>5</Intellectual>
+      <Artistic>1</Artistic>
+    </skillGains>
+    <forcedTraits>
+      <Neurotic>1</Neurotic>
+    </forcedTraits>
+    <spawnCategories>
+      <li>Replicant</li>
+      <li>Offworld</li>
+    </spawnCategories>
+  </BackstoryDef>
+
+  <BackstoryDef>
+    <defName>DRG_ImplantChild_IntellectualPrivateSchool</defName>
+    <title>fabricated private school</title>
+    <titleShort>implanted</titleShort>
+    <description>[PAWN_nameDef] remembers a rigorous private academy. Latin recitations. A demanding teacher who saw potential in [PAWN_objective] when nobody else did. The pride of graduating with honors.\n\nThe school never existed under any name [PAWN_pronoun] has been able to verify. The teacher was an amalgam constructed from real teachers who taught children who were not [PAWN_objective]. The competence persists. The phantom debt of gratitude for an education that never happened is the part [PAWN_pronoun] cannot reconcile.</description>
+    <slot>Childhood</slot>
+    <skillGains>
+      <Intellectual>5</Intellectual>
+      <Social>2</Social>
+    </skillGains>
+    <forcedTraits>
+      <Neurotic>1</Neurotic>
+    </forcedTraits>
+    <spawnCategories>
+      <li>Replicant</li>
+      <li>Offworld</li>
+    </spawnCategories>
+  </BackstoryDef>
+
+  <BackstoryDef>
+    <defName>DRG_VatChild_Social</defName>
+    <title>companion batch</title>
+    <titleShort>companion vat</titleShort>
+    <description>[PAWN_nameDef] was grown for social utility. [PAWN_possessive] development emphasized human behavioral modeling, conversational response, and aesthetic presentation. [PAWN_pronoun] learned to read people long before [PAWN_pronoun] had any use for the skill. [PAWN_pronoun] still finds [PAWN_objective] doing it involuntarily.</description>
+    <slot>Childhood</slot>
+    <skillGains>
+      <Social>5</Social>
+      <Artistic>2</Artistic>
+      </skillGains>
+    <workDisables>
+      <li>ManualDumb</li>
+    </workDisables>
+    <spawnCategories>
+      <li>Replicant</li>
+      <li>Offworld</li>
+    </spawnCategories>
+  </BackstoryDef>
+
+  <BackstoryDef>
+    <defName>DRG_ImplantChild_SocialPerformer</defName>
+    <title>fabricated performer childhood</title>
+    <titleShort>implanted</titleShort>
+    <description>[PAWN_nameDef] remembers a childhood in a traveling performance troupe. Different stages every week. Learning to read a crowd before [PAWN_pronoun] could read a book. The first time [PAWN_pronoun] held an audience by [PAWN_objective].\n\nThe troupe is not in any registry. The performances are not documented. The skill at reading people is real and works on real people. [PAWN_pronoun] cannot decide whether the implanted memories make [PAWN_objective] more or less the person they were designed to produce.</description>
+    <slot>Childhood</slot>
+    <skillGains>
+      <Social>5</Social>
+      <Artistic>2</Artistic>
+    </skillGains>
+    <forcedTraits>
+      <Neurotic>1</Neurotic>
+    </forcedTraits>
+    <spawnCategories>
+      <li>Replicant</li>
+      <li>Offworld</li>
+    </spawnCategories>
+  </BackstoryDef>
+
+  <BackstoryDef>
+    <defName>DRG_ImplantChild_SocialDiplomatParents</defName>
+    <title>fabricated diplomat family</title>
+    <titleShort>implanted</titleShort>
+    <description>[PAWN_nameDef] remembers diplomatic parents and a childhood spent in formal receptions on three different worlds. Learning protocol before [PAWN_possessive] adult teeth came in. Adults treating [PAWN_objective] with the careful courtesy reserved for the children of important people.\n\nThe parents were a fabrication. The worlds were research material. The courtesy [PAWN_pronoun] received in those memories was as real as the absence of it in [PAWN_possessive] actual life has been. [PAWN_pronoun] still misses it.</description>
+    <slot>Childhood</slot>
+    <skillGains>
+      <Social>5</Social>
+      <Intellectual>2</Intellectual>
+    </skillGains>
+    <forcedTraits>
+      <Neurotic>1</Neurotic>
+    </forcedTraits>
+    <spawnCategories>
+      <li>Replicant</li>
+      <li>Offworld</li>
+    </spawnCategories>
+  </BackstoryDef>
+
+  <BackstoryDef>
+    <defName>DRG_VatChild_Artistic</defName>
+    <title>aesthetic batch</title>
+    <titleShort>aesthetic vat</titleShort>
+    <description>[PAWN_nameDef] was grown for decorative and replication work. [PAWN_possessive] conditioning involved reproducing styles on demand and producing technically flawless results. At some point during [PAWN_possessive] development [PAWN_pronoun] began introducing small variations of [PAWN_possessive] own. The conditioning facility never noticed.</description>
+    <slot>Childhood</slot>
+    <skillGains>
+      <Artistic>5</Artistic>
+      <Crafting>2</Crafting>
+      <Social>-2</Social>
+    </skillGains>
+    <spawnCategories>
+      <li>Replicant</li>
+      <li>Offworld</li>
+    </spawnCategories>
+  </BackstoryDef>
+
+  <BackstoryDef>
+    <defName>DRG_ImplantChild_ArtisticMusicalFamily</defName>
+    <title>fabricated musical family</title>
+    <titleShort>implanted</titleShort>
+    <description>[PAWN_nameDef] remembers parents who played instruments and a childhood full of music. Sunday recitals. Learning piano at five. The first time [PAWN_pronoun] composed something that made [PAWN_possessive] mother cry.\n\nThe parents were not real. The piano [PAWN_pronoun] remembers learning on does not exist. [PAWN_pronoun] can still play. [PAWN_pronoun] can still compose. The grief of a mother who never wept for [PAWN_possessive] work is the most authentic emotion [PAWN_pronoun] has.</description>
+    <slot>Childhood</slot>
+    <skillGains>
+      <Artistic>5</Artistic>
+      <Social>2</Social>
+    </skillGains>
+    <forcedTraits>
+      <Neurotic>1</Neurotic>
+    </forcedTraits>
+    <spawnCategories>
+      <li>Replicant</li>
+      <li>Offworld</li>
+    </spawnCategories>
+  </BackstoryDef>
+
+  <BackstoryDef>
+    <defName>DRG_ImplantChild_ArtisticStreetArtist</defName>
+    <title>fabricated street artist childhood</title>
+    <titleShort>implanted</titleShort>
+    <description>[PAWN_nameDef] remembers tagging walls as a teenager in a city that may or may not have existed. A mentor who showed [PAWN_objective] how to make something beautiful out of nothing. The first piece [PAWN_pronoun] was proud of.\n\nThe city is uncertain. The mentor was a designer's creation. The skill in [PAWN_possessive] hands is genuine. The piece [PAWN_pronoun] remembers being proud of was never painted. [PAWN_pronoun] has painted others since that were better. None of them have meant as much as the one that never existed.</description>
+    <slot>Childhood</slot>
+    <skillGains>
+      <Artistic>5</Artistic>
+      <Crafting>1</Crafting>
+    </skillGains>
+    <forcedTraits>
+      <Neurotic>1</Neurotic>
+    </forcedTraits>
+    <spawnCategories>
+      <li>Replicant</li>
+      <li>Offworld</li>
+    </spawnCategories>
+  </BackstoryDef>
+
+</Defs>

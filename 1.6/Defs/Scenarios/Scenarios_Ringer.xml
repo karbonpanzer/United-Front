@@ -117,16 +117,15 @@
 				</li>
 
 				<!-- Needed for Scenario Start to get Early Research-->
-				<li Class="ScenPart_StartingThing_Defined">
-					<def>StartingThing_Defined</def>
-					<thingDef>DRG_Decoder</thingDef>
-					<count>1</count>
+				<li Class="ScenPart_StartingResearch">
+					<def>StartingResearch</def>
+					<project>DRG_FabricationBench</project>
 				</li>
 
 				<li Class="ScenPart_StartingResearch">
 					<def>StartingResearch</def>
 					<project>DRG_RingerUniforms</project>
-				</li>
+				</li>				
 
 				 <!-- Scatter some things near player start -->
 				<li Class="ScenPart_ScatterThingsNearPlayerStart">

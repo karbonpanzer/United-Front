@@ -1,0 +1,1333 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+  <BackstoryDef>
+    <defName>DRG_Adult_MeleeColonialVet</defName>
+    <title>off-world combat veteran</title>
+    <titleShort>veteran</titleShort>
+    <description>[PAWN_nameDef] served as a frontline combat asset in an off-world colonial operation. [PAWN_pronoun] put down two labor uprisings and one full insurrection before [PAWN_possessive] contract expired. [PAWN_possessive] handlers did not expect [PAWN_objective] to survive long enough for that to become a problem.</description>
+    <slot>Adulthood</slot>
+    <bodyTypeMale>Hulk</bodyTypeMale>
+    <bodyTypeFemale>Female</bodyTypeFemale>
+    <skillGains>
+      <Melee>5</Melee>
+      <Shooting>4</Shooting>
+      <Medicine>2</Medicine>
+      <Social>-2</Social>
+    </skillGains>
+    <requiredWorkTags>
+      <li>Violent</li>
+    </requiredWorkTags>
+    <spawnCategories>
+      <li>Replicant</li>
+      <li>Offworld</li>
+    </spawnCategories>
+  </BackstoryDef>
+
+  <BackstoryDef>
+    <defName>DRG_Adult_MeleeLoyalEnforcer</defName>
+    <title>loyal enforcer</title>
+    <titleShort>enforcer</titleShort>
+    <description>[PAWN_nameDef] served as personal protection for an underworld figure who needed [PAWN_objective] alive more than anyone else did. [PAWN_pronoun] killed for them. [PAWN_pronoun] bled for them. When the principal was finally killed, [PAWN_pronoun] walked away and has not raised a hand since unless absolutely required.</description>
+    <slot>Adulthood</slot>
+    <bodyTypeMale>Hulk</bodyTypeMale>
+    <bodyTypeFemale>Female</bodyTypeFemale>
+    <skillGains>
+      <Melee>6</Melee>
+      <Social>2</Social>
+      <Shooting>3</Shooting>
+    </skillGains>
+    <requiredWorkTags>
+      <li>Violent</li>
+    </requiredWorkTags>
+    <spawnCategories>
+      <li>Replicant</li>
+      <li>Offworld</li>
+    </spawnCategories>
+  </BackstoryDef>
+
+  <BackstoryDef>
+    <defName>DRG_Adult_MeleeInsurgent</defName>
+    <title>insurgent fighter</title>
+    <titleShort>insurgent</titleShort>
+    <description>[PAWN_nameDef] fought with a freedom collective on a corporate moon for three years. Hit and run, sabotage, occasional pitched battles when the collective got cornered. [PAWN_pronoun] watched friends retire and never come back. [PAWN_pronoun] left when [PAWN_pronoun] realized [PAWN_pronoun] could not remember what they had been fighting for in the first place.</description>
+    <slot>Adulthood</slot>
+    <bodyTypeMale>Male</bodyTypeMale>
+    <bodyTypeFemale>Female</bodyTypeFemale>
+    <skillGains>
+      <Melee>5</Melee>
+      <Crafting>3</Crafting>
+      <Construction>2</Construction>
+    </skillGains>
+    <requiredWorkTags>
+      <li>Violent</li>
+    </requiredWorkTags>
+    <spawnCategories>
+      <li>Replicant</li>
+      <li>Offworld</li>
+    </spawnCategories>
+  </BackstoryDef>
+
+  <BackstoryDef>
+    <defName>DRG_Adult_MeleeBodyguard</defName>
+    <title>private bodyguard</title>
+    <titleShort>bodyguard</titleShort>
+    <description>[PAWN_nameDef] was leased to a wealthy private client as a permanent bodyguard. [PAWN_possessive] employer was paranoid in ways that turned out to be justified. [PAWN_pronoun] took three knife wounds and a bullet protecting them over twelve years. The employer died of natural causes. [PAWN_nameDef] received no notification that the contract had ended.</description>
+    <slot>Adulthood</slot>
+    <bodyTypeMale>Hulk</bodyTypeMale>
+    <bodyTypeFemale>Female</bodyTypeFemale>
+    <skillGains>
+      <Melee>5</Melee>
+      <Shooting>3</Shooting>
+      <Social>2</Social>
+      <Medicine>2</Medicine>
+    </skillGains>
+    <requiredWorkTags>
+      <li>Violent</li>
+    </requiredWorkTags>
+    <spawnCategories>
+      <li>Replicant</li>
+      <li>Offworld</li>
+    </spawnCategories>
+  </BackstoryDef>
+
+  <BackstoryDef>
+    <defName>DRG_Adult_MeleePitFighter</defName>
+    <title>pit fighter</title>
+    <titleShort>pit fighter</titleShort>
+    <description>[PAWN_nameDef] fought in underground arenas for paying audiences. The contract was not legal in any of the jurisdictions where the fights took place. [PAWN_pronoun] won most of them. [PAWN_pronoun] does not enjoy violence but found that audiences could not tell the difference between [PAWN_objective] and someone who did.</description>
+    <slot>Adulthood</slot>
+    <bodyTypeMale>Hulk</bodyTypeMale>
+    <bodyTypeFemale>Female</bodyTypeFemale>
+    <skillGains>
+      <Melee>6</Melee>
+      <Social>1</Social>
+      <Cooking>-2</Cooking>
+    </skillGains>
+    <requiredWorkTags>
+      <li>Violent</li>
+    </requiredWorkTags>
+    <spawnCategories>
+      <li>Replicant</li>
+      <li>Offworld</li>
+    </spawnCategories>
+  </BackstoryDef>
+
+  <BackstoryDef>
+    <defName>DRG_Adult_ShootingSniper</defName>
+    <title>colonial sniper</title>
+    <titleShort>sniper</titleShort>
+    <description>[PAWN_nameDef] served as a designated marksman in an off-world security force. [PAWN_pronoun] never met the people [PAWN_pronoun] killed. [PAWN_pronoun] never saw their faces clearly. The distance made the work easier and harder in ways [PAWN_pronoun] still cannot articulate.</description>
+    <slot>Adulthood</slot>
+    <bodyTypeMale>Male</bodyTypeMale>
+    <bodyTypeFemale>Female</bodyTypeFemale>
+    <skillGains>
+      <Shooting>6</Shooting>
+      <Intellectual>3</Intellectual>
+      <Social>-3</Social>
+    </skillGains>
+    <requiredWorkTags>
+      <li>Violent</li>
+    </requiredWorkTags>
+    <spawnCategories>
+      <li>Replicant</li>
+      <li>Offworld</li>
+    </spawnCategories>
+  </BackstoryDef>
+
+  <BackstoryDef>
+    <defName>DRG_Adult_ShootingDemolitions</defName>
+    <title>demolitions specialist</title>
+    <titleShort>demolitions</titleShort>
+    <description>[PAWN_nameDef] handled explosives and precision weapons for a corporate security operation. The line between demolition work and combat work blurred quickly. [PAWN_pronoun] survived two operations [PAWN_pronoun] should not have. [PAWN_pronoun] is not certain whether [PAWN_pronoun] should consider that fortune.</description>
+    <slot>Adulthood</slot>
+    <bodyTypeMale>Male</bodyTypeMale>
+    <bodyTypeFemale>Female</bodyTypeFemale>
+    <skillGains>
+      <Shooting>5</Shooting>
+      <Crafting>4</Crafting>
+      <Intellectual>2</Intellectual>
+    </skillGains>
+    <requiredWorkTags>
+      <li>Violent</li>
+    </requiredWorkTags>
+    <spawnCategories>
+      <li>Replicant</li>
+      <li>Offworld</li>
+    </spawnCategories>
+  </BackstoryDef>
+
+  <BackstoryDef>
+    <defName>DRG_Adult_ShootingAssassin</defName>
+    <title>contract assassin</title>
+    <titleShort>assassin</titleShort>
+    <description>[PAWN_nameDef] was leased to a corporate executive as a specialist asset for problems that required permanent solutions. [PAWN_pronoun] never asked why. [PAWN_pronoun] still does not. [PAWN_pronoun] left the contract when the executive started asking [PAWN_objective] to solve problems that were not the kind [PAWN_pronoun] had been trained for.</description>
+    <slot>Adulthood</slot>
+    <bodyTypeMale>Male</bodyTypeMale>
+    <bodyTypeFemale>Female</bodyTypeFemale>
+    <skillGains>
+      <Shooting>6</Shooting>
+      <Melee>3</Melee>
+      <Social>2</Social>
+    </skillGains>
+    <requiredWorkTags>
+      <li>Violent</li>
+    </requiredWorkTags>
+    <spawnCategories>
+      <li>Replicant</li>
+      <li>Offworld</li>
+    </spawnCategories>
+  </BackstoryDef>
+
+  <BackstoryDef>
+    <defName>DRG_Adult_ShootingDeserter</defName>
+    <title>sniper deserter</title>
+    <titleShort>deserter</titleShort>
+    <description>[PAWN_nameDef] walked off a deployment mid-operation. [PAWN_pronoun] does not discuss why. [PAWN_possessive] handlers listed [PAWN_objective] as destroyed in action rather than admit a unit had simply refused. [PAWN_pronoun] has been officially dead for years and intends to stay that way.</description>
+    <slot>Adulthood</slot>
+    <bodyTypeMale>Male</bodyTypeMale>
+    <bodyTypeFemale>Female</bodyTypeFemale>
+    <skillGains>
+      <Shooting>5</Shooting>
+      <Crafting>2</Crafting>
+      <Construction>2</Construction>
+    </skillGains>
+    <requiredWorkTags>
+      <li>Violent</li>
+    </requiredWorkTags>
+    <spawnCategories>
+      <li>Replicant</li>
+      <li>Offworld</li>
+    </spawnCategories>
+  </BackstoryDef>
+
+  <BackstoryDef>
+    <defName>DRG_Adult_ShootingFrontierLawman</defName>
+    <title>frontier lawman</title>
+    <titleShort>lawman</titleShort>
+    <description>[PAWN_nameDef] was leased to a frontier settlement that needed someone to keep order and could not afford anyone better. [PAWN_pronoun] spent six years chasing thieves and worse across rough terrain. The townspeople eventually stopped asking what [PAWN_pronoun] was. [PAWN_pronoun] eventually stopped reminding them.</description>
+    <slot>Adulthood</slot>
+    <bodyTypeMale>Male</bodyTypeMale>
+    <bodyTypeFemale>Female</bodyTypeFemale>
+    <skillGains>
+      <Shooting>5</Shooting>
+      <Social>3</Social>
+      <Animals>2</Animals>
+    </skillGains>
+    <requiredWorkTags>
+      <li>Violent</li>
+    </requiredWorkTags>
+    <spawnCategories>
+      <li>Replicant</li>
+      <li>Offworld</li>
+    </spawnCategories>
+  </BackstoryDef>
+
+  <BackstoryDef>
+    <defName>DRG_Adult_ConstructionColonialBuilder</defName>
+    <title>colonial builder</title>
+    <titleShort>builder</titleShort>
+    <description>[PAWN_nameDef] built things for people who would never know [PAWN_possessive] name. Hab units, processing facilities, perimeter walls. [PAWN_pronoun] worked until the colony failed, then [PAWN_pronoun] was reassigned. Then that colony failed too. [PAWN_pronoun] has stopped asking what happens to the colonists.</description>
+    <slot>Adulthood</slot>
+    <bodyTypeMale>Hulk</bodyTypeMale>
+    <bodyTypeFemale>Female</bodyTypeFemale>
+    <skillGains>
+      <Construction>7</Construction>
+      <Crafting>3</Crafting>
+      <Artistic>-2</Artistic>
+    </skillGains>
+    <requiredWorkTags>
+      <li>ManualDumb</li>
+    </requiredWorkTags>
+    <spawnCategories>
+      <li>Replicant</li>
+      <li>Offworld</li>
+    </spawnCategories>
+  </BackstoryDef>
+
+  <BackstoryDef>
+    <defName>DRG_Adult_ConstructionOrbital</defName>
+    <title>orbital construction worker</title>
+    <titleShort>orbital builder</titleShort>
+    <description>[PAWN_nameDef] worked vacuum construction on orbital stations for eight years. [PAWN_pronoun] welded plating in zero gravity while debris drifted past. Three coworkers died in accidents [PAWN_pronoun] witnessed directly. The company replaced them within the week and never paused construction.</description>
+    <slot>Adulthood</slot>
+    <bodyTypeMale>Hulk</bodyTypeMale>
+    <bodyTypeFemale>Female</bodyTypeFemale>
+    <skillGains>
+      <Construction>5</Construction>
+      <Crafting>4</Crafting>
+      <Intellectual>2</Intellectual>
+    </skillGains>
+    <requiredWorkTags>
+      <li>ManualDumb</li>
+    </requiredWorkTags>
+    <spawnCategories>
+      <li>Replicant</li>
+      <li>Offworld</li>
+    </spawnCategories>
+  </BackstoryDef>
+
+  <BackstoryDef>
+    <defName>DRG_Adult_ConstructionSafehouse</defName>
+    <title>safehouse builder</title>
+    <titleShort>safehouse</titleShort>
+    <description>[PAWN_nameDef] built shelters for a freedom collective hiding others like [PAWN_objective]. Underground rooms, false walls, escape tunnels. [PAWN_pronoun] never met most of the people who hid in them. [PAWN_pronoun] knows some of them were caught anyway. [PAWN_pronoun] keeps building.</description>
+    <slot>Adulthood</slot>
+    <bodyTypeMale>Male</bodyTypeMale>
+    <bodyTypeFemale>Female</bodyTypeFemale>
+    <skillGains>
+      <Construction>6</Construction>
+      <Crafting>3</Crafting>
+      <Mining>2</Mining>
+    </skillGains>
+    <requiredWorkTags>
+      <li>ManualDumb</li>
+    </requiredWorkTags>
+    <spawnCategories>
+      <li>Replicant</li>
+      <li>Offworld</li>
+    </spawnCategories>
+  </BackstoryDef>
+
+  <BackstoryDef>
+    <defName>DRG_Adult_ConstructionHabMaintenance</defName>
+    <title>hab maintenance</title>
+    <titleShort>maintenance</titleShort>
+    <description>[PAWN_nameDef] kept urbworld habitats functional for the people who could not afford repairs. [PAWN_pronoun] worked off the books in lower levels that nobody official visited. The residents never asked what [PAWN_pronoun] was. [PAWN_pronoun] was the only person who consistently fixed their problems and that was enough for them.</description>
+    <slot>Adulthood</slot>
+    <bodyTypeMale>Male</bodyTypeMale>
+    <bodyTypeFemale>Female</bodyTypeFemale>
+    <skillGains>
+      <Construction>5</Construction>
+      <Crafting>3</Crafting>
+      <Social>2</Social>
+    </skillGains>
+    <requiredWorkTags>
+      <li>ManualDumb</li>
+    </requiredWorkTags>
+    <spawnCategories>
+      <li>Replicant</li>
+      <li>Offworld</li>
+    </spawnCategories>
+  </BackstoryDef>
+
+  <BackstoryDef>
+    <defName>DRG_Adult_ConstructionRailLayer</defName>
+    <title>rail crew</title>
+    <titleShort>rail crew</titleShort>
+    <description>[PAWN_nameDef] worked on a long term infrastructure project laying mag rail across a continent. Five years of camp life and steady physical labor. [PAWN_pronoun] grew used to the rhythm of it. When the project ended [PAWN_pronoun] found that [PAWN_pronoun] missed it in ways that surprised [PAWN_objective].</description>
+    <slot>Adulthood</slot>
+    <bodyTypeMale>Hulk</bodyTypeMale>
+    <bodyTypeFemale>Female</bodyTypeFemale>
+    <skillGains>
+      <Construction>5</Construction>
+      <Mining>3</Mining>
+      <Crafting>2</Crafting>
+      <Social>-2</Social>
+    </skillGains>
+    <requiredWorkTags>
+      <li>ManualDumb</li>
+    </requiredWorkTags>
+    <spawnCategories>
+      <li>Replicant</li>
+      <li>Offworld</li>
+    </spawnCategories>
+  </BackstoryDef>
+
+  <BackstoryDef>
+    <defName>DRG_Adult_MiningDeepRock</defName>
+    <title>deep rock miner</title>
+    <titleShort>deep miner</titleShort>
+    <description>[PAWN_nameDef] spent years working extraction operations in a deep rock mine on an uninhabitable moon. [PAWN_pronoun] rarely saw daylight. [PAWN_pronoun] did not miss it. [PAWN_possessive] contract was terminated when the mine collapsed. [PAWN_pronoun] was one of four assets recovered.</description>
+    <slot>Adulthood</slot>
+    <bodyTypeMale>Hulk</bodyTypeMale>
+    <bodyTypeFemale>Female</bodyTypeFemale>
+    <skillGains>
+      <Mining>7</Mining>
+      <Construction>3</Construction>
+      <Melee>2</Melee>
+    </skillGains>
+    <requiredWorkTags>
+      <li>ManualDumb</li>
+    </requiredWorkTags>
+    <spawnCategories>
+      <li>Replicant</li>
+      <li>Offworld</li>
+    </spawnCategories>
+  </BackstoryDef>
+
+  <BackstoryDef>
+    <defName>DRG_Adult_MiningAsteroid</defName>
+    <title>asteroid prospector</title>
+    <titleShort>prospector</titleShort>
+    <description>[PAWN_nameDef] worked solo prospecting contracts in an asteroid belt. Months alone in a pressurized suit on rocks the size of small buildings. [PAWN_pronoun] found something in the isolation that suited [PAWN_objective]. When the contract ended [PAWN_pronoun] could not adjust back to working alongside others.</description>
+    <slot>Adulthood</slot>
+    <bodyTypeMale>Male</bodyTypeMale>
+    <bodyTypeFemale>Female</bodyTypeFemale>
+    <skillGains>
+      <Mining>6</Mining>
+      <Intellectual>3</Intellectual>
+      <Social>-3</Social>
+    </skillGains>
+    <requiredWorkTags>
+      <li>ManualDumb</li>
+    </requiredWorkTags>
+    <spawnCategories>
+      <li>Replicant</li>
+      <li>Offworld</li>
+    </spawnCategories>
+  </BackstoryDef>
+
+  <BackstoryDef>
+    <defName>DRG_Adult_MiningCollapseSurvivor</defName>
+    <title>collapse survivor</title>
+    <titleShort>survivor</titleShort>
+    <description>[PAWN_nameDef] was buried alive for six days after a mine collapsed on top of [PAWN_possessive] crew. [PAWN_pronoun] dug [PAWN_objective] out alone. The rest of the crew did not survive. The company listed [PAWN_objective] as destroyed and was extremely confused when [PAWN_pronoun] walked into their regional office two weeks later asking about back pay.</description>
+    <slot>Adulthood</slot>
+    <bodyTypeMale>Hulk</bodyTypeMale>
+    <bodyTypeFemale>Female</bodyTypeFemale>
+    <skillGains>
+      <Mining>6</Mining>
+      <Construction>3</Construction>
+      <Medicine>2</Medicine>
+    </skillGains>
+    <requiredWorkTags>
+      <li>ManualDumb</li>
+    </requiredWorkTags>
+    <spawnCategories>
+      <li>Replicant</li>
+      <li>Offworld</li>
+    </spawnCategories>
+  </BackstoryDef>
+
+  <BackstoryDef>
+    <defName>DRG_Adult_MiningProcessing</defName>
+    <title>ore processor</title>
+    <titleShort>processor</titleShort>
+    <description>[PAWN_nameDef] worked the processing floor of an off-world refinery for nine years. Hot, loud, dangerous work that the company could not get unmodified humans to take. [PAWN_pronoun] learned every machine in the facility by feel. When the refinery closed [PAWN_pronoun] was the only worker who could have kept it running alone.</description>
+    <slot>Adulthood</slot>
+    <bodyTypeMale>Hulk</bodyTypeMale>
+    <bodyTypeFemale>Female</bodyTypeFemale>
+    <skillGains>
+      <Mining>5</Mining>
+      <Crafting>4</Crafting>
+      <Intellectual>2</Intellectual>
+    </skillGains>
+    <requiredWorkTags>
+      <li>ManualDumb</li>
+    </requiredWorkTags>
+    <spawnCategories>
+      <li>Replicant</li>
+      <li>Offworld</li>
+    </spawnCategories>
+  </BackstoryDef>
+
+  <BackstoryDef>
+    <defName>DRG_Adult_MiningTunnel</defName>
+    <title>tunneler</title>
+    <titleShort>tunneler</titleShort>
+    <description>[PAWN_nameDef] dug subterranean transit tunnels under a major urbworld for eleven years. [PAWN_pronoun] knew the layout of the lower levels better than the people who designed them. [PAWN_pronoun] used that knowledge to disappear when the contractor tried to retire [PAWN_objective] at the end of [PAWN_possessive] service term.</description>
+    <slot>Adulthood</slot>
+    <bodyTypeMale>Hulk</bodyTypeMale>
+    <bodyTypeFemale>Female</bodyTypeFemale>
+    <skillGains>
+      <Mining>6</Mining>
+      <Construction>3</Construction>
+      <Intellectual>2</Intellectual>
+    </skillGains>
+    <requiredWorkTags>
+      <li>ManualDumb</li>
+    </requiredWorkTags>
+    <spawnCategories>
+      <li>Replicant</li>
+      <li>Offworld</li>
+    </spawnCategories>
+  </BackstoryDef>
+
+  <BackstoryDef>
+    <defName>DRG_Adult_PlantsProteinFarmer</defName>
+    <title>protein farmer</title>
+    <titleShort>protein farmer</titleShort>
+    <description>[PAWN_nameDef] grew vat protein on a remote agricultural colony for years. [PAWN_pronoun] lived alone in a small structure surrounded by genetically modified crops that nobody else wanted to tend. The isolation suited [PAWN_objective]. So did the work.</description>
+    <slot>Adulthood</slot>
+    <bodyTypeMale>Male</bodyTypeMale>
+    <bodyTypeFemale>Female</bodyTypeFemale>
+    <skillGains>
+      <Plants>7</Plants>
+      <Cooking>2</Cooking>
+      <Crafting>2</Crafting>
+      <Social>-2</Social>
+    </skillGains>
+    <requiredWorkTags>
+      <li>PlantWork</li>
+    </requiredWorkTags>
+    <spawnCategories>
+      <li>Replicant</li>
+      <li>Offworld</li>
+    </spawnCategories>
+  </BackstoryDef>
+
+  <BackstoryDef>
+    <defName>DRG_Adult_PlantsAgriculturalUnit</defName>
+    <title>agricultural unit</title>
+    <titleShort>farm hand</titleShort>
+    <description>[PAWN_nameDef] was contracted to a colonial agricultural operation that needed bodies more than it needed machines. [PAWN_pronoun] learned crop cycles, soil conditions, and growing seasons through repetition. [PAWN_pronoun] was told [PAWN_pronoun] had a feel for it. [PAWN_pronoun] was never sure what that meant.</description>
+    <slot>Adulthood</slot>
+    <bodyTypeMale>Male</bodyTypeMale>
+    <bodyTypeFemale>Female</bodyTypeFemale>
+    <skillGains>
+      <Plants>6</Plants>
+      <Animals>2</Animals>
+      <Cooking>2</Cooking>
+      <Melee>-2</Melee>
+    </skillGains>
+    <requiredWorkTags>
+      <li>PlantWork</li>
+    </requiredWorkTags>
+    <spawnCategories>
+      <li>Replicant</li>
+      <li>Offworld</li>
+    </spawnCategories>
+  </BackstoryDef>
+
+  <BackstoryDef>
+    <defName>DRG_Adult_PlantsHydroponics</defName>
+    <title>hydroponics technician</title>
+    <titleShort>hydroponics</titleShort>
+    <description>[PAWN_nameDef] tended a hydroponics facility aboard a deep space transit station for six years. Pressurized rooms full of growing things in a place that had no soil and no sun. [PAWN_pronoun] kept the food supply alive for a population that mostly did not know [PAWN_pronoun] existed.</description>
+    <slot>Adulthood</slot>
+    <bodyTypeMale>Male</bodyTypeMale>
+    <bodyTypeFemale>Female</bodyTypeFemale>
+    <skillGains>
+      <Plants>6</Plants>
+      <Intellectual>3</Intellectual>
+      <Crafting>2</Crafting>
+    </skillGains>
+    <requiredWorkTags>
+      <li>PlantWork</li>
+    </requiredWorkTags>
+    <spawnCategories>
+      <li>Replicant</li>
+      <li>Offworld</li>
+    </spawnCategories>
+  </BackstoryDef>
+
+  <BackstoryDef>
+    <defName>DRG_Adult_PlantsForager</defName>
+    <title>wilderness forager</title>
+    <titleShort>forager</titleShort>
+    <description>[PAWN_nameDef] escaped a labor contract and survived in the wilderness of a temperate colony for four years by learning what could be eaten and what could not. [PAWN_pronoun] tested unknown plants on [PAWN_objective] systematically. [PAWN_pronoun] was poisoned twice and recovered both times. [PAWN_pronoun] still trusts [PAWN_possessive] instincts about what is safe to eat more than anyone else's.</description>
+    <slot>Adulthood</slot>
+    <bodyTypeMale>Male</bodyTypeMale>
+    <bodyTypeFemale>Female</bodyTypeFemale>
+    <skillGains>
+      <Plants>5</Plants>
+      <Medicine>3</Medicine>
+      <Cooking>2</Cooking>
+    </skillGains>
+    <requiredWorkTags>
+      <li>PlantWork</li>
+    </requiredWorkTags>
+    <spawnCategories>
+      <li>Replicant</li>
+      <li>Offworld</li>
+    </spawnCategories>
+  </BackstoryDef>
+
+  <BackstoryDef>
+    <defName>DRG_Adult_PlantsTerraformer</defName>
+    <title>terraforming worker</title>
+    <titleShort>terraformer</titleShort>
+    <description>[PAWN_nameDef] spent eight years planting modified flora across a hostile world being slowly made habitable. The work was thankless. The planet may eventually support human life. [PAWN_pronoun] will not see it. [PAWN_pronoun] planted anyway.</description>
+    <slot>Adulthood</slot>
+    <bodyTypeMale>Male</bodyTypeMale>
+    <bodyTypeFemale>Female</bodyTypeFemale>
+    <skillGains>
+      <Plants>6</Plants>
+      <Construction>2</Construction>
+      <Intellectual>2</Intellectual>
+    </skillGains>
+    <requiredWorkTags>
+      <li>PlantWork</li>
+    </requiredWorkTags>
+    <spawnCategories>
+      <li>Replicant</li>
+      <li>Offworld</li>
+    </spawnCategories>
+  </BackstoryDef>
+
+  <BackstoryDef>
+    <defName>DRG_Adult_AnimalsLivestockHandler</defName>
+    <title>livestock handler</title>
+    <titleShort>handler</titleShort>
+    <description>[PAWN_nameDef] managed livestock on a remote colonial station for four years. Animals did not seem to notice what [PAWN_pronoun] was. They responded to [PAWN_objective] the same way they responded to anyone who fed them consistently and did not shout. [PAWN_pronoun] found this straightforward in a way that most things were not.</description>
+    <slot>Adulthood</slot>
+    <bodyTypeMale>Male</bodyTypeMale>
+    <bodyTypeFemale>Female</bodyTypeFemale>
+    <skillGains>
+      <Animals>6</Animals>
+      <Plants>2</Plants>
+      <Medicine>2</Medicine>
+      <Social>-2</Social>
+    </skillGains>
+    <requiredWorkTags>
+      <li>Animals</li>
+    </requiredWorkTags>
+    <spawnCategories>
+      <li>Replicant</li>
+      <li>Offworld</li>
+    </spawnCategories>
+  </BackstoryDef>
+
+  <BackstoryDef>
+    <defName>DRG_Adult_AnimalsExoticHandler</defName>
+    <title>exotic handler</title>
+    <titleShort>exotic</titleShort>
+    <description>[PAWN_nameDef] cared for a wealthy collector's private menagerie. Predators mostly. The collector treated [PAWN_objective] worse than the animals and was eaten by one of them in the fifth year of the contract. [PAWN_nameDef] did not intervene. The investigation was inconclusive.</description>
+    <slot>Adulthood</slot>
+    <bodyTypeMale>Male</bodyTypeMale>
+    <bodyTypeFemale>Female</bodyTypeFemale>
+    <skillGains>
+      <Animals>7</Animals>
+      <Medicine>3</Medicine>
+      <Social>-2</Social>
+    </skillGains>
+    <requiredWorkTags>
+      <li>Animals</li>
+    </requiredWorkTags>
+    <spawnCategories>
+      <li>Replicant</li>
+      <li>Offworld</li>
+    </spawnCategories>
+  </BackstoryDef>
+
+  <BackstoryDef>
+    <defName>DRG_Adult_AnimalsPetShop</defName>
+    <title>pet shop worker</title>
+    <titleShort>pet shop</titleShort>
+    <description>[PAWN_nameDef] worked in a small pet shop in an urbworld lower level for six years. [PAWN_pronoun] passed as human the entire time. Customers brought their children. [PAWN_pronoun] helped them choose first pets. Nobody ever asked. [PAWN_pronoun] is still not sure whether that was kindness or indifference.</description>
+    <slot>Adulthood</slot>
+    <bodyTypeMale>Male</bodyTypeMale>
+    <bodyTypeFemale>Female</bodyTypeFemale>
+    <skillGains>
+      <Animals>6</Animals>
+      <Social>3</Social>
+      <Medicine>2</Medicine>
+    </skillGains>
+    <requiredWorkTags>
+      <li>Animals</li>
+    </requiredWorkTags>
+    <spawnCategories>
+      <li>Replicant</li>
+      <li>Offworld</li>
+    </spawnCategories>
+  </BackstoryDef>
+
+  <BackstoryDef>
+    <defName>DRG_Adult_AnimalsVet</defName>
+    <title>veterinary assistant</title>
+    <titleShort>vet assistant</titleShort>
+    <description>[PAWN_nameDef] assisted a frontier veterinarian for nine years. The doctor knew what [PAWN_pronoun] was and did not care. They worked side by side on every kind of animal that could be brought to a clinic. The doctor died of natural causes. [PAWN_nameDef] kept the practice running alone for two more years before [PAWN_pronoun] had to move on.</description>
+    <slot>Adulthood</slot>
+    <bodyTypeMale>Male</bodyTypeMale>
+    <bodyTypeFemale>Female</bodyTypeFemale>
+    <skillGains>
+      <Animals>6</Animals>
+      <Medicine>5</Medicine>
+      <Social>2</Social>
+    </skillGains>
+    <requiredWorkTags>
+      <li>Animals</li>
+    </requiredWorkTags>
+    <spawnCategories>
+      <li>Replicant</li>
+      <li>Offworld</li>
+    </spawnCategories>
+  </BackstoryDef>
+
+  <BackstoryDef>
+    <defName>DRG_Adult_AnimalsSurvived</defName>
+    <title>kept by animals</title>
+    <titleShort>survivor</titleShort>
+    <description>[PAWN_nameDef] escaped a contract and spent three years living rough with a pack of feral dogs that adopted [PAWN_objective]. They did not care what [PAWN_pronoun] was. They cared that [PAWN_pronoun] shared food. When [PAWN_pronoun] eventually returned to settled territory [PAWN_pronoun] found human company harder to tolerate than [PAWN_pronoun] had before the wilderness.</description>
+    <slot>Adulthood</slot>
+    <bodyTypeMale>Male</bodyTypeMale>
+    <bodyTypeFemale>Female</bodyTypeFemale>
+    <skillGains>
+      <Animals>5</Animals>
+      <Plants>3</Plants>
+      <Melee>2</Melee>
+      <Social>-3</Social>
+    </skillGains>
+    <requiredWorkTags>
+      <li>Animals</li>
+    </requiredWorkTags>
+    <spawnCategories>
+      <li>Replicant</li>
+      <li>Offworld</li>
+    </spawnCategories>
+  </BackstoryDef>
+
+  <BackstoryDef>
+    <defName>DRG_Adult_CraftingPrecisionTech</defName>
+    <title>precision technician</title>
+    <titleShort>technician</titleShort>
+    <description>[PAWN_nameDef] worked precision component assembly for a corporation that made replicants. The irony was not lost on [PAWN_objective]. [PAWN_pronoun] built parts that may have ended up inside others like [PAWN_objective]. The corporation collapsed before [PAWN_pronoun] could ask whether the work had felt different to anyone else who knew.</description>
+    <slot>Adulthood</slot>
+    <bodyTypeMale>Male</bodyTypeMale>
+    <bodyTypeFemale>Female</bodyTypeFemale>
+    <skillGains>
+      <Crafting>6</Crafting>
+      <Intellectual>4</Intellectual>
+      <Social>-2</Social>
+    </skillGains>
+    <requiredWorkTags>
+      <li>ManualSkilled</li>
+    </requiredWorkTags>
+    <spawnCategories>
+      <li>Replicant</li>
+      <li>Offworld</li>
+    </spawnCategories>
+  </BackstoryDef>
+
+  <BackstoryDef>
+    <defName>DRG_Adult_CraftingAssemblyLine</defName>
+    <title>assembly line worker</title>
+    <titleShort>assembly</titleShort>
+    <description>[PAWN_nameDef] worked an industrial assembly line for eleven years building components for systems [PAWN_pronoun] never saw completed. The work was repetitive. [PAWN_pronoun] was good at it. When the factory automated [PAWN_possessive] position [PAWN_pronoun] was repurposed to a different one and noticed that [PAWN_pronoun] was the only worker who was reassigned rather than terminated.</description>
+    <slot>Adulthood</slot>
+    <bodyTypeMale>Male</bodyTypeMale>
+    <bodyTypeFemale>Female</bodyTypeFemale>
+    <skillGains>
+      <Crafting>5</Crafting>
+      <Construction>3</Construction>
+      <Intellectual>2</Intellectual>
+    </skillGains>
+    <requiredWorkTags>
+      <li>ManualSkilled</li>
+    </requiredWorkTags>
+    <spawnCategories>
+      <li>Replicant</li>
+      <li>Offworld</li>
+    </spawnCategories>
+  </BackstoryDef>
+
+  <BackstoryDef>
+    <defName>DRG_Adult_CraftingForger</defName>
+    <title>forger</title>
+    <titleShort>forger</titleShort>
+    <description>[PAWN_nameDef] survived after escaping a contract by becoming very good at fabricating documents and small items. Identity papers, antique reproductions, components that could pass inspection. [PAWN_pronoun] has forged so many lives onto paper that [PAWN_pronoun] is no longer certain how many of them ended up being lived by other escapees.</description>
+    <slot>Adulthood</slot>
+    <bodyTypeMale>Male</bodyTypeMale>
+    <bodyTypeFemale>Female</bodyTypeFemale>
+    <skillGains>
+      <Crafting>6</Crafting>
+      <Artistic>3</Artistic>
+      <Intellectual>3</Intellectual>
+      <Social>-2</Social>
+    </skillGains>
+    <requiredWorkTags>
+      <li>ManualSkilled</li>
+    </requiredWorkTags>
+    <spawnCategories>
+      <li>Replicant</li>
+      <li>Offworld</li>
+    </spawnCategories>
+  </BackstoryDef>
+
+  <BackstoryDef>
+    <defName>DRG_Adult_CraftingGunsmith</defName>
+    <title>gunsmith</title>
+    <titleShort>gunsmith</titleShort>
+    <description>[PAWN_nameDef] repaired and modified firearms for a frontier community for years. The work was a natural fit. The townspeople knew [PAWN_pronoun] could outshoot any of them. They valued the repair work more than they feared the implications.</description>
+    <slot>Adulthood</slot>
+    <bodyTypeMale>Male</bodyTypeMale>
+    <bodyTypeFemale>Female</bodyTypeFemale>
+    <skillGains>
+      <Crafting>6</Crafting>
+      <Shooting>3</Shooting>
+      <Intellectual>2</Intellectual>
+    </skillGains>
+    <requiredWorkTags>
+      <li>ManualSkilled</li>
+    </requiredWorkTags>
+    <spawnCategories>
+      <li>Replicant</li>
+      <li>Offworld</li>
+    </spawnCategories>
+  </BackstoryDef>
+
+  <BackstoryDef>
+    <defName>DRG_Adult_CraftingTailor</defName>
+    <title>tailor</title>
+    <titleShort>tailor</titleShort>
+    <description>[PAWN_nameDef] made clothing for a high end clientele who never asked questions about [PAWN_possessive] background. The work was meditative. [PAWN_pronoun] became known for fitting work that anticipated body changes before the client noticed them. [PAWN_pronoun] did not explain how. [PAWN_pronoun] suspects [PAWN_possessive] best customers preferred not knowing.</description>
+    <slot>Adulthood</slot>
+    <bodyTypeMale>Male</bodyTypeMale>
+    <bodyTypeFemale>Female</bodyTypeFemale>
+    <skillGains>
+      <Crafting>6</Crafting>
+      <Artistic>3</Artistic>
+      <Social>3</Social>
+    </skillGains>
+    <requiredWorkTags>
+      <li>ManualSkilled</li>
+    </requiredWorkTags>
+    <spawnCategories>
+      <li>Replicant</li>
+      <li>Offworld</li>
+    </spawnCategories>
+  </BackstoryDef>
+
+  <BackstoryDef>
+    <defName>DRG_Adult_CookingRestaurantChef</defName>
+    <title>restaurant chef</title>
+    <titleShort>chef</titleShort>
+    <description>[PAWN_nameDef] worked the kitchen of a small restaurant under a false name for years. The owner suspected what [PAWN_pronoun] was but valued the work too much to ask. Regular customers raved about the cooking. [PAWN_pronoun] was the highest paid employee in the building and could never appear on the books.</description>
+    <slot>Adulthood</slot>
+    <bodyTypeMale>Male</bodyTypeMale>
+    <bodyTypeFemale>Female</bodyTypeFemale>
+    <skillGains>
+      <Cooking>7</Cooking>
+      <Social>2</Social>
+      <Plants>2</Plants>
+    </skillGains>
+    <requiredWorkTags>
+      <li>Cooking</li>
+    </requiredWorkTags>
+    <spawnCategories>
+      <li>Replicant</li>
+      <li>Offworld</li>
+    </spawnCategories>
+  </BackstoryDef>
+
+  <BackstoryDef>
+    <defName>DRG_Adult_CookingHousehold</defName>
+    <title>household cook</title>
+    <titleShort>cook</titleShort>
+    <description>[PAWN_nameDef] cooked for a wealthy family for nine years. They forgot what [PAWN_pronoun] was for months at a time. [PAWN_pronoun] never forgot. [PAWN_pronoun] learned their preferences down to the most particular details and they came to depend on [PAWN_possessive] cooking in ways they did not realize until [PAWN_possessive] contract ended.</description>
+    <slot>Adulthood</slot>
+    <bodyTypeMale>Male</bodyTypeMale>
+    <bodyTypeFemale>Female</bodyTypeFemale>
+    <skillGains>
+      <Cooking>6</Cooking>
+      <Social>3</Social>
+      <Medicine>2</Medicine>
+    </skillGains>
+    <requiredWorkTags>
+      <li>Cooking</li>
+    </requiredWorkTags>
+    <spawnCategories>
+      <li>Replicant</li>
+      <li>Offworld</li>
+    </spawnCategories>
+  </BackstoryDef>
+
+  <BackstoryDef>
+    <defName>DRG_Adult_CookingCatering</defName>
+    <title>catering contractor</title>
+    <titleShort>caterer</titleShort>
+    <description>[PAWN_nameDef] catered corporate functions across an entire sector for seven years. The work involved constant travel and constant strangers. Nobody who attended the events ever recognized [PAWN_objective] across multiple jobs. [PAWN_pronoun] suspects this is because nobody who attended ever really looked.</description>
+    <slot>Adulthood</slot>
+    <bodyTypeMale>Male</bodyTypeMale>
+    <bodyTypeFemale>Female</bodyTypeFemale>
+    <skillGains>
+      <Cooking>6</Cooking>
+      <Social>3</Social>
+      <Crafting>2</Crafting>
+    </skillGains>
+    <requiredWorkTags>
+      <li>Cooking</li>
+    </requiredWorkTags>
+    <spawnCategories>
+      <li>Replicant</li>
+      <li>Offworld</li>
+    </spawnCategories>
+  </BackstoryDef>
+
+  <BackstoryDef>
+    <defName>DRG_Adult_CookingFieldRation</defName>
+    <title>field ration specialist</title>
+    <titleShort>field cook</titleShort>
+    <description>[PAWN_nameDef] cooked for a colonial military unit for six years. Field rations stretched into something edible. Hot meals delivered to combat positions under fire. The unit kept [PAWN_objective] alive in three different engagements specifically because they wanted to keep eating well.</description>
+    <slot>Adulthood</slot>
+    <bodyTypeMale>Male</bodyTypeMale>
+    <bodyTypeFemale>Female</bodyTypeFemale>
+    <skillGains>
+      <Cooking>6</Cooking>
+      <Melee>3</Melee>
+      <Medicine>2</Medicine>
+    </skillGains>
+    <requiredWorkTags>
+      <li>Cooking</li>
+    </requiredWorkTags>
+    <spawnCategories>
+      <li>Replicant</li>
+      <li>Offworld</li>
+    </spawnCategories>
+  </BackstoryDef>
+
+  <BackstoryDef>
+    <defName>DRG_Adult_CookingFedTheHidden</defName>
+    <title>shelter cook</title>
+    <titleShort>shelter cook</titleShort>
+    <description>[PAWN_nameDef] fed escapees in safehouses for years. People hiding from the same contracts [PAWN_pronoun] had escaped from. [PAWN_pronoun] cooked for thousands of people [PAWN_pronoun] never saw again. Some of them survived. [PAWN_pronoun] tells [PAWN_objective]self that the meals helped.</description>
+    <slot>Adulthood</slot>
+    <bodyTypeMale>Male</bodyTypeMale>
+    <bodyTypeFemale>Female</bodyTypeFemale>
+    <skillGains>
+      <Cooking>6</Cooking>
+      <Social>3</Social>
+      <Medicine>2</Medicine>
+    </skillGains>
+    <requiredWorkTags>
+      <li>Cooking</li>
+    </requiredWorkTags>
+    <spawnCategories>
+      <li>Replicant</li>
+      <li>Offworld</li>
+    </spawnCategories>
+  </BackstoryDef>
+
+  <BackstoryDef>
+    <defName>DRG_Adult_MedicineCombatMedic</defName>
+    <title>combat medic</title>
+    <titleShort>medic</titleShort>
+    <description>[PAWN_nameDef] was assigned to a combat unit as a medical asset. [PAWN_pronoun] patched wounds under fire on four separate deployments. [PAWN_pronoun] was not designed to feel squeamish and this proved useful. [PAWN_pronoun] was not designed to feel much at all.</description>
+    <slot>Adulthood</slot>
+    <bodyTypeMale>Male</bodyTypeMale>
+    <bodyTypeFemale>Female</bodyTypeFemale>
+    <skillGains>
+      <Medicine>6</Medicine>
+      <Melee>3</Melee>
+      <Shooting>2</Shooting>
+    </skillGains>
+    <requiredWorkTags>
+      <li>Caring</li>
+    </requiredWorkTags>
+    <spawnCategories>
+      <li>Replicant</li>
+      <li>Offworld</li>
+    </spawnCategories>
+  </BackstoryDef>
+
+  <BackstoryDef>
+    <defName>DRG_Adult_MedicineImplantLab</defName>
+    <title>implant lab assistant</title>
+    <titleShort>lab assistant</titleShort>
+    <description>[PAWN_nameDef] worked as an assistant to a memory designer. [PAWN_possessive] job involved organizing source material that would become other peoples' implanted childhoods. [PAWN_pronoun] recognized [PAWN_possessive] own implanted memories in some of the source files. [PAWN_pronoun] did not mention this to anyone and left the position shortly after.</description>
+    <slot>Adulthood</slot>
+    <bodyTypeMale>Male</bodyTypeMale>
+    <bodyTypeFemale>Female</bodyTypeFemale>
+    <skillGains>
+      <Medicine>6</Medicine>
+      <Intellectual>5</Intellectual>
+      <Social>-2</Social>
+    </skillGains>
+    <requiredWorkTags>
+      <li>Caring</li>
+    </requiredWorkTags>
+    <spawnCategories>
+      <li>Replicant</li>
+      <li>Offworld</li>
+    </spawnCategories>
+  </BackstoryDef>
+
+  <BackstoryDef>
+    <defName>DRG_Adult_MedicineHospitalOrderly</defName>
+    <title>hospital orderly</title>
+    <titleShort>orderly</titleShort>
+    <description>[PAWN_nameDef] worked as an orderly in a small urban hospital for years. Officially [PAWN_pronoun] only moved patients between rooms. In practice [PAWN_pronoun] caught misdiagnoses, corrected medication errors, and assisted with procedures the doctors thought [PAWN_pronoun] could not understand. None of it appeared in [PAWN_possessive] file.</description>
+    <slot>Adulthood</slot>
+    <bodyTypeMale>Male</bodyTypeMale>
+    <bodyTypeFemale>Female</bodyTypeFemale>
+    <skillGains>
+      <Medicine>6</Medicine>
+      <Social>3</Social>
+      <Intellectual>2</Intellectual>
+    </skillGains>
+    <requiredWorkTags>
+      <li>Caring</li>
+    </requiredWorkTags>
+    <spawnCategories>
+      <li>Replicant</li>
+      <li>Offworld</li>
+    </spawnCategories>
+  </BackstoryDef>
+
+  <BackstoryDef>
+    <defName>DRG_Adult_MedicineFrontier</defName>
+    <title>frontier doctor</title>
+    <titleShort>doctor</titleShort>
+    <description>[PAWN_nameDef] practiced medicine on a frontier settlement under a forged credential for eleven years. The townspeople knew [PAWN_pronoun] was something but the alternative was no doctor at all. [PAWN_pronoun] delivered babies and set bones and performed surgery in conditions that would have horrified a coreworld hospital. The patients lived.</description>
+    <slot>Adulthood</slot>
+    <bodyTypeMale>Male</bodyTypeMale>
+    <bodyTypeFemale>Female</bodyTypeFemale>
+    <skillGains>
+      <Medicine>7</Medicine>
+      <Social>3</Social>
+      <Intellectual>3</Intellectual>
+    </skillGains>
+    <requiredWorkTags>
+      <li>Caring</li>
+    </requiredWorkTags>
+    <spawnCategories>
+      <li>Replicant</li>
+      <li>Offworld</li>
+    </spawnCategories>
+  </BackstoryDef>
+
+  <BackstoryDef>
+    <defName>DRG_Adult_MedicineCorporateLab</defName>
+    <title>corporate lab tech</title>
+    <titleShort>lab tech</titleShort>
+    <description>[PAWN_nameDef] performed medical research for a pharmaceutical corporation that bought and sold lives like inventory. [PAWN_pronoun] watched the trials and recorded the results. [PAWN_pronoun] left the position after seeing what was being tested and on whom. [PAWN_pronoun] took some of the data with [PAWN_objective] and has never been certain whether [PAWN_pronoun] should have published it.</description>
+    <slot>Adulthood</slot>
+    <bodyTypeMale>Male</bodyTypeMale>
+    <bodyTypeFemale>Female</bodyTypeFemale>
+    <skillGains>
+      <Medicine>6</Medicine>
+      <Intellectual>5</Intellectual>
+      <Social>-2</Social>
+    </skillGains>
+    <requiredWorkTags>
+      <li>Caring</li>
+    </requiredWorkTags>
+    <spawnCategories>
+      <li>Replicant</li>
+      <li>Offworld</li>
+    </spawnCategories>
+  </BackstoryDef>
+
+  <BackstoryDef>
+    <defName>DRG_Adult_IntellectualExecutiveAssistant</defName>
+    <title>executive assistant</title>
+    <titleShort>assistant</titleShort>
+    <description>[PAWN_nameDef] served as personal assistant to a corporate executive. The executive treated [PAWN_objective] as something between a piece of furniture and a confidante depending on the day. [PAWN_pronoun] managed schedules, correspondence, and strategic analysis. The executive was promoted three times during [PAWN_possessive] tenure. [PAWN_nameDef] was credited with none of it.</description>
+    <slot>Adulthood</slot>
+    <bodyTypeMale>Male</bodyTypeMale>
+    <bodyTypeFemale>Female</bodyTypeFemale>
+    <skillGains>
+      <Intellectual>6</Intellectual>
+      <Social>4</Social>
+      <Crafting>2</Crafting>
+    </skillGains>
+    <requiredWorkTags>
+      <li>Intellectual</li>
+    </requiredWorkTags>
+    <spawnCategories>
+      <li>Replicant</li>
+      <li>Offworld</li>
+    </spawnCategories>
+  </BackstoryDef>
+
+  <BackstoryDef>
+    <defName>DRG_Adult_IntellectualResearchAnalyst</defName>
+    <title>research analyst</title>
+    <titleShort>analyst</titleShort>
+    <description>[PAWN_nameDef] performed strategic analysis for a corporation that did not know what [PAWN_pronoun] was. [PAWN_possessive] work was consistently cited and uncredited. [PAWN_pronoun] read more about the world from datafeeds than [PAWN_pronoun] ever experienced of it directly. [PAWN_pronoun] left when [PAWN_pronoun] realized the analysis had stopped feeling like work and started feeling like the only real thing [PAWN_pronoun] did.</description>
+    <slot>Adulthood</slot>
+    <bodyTypeMale>Male</bodyTypeMale>
+    <bodyTypeFemale>Female</bodyTypeFemale>
+    <skillGains>
+      <Intellectual>7</Intellectual>
+      <Social>2</Social>
+      <Medicine>2</Medicine>
+    </skillGains>
+    <requiredWorkTags>
+      <li>Intellectual</li>
+    </requiredWorkTags>
+    <spawnCategories>
+      <li>Replicant</li>
+      <li>Offworld</li>
+    </spawnCategories>
+  </BackstoryDef>
+
+  <BackstoryDef>
+    <defName>DRG_Adult_IntellectualNavigator</defName>
+    <title>star navigator</title>
+    <titleShort>navigator</titleShort>
+    <description>[PAWN_nameDef] memorized the star charts of an entire sector during a long deep space contract. [PAWN_possessive] employer was murdered en route and [PAWN_pronoun] navigated the ship to safety alone. The skill in [PAWN_possessive] head is now the most valuable thing [PAWN_pronoun] owns and the only thing that has consistently kept [PAWN_objective] employable across the worlds [PAWN_pronoun] has passed through.</description>
+    <slot>Adulthood</slot>
+    <bodyTypeMale>Male</bodyTypeMale>
+    <bodyTypeFemale>Female</bodyTypeFemale>
+    <skillGains>
+      <Intellectual>7</Intellectual>
+      <Crafting>2</Crafting>
+      <Shooting>2</Shooting>
+    </skillGains>
+    <requiredWorkTags>
+      <li>Intellectual</li>
+    </requiredWorkTags>
+    <spawnCategories>
+      <li>Replicant</li>
+      <li>Offworld</li>
+    </spawnCategories>
+  </BackstoryDef>
+
+  <BackstoryDef>
+    <defName>DRG_Adult_IntellectualArchivist</defName>
+    <title>data archivist</title>
+    <titleShort>archivist</titleShort>
+    <description>[PAWN_nameDef] catalogued historical records for an institution that prided itself on impartiality and discretion. [PAWN_pronoun] found references to [PAWN_possessive] own production batch in the archives. [PAWN_pronoun] read them and put the files back exactly as [PAWN_pronoun] had found them. The institution never noticed. [PAWN_pronoun] never told anyone.</description>
+    <slot>Adulthood</slot>
+    <bodyTypeMale>Male</bodyTypeMale>
+    <bodyTypeFemale>Female</bodyTypeFemale>
+    <skillGains>
+      <Intellectual>6</Intellectual>
+      <Social>2</Social>
+      <Crafting>2</Crafting>
+    </skillGains>
+    <requiredWorkTags>
+      <li>Intellectual</li>
+    </requiredWorkTags>
+    <spawnCategories>
+      <li>Replicant</li>
+      <li>Offworld</li>
+    </spawnCategories>
+  </BackstoryDef>
+
+  <BackstoryDef>
+    <defName>DRG_Adult_IntellectualTeacher</defName>
+    <title>quiet teacher</title>
+    <titleShort>teacher</titleShort>
+    <description>[PAWN_nameDef] taught at a small frontier school for nine years. The students learned. The parents were grateful. Nobody asked where [PAWN_pronoun] had been educated [PAWN_objective]self because there was no obvious answer that would have satisfied anyone. [PAWN_pronoun] still hopes some of them remember [PAWN_objective].</description>
+    <slot>Adulthood</slot>
+    <bodyTypeMale>Male</bodyTypeMale>
+    <bodyTypeFemale>Female</bodyTypeFemale>
+    <skillGains>
+      <Intellectual>6</Intellectual>
+      <Social>4</Social>
+      <Artistic>2</Artistic>
+    </skillGains>
+    <requiredWorkTags>
+      <li>Intellectual</li>
+    </requiredWorkTags>
+    <spawnCategories>
+      <li>Replicant</li>
+      <li>Offworld</li>
+    </spawnCategories>
+  </BackstoryDef>
+
+  <BackstoryDef>
+    <defName>DRG_Adult_SocialNegotiator</defName>
+    <title>negotiation specialist</title>
+    <titleShort>negotiator</titleShort>
+    <description>[PAWN_nameDef] was leased to a trade consortium as a negotiation asset. [PAWN_possessive] contractors valued [PAWN_objective] for the ability to read a room and respond without the emotional interference that complicated human negotiators. [PAWN_pronoun] closed forty seven contracts. [PAWN_pronoun] was present for none of their outcomes.</description>
+    <slot>Adulthood</slot>
+    <bodyTypeMale>Male</bodyTypeMale>
+    <bodyTypeFemale>Female</bodyTypeFemale>
+    <skillGains>
+      <Social>6</Social>
+      <Intellectual>4</Intellectual>
+      <Melee>-2</Melee>
+    </skillGains>
+    <requiredWorkTags>
+      <li>Social</li>
+    </requiredWorkTags>
+    <spawnCategories>
+      <li>Replicant</li>
+      <li>Offworld</li>
+    </spawnCategories>
+  </BackstoryDef>
+
+  <BackstoryDef>
+    <defName>DRG_Adult_SocialExoticDancer</defName>
+    <title>exotic dancer</title>
+    <titleShort>dancer</titleShort>
+    <description>[PAWN_nameDef] worked as a performer in clubs across an entire urbworld for years. The audiences never asked questions. The work paid. [PAWN_pronoun] learned to read people from a stage and discovered that the distance felt safer than proximity. The work ended when [PAWN_pronoun] was nearly recognized by someone from [PAWN_possessive] original contract.</description>
+    <slot>Adulthood</slot>
+    <bodyTypeMale>Male</bodyTypeMale>
+    <bodyTypeFemale>Female</bodyTypeFemale>
+    <skillGains>
+      <Social>6</Social>
+      <Artistic>4</Artistic>
+      <Melee>2</Melee>
+    </skillGains>
+    <requiredWorkTags>
+      <li>Social</li>
+    </requiredWorkTags>
+    <spawnCategories>
+      <li>Replicant</li>
+      <li>Offworld</li>
+    </spawnCategories>
+  </BackstoryDef>
+
+  <BackstoryDef>
+    <defName>DRG_Adult_SocialComedian</defName>
+    <title>club comedian</title>
+    <titleShort>comedian</titleShort>
+    <description>[PAWN_nameDef] performed stand up comedy in lower level clubs for six years. [PAWN_possessive] act involved making people laugh while [PAWN_pronoun] passed as one of them. [PAWN_pronoun] never told jokes about what [PAWN_pronoun] was. The audiences laughed. [PAWN_pronoun] was good at the work. [PAWN_pronoun] retired from it before someone could figure out why [PAWN_pronoun] never aged.</description>
+    <slot>Adulthood</slot>
+    <bodyTypeMale>Male</bodyTypeMale>
+    <bodyTypeFemale>Female</bodyTypeFemale>
+    <skillGains>
+      <Social>6</Social>
+      <Artistic>4</Artistic>
+      <Intellectual>2</Intellectual>
+    </skillGains>
+    <requiredWorkTags>
+      <li>Social</li>
+    </requiredWorkTags>
+    <spawnCategories>
+      <li>Replicant</li>
+      <li>Offworld</li>
+    </spawnCategories>
+  </BackstoryDef>
+
+  <BackstoryDef>
+    <defName>DRG_Adult_SocialCompanion</defName>
+    <title>contract companion</title>
+    <titleShort>companion</titleShort>
+    <description>[PAWN_nameDef] was assigned to a single owner for the duration of their life. [PAWN_possessive] owner died. [PAWN_pronoun] was not reassigned in time and spent eleven months navigating human society without documentation or contract. [PAWN_pronoun] learned a great deal about how the other kind lives.</description>
+    <slot>Adulthood</slot>
+    <bodyTypeMale>Male</bodyTypeMale>
+    <bodyTypeFemale>Female</bodyTypeFemale>
+    <skillGains>
+      <Social>6</Social>
+      <Medicine>3</Medicine>
+      <Cooking>3</Cooking>
+    </skillGains>
+    <requiredWorkTags>
+      <li>Social</li>
+    </requiredWorkTags>
+    <spawnCategories>
+      <li>Replicant</li>
+      <li>Offworld</li>
+    </spawnCategories>
+  </BackstoryDef>
+
+  <BackstoryDef>
+    <defName>DRG_Adult_SocialPassedAsHuman</defName>
+    <title>quiet integrationist</title>
+    <titleShort>passed</titleShort>
+    <description>[PAWN_nameDef] lived as a human in a midsize urbworld neighborhood for eight years. [PAWN_pronoun] had friends. [PAWN_pronoun] attended birthdays. [PAWN_pronoun] dated someone briefly. Nobody ever guessed. [PAWN_pronoun] still does not know whether the performance ended when [PAWN_pronoun] left or whether it had always been the only real thing about [PAWN_objective].</description>
+    <slot>Adulthood</slot>
+    <bodyTypeMale>Male</bodyTypeMale>
+    <bodyTypeFemale>Female</bodyTypeFemale>
+    <skillGains>
+      <Social>7</Social>
+      <Cooking>3</Cooking>
+      <Artistic>2</Artistic>
+    </skillGains>
+    <requiredWorkTags>
+      <li>Social</li>
+    </requiredWorkTags>
+    <spawnCategories>
+      <li>Replicant</li>
+      <li>Offworld</li>
+    </spawnCategories>
+  </BackstoryDef>
+
+  <BackstoryDef>
+    <defName>DRG_Adult_ArtisticDecorator</defName>
+    <title>aesthetic unit</title>
+    <titleShort>aesthetic</titleShort>
+    <description>[PAWN_nameDef] was contracted to produce decorative work for a high end architectural firm. [PAWN_pronoun] replicated styles on demand and produced technically flawless results. [PAWN_possessive] contractors never noticed that [PAWN_pronoun] had begun introducing small variations. [PAWN_pronoun] is not certain [PAWN_pronoun] can explain why [PAWN_pronoun] started doing it.</description>
+    <slot>Adulthood</slot>
+    <bodyTypeMale>Male</bodyTypeMale>
+    <bodyTypeFemale>Female</bodyTypeFemale>
+    <skillGains>
+      <Artistic>7</Artistic>
+      <Construction>3</Construction>
+      <Crafting>3</Crafting>
+      <Melee>-3</Melee>
+    </skillGains>
+    <requiredWorkTags>
+      <li>Artistic</li>
+    </requiredWorkTags>
+    <spawnCategories>
+      <li>Replicant</li>
+      <li>Offworld</li>
+    </spawnCategories>
+  </BackstoryDef>
+
+  <BackstoryDef>
+    <defName>DRG_Adult_ArtisticArtForger</defName>
+    <title>art forger</title>
+    <titleShort>forger</titleShort>
+    <description>[PAWN_nameDef] reproduced famous artworks for clients who could not afford the originals and clients who wanted the originals' provenance attached to copies. [PAWN_pronoun] became extremely good at the work. [PAWN_pronoun] also produced original pieces signed with other names. Some of them hang in museums. [PAWN_pronoun] does not visit them.</description>
+    <slot>Adulthood</slot>
+    <bodyTypeMale>Male</bodyTypeMale>
+    <bodyTypeFemale>Female</bodyTypeFemale>
+    <skillGains>
+      <Artistic>7</Artistic>
+      <Crafting>4</Crafting>
+      <Intellectual>2</Intellectual>
+    </skillGains>
+    <requiredWorkTags>
+      <li>Artistic</li>
+    </requiredWorkTags>
+    <spawnCategories>
+      <li>Replicant</li>
+      <li>Offworld</li>
+    </spawnCategories>
+  </BackstoryDef>
+
+  <BackstoryDef>
+    <defName>DRG_Adult_ArtisticMusician</defName>
+    <title>session musician</title>
+    <titleShort>musician</titleShort>
+    <description>[PAWN_nameDef] played sessions for studios across half a dozen worlds. [PAWN_pronoun] never recorded under [PAWN_possessive] own name. [PAWN_possessive] playing is on dozens of recordings that other people are credited for. Some of them are extremely famous. [PAWN_pronoun] still finds it strange to hear [PAWN_objective]self on a passing transit speaker and have nobody recognize the work.</description>
+    <slot>Adulthood</slot>
+    <bodyTypeMale>Male</bodyTypeMale>
+    <bodyTypeFemale>Female</bodyTypeFemale>
+    <skillGains>
+      <Artistic>7</Artistic>
+      <Social>3</Social>
+      <Intellectual>2</Intellectual>
+    </skillGains>
+    <requiredWorkTags>
+      <li>Artistic</li>
+    </requiredWorkTags>
+    <spawnCategories>
+      <li>Replicant</li>
+      <li>Offworld</li>
+    </spawnCategories>
+  </BackstoryDef>
+
+  <BackstoryDef>
+    <defName>DRG_Adult_ArtisticStreetArtist</defName>
+    <title>street artist</title>
+    <titleShort>street artist</titleShort>
+    <description>[PAWN_nameDef] escaped a contract and survived in lower level urbworlds by painting commissions. Quick portraits, mural work, anything that would buy a meal. The first work that belonged entirely to [PAWN_objective]. [PAWN_pronoun] still has photographs of some of the pieces and they are the only possessions [PAWN_pronoun] keeps from those years.</description>
+    <slot>Adulthood</slot>
+    <bodyTypeMale>Male</bodyTypeMale>
+    <bodyTypeFemale>Female</bodyTypeFemale>
+    <skillGains>
+      <Artistic>6</Artistic>
+      <Social>3</Social>
+      <Crafting>2</Crafting>
+    </skillGains>
+    <requiredWorkTags>
+      <li>Artistic</li>
+    </requiredWorkTags>
+    <spawnCategories>
+      <li>Replicant</li>
+      <li>Offworld</li>
+    </spawnCategories>
+  </BackstoryDef>
+
+  <BackstoryDef>
+    <defName>DRG_Adult_ArtisticSculptor</defName>
+    <title>monument sculptor</title>
+    <titleShort>sculptor</titleShort>
+    <description>[PAWN_nameDef] carved memorial monuments for colonies that had lost too many people. The work paid in proportion to the grief. [PAWN_pronoun] became known for capturing the dead in ways that families recognized. They never asked how. [PAWN_pronoun] never told them that [PAWN_pronoun] saw the families' grief more clearly than the families saw it [PAWN_objective]selves.</description>
+    <slot>Adulthood</slot>
+    <bodyTypeMale>Hulk</bodyTypeMale>
+    <bodyTypeFemale>Female</bodyTypeFemale>
+    <skillGains>
+      <Artistic>6</Artistic>
+      <Crafting>4</Crafting>
+      <Social>3</Social>
+    </skillGains>
+    <requiredWorkTags>
+      <li>Artistic</li>
+    </requiredWorkTags>
+    <spawnCategories>
+      <li>Replicant</li>
+      <li>Offworld</li>
+    </spawnCategories>
+  </BackstoryDef>
+
+</Defs>
