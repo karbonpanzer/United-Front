@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LanguageData>
+
+  <!-- Decal UI -->
+  <DeadRinger_StyleDecalsGizmo>Style Decals: {0}</DeadRinger_StyleDecalsGizmo>
+  <DeadRinger_StyleDecalsDesc>Customize the decal markings on this pawn's armor and helmet.</DeadRinger_StyleDecalsDesc>
+  <DeadRinger_StyleDecalsTitle>Style Decals: {0}</DeadRinger_StyleDecalsTitle>
+  <DeadRinger_Decals_Armor>Armor</DeadRinger_Decals_Armor>
+  <DeadRinger_Decals_Helmet>Helmet</DeadRinger_Decals_Helmet>
+  <DeadRinger_Decals_Enabled>Enable Decals</DeadRinger_Decals_Enabled>
+  <DeadRinger_Decals_RandomSymbol>Random Symbol</DeadRinger_Decals_RandomSymbol>
+  <DeadRinger_Decals_RoleOther>Other</DeadRinger_Decals_RoleOther>
+  <DeadRinger_Decals_IdeoColor>Ideo Color</DeadRinger_Decals_IdeoColor>
+  <DeadRinger_Decals_RandomColor>Random Color</DeadRinger_Decals_RandomColor>
+  <DeadRinger_Decals_FavColor>Favorite Color</DeadRinger_Decals_FavColor>
+  <DeadRinger_Decals_Cancel>Cancel</DeadRinger_Decals_Cancel>
+  <DeadRinger_Decals_Reset>Reset</DeadRinger_Decals_Reset>
+  <DeadRinger_Decals_Accept>Accept</DeadRinger_Decals_Accept>
+
+  <!-- Replicant -->  
+  <Replicant_FinalClarity_Message>{0} has reached final clarity.</Replicant_FinalClarity_Message>
+
+  <!-- Food Synthesizer -->
+  <FoodSynth_GizmoLabel>Output: {0}</FoodSynth_GizmoLabel>
+  <FoodSynth_GizmoDesc>Select which food cube the synthesizer produces.\n\nCurrently producing: {0} x{1}</FoodSynth_GizmoDesc>
+  <FoodSynth_CurrentMarker>{0} x{1} (current)</FoodSynth_CurrentMarker>
+  <FoodSynth_MenuOption>{0} x{1}</FoodSynth_MenuOption>
+  <FoodSynth_Producing>Producing: {0} x{1}</FoodSynth_Producing>
+ 
+</LanguageData>

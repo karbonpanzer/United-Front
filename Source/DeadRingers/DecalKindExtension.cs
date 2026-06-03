@@ -4,7 +4,7 @@ using Verse;
 namespace DeadRinger
 {
     //Slap this on a PawnKindDef to force a default decal when the pawn spawns with decal gear
-    //Player can still override it in the dialog, NPCs just get whatever's set here
+    //NPCs default just get whatever's set here
     public class DecalKindExtension : DefModExtension
     {
         public string armorDecalPath = "";

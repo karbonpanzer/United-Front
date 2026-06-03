@@ -1,0 +1,235 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+
+  <ThingDef ParentName="DRG_ServiceRifle">
+    <defName>DRG_ServiceRifle_Unique</defName>
+    <label>unique combat rifle</label>
+    <description>A combat rifle with customized parts.</description>
+    <graphicData>
+      <texPath>Things/Item/Equipment/WeaponRanged/UniqueWeapons/ServiceRifle</texPath>
+      <graphicClass>Graphic_Random</graphicClass>
+      <shaderType>CutoutComplex</shaderType>
+    </graphicData>
+    <!-- Can't inherit comps because we need to override CompEquippable with CompEquippableAbility -->
+    <!-- If changes are made to the comps of BaseHumanMakeableGun or parents then they will need to be replicated here -->
+    <comps Inherit="False">
+      <li Class="CompProperties_EquippableAbilityReloadable" /> <!-- Props are populated by traits -->
+      <li Class="CompProperties_Forbiddable"/>
+      <li Class="CompProperties_Styleable"/>
+      <li Class="CompProperties_Biocodable"/>
+      <li>
+        <compClass>CompQuality</compClass>
+      </li>
+      <li Class="CompProperties_Art">
+        <nameMaker>NamerArtWeaponGun</nameMaker>
+        <descriptionMaker>ArtDescription_WeaponGun</descriptionMaker>
+        <minQualityForArtistic>Excellent</minQualityForArtistic>
+      </li>
+      <li Class="CompProperties_UniqueWeapon">
+        <weaponCategories>
+          <li>Ranged</li>
+          <li>BulletFiring</li>
+          <li>Gun</li>
+          <li>Rifle</li>
+          <li>Sighted</li>
+          <li>BurstFire</li>
+          <li>Attachable</li>
+        </weaponCategories>
+        <namerLabels>
+          <li>rifle</li>
+          <li>carbine</li>
+          <li>autorifle</li>
+          <li>battlerifle</li>
+          <li>kicker</li>
+          <li>stick</li>
+        </namerLabels>
+      </li>
+    </comps>
+    <generateAllowChance>0</generateAllowChance>
+    <possessionCount>0</possessionCount>
+    <tradeability>Sellable</tradeability>
+    <thingSetMakerTags Inherit="False">
+      <li>RewardStandardLowFreq</li>
+      <li>UniqueWeapon</li>
+    </thingSetMakerTags>
+    <recipeMaker Inherit="False" IsNull="True" />
+    <thingCategories Inherit="False">
+      <li>WeaponsUnique</li>
+    </thingCategories>
+    <descriptionHyperlinks>
+      <ThingDef>DRG_ServiceRifle</ThingDef>
+    </descriptionHyperlinks>
+  </ThingDef>
+
+  <ThingDef ParentName="DRG_LawbringerShotgun">
+    <defName>DRG_LawbringerShotgun_Unique</defName>
+    <label>unique Lawbringer shotgun</label>
+    <description>A Lawbringer shotgun with customized parts.</description>
+    <graphicData>
+      <texPath>Things/Item/Equipment/WeaponRanged/UniqueWeapons/LawbringerShotgun</texPath>
+      <graphicClass>Graphic_Random</graphicClass>
+      <shaderType>CutoutComplex</shaderType>
+    </graphicData>
+    <comps Inherit="False">
+      <li Class="CompProperties_EquippableAbilityReloadable" />
+      <li Class="CompProperties_Forbiddable"/>
+      <li Class="CompProperties_Styleable"/>
+      <li Class="CompProperties_Biocodable"/>
+      <li>
+        <compClass>CompQuality</compClass>
+      </li>
+      <li Class="CompProperties_Art">
+        <nameMaker>NamerArtWeaponGun</nameMaker>
+        <descriptionMaker>ArtDescription_WeaponGun</descriptionMaker>
+        <minQualityForArtistic>Excellent</minQualityForArtistic>
+      </li>
+      <li Class="CompProperties_UniqueWeapon">
+        <weaponCategories>
+          <li>Ranged</li>
+          <li>PelletFiring</li>
+          <li>Gun</li>
+          <li>Shotgun</li>
+          <li>BurstFire</li>
+          <li>Attachable</li>
+        </weaponCategories>
+        <namerLabels>
+          <li>shotgun</li>
+          <li>scattergun</li>
+          <li>slugger</li>
+          <li>eightgauge</li>
+          <li>boomstick</li>
+          <li>breaker</li>
+        </namerLabels>
+      </li>
+    </comps>
+    <generateAllowChance>0</generateAllowChance>
+    <possessionCount>0</possessionCount>
+    <tradeability>Sellable</tradeability>
+    <thingSetMakerTags Inherit="False">
+      <li>RewardStandardLowFreq</li>
+      <li>UniqueWeapon</li>
+    </thingSetMakerTags>
+    <recipeMaker Inherit="False" IsNull="True" />
+    <thingCategories Inherit="False">
+      <li>WeaponsUnique</li>
+    </thingCategories>
+    <descriptionHyperlinks>
+      <ThingDef>DRG_LawbringerShotgun</ThingDef>
+    </descriptionHyperlinks>
+  </ThingDef>
+
+  <ThingDef ParentName="DRG_StampedeRevolver">
+    <defName>DRG_StampedeRevolver_Unique</defName>
+    <label>unique Stampede revolver</label>
+    <description>A Stampede revolver with customized parts.</description>
+    <graphicData>
+      <texPath>Things/Item/Equipment/WeaponRanged/UniqueWeapons/StampedeRevolver</texPath>
+      <graphicClass>Graphic_Random</graphicClass>
+      <shaderType>CutoutComplex</shaderType>
+    </graphicData>
+    <comps Inherit="False">
+      <li Class="CompProperties_EquippableAbilityReloadable" />
+      <li Class="CompProperties_Forbiddable"/>
+      <li Class="CompProperties_Styleable"/>
+      <li Class="CompProperties_Biocodable"/>
+      <li>
+        <compClass>CompQuality</compClass>
+      </li>
+      <li Class="CompProperties_Art">
+        <nameMaker>NamerArtWeaponGun</nameMaker>
+        <descriptionMaker>ArtDescription_WeaponGun</descriptionMaker>
+        <minQualityForArtistic>Excellent</minQualityForArtistic>
+      </li>
+      <li Class="CompProperties_UniqueWeapon">
+        <weaponCategories>
+          <li>Ranged</li>
+          <li>BulletFiring</li>
+          <li>Gun</li>
+          <li>Pistol</li>
+          <li>Sighted</li>
+        </weaponCategories>
+        <namerLabels>
+          <li>revolver</li>
+          <li>sixshooter</li>
+          <li>wheelgun</li>
+          <li>hogleg</li>
+          <li>magnum</li>
+          <li>hammer</li>
+        </namerLabels>
+      </li>
+    </comps>
+    <generateAllowChance>0</generateAllowChance>
+    <possessionCount>0</possessionCount>
+    <tradeability>Sellable</tradeability>
+    <thingSetMakerTags Inherit="False">
+      <li>RewardStandardLowFreq</li>
+      <li>UniqueWeapon</li>
+    </thingSetMakerTags>
+    <recipeMaker Inherit="False" IsNull="True" />
+    <thingCategories Inherit="False">
+      <li>WeaponsUnique</li>
+    </thingCategories>
+    <descriptionHyperlinks>
+      <ThingDef>DRG_StampedeRevolver</ThingDef>
+    </descriptionHyperlinks>
+  </ThingDef>
+
+  <ThingDef ParentName="DRG_HydraRifle">
+    <defName>DRG_HydraRifle_Unique</defName>
+    <label>unique Hydra rifle</label>
+    <description>A Hydra rifle with customized parts.</description>
+    <graphicData>
+      <texPath>Things/Item/Equipment/WeaponRanged/UniqueWeapons/HydraRifle</texPath>
+      <graphicClass>Graphic_Random</graphicClass>
+      <shaderType>CutoutComplex</shaderType>
+    </graphicData>
+    <comps Inherit="False">
+      <li Class="CompProperties_EquippableAbilityReloadable" />
+      <li Class="CompProperties_Forbiddable"/>
+      <li Class="CompProperties_Styleable"/>
+      <li Class="CompProperties_Biocodable"/>
+      <li>
+        <compClass>CompQuality</compClass>
+      </li>
+      <li Class="CompProperties_Art">
+        <nameMaker>NamerArtWeaponGun</nameMaker>
+        <descriptionMaker>ArtDescription_WeaponGun</descriptionMaker>
+        <minQualityForArtistic>Excellent</minQualityForArtistic>
+      </li>
+      <li Class="CompProperties_UniqueWeapon">
+        <weaponCategories>
+          <li>Ranged</li>
+          <li>BulletFiring</li>
+          <li>Gun</li>
+          <li>Rifle</li>
+          <li>Sighted</li>
+          <li>Scoped</li>
+          <li>BurstFire</li>
+        </weaponCategories>
+        <namerLabels>
+          <li>AMR</li>
+          <li>longrifle</li>
+          <li>antitank</li>
+          <li>doorbuster</li>
+          <li>wallbreaker</li>
+          <li>hydra</li>
+        </namerLabels>
+      </li>
+    </comps>
+    <generateAllowChance>0</generateAllowChance>
+    <possessionCount>0</possessionCount>
+    <tradeability>Sellable</tradeability>
+    <thingSetMakerTags Inherit="False">
+      <li>RewardStandardLowFreq</li>
+      <li>UniqueWeapon</li>
+    </thingSetMakerTags>
+    <recipeMaker Inherit="False" IsNull="True" />
+    <thingCategories Inherit="False">
+      <li>WeaponsUnique</li>
+    </thingCategories>
+    <descriptionHyperlinks>
+      <ThingDef>DRG_HydraRifle</ThingDef>
+    </descriptionHyperlinks>
+  </ThingDef>
+
+</Defs>

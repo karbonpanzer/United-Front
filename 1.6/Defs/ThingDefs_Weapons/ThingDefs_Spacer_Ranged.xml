@@ -20,7 +20,7 @@
 		</projectile>
 	</ThingDef>
 
-	<ThingDef ParentName="BaseHumanMakeableGun">
+	<ThingDef ParentName="BaseHumanMakeableGun" Name="DRG_AssaultPistol">
 		<defName>DRG_AssaultPistol</defName>
 		<label>Assault Pistol</label>
 		<description>A heavy caliber pistol favored by pirates and mercenaries. Powerful and weighty, it can easily pierce armor at close range. Though it lacks in the ability to hit at a distance.</description>
@@ -119,7 +119,7 @@
 		</projectile>
 	</ThingDef>
 
-	<ThingDef ParentName="BaseHumanMakeableGun">
+	<ThingDef ParentName="BaseHumanMakeableGun" Name="DRG_ServicePistol">
 		<defName>DRG_ServicePistol</defName>
 		<label>Service Pistol</label>
 		<description>A semi-automatic pistol chambered in a large caliber. Its heavy weight makes it cumbersome, but the weight provides easier handling and control, allowing more accurate shots to be made.</description>
@@ -220,7 +220,7 @@
 		</projectile>
 	</ThingDef>
 
-	<ThingDef ParentName="BaseHumanMakeableGun">
+	<ThingDef ParentName="BaseHumanMakeableGun" Name="DRG_AdvancedSMG">
 		<defName>DRG_AdvancedSMG</defName>
 		<label>Advanced SMG</label>
 		<description>A state of the art sub-machinegun built with lightweight polymers and advanced alloys. Light, accurate, and easy to use, it has found usage in hundreds of colonies now for security.</description>
@@ -322,7 +322,7 @@
 		</projectile>
 	</ThingDef>
 
-	<ThingDef ParentName="BaseHumanMakeableGun">
+	<ThingDef ParentName="BaseHumanMakeableGun" Name="DRG_StampedeRevolver">
 		<defName>DRG_StampedeRevolver</defName>
 		<label>Stampede Revolver</label>
 		<description>A large frame revolver often seen with mercenaries. Despite its size, it is light and powerful, thanks to its advanced manufacturing and specialized high power ammunition.</description>
@@ -423,7 +423,7 @@
 		</projectile>
 	</ThingDef>
 
-	<ThingDef ParentName="BaseHumanMakeableGun">
+	<ThingDef ParentName="BaseHumanMakeableGun" Name="DRG_ServiceRifle">
 		<defName>DRG_ServiceRifle</defName>
 		<label>Combat Rifle</label>
 		<description>An advanced rifle design used by ringer veterans and mercenaries. Built with state-of-the-art polymers and alloys, it fires armor-piercing duplex ammunition.</description>
@@ -524,7 +524,7 @@
 		</projectile>
 	</ThingDef>
 
-	<ThingDef ParentName="BaseHumanMakeableGun">
+	<ThingDef ParentName="BaseHumanMakeableGun" Name="DRG_ServiceCarbine">
 		<defName>DRG_ServiceCarbine</defName>
 		<label>Combat Carbine</label>
 		<description>An older design rifle using less complex methods, earning it favor with prospectors. Built with stamped materials, making it cheaper to produce but less accurate at range.</description>
@@ -624,7 +624,7 @@
 		</projectile>
 	</ThingDef>
 
-	<ThingDef ParentName="BaseHumanMakeableGun">
+	<ThingDef ParentName="BaseHumanMakeableGun" Name="DRG_JackhammerShotgun">
 		<defName>DRG_JackhammerShotgun</defName>
 		<label>Jackhammer Shotgun</label>
 		<description>An ancient design for a multi-purpose automatic shotgun favored by mercenaries. Firing high-power shells via a drum magazine, it easily shreds flesh and can even damage armor.</description>
@@ -726,14 +726,14 @@
 		</projectile>
 	</ThingDef>
 
-	<ThingDef ParentName="BaseHumanMakeableGun">
+	<ThingDef ParentName="BaseHumanMakeableGun" Name="DRG_LawbringerShotgun">
 		<defName>DRG_LawbringerShotgun</defName>
 		<label>Lawbringer Shotgun</label>
 		<description>A large gauge shotgun favored by colonists for its ruggedness and stopping power. Slow to cycle but devastating at close to medium range with its uncommon 8 gauge shell.</description>
 		<graphicData>
 			<graphicClass>Graphic_Single</graphicClass>
 			<texPath>Things/Item/Equipment/WeaponRanged/lawbringershotgun</texPath>
-			<drawSize>1.4</drawSize>
+			<drawSize>1.0</drawSize>
 		</graphicData>
 		<techLevel>Spacer</techLevel>
 		<soundInteract>Interact_Shotgun</soundInteract>

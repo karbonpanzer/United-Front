@@ -71,4 +71,37 @@
       <PackageReference Include="Krafs.Rimworld.Ref" Version="1.6.4739-beta" />
     </ItemGroup>
 
+    <ItemGroup>
+      <Content Include="..\FoodSynth\.idea\.idea.FoodSynth.dir\.idea\.gitignore">
+        <Link>FoodSynth\.idea\.idea.FoodSynth.dir\.idea\.gitignore</Link>
+      </Content>
+      <Content Include="..\FoodSynth\.idea\.idea.FoodSynth.dir\.idea\encodings.xml">
+        <Link>FoodSynth\.idea\.idea.FoodSynth.dir\.idea\encodings.xml</Link>
+      </Content>
+      <Content Include="..\FoodSynth\.idea\.idea.FoodSynth.dir\.idea\indexLayout.xml">
+        <Link>FoodSynth\.idea\.idea.FoodSynth.dir\.idea\indexLayout.xml</Link>
+      </Content>
+      <Content Include="..\FoodSynth\.idea\.idea.FoodSynth.dir\.idea\projectSettingsUpdater.xml">
+        <Link>FoodSynth\.idea\.idea.FoodSynth.dir\.idea\projectSettingsUpdater.xml</Link>
+      </Content>
+      <Content Include="..\FoodSynth\.idea\.idea.FoodSynth.dir\.idea\vcs.xml">
+        <Link>FoodSynth\.idea\.idea.FoodSynth.dir\.idea\vcs.xml</Link>
+      </Content>
+      <Content Include="..\FoodSynth\.idea\.idea.FoodSynth.dir\.idea\workspace.xml">
+        <Link>FoodSynth\.idea\.idea.FoodSynth.dir\.idea\workspace.xml</Link>
+      </Content>
+      <Content Include="..\FoodSynth\obj\project.packagespec.json">
+        <Link>FoodSynth\obj\project.packagespec.json</Link>
+      </Content>
+    </ItemGroup>
+
+    <ItemGroup>
+      <Compile Include="..\FoodSynth\Comps\CompProperties_SpawnerSelectable.cs">
+        <Link>FoodSynth\Comps\CompProperties_SpawnerSelectable.cs</Link>
+      </Compile>
+      <Compile Include="..\FoodSynth\Comps\CompSpawnerSelectable.cs">
+        <Link>FoodSynth\Comps\CompSpawnerSelectable.cs</Link>
+      </Compile>
+    </ItemGroup>
+
 </Project>

@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Program Files (x86)\\Steam\\steamapps\\common\\RimWorld\\Mods\\Dead Ringers\\Source\\Replicants\\Replicants.csproj": {}
+    "C:\\Program Files (x86)\\Steam\\steamapps\\common\\RimWorld\\Mods\\Dead Ringers\\Resources\\Code\\Replicant\\Source\\Replicants\\Replicants.csproj": {}
   },
   "projects": {
-    "C:\\Program Files (x86)\\Steam\\steamapps\\common\\RimWorld\\Mods\\Dead Ringers\\Source\\Replicants\\Replicants.csproj": {
+    "C:\\Program Files (x86)\\Steam\\steamapps\\common\\RimWorld\\Mods\\Dead Ringers\\Resources\\Code\\Replicant\\Source\\Replicants\\Replicants.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Program Files (x86)\\Steam\\steamapps\\common\\RimWorld\\Mods\\Dead Ringers\\Source\\Replicants\\Replicants.csproj",
+        "projectUniqueName": "C:\\Program Files (x86)\\Steam\\steamapps\\common\\RimWorld\\Mods\\Dead Ringers\\Resources\\Code\\Replicant\\Source\\Replicants\\Replicants.csproj",
         "projectName": "Replicant",
-        "projectPath": "C:\\Program Files (x86)\\Steam\\steamapps\\common\\RimWorld\\Mods\\Dead Ringers\\Source\\Replicants\\Replicants.csproj",
+        "projectPath": "C:\\Program Files (x86)\\Steam\\steamapps\\common\\RimWorld\\Mods\\Dead Ringers\\Resources\\Code\\Replicant\\Source\\Replicants\\Replicants.csproj",
         "packagesPath": "C:\\Users\\Scott\\.nuget\\packages\\",
-        "outputPath": "C:\\Program Files (x86)\\Steam\\steamapps\\common\\RimWorld\\Mods\\Dead Ringers\\Source\\Replicants\\obj\\",
+        "outputPath": "C:\\Program Files (x86)\\Steam\\steamapps\\common\\RimWorld\\Mods\\Dead Ringers\\Resources\\Code\\Replicant\\Source\\Replicants\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Scott\\AppData\\Roaming\\NuGet\\NuGet.Config"

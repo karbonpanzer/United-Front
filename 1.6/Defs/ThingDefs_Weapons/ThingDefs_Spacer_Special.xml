@@ -20,7 +20,7 @@
 		</projectile>
 	</ThingDef>
 
-	<ThingDef ParentName="BaseHumanMakeableGun">
+	<ThingDef ParentName="BaseHumanMakeableGun" Name="DRG_ServiceLMG">
 		<defName>DRG_ServiceLMG</defName>
 		<label>Combat LMG</label>
 		<description>A modified form of the combat rifle used as a support weapon. Fitted with a longer barrel and a bipod, it also features a higher rate of fire, making it more effective as a light machinegun.</description>
@@ -127,7 +127,7 @@
 		</projectile>
 	</ThingDef>
 
-	<ThingDef ParentName="BaseHumanMakeableGun">
+	<ThingDef ParentName="BaseHumanMakeableGun" Name="DRG_SalvoGrenadeLauncher">
 		<defName>DRG_SalvoGrenadeLauncher</defName>
 		<label>Salvo Grenade Launcher</label>
 		<description>A rotary grenade launcher, favored by mercenaries. Designed for accuracy, it can fire a variety of grenades accurately in both lethal and nonlethal scenarios.</description>
@@ -230,7 +230,7 @@
 		</projectile>
 	</ThingDef>
 
-	<ThingDef ParentName="BaseHumanMakeableGun">
+	<ThingDef ParentName="BaseHumanMakeableGun" Name="DRG_AutoloaderCannon">
 		<defName>DRG_AutoloaderCannon</defName>
 		<label>Light Autoloader Cannon</label>
 		<description>A scaled down anti-tank cannon made for infantry use. Heavy, cumbersome, and slow, but capable of destroying armor effectively over great distances.</description>
@@ -333,7 +333,7 @@
 		</projectile>
 	</ThingDef>
 
-	<ThingDef ParentName="BaseHumanMakeableGun">
+	<ThingDef ParentName="BaseHumanMakeableGun" Name="DRG_HydraRifle">
 		<defName>DRG_HydraRifle</defName>
 		<label>Hydra Rifle</label>
 		<description>An experimental hyper-burst anti-material rifle chambered in high-powered armor piercing shells. Heavy and cumbersome, effective against both armored and unarmored targets.</description>

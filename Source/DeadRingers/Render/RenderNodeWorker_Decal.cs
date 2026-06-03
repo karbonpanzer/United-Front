@@ -4,7 +4,7 @@ namespace DeadRinger
 {
     public class PawnRenderNodeWorkerApparel : PawnRenderNodeWorker
     {
-        //VEF pattern — base check plus clothes visibility flag, no extra apparel scan
+        //Base check plus clothes visibility flag, no extra apparel scan
         public override bool CanDrawNow(PawnRenderNode node, PawnDrawParms parms)
         {
             if (!base.CanDrawNow(node, parms)) return false;
