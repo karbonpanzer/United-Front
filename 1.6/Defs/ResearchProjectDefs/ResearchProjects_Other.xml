@@ -18,21 +18,4 @@
 		<researchViewY>2.1</researchViewY>
 	</ResearchProjectDef>		
 
-	<ResearchProjectDef>
-		<defName>DRG_FoodSynthesizer</defName>
-		<label>Food Synthesizer</label>
-		<description>Build the Food Synthesizer to produce a steady supply of food.</description>
-		<baseCost>3000</baseCost>
-		<tab>DRG_ResearchTab</tab>
-		<techLevel>Spacer</techLevel>
-		<prerequisites>
-			<li>Fabrication</li>
-		</prerequisites>
-		<requiredAnalyzed>
-			<li>DRG_DecoderFoodSynthesizer</li>
-		</requiredAnalyzed>
-		<researchViewX>0</researchViewX>
-		<researchViewY>0.7</researchViewY>
-	</ResearchProjectDef>	
-
 </Defs>

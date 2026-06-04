@@ -1,30 +1,30 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Defs>
 
-  <ThingDef ParentName="BuildingBase">
-    <defName>DRG_FoodSynthesizer</defName>
-    <label>food synthesizer</label>
-    <description>An advanced molecular assembly unit that synthesizes edible food cubes from atmospheric compounds. A selection dial allows the operator to choose the output type. The machine hums with quiet purpose — utilitarian, reliable, and deeply unappetizing.</description>
-    <thingClass>Building</thingClass>
-    <graphicData>
-      <texPath>Things/Building/Special/FoodSynthesizer</texPath>
-      <graphicClass>Graphic_Single</graphicClass>
-      <drawSize>(3.5,3.5)</drawSize>
-      <shadowData>
-        <volume>(0.30, 0.30, 0.40)</volume>
-      </shadowData>
-    </graphicData>
-    <costList>
-      <Steel>150</Steel>
-      <Plasteel>75</Plasteel>
-      <ComponentSpacer>30</ComponentSpacer>
-    </costList>
-    <thingCategories>
-      <li>BuildingsSpecial</li>
-    </thingCategories>
-    <building>
-      <destroySound>BuildingDestroyed_Metal_Big</destroySound>
-    </building>
+<ThingDef ParentName="BuildingBase">
+  <defName>FoodSynthesizer</defName>
+  <label>food synthesizer</label>
+  <description>An advanced molecular assembly unit that synthesizes edible food cubes from atmospheric compounds. A selection dial allows the operator to choose the output type. The machine hums with quiet purpose — utilitarian, reliable, and deeply unappetizing.</description>
+  <thingClass>Building</thingClass>
+  <graphicData>
+    <texPath>Things/Building/Special/FoodSynthesizer</texPath>
+    <graphicClass>Graphic_Single</graphicClass>
+    <drawSize>(3, 3)</drawSize>
+    <shadowData>
+      <volume>(1.8, 1.0, 0.2)</volume>
+      <offset>(0.0, 0.0, -0.4)</offset>
+    </shadowData>
+  </graphicData>
+  <thingCategories>
+    <li>BuildingsSpecial</li>
+  </thingCategories>
+  <costList>
+    <Steel>250</Steel>
+    <ComponentSpacer>6</ComponentSpacer>
+  </costList>
+  <building>
+    <destroySound>BuildingDestroyed_Metal_Big</destroySound>
+  </building>
     <comps>
       <li Class="CompProperties_Power">
         <compClass>CompPowerTrader</compClass>
@@ -45,37 +45,31 @@
         <saveKeysPrefix>foodSynth</saveKeysPrefix>
       </li>
     </comps>
-    <altitudeLayer>Building</altitudeLayer>
-    <statBases>
-      <MarketValue>9000</MarketValue>
-      <MaxHitPoints>200</MaxHitPoints>
-      <Flammability>0.5</Flammability>
-      <Beauty>-5</Beauty>
-      <Mass>40</Mass>
-      <WorkToBuild>25000</WorkToBuild>
-    </statBases>
-    <thingSetMakerTags>
-      <li>RewardStandardCore</li>
-    </thingSetMakerTags>
-    <tickerType>Normal</tickerType>
-    <size>(1, 1)</size>
-    <fillPercent>1.0</fillPercent>
-    <leaveResourcesWhenKilled>false</leaveResourcesWhenKilled>
-    <terrainAffordanceNeeded>Medium</terrainAffordanceNeeded>
-    <passability>Impassable</passability>
-    <rotatable>false</rotatable>
-    <canOverlapZones>false</canOverlapZones>
-    <minifiedDef>MinifiedThing</minifiedDef>
-    <tradeability>Sellable</tradeability>
-    <tradeTags>
-      <li>ExoticBuilding</li>
-    </tradeTags>
-    <designationCategory>Production</designationCategory>
-    <constructionSkillPrerequisite>8</constructionSkillPrerequisite>
-    <constructEffect>ConstructMetal</constructEffect>
-    <researchPrerequisites>
-      <li>DRG_FoodSynthesizer</li>
-    </researchPrerequisites>
-  </ThingDef>
+  <altitudeLayer>Building</altitudeLayer>
+  <statBases>
+    <MarketValue>1800</MarketValue>
+    <MaxHitPoints>200</MaxHitPoints>
+    <Flammability>0.5</Flammability>
+    <Beauty>-5</Beauty>
+    <Mass>40</Mass>
+    <WorkToBuild>10000</WorkToBuild>
+  </statBases>
+  <thingSetMakerTags>
+    <li>RewardStandardCore</li>
+  </thingSetMakerTags>
+  <tickerType>Normal</tickerType>
+  <size>(1, 1)</size>
+  <fillPercent>1.0</fillPercent>
+  <leaveResourcesWhenKilled>false</leaveResourcesWhenKilled>
+  <terrainAffordanceNeeded>Medium</terrainAffordanceNeeded>
+  <passability>Impassable</passability>
+  <rotatable>false</rotatable>
+  <canOverlapZones>false</canOverlapZones>
+  <minifiedDef>MinifiedThing</minifiedDef>
+  <tradeability>Sellable</tradeability>
+  <tradeTags>
+    <li>ExoticBuilding</li>
+  </tradeTags>
+</ThingDef>
 
 </Defs>
