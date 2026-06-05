@@ -36,6 +36,8 @@
           <DRG_Vegblock>75</DRG_Vegblock>
           <DRG_Fruitblock>75</DRG_Fruitblock>
           <DRG_Chocoblock>50</DRG_Chocoblock>
+          <DRG_Squareloaf MayRequire="vanillaexpanded.vcooke">75</DRG_Squareloaf>
+          <DRG_Seasoncube MayRequire="vanillaexpanded.vcooke">50</DRG_Seasoncube>
         </spawnOptions>
         <spawnIntervalRange>100000~100000</spawnIntervalRange>
         <spawnMaxAdjacent>-1</spawnMaxAdjacent>
