@@ -5,7 +5,7 @@ namespace FoodSynthesizer
 {
     public class CompProperties_SpawnerSelectable : CompProperties
     {
-        //My addition — replaces the single thingToSpawn with a selectable list
+        //My addition which replaces the single thingToSpawn with a selectable list
         public List<ThingDefCountClass> spawnOptions = null!;
 
         //Carryover from CompProperties_Spawner
@@ -24,7 +24,7 @@ namespace FoodSynthesizer
             compClass = typeof(CompSpawnerSelectable);
         }
 
-        //I validate that spawnOptions isn't empty so I don't get null refs at runtime
+        //Validate that spawnOptions isn't empty so I don't get null refs at runtime
         public override IEnumerable<string> ConfigErrors(ThingDef parentDef)
         {
             foreach (string error in base.ConfigErrors(parentDef))

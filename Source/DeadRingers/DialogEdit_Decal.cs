@@ -1,5 +1,5 @@
+using System;
 using System.Collections.Generic;
-using System.Linq;
 using RimWorld;
 using UnityEngine;
 using Verse;
@@ -52,9 +52,8 @@ namespace DeadRinger
             _original = _profileSet;
 
             //Alpha sort filtered by current tab slot
-            _symbols = DecalUtil.SymbolsForSlot(_curTab)
-                .OrderBy(s => s.LabelCap.ToString())
-                .ToList();
+            _symbols = new List<DecalSymbol>(DecalUtil.SymbolsForSlot(_curTab));
+            _symbols.Sort((a, b) => string.Compare(a.LabelCap.ToString(), b.LabelCap.ToString(), StringComparison.Ordinal));
 
             _selectedHelmetIndex = FindSymbolIndex(_profileSet.Helmet.SymbolPath);
             _selectedArmorIndex = FindSymbolIndex(_profileSet.Armor.SymbolPath);
@@ -166,9 +165,8 @@ namespace DeadRinger
         {
             if (_curTab == slot) return;
             _curTab = slot;
-            _symbols = DecalUtil.SymbolsForSlot(_curTab)
-                .OrderBy(s => s.LabelCap.ToString())
-                .ToList();
+            _symbols = new List<DecalSymbol>(DecalUtil.SymbolsForSlot(_curTab));
+            _symbols.Sort((a, b) => string.Compare(a.LabelCap.ToString(), b.LabelCap.ToString(), StringComparison.Ordinal));
             _selectedHelmetIndex = FindSymbolIndex(_profileSet.Helmet.SymbolPath);
             _selectedArmorIndex = FindSymbolIndex(_profileSet.Armor.SymbolPath);
         }
@@ -387,7 +385,16 @@ namespace DeadRinger
             {
                 if (def.colorType == ColorType.Ideo || def.colorType == ColorType.Misc || def.colorType == ColorType.Structure)
                 {
-                    if (!colorSet.Any(c => c.IndistinguishableFrom(def.color)))
+                    bool duplicate = false;
+                    foreach (Color c in colorSet)
+                    {
+                        if (c.IndistinguishableFrom(def.color))
+                        {
+                            duplicate = true;
+                            break;
+                        }
+                    }
+                    if (!duplicate)
                         colorSet.Add(def.color);
                 }
             }

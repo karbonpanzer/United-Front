@@ -11,7 +11,7 @@
         <Nullable>enable</Nullable>
     </PropertyGroup>
 
-    <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|AnyCPU'">
+    <PropertyGroup>
         <PlatformTarget>AnyCPU</PlatformTarget>
         <DebugType>embedded</DebugType>
         <Optimize>false</Optimize>
@@ -20,16 +20,6 @@
         <ErrorReport>prompt</ErrorReport>
         <WarningLevel>4</WarningLevel>
         <LangVersion>Latest</LangVersion>
-    </PropertyGroup>
-    <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|AnyCPU'">
-        <PlatformTarget>AnyCPU</PlatformTarget>
-        <DebugType>embedded</DebugType>
-        <Optimize>true</Optimize>
-        <OutputPath>..\..\1.6\Assemblies\</OutputPath>
-        <DefineConstants>TRACE</DefineConstants>
-        <ErrorReport>prompt</ErrorReport>
-        <WarningLevel>4</WarningLevel>
-        <LangVersion>Latest</LangVersion>        
     </PropertyGroup>
 
     <ItemGroup>
