@@ -117,7 +117,7 @@ namespace DeadRinger
             {
                 if (throwMessages && Props.ShowWarningIfMissing)
                 {
-                    Messages.Message("This ability requires reloadable apparel that provides it.",
+                    Messages.Message("DeadRinger_AbilityRequiresReloadable".Translate(),
                         MessageTypeDefOf.RejectInput, historical: false);
                 }
                 return false;
@@ -141,7 +141,7 @@ namespace DeadRinger
             CompApparelReloadable? reloadable = Reloadable;
             if (reloadable == null)
             {
-                reason = "No reloadable apparel with this ability equipped.";
+                reason = "DeadRinger_NoReloadableEquipped".Translate();
                 return true;
             }
 
@@ -159,10 +159,12 @@ namespace DeadRinger
             CompApparelReloadable? reloadable = Reloadable;
             if (reloadable != null && _cachedApparel != null)
             {
-                return $"Requires: {_cachedApparel.LabelCap}\n" +
-                       $"Charges: {reloadable.RemainingCharges} / {reloadable.MaxCharges}";
+                return "DeadRinger_ReloadableTooltip".Translate(
+                    _cachedApparel.LabelCap,
+                    reloadable.RemainingCharges,
+                    reloadable.MaxCharges);
             }
-            return "Requires reloadable apparel that provides this ability.";
+            return "DeadRinger_AbilityRequiresReloadable".Translate();
         }
     }
 
