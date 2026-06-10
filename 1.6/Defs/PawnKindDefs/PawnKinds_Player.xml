@@ -5,8 +5,6 @@
 		<label>Ringer settlers</label>
 		<race>Human</race>
 		<defaultFactionType>DRG_Player</defaultFactionType>
-		<nameMaker>DRG_Ringer_NamerMale</nameMaker>
-		<nameMakerFemale>DRG_Ringer_NamerFemale</nameMakerFemale>
 		<backstoryFiltersOverride>
 			<li>
 				<categories>

@@ -17,8 +17,7 @@
         <maxGenerationAge>50</maxGenerationAge>
         <combatEnhancingDrugsChance>0</combatEnhancingDrugsChance>
         <isFighter>false</isFighter>
-        <nameMaker>DRG_Ringer_NamerMale</nameMaker>
-        <nameMakerFemale>DRG_Ringer_NamerFemale</nameMakerFemale>
+
         <backstoryFiltersOverride>
             <li>
                 <categories>
@@ -85,8 +84,7 @@
         <maxGenerationAge>60</maxGenerationAge>
         <combatEnhancingDrugsChance>0</combatEnhancingDrugsChance>
         <isFighter>false</isFighter>
-        <nameMaker>DRG_Ringer_NamerMale</nameMaker>
-        <nameMakerFemale>DRG_Ringer_NamerFemale</nameMakerFemale>
+
         <backstoryFiltersOverride>
             <li>
                 <categories>
@@ -136,8 +134,7 @@
         <maxGenerationAge>35</maxGenerationAge>
         <combatEnhancingDrugsChance>0</combatEnhancingDrugsChance>
         <isFighter>true</isFighter>
-        <nameMaker>DRG_Ringer_NamerMale</nameMaker>
-        <nameMakerFemale>DRG_Ringer_NamerFemale</nameMakerFemale>
+
         <backstoryFiltersOverride>
             <li>
                 <categories>
