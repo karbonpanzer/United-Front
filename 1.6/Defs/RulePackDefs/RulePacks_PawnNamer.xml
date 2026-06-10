@@ -1,43 +1,18 @@
-<?xml version="1.0" encoding="utf-8" ?>
+<?xml version="1.0" encoding="utf-8"?>
 <Defs>
 
   <RulePackDef>
     <defName>DRG_PawnNamerRinger</defName>
     <rulePack>
+      <rulesStrings>
+        <li>r_name_male->[firstname_male] [surname]</li>
+        <li>r_name_female->[firstname_female] [surname]</li>
+      </rulesStrings>
       <rulesFiles>
-        <li>DRG_Ringer_Male->Names/DRG_Ringer_Male</li>
-        <li>DRG_Ringer_Female->Names/DRG_Ringer_Female</li>
-        <li>DRG_Ringer_Surname->Names/DRG_Ringer_Surname</li>
+        <li>firstname_male->Names/DRG_Ringer_Male</li>
+        <li>firstname_female->Names/DRG_Ringer_Female</li>
+        <li>surname->Names/DRG_Ringer_Surname</li>
       </rulesFiles>
-      <rulesStrings>
-        <li>DRG_Ringer_Male->[DRG_Ringer_Male]</li>
-        <li>DRG_Ringer_Female->[DRG_Ringer_Female]</li>
-        <li>DRG_Ringer_Surname->[DRG_Ringer_Surname]</li>
-      </rulesStrings>
-    </rulePack>
-  </RulePackDef>
-
-  <RulePackDef>
-    <defName>DRG_Ringer_NamerMale</defName>
-    <include>
-      <li>DRG_PawnNamerRinger</li>
-    </include>
-    <rulePack>
-      <rulesStrings>
-        <li>r_name(p=2)->[DRG_Ringer_Male] [DRG_Ringer_Surname]</li>
-      </rulesStrings>
-    </rulePack>
-  </RulePackDef>
-
-  <RulePackDef>
-    <defName>DRG_Ringer_NamerFemale</defName>
-    <include>
-      <li>DRG_PawnNamerRinger</li>
-    </include>
-    <rulePack>
-      <rulesStrings>
-        <li>r_name(p=2)->[DRG_Ringer_Female] [DRG_Ringer_Surname]</li>
-      </rulesStrings>
     </rulePack>
   </RulePackDef>
 

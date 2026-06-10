@@ -4,7 +4,7 @@
 	<FactionDef ParentName="PlayerFactionBase">
 		<defName>DRG_Player</defName>
 		<label>Outcast refugees</label>
-		<description>A colony of war refugees displaced from a fallen industrial world that the Empire could no longer defend. They carry what Imperial-pattern gear they could evacuate with, and the will to build something stable on the rim.</description>
+		<description>A colony of war refugees displaced from a fallen industrial world that the Empire could no longer defend. They carry whatever Imperial gear they could evacuate with, and the will to build something stable on the rim.</description>
 		<colorSpectrum>
             <li>(0, 0.737, 0.847)</li>
 		</colorSpectrum>
@@ -43,7 +43,7 @@
 	<FactionDef ParentName="FactionBase">
 		<defName>DRG_Civil</defName>
 		<label>Outcast refugees</label>
-		<description>War refugees from a fallen industrial world. When their homeworld was overrun by the mechanoids and the Empire's reinforcements never came, the survivors scattered across the rimworlds in search of stability they no longer had.\n\nThey carry Imperial-pattern weapons, composite armor, and the discipline of subjects who once belonged to something larger. With their homeworld gone, they cannot replace what breaks or replenish what runs out. Their settlements are provisional by necessity and permanent by hope: charters and compacts drawn up around campfires, founding documents signed by people who remember being citizens.\n\nResilient, charitable, and fiercely cooperative, they make excellent allies and stubborn enemies.</description>
+		<description>War refugees from a fallen industrial world. When their homeworld was overrun by the mechanoids and the Empire's reinforcements never came, the survivors scattered across the rimworlds in search of stability they no longer had.\n\nThey carry Imperial weapons, composite armor, and the discipline of subjects who once belonged to something larger. With their homeworld gone, they cannot replace what breaks or replenish what runs out. They retain spacer technology by inheritance, not by capacity. Their settlements are provisional by necessity and permanent by hope: charters and compacts drawn up around campfires, founding documents signed by people who remember being citizens.\n\nResilient, charitable, and fiercely cooperative, they make excellent allies and stubborn enemies.</description>
 		<pawnSingular>outcast</pawnSingular>
 		<pawnsPlural>outcasts</pawnsPlural>
 		<listOrderPriority>13</listOrderPriority>
@@ -245,7 +245,7 @@
 	<FactionDef ParentName="FactionBase">
 		<defName>DRG_Rough</defName>
 		<label>Free Companies</label>
-		<description>When their homeworld fell, not everyone wanted to start over. The harder elements of the displaced population broke from the civilian diaspora and kept moving.\n\nThey operate as free companies and bushwhacker bands, organized along the military lines they served under, selling their services where they can and taking what they want where they can't. They carry the same Imperial-pattern weapons as their settled cousins, but where the settlers see a finite supply to conserve, the Free Companies see a reason to keep raiding for spare parts and replacement gear.\n\nThey are not lawless chaos. They are something more dangerous: an army that lost its war and never demobilized.</description>
+		<description>When their homeworld fell, not everyone wanted to start over. The harder elements of the displaced population broke from the civilian diaspora and kept moving. These were paramilitaries, security divisions, and opportunists with their formations intact.\n\nThey operate as free companies and bushwhacker bands, organized along the military lines they served under, selling their services where they can and taking what they want where they can't. They carry the same Imperial weapons as their settled cousins, but where the settlers see a finite supply to conserve, the Free Companies see a reason to keep raiding for spare parts and replacement gear.\n\nThey are not lawless chaos. They are something more dangerous: an army that lost its war and never demobilized.</description>
 		<pawnSingular>mercenary</pawnSingular>
 		<pawnsPlural>mercenaries</pawnsPlural>
 		<listOrderPriority>13</listOrderPriority>
