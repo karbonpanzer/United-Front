@@ -7,6 +7,7 @@
 		<li IfModActive="Ludeon.RimWorld.Biotech">1.6/Mods/Biotech</li>	
 		<li IfModActive="VanillaExpanded.VWE">1.6/Mods/VWE</li>
 		<li IfModActive="VanillaExpanded.VWENL">1.6/Mods/VWENL</li>	
-		<li IfModActive="VanillaExpanded.VCookE">1.6/Mods/VEC</li>									
+		<li IfModActive="VanillaExpanded.VCookE">1.6/Mods/VEC</li>
+		<li IfModActive="issaczhuang.muzzleflash">1.6/Mods/MuzzleFlash</li>									
 	</v1.6>
 </loadFolders>
