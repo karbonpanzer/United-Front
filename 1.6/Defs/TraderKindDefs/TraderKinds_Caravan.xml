@@ -79,16 +79,6 @@
           <li>Pemmican</li>
         </thingDefs>
       </li>
-      <!-- Faction-specific food cubes -->
-      <li Class="StockGenerator_MultiDef">
-        <thingDefs>
-          <li>DRG_Meatcube</li>
-          <li>DRG_Vegblock</li>
-          <li>DRG_Fruitblock</li>
-          <li>DRG_Chocoblock</li>
-        </thingDefs>
-        <countRange>15~40</countRange>
-      </li>
 
       <!-- Textiles -->
       <li Class="StockGenerator_Category">
@@ -542,7 +532,6 @@
         <thingDefs>
           <li>Kibble</li>
           <li>Pemmican</li>
-          <li>DRG_Meatcube</li>
         </thingDefs>
         <countRange>10~25</countRange>
       </li>

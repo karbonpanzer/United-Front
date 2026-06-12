@@ -34,17 +34,6 @@
         </thingDefs>
       </li>
 
-      <!-- Faction food -->
-      <li Class="StockGenerator_MultiDef">
-        <thingDefs>
-          <li>DRG_Meatcube</li>
-          <li>DRG_Vegblock</li>
-          <li>DRG_Fruitblock</li>
-          <li>DRG_Chocoblock</li>
-        </thingDefs>
-        <countRange>5~15</countRange>
-      </li>
-
       <!-- Drugs -->
       <li Class="StockGenerator_Category">
         <categoryDef>Drugs</categoryDef>

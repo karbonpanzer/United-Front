@@ -6,3 +6,7 @@ United
 Settler
 Allied
 Reformed
+Transitional
+Sovereign
+Independent
+Reorganized

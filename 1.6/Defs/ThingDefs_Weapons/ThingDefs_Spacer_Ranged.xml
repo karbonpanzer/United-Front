@@ -484,7 +484,7 @@
 		<tradeTags>
 			<li>WeaponRanged</li>
 		</tradeTags>
-		<uiIconScale>1.15</uiIconScale>
+		<uiIconScale>1.05</uiIconScale>
 	</ThingDef>
 
 	<ThingDef ParentName="BaseBullet">
@@ -577,7 +577,7 @@
 		<tradeTags>
 			<li>WeaponRanged</li>
 		</tradeTags>
-		<uiIconScale>1.15</uiIconScale>
+		<uiIconScale>1.05</uiIconScale>
 	</ThingDef>
 
 	<ThingDef ParentName="BaseBullet">
@@ -674,7 +674,7 @@
 		<tradeTags>
 			<li>WeaponRanged</li>
 		</tradeTags>
-		<uiIconScale>1.15</uiIconScale>
+		<uiIconScale>1.05</uiIconScale>
 	</ThingDef>	
 
 	<ThingDef ParentName="BaseBullet">
@@ -775,7 +775,7 @@
 		<tradeTags>
 			<li>WeaponRanged</li>
 		</tradeTags>
-		<uiIconScale>1.15</uiIconScale>
+		<uiIconScale>1.05</uiIconScale>
 	</ThingDef>	
 
 	<!-- Shotguns -->
@@ -875,7 +875,7 @@
 		<tradeTags>
 			<li>WeaponRanged</li>
 		</tradeTags>
-		<uiIconScale>1.15</uiIconScale>
+		<uiIconScale>1.00</uiIconScale>
 	</ThingDef>
 
 	<ThingDef ParentName="BaseBullet">
@@ -973,7 +973,7 @@
 		<tradeTags>
 			<li>WeaponRanged</li>
 		</tradeTags>
-		<uiIconScale>1.3</uiIconScale>
+		<uiIconScale>1.15</uiIconScale>
 	</ThingDef>
 
 </Defs>

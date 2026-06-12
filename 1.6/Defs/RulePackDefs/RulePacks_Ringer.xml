@@ -8,13 +8,34 @@
 		</include>
 		<rulePack>
 			<rulesStrings>
-				<li>r_name(p=3)->[nearnameinitial]</li>
-				<li>r_name->[nearnameinitial] [political_union_outcast]</li>
-				<li>r_name->[nearnameinitial] [political_adjective_outcast] [political_union_outcast]</li>
-				<li>r_name->[political_union_outcast] of [nearnameinitial]</li>
-				<li>r_name->[political_adjective_outcast] [political_union_outcast] of [nearnameinitial]</li>
+				<li>r_name(p=3)->Provisional Republic of [nearnameinitial]</li>
+				<li>r_name(p=2)->Provisional Government of [nearnameinitial]</li>
+				<li>r_name(p=2)->[nearnameinitial] Reconstruction Authority</li>
+				<li>r_name(p=2)->[nearnameinitial] Provisional Authority</li>
+				<li>r_name(p=2)->[nearnameinitial] Transitional Council</li>
+				<li>r_name(p=2)->Interim Authority of [nearnameinitial]</li>
+				<li>r_name(p=1)->Reconstruction Authority of [nearnameinitial]</li>
+				<li>r_name(p=1)->[nearnameinitial] Emergency Committee</li>
+
+				<li>r_name(p=3)->People's Republic of [nearnameinitial]</li>
+				<li>r_name(p=2)->[nearnameinitial] Free Territories</li>
+				<li>r_name(p=2)->Free Territories of [nearnameinitial]</li>
+				<li>r_name(p=2)->The [nearnameinitial] Soviet</li>
+				<li>r_name(p=2)->[nearnameinitial] Workers' Council</li>
+				<li>r_name(p=2)->[nearnameinitial] Collective</li>
+				<li>r_name(p=2)->Workers' Republic of [nearnameinitial]</li>
+				<li>r_name(p=2)->People's Compact of [nearnameinitial]</li>
+				<li>r_name(p=1)->The [nearnameinitial] Cooperative</li>
+				<li>r_name(p=1)->Toilers' Compact of [nearnameinitial]</li>
+				<li>r_name(p=1)->People's Federation of [nearnameinitial]</li>
+
+				<li>r_name(p=3)->[nearnameinitial] [political_union_outcast]</li>
+				<li>r_name(p=3)->[political_union_outcast] of [nearnameinitial]</li>
+				<li>r_name(p=3)->[political_adjective_outcast] [political_union_outcast] of [nearnameinitial]</li>
+				<li>r_name(p=2)->The [political_union_outcast] of [nearnameinitial]</li>
+				<li>r_name(p=2)->[nearnameinitial] [political_adjective_outcast] [political_union_outcast]</li>
+
 				<li>nearnameinitial(p=3)->[PlaceOutlander]</li>
-				<li>nearnameinitial(p=2)->New [PlaceOutlander]</li>
 				<li>nearnameinitial->[Direction] [PlaceOutlander]</li>
 			</rulesStrings>
 			<rulesFiles>
@@ -23,6 +44,67 @@
 			</rulesFiles>
 		</rulePack>
 	</RulePackDef>
+
+	<RulePackDef>
+		<defName>DRG_Settlement_Outcast</defName>
+		<include>
+			<li>OutlanderPlaceNameUtility</li>
+		</include>
+		<rulePack>
+			<rulesStrings>
+				<li>r_name(p=4)->New [ghosttown]</li>
+				<li>r_name(p=3)->New [concept_outcast]</li>
+				<li>r_name(p=2)->New [PlaceOutlander]</li>
+
+				<li>r_name(p=3)->[Character]grad</li>
+				<li>r_name(p=2)->New [Character]grad</li>
+				<li>r_name(p=2)->[Character]burg</li>
+				<li>r_name(p=1)->Port [Character]</li>
+
+				<li>r_name(p=4)->[concept_outcast]</li>
+				<li>r_name(p=2)->[concept_outcast] [community_term]</li>
+				<li>r_name(p=1)->Port [concept_outcast]</li>
+
+				<li>r_name(p=6)->[ghosttown]</li>
+				<li>r_name(p=3)->Fort [ghosttown]</li>
+				<li>r_name(p=2)->Old [ghosttown]</li>
+				<li>r_name(p=3)->[townname_wordgen]</li>
+				<li>r_name(p=2)->[townname_fixed]</li>
+				<li>r_name(p=2)->[townname_combo]</li>
+
+				<li>r_name(p=2)->[Character]'s Crossing</li>
+				<li>r_name(p=2)->[Character]'s Landing</li>
+				<li>r_name(p=1)->[Character]'s Haven</li>
+				<li>r_name(p=1)->[Character]'s Reach</li>
+
+				<li>community_term->Reach</li>
+				<li>community_term->Stand</li>
+				<li>community_term->Hold</li>
+				<li>community_term->Haven</li>
+				<li>community_term->Crossing</li>
+
+				<li>townname_wordgen(p=2)->[SylE][SylE]</li>
+				<li>townname_wordgen->[SylE][townend]</li>
+
+				<li>townname_combo->[Character]'s [Community]</li>
+				<li>townname_combo->[concept_positive] [Community]</li>
+
+				<li>townend->ville</li>
+				<li>townend->ton</li>
+				<li>townend->dale</li>
+				<li>townend->mere</li>
+				<li>townend->well</li>
+				<li>townend->wood</li>
+				<li>townend->land</li>
+			</rulesStrings>
+			<rulesFiles>
+				<li>townname_fixed->Names/OutlanderTown</li>
+				<li>concept_positive->Words/Nouns/Concepts_Positive</li>
+				<li>ghosttown->Names/DRG_GhostTowns</li>
+				<li>concept_outcast->Words/Nouns/Concepts_Outcast</li>
+			</rulesFiles>
+		</rulePack>
+	</RulePackDef>	
 
 	<RulePackDef>
 		<defName>DRG_Faction_Freebooters</defName>
@@ -49,51 +131,6 @@
 			</rulesStrings>
 			<rulesFiles>
 				<li>groupname->Words/Nouns/GroupNames</li>
-			</rulesFiles>
-		</rulePack>
-	</RulePackDef>
-
-	<RulePackDef>
-		<defName>DRG_Settlement_Outcast</defName>
-		<include>
-			<li>OutlanderPlaceNameUtility</li>
-		</include>
-		<rulePack>
-			<rulesStrings>
-				<li>r_name(p=8)->[townname_wordgen]</li>
-				<li>r_name(p=4)->[townname_fixed]</li>
-				<li>r_name(p=3)->[townname_combo]</li>
-				<li>r_name(p=3)->[townname_outcast]</li>
-
-				<li>townname_outcast->New [PlaceOutlander]</li>
-				<li>townname_outcast->Fort [PlaceOutlander]</li>
-				<li>townname_outcast->[Character]'s Crossing</li>
-				<li>townname_outcast->[Character]'s Landing</li>
-				<li>townname_outcast->[Character]'s Haven</li>
-				<li>townname_outcast->[Character]'s Reach</li>
-
-				<li>townname_wordgen(p=2)->[SylE][SylE]</li>
-				<li>townname_wordgen(p=2)->[SylE][townend]</li>
-				<li>townname_wordgen->[TerrainFeature][townend]</li>
-
-				<li>townname_combo->[Character]'s [Community]</li>
-				<li>townname_combo->[concept_positive] [Community]</li>
-				<li>townname_combo->[concept_positive] [TerrainFeature]</li>
-
-				<li>townend->ville</li>
-				<li>townend->ton</li>
-				<li>townend->hurst</li>
-				<li>townend->dale</li>
-				<li>townend->mere</li>
-				<li>townend->well</li>
-				<li>townend->wood</li>
-				<li>townend->land</li>
-				<li>townend->worth</li>
-				<li>townend->bourne</li>
-			</rulesStrings>
-			<rulesFiles>
-				<li>townname_fixed->Names/OutlanderTown</li>
-				<li>concept_positive->Words/Nouns/Concepts_Positive</li>
 			</rulesFiles>
 		</rulePack>
 	</RulePackDef>

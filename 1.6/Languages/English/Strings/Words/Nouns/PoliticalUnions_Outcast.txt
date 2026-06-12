@@ -6,3 +6,8 @@ Covenant
 Accord
 Cooperative
 Commune
+Authority
+Republic
+Federation
+Collective
+Territories
