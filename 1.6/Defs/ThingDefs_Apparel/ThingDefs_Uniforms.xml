@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Defs>
   <ThingDef ParentName="ApparelMakeableBase">
-    <defName>DITN_RingerUniform_SuperHot</defName>
-    <label>Ringer Uniform (Desert)</label>
-    <description>A standard Ringer duty uniform adapted for extreme heat. Stripped to the minimum needed for function, with a light weave that resists heat buildup.</description>
+    <defName>DITN_OutcastUniform_SuperHot</defName>
+    <label>Outcast Uniform (Desert)</label>
+    <description>A standard Outcast duty uniform adapted for extreme heat. Stripped to the minimum needed for function, with a light weave that resists heat buildup.</description>
     <graphicData>
       <graphicClass>Graphic_Single</graphicClass>
       <texPath>Things/Pawn/Humanlike/Clothes/FieldUniformHell/FieldUniformHell</texPath>
@@ -58,7 +58,7 @@
         <li>OnSkin</li>
       </layers>
       <tags>
-        <li>DITN_RingerUniform</li>
+        <li>DITN_OutcastUniform</li>
       </tags>
       <defaultOutfitTags>
         <li>Soldier</li>
@@ -76,9 +76,9 @@
   </ThingDef>
 
 	<ThingDef ParentName="HatMakeableBase">
-    <defName>DITN_RingerHat_Hot</defName>
-    <label>Ringer Uniform Headwear (Steppe)</label>
-    <description>A wide-brimmed field cap worn by Ringer personnel in desert postings. Shades the face and neck from direct sun.</description>
+    <defName>DITN_OutcastHat_Hot</defName>
+    <label>Outcast Uniform Headwear (Steppe)</label>
+    <description>A wide-brimmed field cap worn by Outcast personnel in desert postings. Shades the face and neck from direct sun.</description>
     <graphicData>
       <texPath>Things/Pawn/Humanlike/Headgear/FieldHatHell/FieldHatHell</texPath>
       <graphicClass>Graphic_Single</graphicClass>
@@ -128,7 +128,7 @@
         <li>Overhead</li>
       </layers>
       <tags>
-        <li>DITN_RingerUniform</li>
+        <li>DITN_OutcastUniform</li>
       </tags>
       <defaultOutfitTags>
         <li>Soldier</li>
@@ -150,9 +150,9 @@
   </ThingDef>
 
 	<ThingDef ParentName="ApparelMakeableBase">
-    <defName>DITN_RingerUniform_Hot</defName>
-    <label>Ringer Uniform (Steppe)</label>
-    <description>A standard Ringer duty uniform adapted for Steppe and desert postings. Loose-weave fabric reduces heat absorption and allows some airflow.</description>
+    <defName>DITN_OutcastUniform_Hot</defName>
+    <label>Outcast Uniform (Steppe)</label>
+    <description>A standard Outcast duty uniform adapted for Steppe and desert postings. Loose-weave fabric reduces heat absorption and allows some airflow.</description>
     <graphicData>
       <graphicClass>Graphic_Single</graphicClass>
       <texPath>Things/Pawn/Humanlike/Clothes/FieldUniformDesert/FieldUniformDesert</texPath>
@@ -176,7 +176,7 @@
       </options>
     </colorGenerator>
     <recipeMaker>
-      <researchPrerequisite>DITN_RingerUniforms</researchPrerequisite>
+      <researchPrerequisite>DITN_OutcastUniforms</researchPrerequisite>
     </recipeMaker>
     <stuffCategories>
       <li>Fabric</li>
@@ -207,7 +207,7 @@
         <li>OnSkin</li>
       </layers>
       <tags>
-        <li>DITN_RingerUniform</li>
+        <li>DITN_OutcastUniform</li>
       </tags>
       <defaultOutfitTags>
         <li>Soldier</li>
@@ -225,7 +225,7 @@
   </ThingDef>
 
 	<ThingDef ParentName="HatMakeableBase">
-    <defName>DITN_RingerHat_SuperHot</defName>
+    <defName>DITN_OutcastHat_SuperHot</defName>
     <label>Field Hat (Arid)</label>
     <description>Based on an Old Earth design from the 3rd Era of Imperialism. This headgear is designed to protect the wearer from the worst heat they can find in the Rim. Providing not only cool headwear but also protecting the wearer from the worst that the sun can provide. Originally designed for usage on Spiceworld Regiments, it is now found in more worlds than the uniform that it came from.</description>
     <graphicData>
@@ -251,7 +251,7 @@
       </options>
     </colorGenerator>
     <recipeMaker>
-      <researchPrerequisite>DITN_RingerUniforms</researchPrerequisite>
+      <researchPrerequisite>DITN_OutcastUniforms</researchPrerequisite>
     </recipeMaker>
     <stuffCategories>
       <li>Fabric</li>
@@ -277,7 +277,7 @@
         <li>Overhead</li>
       </layers>
       <tags>
-        <li>DITN_RingerUniform</li>
+        <li>DITN_OutcastUniform</li>
       </tags>
       <defaultOutfitTags>
         <li>Soldier</li>
@@ -299,9 +299,9 @@
   </ThingDef>
 
 	<ThingDef ParentName="ApparelMakeableBase">
-    <defName>DITN_RingerUniform_Temperate</defName>
-    <label>Ringer Uniform (Temperate)</label>
-    <description>The standard Ringer duty uniform, balanced for moderate climates. Worn by most deployed Ringer personnel across a wide range of postings.</description>
+    <defName>DITN_OutcastUniform_Temperate</defName>
+    <label>Outcast Uniform (Temperate)</label>
+    <description>The standard Outcast duty uniform, balanced for moderate climates. Worn by most deployed Outcast personnel across a wide range of postings.</description>
     <graphicData>
       <graphicClass>Graphic_Single</graphicClass>
       <texPath>Things/Pawn/Humanlike/Clothes/FieldUniformTemperate/FieldUniformTemperate</texPath>
@@ -329,7 +329,7 @@
       </options>
     </colorGenerator>
     <recipeMaker>
-      <researchPrerequisite>DITN_RingerUniforms</researchPrerequisite>
+      <researchPrerequisite>DITN_OutcastUniforms</researchPrerequisite>
     </recipeMaker>
     <stuffCategories>
       <li>Fabric</li>
@@ -360,7 +360,7 @@
         <li>OnSkin</li>
       </layers>
       <tags>
-        <li>DITN_RingerUniform</li>
+        <li>DITN_OutcastUniform</li>
       </tags>
       <defaultOutfitTags>
         <li>Soldier</li>
@@ -378,9 +378,9 @@
   </ThingDef>
 
 	<ThingDef ParentName="HatMakeableBase">
-    <defName>DITN_RingerHat_Temperate</defName>
-    <label>Ringer Uniform Headwear (Temperate)</label>
-    <description>A standard Ringer field cap, worn across most postings. Provides modest weather protection and carries unit markings.</description>
+    <defName>DITN_OutcastHat_Temperate</defName>
+    <label>Outcast Uniform Headwear (Temperate)</label>
+    <description>A standard Outcast field cap, worn across most postings. Provides modest weather protection and carries unit markings.</description>
     <graphicData>
       <texPath>Things/Pawn/Humanlike/Headgear/FieldHatTemperate/FieldHatTemperate</texPath>
       <graphicClass>Graphic_Single</graphicClass>
@@ -408,7 +408,7 @@
       </options>
     </colorGenerator>
     <recipeMaker>
-      <researchPrerequisite>DITN_RingerUniforms</researchPrerequisite>
+      <researchPrerequisite>DITN_OutcastUniforms</researchPrerequisite>
     </recipeMaker>
     <stuffCategories>
       <li>Fabric</li>
@@ -434,7 +434,7 @@
         <li>Overhead</li>
       </layers>
       <tags>
-        <li>DITN_RingerUniform</li>
+        <li>DITN_OutcastUniform</li>
       </tags>
       <defaultOutfitTags>
         <li>Soldier</li>
@@ -456,9 +456,9 @@
   </ThingDef>
 
 	<ThingDef ParentName="ApparelMakeableBase">
-    <defName>DITN_RingerUniform_Cold</defName>
-    <label>Ringer Uniform (Boreal)</label>
-    <description>A standard Ringer duty uniform layered for cold forest climates. Thick enough to retain warmth, flexible enough for movement through difficult terrain.</description>
+    <defName>DITN_OutcastUniform_Cold</defName>
+    <label>Outcast Uniform (Boreal)</label>
+    <description>A standard Outcast duty uniform layered for cold forest climates. Thick enough to retain warmth, flexible enough for movement through difficult terrain.</description>
     <graphicData>
       <graphicClass>Graphic_Single</graphicClass>
       <texPath>Things/Pawn/Humanlike/Clothes/FieldUniformWinter/FieldUniformWinter</texPath>
@@ -486,7 +486,7 @@
       </options>
     </colorGenerator>
     <recipeMaker>
-      <researchPrerequisite>DITN_RingerUniforms</researchPrerequisite>
+      <researchPrerequisite>DITN_OutcastUniforms</researchPrerequisite>
     </recipeMaker>
     <stuffCategories>
       <li>Fabric</li>
@@ -517,7 +517,7 @@
         <li>OnSkin</li>
       </layers>
       <tags>
-        <li>DITN_RingerUniform</li>
+        <li>DITN_OutcastUniform</li>
       </tags>
       <defaultOutfitTags>
         <li>Soldier</li>
@@ -535,9 +535,9 @@
   </ThingDef>
 
 	<ThingDef ParentName="HatMakeableBase">
-    <defName>DITN_RingerHat_Cold</defName>
-    <label>Ringer Uniform Headwear (Boreal)</label>
-    <description>A mid-weight field cap with insulated lining, worn by Ringer personnel in cold forest postings. Covers the ears without significantly restricting peripheral vision.</description>
+    <defName>DITN_OutcastHat_Cold</defName>
+    <label>Outcast Uniform Headwear (Boreal)</label>
+    <description>A mid-weight field cap with insulated lining, worn by Outcast personnel in cold forest postings. Covers the ears without significantly restricting peripheral vision.</description>
     <graphicData>
       <texPath>Things/Pawn/Humanlike/Headgear/FieldHatWinter/FieldHatWinter</texPath>
       <graphicClass>Graphic_Single</graphicClass>
@@ -565,7 +565,7 @@
       </options>
     </colorGenerator>
     <recipeMaker>
-      <researchPrerequisite>DITN_RingerUniforms</researchPrerequisite>
+      <researchPrerequisite>DITN_OutcastUniforms</researchPrerequisite>
     </recipeMaker>
     <stuffCategories>
       <li>Fabric</li>
@@ -591,7 +591,7 @@
         <li>Overhead</li>
       </layers>
       <tags>
-        <li>DITN_RingerUniform</li>
+        <li>DITN_OutcastUniform</li>
       </tags>
       <defaultOutfitTags>
         <li>Soldier</li>
@@ -613,9 +613,9 @@
   </ThingDef>
 
 	<ThingDef ParentName="ApparelMakeableBase">
-    <defName>DITN_RingerUniform_SuperCold</defName>
-    <label>Ringer Uniform (Tundra)</label>
-    <description>A standard Ringer duty uniform insulated for extreme cold. Reinforced seams and sealed cuffs keep heat in when outside temperatures become dangerous.</description>
+    <defName>DITN_OutcastUniform_SuperCold</defName>
+    <label>Outcast Uniform (Tundra)</label>
+    <description>A standard Outcast duty uniform insulated for extreme cold. Reinforced seams and sealed cuffs keep heat in when outside temperatures become dangerous.</description>
     <graphicData>
       <graphicClass>Graphic_Single</graphicClass>
       <texPath>Things/Pawn/Humanlike/Clothes/FieldUniformArctic/FieldUniformArctic</texPath>
@@ -674,7 +674,7 @@
         <li>OnSkin</li>
       </layers>
       <tags>
-        <li>DITN_RingerUniform</li>
+        <li>DITN_OutcastUniform</li>
       </tags>
       <defaultOutfitTags>
         <li>Soldier</li>
@@ -692,9 +692,9 @@
   </ThingDef>
 
 	<ThingDef ParentName="HatMakeableBase">
-    <defName>DITN_RingerHat_SuperCold</defName>
-    <label>Ringer Uniform Headwear (Tundra)</label>
-    <description>A fully insulated field cap worn by Ringer personnel in extreme cold. Covers the ears, brow, and most of the face to prevent frostbite in subzero conditions.</description>
+    <defName>DITN_OutcastHat_SuperCold</defName>
+    <label>Outcast Uniform Headwear (Tundra)</label>
+    <description>A fully insulated field cap worn by Outcast personnel in extreme cold. Covers the ears, brow, and most of the face to prevent frostbite in subzero conditions.</description>
     <graphicData>
       <texPath>Things/Pawn/Humanlike/Headgear/FieldHatArctic/FieldHatArctic</texPath>
       <graphicClass>Graphic_Single</graphicClass>
@@ -748,7 +748,7 @@
         <li>Overhead</li>
       </layers>
       <tags>
-        <li>DITN_RingerUniform</li>
+        <li>DITN_OutcastUniform</li>
       </tags>
       <defaultOutfitTags>
         <li>Soldier</li>

@@ -2,7 +2,7 @@
 <Defs>
 
   <TraderKindDef>
-    <defName>Base_Ringer_Standard</defName>
+    <defName>Base_Outcast_Standard</defName>
     <stockGenerators>
 
       <!-- Resources -->

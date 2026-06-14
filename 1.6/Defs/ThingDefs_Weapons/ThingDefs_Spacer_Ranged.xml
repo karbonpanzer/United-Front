@@ -69,7 +69,7 @@
 			</li>
 		</verbs>
 		<weaponTags>
-			<li>DITN_RingerHeavyPistol</li>
+			<li>DITN_OutcastHeavyPistol</li>
 		</weaponTags>
 		<tools>
 			<li>
@@ -127,7 +127,7 @@
 		<techLevel>Spacer</techLevel>
 		<soundInteract>Interact_Autopistol</soundInteract>
 		<recipeMaker>
-			<researchPrerequisite>DITN_RingerWeaponry</researchPrerequisite>
+			<researchPrerequisite>DITN_OutcastWeaponry</researchPrerequisite>
 			<skillRequirements>
 				<Crafting>7</Crafting>
 			</skillRequirements>
@@ -164,7 +164,7 @@
 			</li>
 		</verbs>
 		<weaponTags>
-			<li>DITN_RingerSidearm</li>
+			<li>DITN_OutcastSidearm</li>
 		</weaponTags>
 		<tools>
 			<li>
@@ -262,7 +262,7 @@
 			</li>
 		</verbs>
 		<weaponTags>
-			<li>DITN_RingerSMG</li>
+			<li>DITN_OutcastSMG</li>
 		</weaponTags>
 		<tools>
 			<li>
@@ -358,7 +358,7 @@
 			</li>
 		</verbs>
 		<weaponTags>
-			<li>DITN_RingerHeavyPistol</li>
+			<li>DITN_OutcastHeavyPistol</li>
 		</weaponTags>
 		<tools>
 			<li>
@@ -409,7 +409,7 @@
 	<ThingDef ParentName="BaseHumanMakeableGun" Name="DITN_ServiceRifle">
 		<defName>DITN_ServiceRifle</defName>
 		<label>Combat Rifle</label>
-		<description>An advanced rifle design used by ringer veterans and mercenaries. Built with state-of-the-art polymers and alloys, it fires armor-piercing duplex ammunition.</description>
+		<description>An advanced rifle design used by Outcast veterans and mercenaries. Built with state-of-the-art polymers and alloys, it fires armor-piercing duplex ammunition.</description>
 		<graphicData>
 			<graphicClass>Graphic_Single</graphicClass>
 			<texPath>Things/Item/Equipment/WeaponRanged/combatrifle</texPath>
@@ -457,7 +457,7 @@
 			</li>
 		</verbs>
 		<weaponTags>
-			<li>DITN_RingerRifle</li>
+			<li>DITN_OutcastRifle</li>
 		</weaponTags>
 		<tools>
 			<li>
@@ -515,7 +515,7 @@
 		<techLevel>Spacer</techLevel>
 		<soundInteract>Interact_Rifle</soundInteract>
 		<recipeMaker>
-			<researchPrerequisite>DITN_RingerWeaponry</researchPrerequisite>
+			<researchPrerequisite>DITN_OutcastWeaponry</researchPrerequisite>
 			<skillRequirements>
 				<Crafting>6</Crafting>
 			</skillRequirements>
@@ -553,7 +553,7 @@
 			</li>
 		</verbs>
 		<weaponTags>
-			<li>DITN_RingerCarbine</li>
+			<li>DITN_OutcastCarbine</li>
 		</weaponTags>
 		<tools>
 			<li>
@@ -647,7 +647,7 @@
 			</li>
 		</verbs>
 		<weaponTags>
-			<li>DITN_RingerDMR</li>
+			<li>DITN_OutcastDMR</li>
 		</weaponTags>
 		<tools>
 			<li>
@@ -748,7 +748,7 @@
 			</li>
 		</verbs>
 		<weaponTags>
-			<li>DITN_RingerHeavyGun</li>
+			<li>DITN_OutcastHeavyGun</li>
 		</weaponTags>
 		<tools>
 			<li>
@@ -782,7 +782,7 @@
 
 	<ThingDef ParentName="BaseBullet">
 		<defName>DITN_Shell_JackhammerShotgun</defName>
-		<label>jackhammer shotgun shell</label>
+		<label>shotgun blast</label>
 		<graphicData>
 			<graphicClass>Graphic_Single</graphicClass>
 			<texPath>Things/Projectile/Bullet_Shotgun</texPath>
@@ -848,7 +848,7 @@
 			</li>
 		</verbs>
 		<weaponTags>
-			<li>DITN_RingerEliteShotgun</li>
+			<li>DITN_OutcastEliteShotgun</li>
 		</weaponTags>
 		<tools>
 			<li>
@@ -880,7 +880,7 @@
 
 	<ThingDef ParentName="BaseBullet">
 		<defName>DITN_Shell_LawbringerShotgun</defName>
-		<label>8 gauge shotgun shell</label>
+		<label>shotgun blast</label>
 		<graphicData>
 			<graphicClass>Graphic_Single</graphicClass>
 			<texPath>Things/Projectile/Bullet_Shotgun</texPath>
@@ -946,7 +946,7 @@
 			</li>
 		</verbs>
 		<weaponTags>
-			<li>DITN_RingerShotgun</li>
+			<li>DITN_OutcastShotgun</li>
 		</weaponTags>
 		<tools>
 			<li>

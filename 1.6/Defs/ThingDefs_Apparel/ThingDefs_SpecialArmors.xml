@@ -70,9 +70,9 @@
         <li>DITN_Armor</li>
       </tags>
       <renderNodeProperties>
-        <li Class="DeadRinger.PawnRenderNodePropertiesDecal">
-          <nodeClass>DeadRinger.PawnRenderNodeDecal</nodeClass>
-          <workerClass>DeadRinger.PawnRenderNodeWorkerDecal</workerClass>
+        <li Class="DarkIsTheNight.PawnRenderNodePropertiesDecal">
+          <nodeClass>DarkIsTheNight.PawnRenderNodeDecal</nodeClass>
+          <workerClass>DarkIsTheNight.PawnRenderNodeWorkerDecal</workerClass>
           <parentTagDef>ApparelBody</parentTagDef>
           <baseLayer>92</baseLayer>
           <texPaths>
@@ -103,7 +103,7 @@
       </renderNodeProperties>
     </apparel>
     <comps>
-      <li Class="DeadRinger.CompPropertiesEditDecalMarker" />
+      <li Class="DarkIsTheNight.CompPropertiesEditDecalMarker" />
     </comps>
     <techLevel>Spacer</techLevel>
     <thingCategories>
@@ -183,9 +183,9 @@
         <li>DITN_Armor</li>
       </tags>
       <renderNodeProperties>
-        <li Class="DeadRinger.PawnRenderNodePropertiesDecal">
-          <nodeClass>DeadRinger.PawnRenderNodeDecal</nodeClass>
-          <workerClass>DeadRinger.PawnRenderNodeWorkerDecal</workerClass>
+        <li Class="DarkIsTheNight.PawnRenderNodePropertiesDecal">
+          <nodeClass>DarkIsTheNight.PawnRenderNodeDecal</nodeClass>
+          <workerClass>DarkIsTheNight.PawnRenderNodeWorkerDecal</workerClass>
           <parentTagDef>ApparelBody</parentTagDef>
           <baseLayer>92</baseLayer>
           <texPaths>
@@ -216,7 +216,7 @@
       </renderNodeProperties>
     </apparel>
     <comps>
-      <li Class="DeadRinger.CompPropertiesEditDecalMarker" />
+      <li Class="DarkIsTheNight.CompPropertiesEditDecalMarker" />
     </comps>
     <techLevel>Spacer</techLevel>
     <thingCategories>
@@ -295,9 +295,9 @@
         <li>DITN_Armor_Conscript</li>
       </tags>
       <renderNodeProperties>
-        <li Class="DeadRinger.PawnRenderNodePropertiesDecal">
-          <nodeClass>DeadRinger.PawnRenderNodeDecal</nodeClass>
-          <workerClass>DeadRinger.PawnRenderNodeWorkerDecal</workerClass>
+        <li Class="DarkIsTheNight.PawnRenderNodePropertiesDecal">
+          <nodeClass>DarkIsTheNight.PawnRenderNodeDecal</nodeClass>
+          <workerClass>DarkIsTheNight.PawnRenderNodeWorkerDecal</workerClass>
           <parentTagDef>ApparelBody</parentTagDef>
           <baseLayer>92</baseLayer>
           <texPaths>
@@ -328,7 +328,7 @@
       </renderNodeProperties>
     </apparel>
     <comps>
-      <li Class="DeadRinger.CompPropertiesEditDecalMarker" />
+      <li Class="DarkIsTheNight.CompPropertiesEditDecalMarker" />
     </comps>
     <techLevel>Spacer</techLevel>
     <thingCategories>
@@ -410,9 +410,9 @@
       <soundRemove>Remove_PowerArmor</soundRemove>
       <useDeflectMetalEffect>true</useDeflectMetalEffect>
       <renderNodeProperties>
-        <li Class="DeadRinger.PawnRenderNodePropertiesDecal">
-          <nodeClass>DeadRinger.PawnRenderNodeDecal</nodeClass>
-          <workerClass>DeadRinger.PawnRenderNodeWorkerDecal</workerClass>
+        <li Class="DarkIsTheNight.PawnRenderNodePropertiesDecal">
+          <nodeClass>DarkIsTheNight.PawnRenderNodeDecal</nodeClass>
+          <workerClass>DarkIsTheNight.PawnRenderNodeWorkerDecal</workerClass>
           <parentTagDef>ApparelBody</parentTagDef>
           <baseLayer>92</baseLayer>
           <texPaths>
@@ -443,7 +443,7 @@
       </renderNodeProperties>
     </apparel>
     <comps>
-      <li Class="DeadRinger.CompPropertiesEditDecalMarker" />
+      <li Class="DarkIsTheNight.CompPropertiesEditDecalMarker" />
     </comps>
     <techLevel>Spacer</techLevel>
     <thingCategories>

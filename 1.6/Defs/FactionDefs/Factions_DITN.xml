@@ -100,15 +100,15 @@
 		<allowedArrivalTemperatureRange>-40~50</allowedArrivalTemperatureRange>
 		<raidLootMaker>OutlanderRaidLootMaker</raidLootMaker>
 		<caravanTraderKinds>
-			<li>Caravan_Ringer_BulkGoods</li>
-			<li>Caravan_Ringer_ArmsDealer</li>
-			<li>Caravan_Ringer_Exotic</li>
+			<li>Caravan_Outcast_BulkGoods</li>
+			<li>Caravan_Outcast_ArmsDealer</li>
+			<li>Caravan_Outcast_Exotic</li>
 		</caravanTraderKinds>
 		<visitorTraderKinds>
-			<li>Visitor_Ringer_Standard</li>
+			<li>Visitor_Outcast_Standard</li>
 		</visitorTraderKinds>
 		<baseTraderKinds>
-			<li>Base_Ringer_Standard</li>
+			<li>Base_Outcast_Standard</li>
 		</baseTraderKinds>
 		<maxPawnCostPerTotalPointsCurve>
 			<points>
@@ -289,7 +289,6 @@
 				<categories>
 					<li>Outlander</li>
 					<li>Pirate</li>
-					<li>Ringer</li>
 				</categories>
 			</li>
 		</backstoryFilters>
@@ -305,16 +304,15 @@
 		<allowedArrivalTemperatureRange>-40~50</allowedArrivalTemperatureRange>
 		<raidLootMaker>OutlanderRaidLootMaker</raidLootMaker>
 		<caravanTraderKinds>
-			<li>Caravan_Ringer_BulkGoods</li>
-			<li>Caravan_Ringer_ArmsDealer</li>
-			<li>Caravan_Ringer_Exotic</li>
-			<li>Caravan_Rough_PirateMerchant</li>
+			<li>Caravan_Outcast_BulkGoods</li>
+			<li>Caravan_Outcast_ArmsDealer</li>
+			<li>Caravan_Outcast_Exotic</li>
 		</caravanTraderKinds>
 		<visitorTraderKinds>
-			<li>Visitor_Ringer_Standard</li>
+			<li>Visitor_Outcast_Standard</li>
 		</visitorTraderKinds>
 		<baseTraderKinds>
-			<li>Base_Ringer_Standard</li>
+			<li>Base_Outcast_Standard</li>
 		</baseTraderKinds>
 		<maxPawnCostPerTotalPointsCurve>
 			<points>

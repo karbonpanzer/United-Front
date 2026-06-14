@@ -17,16 +17,6 @@
         <maxGenerationAge>50</maxGenerationAge>
         <combatEnhancingDrugsChance>0</combatEnhancingDrugsChance>
         <isFighter>false</isFighter>
-
-        <backstoryFiltersOverride>
-            <li>
-                <categories>
-                    <li>Ringer</li>
-                    <li>Outlander</li>
-                    <li>Pirate</li>
-                </categories>
-            </li>
-        </backstoryFiltersOverride>
         <initialWillRange>2~4</initialWillRange>
         <initialResistanceRange>15~25</initialResistanceRange>
         <xenotypeSet Inherit="False">
@@ -45,7 +35,7 @@
             </subOptionsChooseOne>
         </inventoryOptions>
         <weaponTags>
-            <li>DITN_RingerSidearm</li>
+            <li>DITN_OutcastSidearm</li>
         </weaponTags>
     </PawnKindDef>
 
@@ -67,7 +57,7 @@
         <initialWillRange>2~4</initialWillRange>
         <initialResistanceRange>15~25</initialResistanceRange>
         <weaponTags>
-            <li>DITN_RingerSidearm</li>
+            <li>DITN_OutcastSidearm</li>
         </weaponTags>
     </PawnKindDef>
 
@@ -84,16 +74,6 @@
         <maxGenerationAge>60</maxGenerationAge>
         <combatEnhancingDrugsChance>0</combatEnhancingDrugsChance>
         <isFighter>false</isFighter>
-
-        <backstoryFiltersOverride>
-            <li>
-                <categories>
-                    <li>Ringer</li>
-                    <li>Outlander</li>
-                    <li>Pirate</li>
-                </categories>
-            </li>
-        </backstoryFiltersOverride>
         <initialWillRange>4~6</initialWillRange>
         <initialResistanceRange>25~35</initialResistanceRange>
         <xenotypeSet Inherit="False">
@@ -116,8 +96,8 @@
             </subOptionsChooseOne>
         </inventoryOptions>
         <weaponTags>
-            <li>DITN_RingerSidearm</li>
-            <li>DITN_RingerHeavyPistol</li>
+            <li>DITN_OutcastSidearm</li>
+            <li>DITN_OutcastHeavyPistol</li>
         </weaponTags>
     </PawnKindDef>
 
@@ -134,16 +114,6 @@
         <maxGenerationAge>35</maxGenerationAge>
         <combatEnhancingDrugsChance>0</combatEnhancingDrugsChance>
         <isFighter>true</isFighter>
-
-        <backstoryFiltersOverride>
-            <li>
-                <categories>
-                    <li>Ringer</li>
-                    <li>Outlander</li>
-                    <li>Pirate</li>
-                </categories>
-            </li>
-        </backstoryFiltersOverride>
         <initialWillRange>3~5</initialWillRange>
         <initialResistanceRange>7~11</initialResistanceRange>
         <xenotypeSet Inherit="False">
@@ -169,8 +139,8 @@
         <apparelMoney>600~900</apparelMoney>
         <apparelAllowHeadgearChance>0.5</apparelAllowHeadgearChance>
         <weaponTags>
-            <li>DITN_RingerSidearm</li>
-            <li>DITN_RingerSMG</li>
+            <li>DITN_OutcastSidearm</li>
+            <li>DITN_OutcastSMG</li>
         </weaponTags>
         <weaponMoney>1000~1500</weaponMoney>
         <techHediffsChance>0.02</techHediffsChance>
@@ -195,7 +165,7 @@
         <apparelMoney>600~900</apparelMoney>
         <apparelAllowHeadgearChance>0.5</apparelAllowHeadgearChance>
         <weaponTags>
-            <li>DITN_RingerMelee</li>
+            <li>DITN_OutcastMelee</li>
         </weaponTags>
         <weaponMoney>2000~2500</weaponMoney>
         <techHediffsChance>0.02</techHediffsChance>
@@ -216,7 +186,7 @@
         <apparelMoney>1000~1500</apparelMoney>
         <apparelAllowHeadgearChance>0.7</apparelAllowHeadgearChance>
         <weaponTags>
-            <li>DITN_RingerRifle</li>
+            <li>DITN_OutcastRifle</li>
         </weaponTags>
         <weaponMoney>3200~4500</weaponMoney>
         <techHediffsChance>0.05</techHediffsChance>
@@ -240,7 +210,7 @@
         <apparelMoney>1000~1500</apparelMoney>
         <apparelAllowHeadgearChance>0.7</apparelAllowHeadgearChance>
         <weaponTags>
-            <li>DITN_RingerMelee</li>
+            <li>DITN_OutcastMelee</li>
         </weaponTags>
         <weaponMoney>2000~2800</weaponMoney>
         <techHediffsChance>0.05</techHediffsChance>
@@ -261,8 +231,8 @@
         <apparelMoney>1200~1700</apparelMoney>
         <apparelAllowHeadgearChance>0.75</apparelAllowHeadgearChance>
         <weaponTags>
-            <li>DITN_RingerCarbine</li>
-            <li>DITN_RingerHeavyPistol</li>
+            <li>DITN_OutcastCarbine</li>
+            <li>DITN_OutcastHeavyPistol</li>
         </weaponTags>
         <weaponMoney>1800~2400</weaponMoney>
         <techHediffsChance>0.08</techHediffsChance>
@@ -287,8 +257,8 @@
         <apparelMoney>1200~1700</apparelMoney>
         <apparelAllowHeadgearChance>0.75</apparelAllowHeadgearChance>
         <weaponTags>
-            <li>DITN_RingerMelee</li>
-            <li>DITN_RingerEliteMelee</li>
+            <li>DITN_OutcastMelee</li>
+            <li>DITN_OutcastEliteMelee</li>
         </weaponTags>
         <weaponMoney>1800~2400</weaponMoney>
         <techHediffsChance>0.08</techHediffsChance>
@@ -323,7 +293,7 @@
             </li>
         </skills>
         <weaponTags>
-            <li>DITN_RingerHeavyGun</li>
+            <li>DITN_OutcastHeavyGun</li>
         </weaponTags>
     </PawnKindDef>
 
@@ -349,9 +319,9 @@
             <li>Brawler</li>
         </disallowedTraits>
         <weaponTags>
-            <li>DITN_RingerRifle</li>
-            <li>DITN_RingerEliteShotgun</li>
-            <li>DITN_RingerMarksmanGun</li>
+            <li>DITN_OutcastRifle</li>
+            <li>DITN_OutcastEliteShotgun</li>
+            <li>DITN_OutcastMarksmanGun</li>
         </weaponTags>
     </PawnKindDef>
 
@@ -374,7 +344,7 @@
             </li>
         </skills>
         <weaponTags>
-            <li>DITN_RingerEliteMelee</li>
+            <li>DITN_OutcastEliteMelee</li>
         </weaponTags>
     </PawnKindDef>
 
@@ -386,8 +356,8 @@
         <minGenerationAge>25</minGenerationAge>
         <maxGenerationAge>45</maxGenerationAge>
         <weaponTags>
-            <li>DITN_RingerRifle</li>
-            <li>DITN_RingerHeavyPistol</li>
+            <li>DITN_OutcastRifle</li>
+            <li>DITN_OutcastHeavyPistol</li>
         </weaponTags>
         <weaponMoney>1800~2400</weaponMoney>
         <techHediffsChance>0.07</techHediffsChance>
@@ -441,8 +411,8 @@
             <li>Brawler</li>
         </disallowedTraits>
         <weaponTags>
-            <li>DITN_RingerRifle</li>
-            <li>DITN_RingerEliteShotgun</li>
+            <li>DITN_OutcastRifle</li>
+            <li>DITN_OutcastEliteShotgun</li>
         </weaponTags>
     </PawnKindDef>
 
@@ -451,10 +421,10 @@
         <apparelMoney>1000~1500</apparelMoney>
         <apparelAllowHeadgearChance>0.7</apparelAllowHeadgearChance>
         <weaponTags>
-            <li>DITN_RingerSidearm</li>
-            <li>DITN_RingerSMG</li>
-            <li>DITN_RingerCarbine</li>
-            <li>DITN_RingerShotgun</li>
+            <li>DITN_OutcastSidearm</li>
+            <li>DITN_OutcastSMG</li>
+            <li>DITN_OutcastCarbine</li>
+            <li>DITN_OutcastShotgun</li>
         </weaponTags>
         <weaponMoney>1500~2100</weaponMoney>
         <techHediffsChance>0.06</techHediffsChance>
@@ -477,8 +447,8 @@
         <apparelMoney>1200~1800</apparelMoney>
         <apparelAllowHeadgearChance>0.9</apparelAllowHeadgearChance>
         <weaponTags>
-            <li>DITN_RingerCarbine</li>
-            <li>DITN_RingerHeavyPistol</li>
+            <li>DITN_OutcastCarbine</li>
+            <li>DITN_OutcastHeavyPistol</li>
         </weaponTags>
         <weaponMoney>3600~4500</weaponMoney>
         <techHediffsChance>0.15</techHediffsChance>
@@ -526,8 +496,8 @@
             <li>Brawler</li>
         </disallowedTraits>
         <weaponTags>
-            <li>DITN_RingerSidearm</li>
-            <li>DITN_RingerSMG</li>
+            <li>DITN_OutcastSidearm</li>
+            <li>DITN_OutcastSMG</li>
         </weaponTags>
     </PawnKindDef>
 
@@ -540,8 +510,8 @@
         <apparelMoney>1400~2000</apparelMoney>
         <apparelAllowHeadgearChance>0.85</apparelAllowHeadgearChance>
         <weaponTags>
-            <li>DITN_RingerShotgun</li>
-            <li>DITN_RingerSidearm</li>
+            <li>DITN_OutcastShotgun</li>
+            <li>DITN_OutcastSidearm</li>
         </weaponTags>
         <weaponMoney>2400~3600</weaponMoney>
         <techHediffsChance>0.12</techHediffsChance>
@@ -595,7 +565,7 @@
             </li>
         </skills>
         <weaponTags>
-            <li>DITN_RingerHeavyPistol</li>
+            <li>DITN_OutcastHeavyPistol</li>
         </weaponTags>
     </PawnKindDef>
 
@@ -636,7 +606,7 @@
             <li>Brawler</li>
         </disallowedTraits>
         <apparelTags Inherit="False">
-            <li>DITN_RingerUniform</li>
+            <li>DITN_OutcastUniform</li>
         </apparelTags>
         <apparelAllowHeadgearChance>0.5</apparelAllowHeadgearChance>
     </PawnKindDef>
@@ -676,7 +646,7 @@
             <li>Brawler</li>
         </disallowedTraits>
         <apparelTags Inherit="False">
-            <li>DITN_RingerUniform</li>
+            <li>DITN_OutcastUniform</li>
         </apparelTags>
         <apparelAllowHeadgearChance>0.5</apparelAllowHeadgearChance>
     </PawnKindDef>
@@ -704,7 +674,7 @@
             <li>Brawler</li>
         </disallowedTraits>
         <apparelTags Inherit="False">
-            <li>DITN_RingerUniform</li>
+            <li>DITN_OutcastUniform</li>
         </apparelTags>
         <apparelAllowHeadgearChance>0.3</apparelAllowHeadgearChance>
     </PawnKindDef>
@@ -754,7 +724,7 @@
             <li>Brawler</li>
         </disallowedTraits>
         <apparelTags Inherit="False">
-            <li>DITN_RingerUniform</li>
+            <li>DITN_OutcastUniform</li>
         </apparelTags>
         <apparelAllowHeadgearChance>0.7</apparelAllowHeadgearChance>
     </PawnKindDef>
@@ -773,7 +743,7 @@
         <initialWillRange>3~5</initialWillRange>
         <initialResistanceRange>25~35</initialResistanceRange>
         <modExtensions>
-            <li Class="DeadRinger.DecalKindExtension">
+            <li Class="DarkIsTheNight.DecalKindExtension">
                 <armorDecalPath>Things/Decals/private</armorDecalPath>
                 <helmetDecalPath>Things/Decals/private</helmetDecalPath>
             </li>
@@ -782,7 +752,7 @@
             <li>DITN_Webbing_Infantry</li>
         </apparelRequired>
         <apparelTags Inherit="False">
-            <li>DITN_RingerUniform</li>
+            <li>DITN_OutcastUniform</li>
         </apparelTags>
         <apparelAllowHeadgearChance>0.7</apparelAllowHeadgearChance>
     </PawnKindDef>
@@ -797,7 +767,7 @@
         <initialWillRange>3~5</initialWillRange>
         <initialResistanceRange>25~35</initialResistanceRange>
         <modExtensions>
-            <li Class="DeadRinger.DecalKindExtension">
+            <li Class="DarkIsTheNight.DecalKindExtension">
                 <armorDecalPath>Things/Decals/private</armorDecalPath>
                 <helmetDecalPath>Things/Decals/private</helmetDecalPath>
             </li>
@@ -806,7 +776,7 @@
             <li>DITN_Webbing_Infantry</li>
         </apparelRequired>
         <apparelTags Inherit="False">
-            <li>DITN_RingerUniform</li>
+            <li>DITN_OutcastUniform</li>
         </apparelTags>
         <apparelAllowHeadgearChance>0.7</apparelAllowHeadgearChance>
     </PawnKindDef>
@@ -817,7 +787,7 @@
         <labelPlural>infantry</labelPlural>
         <combatPower>105</combatPower>
         <modExtensions>
-            <li Class="DeadRinger.DecalKindExtension">
+            <li Class="DarkIsTheNight.DecalKindExtension">
                 <armorDecalPath>Things/Decals/corporal</armorDecalPath>
                 <helmetDecalPath>Things/Decals/corporal</helmetDecalPath>
             </li>
@@ -827,7 +797,7 @@
             <li>DITN_MarauderArmor</li>
         </apparelRequired>
         <apparelTags Inherit="False">
-            <li>DITN_RingerUniform</li>
+            <li>DITN_OutcastUniform</li>
             <li>DITN_LightHelmet</li>
         </apparelTags>
         <apparelAllowHeadgearChance>1.0</apparelAllowHeadgearChance>
@@ -839,7 +809,7 @@
         <labelPlural>infantry</labelPlural>
         <combatPower>105</combatPower>
         <modExtensions>
-            <li Class="DeadRinger.DecalKindExtension">
+            <li Class="DarkIsTheNight.DecalKindExtension">
                 <armorDecalPath>Things/Decals/corporal</armorDecalPath>
                 <helmetDecalPath>Things/Decals/corporal</helmetDecalPath>
             </li>
@@ -849,7 +819,7 @@
             <li>DITN_MarauderArmor</li>
         </apparelRequired>
         <apparelTags Inherit="False">
-            <li>DITN_RingerUniform</li>
+            <li>DITN_OutcastUniform</li>
             <li>DITN_LightHelmet</li>
         </apparelTags>
         <apparelAllowHeadgearChance>1.0</apparelAllowHeadgearChance>
@@ -863,7 +833,7 @@
         <initialWillRange>5~7</initialWillRange>
         <initialResistanceRange>35~45</initialResistanceRange>
         <modExtensions>
-            <li Class="DeadRinger.DecalKindExtension">
+            <li Class="DarkIsTheNight.DecalKindExtension">
                 <armorDecalPath>Things/Decals/skull</armorDecalPath>
                 <helmetDecalPath>Things/Decals/skull</helmetDecalPath>
             </li>
@@ -873,7 +843,7 @@
             <li>DITN_HeavyMarauderArmor</li>
         </apparelRequired>
         <apparelTags Inherit="False">
-            <li>DITN_RingerUniform</li>
+            <li>DITN_OutcastUniform</li>
             <li>DITN_HeavyHelmet</li>
         </apparelTags>
         <apparelAllowHeadgearChance>1.0</apparelAllowHeadgearChance>
@@ -885,7 +855,7 @@
         <labelPlural>sergeants</labelPlural>
         <combatPower>90</combatPower>
         <modExtensions>
-            <li Class="DeadRinger.DecalKindExtension">
+            <li Class="DarkIsTheNight.DecalKindExtension">
                 <armorDecalPath>Things/Decals/sgt</armorDecalPath>
                 <helmetDecalPath>Things/Decals/sgt</helmetDecalPath>
             </li>
@@ -895,7 +865,7 @@
             <li>DITN_MarauderArmor</li>
         </apparelRequired>
         <apparelTags Inherit="False">
-            <li>DITN_RingerUniform</li>
+            <li>DITN_OutcastUniform</li>
             <li>DITN_LightHelmet</li>
         </apparelTags>
         <apparelAllowHeadgearChance>1.0</apparelAllowHeadgearChance>
@@ -909,13 +879,13 @@
         <minGenerationAge>30</minGenerationAge>
         <maxGenerationAge>50</maxGenerationAge>
         <weaponTags Inherit="False">
-            <li>DITN_RingerRifle</li>
-            <li>DITN_RingerEliteShotgun</li>
-            <li>DITN_RingerMarksmanGun</li>
-            <li>DITN_RingerDMR</li>              
+            <li>DITN_OutcastRifle</li>
+            <li>DITN_OutcastEliteShotgun</li>
+            <li>DITN_OutcastMarksmanGun</li>
+            <li>DITN_OutcastDMR</li>              
         </weaponTags>
         <modExtensions>
-            <li Class="DeadRinger.DecalKindExtension">
+            <li Class="DarkIsTheNight.DecalKindExtension">
                 <armorDecalPath>Things/Decals/skullrifle</armorDecalPath>
                 <helmetDecalPath>Things/Decals/skullrifle</helmetDecalPath>
             </li>
@@ -925,7 +895,7 @@
             <li>DITN_HeavyMarauderArmor</li>
         </apparelRequired>
         <apparelTags Inherit="False">
-            <li>DITN_RingerUniform</li>
+            <li>DITN_OutcastUniform</li>
             <li>DITN_HeavyHelmet</li>
         </apparelTags>
         <apparelAllowHeadgearChance>1.0</apparelAllowHeadgearChance>
@@ -939,10 +909,10 @@
         <minGenerationAge>30</minGenerationAge>
         <maxGenerationAge>50</maxGenerationAge>
         <weaponTags Inherit="False">
-            <li>DITN_RingerEliteMelee</li>
+            <li>DITN_OutcastEliteMelee</li>
         </weaponTags>
         <modExtensions>
-            <li Class="DeadRinger.DecalKindExtension">
+            <li Class="DarkIsTheNight.DecalKindExtension">
                 <armorDecalPath>Things/Decals/skullsword</armorDecalPath>
                 <helmetDecalPath>Things/Decals/skullsword</helmetDecalPath>
             </li>
@@ -952,7 +922,7 @@
             <li>DITN_HeavyMarauderArmor</li>
         </apparelRequired>
         <apparelTags Inherit="False">
-            <li>DITN_RingerUniform</li>
+            <li>DITN_OutcastUniform</li>
             <li>DITN_HeavyHelmet</li>
         </apparelTags>
         <apparelAllowHeadgearChance>1.0</apparelAllowHeadgearChance>
@@ -964,9 +934,9 @@
         <labelPlural>rangers</labelPlural>
         <combatPower>110</combatPower>
         <weaponTags Inherit="False">
-            <li>DITN_RingerCarbine</li>
-            <li>DITN_RingerHeavyPistol</li>
-            <li>DITN_RingerDMR</li>
+            <li>DITN_OutcastCarbine</li>
+            <li>DITN_OutcastHeavyPistol</li>
+            <li>DITN_OutcastDMR</li>
         </weaponTags>
         <weaponMoney>1950~2550</weaponMoney>
         <apparelMoney>1100~1600</apparelMoney>
@@ -981,7 +951,7 @@
             </li>
         </skills>
         <modExtensions>
-            <li Class="DeadRinger.DecalKindExtension">
+            <li Class="DarkIsTheNight.DecalKindExtension">
                 <armorDecalPath>Things/Decals/arrowhead</armorDecalPath>
                 <helmetDecalPath>Things/Decals/arrowhead</helmetDecalPath>
             </li>
@@ -991,7 +961,7 @@
             <li>DITN_ScoutMarauderArmor</li>
         </apparelRequired>
         <apparelTags Inherit="False">
-            <li>DITN_RingerUniform</li>
+            <li>DITN_OutcastUniform</li>
         </apparelTags>
         <apparelAllowHeadgearChance>0.7</apparelAllowHeadgearChance>
     </PawnKindDef>
@@ -1025,21 +995,21 @@
             </li>
         </skills>
         <modExtensions>
-            <li Class="DeadRinger.DecalKindExtension">
+            <li Class="DarkIsTheNight.DecalKindExtension">
                 <armorDecalPath>Things/Decals/cross</armorDecalPath>
                 <helmetDecalPath>Things/Decals/cross</helmetDecalPath>
             </li>
         </modExtensions>
         <weaponTags Inherit="False">
-            <li>DITN_RingerSidearm</li>
-            <li>DITN_RingerSMG</li>
+            <li>DITN_OutcastSidearm</li>
+            <li>DITN_OutcastSMG</li>
         </weaponTags>
         <apparelRequired>
             <li>DITN_Webbing_Medic</li>
             <li>DITN_MarauderArmor</li>
         </apparelRequired>
         <apparelTags Inherit="False">
-            <li>DITN_RingerUniform</li>
+            <li>DITN_OutcastUniform</li>
             <li>DITN_LightHelmet</li>
         </apparelTags>
         <apparelAllowHeadgearChance>1.0</apparelAllowHeadgearChance>
@@ -1065,21 +1035,21 @@
             </li>
         </skills>
         <modExtensions>
-            <li Class="DeadRinger.DecalKindExtension">
+            <li Class="DarkIsTheNight.DecalKindExtension">
                 <armorDecalPath>Things/Decals/cog</armorDecalPath>
                 <helmetDecalPath>Things/Decals/cog</helmetDecalPath>
             </li>
         </modExtensions>
         <weaponTags Inherit="False">
-            <li>DITN_RingerCarbine</li>
-            <li>DITN_RingerShotgun</li>
+            <li>DITN_OutcastCarbine</li>
+            <li>DITN_OutcastShotgun</li>
         </weaponTags>
         <apparelRequired>
             <li>DITN_Webbing_Engineer</li>
             <li>DITN_MarauderArmor</li>
         </apparelRequired>
         <apparelTags Inherit="False">
-            <li>DITN_RingerUniform</li>
+            <li>DITN_OutcastUniform</li>
             <li>DITN_LightHelmet</li>
         </apparelTags>
         <apparelAllowHeadgearChance>1.0</apparelAllowHeadgearChance>
@@ -1091,11 +1061,11 @@
         <labelPlural>grenadiers</labelPlural>
         <combatPower>100</combatPower>
         <weaponTags Inherit="False">
-            <li>DITN_RingerSidearm</li>
-            <li>DITN_RingerSMG</li>
+            <li>DITN_OutcastSidearm</li>
+            <li>DITN_OutcastSMG</li>
         </weaponTags>
         <modExtensions>
-            <li Class="DeadRinger.DecalKindExtension">
+            <li Class="DarkIsTheNight.DecalKindExtension">
                 <armorDecalPath>Things/Decals/battleaxe</armorDecalPath>
                 <helmetDecalPath>Things/Decals/battleaxe</helmetDecalPath>
             </li>
@@ -1105,7 +1075,7 @@
             <li>DITN_MarauderArmor</li>
         </apparelRequired>
         <apparelTags Inherit="False">
-            <li>DITN_RingerUniform</li>
+            <li>DITN_OutcastUniform</li>
             <li>DITN_LightHelmet</li>
         </apparelTags>
         <apparelAllowHeadgearChance>1.0</apparelAllowHeadgearChance>
@@ -1117,11 +1087,11 @@
         <labelPlural>grenadiers</labelPlural>
         <combatPower>100</combatPower>
         <weaponTags Inherit="False">
-            <li>DITN_RingerSidearm</li>
-            <li>DITN_RingerSMG</li>
+            <li>DITN_OutcastSidearm</li>
+            <li>DITN_OutcastSMG</li>
         </weaponTags>
         <modExtensions>
-            <li Class="DeadRinger.DecalKindExtension">
+            <li Class="DarkIsTheNight.DecalKindExtension">
                 <armorDecalPath>Things/Decals/battleaxe</armorDecalPath>
                 <helmetDecalPath>Things/Decals/battleaxe</helmetDecalPath>
             </li>
@@ -1131,7 +1101,7 @@
             <li>DITN_MarauderArmor</li>
         </apparelRequired>
         <apparelTags Inherit="False">
-            <li>DITN_RingerUniform</li>
+            <li>DITN_OutcastUniform</li>
             <li>DITN_LightHelmet</li>
         </apparelTags>
         <apparelAllowHeadgearChance>1.0</apparelAllowHeadgearChance>
@@ -1143,11 +1113,11 @@
         <labelPlural>grenadiers</labelPlural>
         <combatPower>100</combatPower>
         <weaponTags Inherit="False">
-            <li>DITN_RingerSidearm</li>
-            <li>DITN_RingerSMG</li>
+            <li>DITN_OutcastSidearm</li>
+            <li>DITN_OutcastSMG</li>
         </weaponTags>
         <modExtensions>
-            <li Class="DeadRinger.DecalKindExtension">
+            <li Class="DarkIsTheNight.DecalKindExtension">
                 <armorDecalPath>Things/Decals/battleaxe</armorDecalPath>
                 <helmetDecalPath>Things/Decals/battleaxe</helmetDecalPath>
             </li>
@@ -1157,7 +1127,7 @@
             <li>DITN_MarauderArmor</li>
         </apparelRequired>
         <apparelTags Inherit="False">
-            <li>DITN_RingerUniform</li>
+            <li>DITN_OutcastUniform</li>
             <li>DITN_LightHelmet</li>
         </apparelTags>
         <apparelAllowHeadgearChance>1.0</apparelAllowHeadgearChance>
@@ -1169,11 +1139,11 @@
         <labelPlural>grenadiers</labelPlural>
         <combatPower>100</combatPower>
         <weaponTags Inherit="False">
-            <li>DITN_RingerSidearm</li>
-            <li>DITN_RingerSMG</li>
+            <li>DITN_OutcastSidearm</li>
+            <li>DITN_OutcastSMG</li>
         </weaponTags>
         <modExtensions>
-            <li Class="DeadRinger.DecalKindExtension">
+            <li Class="DarkIsTheNight.DecalKindExtension">
                 <armorDecalPath>Things/Decals/battleaxe</armorDecalPath>
                 <helmetDecalPath>Things/Decals/battleaxe</helmetDecalPath>
             </li>
@@ -1183,7 +1153,7 @@
             <li>DITN_MarauderArmor</li>
         </apparelRequired>
         <apparelTags Inherit="False">
-            <li>DITN_RingerUniform</li>
+            <li>DITN_OutcastUniform</li>
             <li>DITN_LightHelmet</li>
         </apparelTags>
         <apparelAllowHeadgearChance>1.0</apparelAllowHeadgearChance>
@@ -1197,10 +1167,10 @@
         <minGenerationAge>25</minGenerationAge>
         <maxGenerationAge>40</maxGenerationAge>
         <weaponTags Inherit="False">
-            <li>DITN_RingerHeavyPistol</li>
+            <li>DITN_OutcastHeavyPistol</li>
         </weaponTags>
         <modExtensions>
-            <li Class="DeadRinger.DecalKindExtension">
+            <li Class="DarkIsTheNight.DecalKindExtension">
                 <armorDecalPath>Things/Decals/skullspear</armorDecalPath>
                 <helmetDecalPath>Things/Decals/skullspear</helmetDecalPath>
             </li>
@@ -1211,7 +1181,7 @@
             <li>DITN_HeavyMarauderHelmet_Shielded</li>
         </apparelRequired>
         <apparelTags Inherit="False">
-            <li>DITN_RingerUniform</li>
+            <li>DITN_OutcastUniform</li>
         </apparelTags>
         <apparelAllowHeadgearChance>1.0</apparelAllowHeadgearChance>
     </PawnKindDef>
@@ -1222,7 +1192,7 @@
         <labelPlural>wardens</labelPlural>
         <combatPower>115</combatPower>
         <modExtensions>
-            <li Class="DeadRinger.DecalKindExtension">
+            <li Class="DarkIsTheNight.DecalKindExtension">
                 <armorDecalPath>Things/Decals/police</armorDecalPath>
                 <helmetDecalPath>Things/Decals/police</helmetDecalPath>
             </li>
@@ -1232,7 +1202,7 @@
             <li>DITN_RiotMarauderArmor</li>
         </apparelRequired>
         <apparelTags Inherit="False">
-            <li>DITN_RingerUniform</li>
+            <li>DITN_OutcastUniform</li>
         </apparelTags>
         <apparelAllowHeadgearChance>0.7</apparelAllowHeadgearChance>
     </PawnKindDef>
@@ -1268,7 +1238,7 @@
             </li>
         </skills>
         <modExtensions>
-            <li Class="DeadRinger.DecalKindExtension">
+            <li Class="DarkIsTheNight.DecalKindExtension">
                 <armorDecalPath>Things/Decals/commander</armorDecalPath>
                 <helmetDecalPath>Things/Decals/commander</helmetDecalPath>
             </li>

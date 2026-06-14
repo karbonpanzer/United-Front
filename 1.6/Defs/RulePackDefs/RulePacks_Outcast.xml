@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+
+	<RulePackDef>
+		<defName>DITN_Faction_Outcast</defName>
+		<include>
+			<li>OutlanderPlaceNameUtility</li>
+		</include>
+		<rulePack>
+			<rulesStrings>
+				<li>r_name(p=5)->[provisional_adjective] [provisional_government] of [nearnameinitial]</li>
+				<li>r_name(p=4)->[nearnameinitial] [provisional_adjective] [provisional_government]</li>
+				<li>r_name(p=2)->[nearnameinitial] [provisional_government]</li>
+				<li>r_name(p=3)->The [provisional_government] of [nearnameinitial]</li>
+
+				<li>r_name(p=5)->[socialist_adjective] [socialist_government] of [nearnameinitial]</li>
+				<li>r_name(p=4)->[nearnameinitial] [socialist_adjective] [socialist_government]</li>
+				<li>r_name(p=4)->[nearnameinitial] [socialist_government]</li>
+				<li>r_name(p=3)->The [nearnameinitial] Soviet</li>
+				<li>r_name(p=2)->[nearnameinitial] Soviet</li>
+
+				<li>r_name(p=2)->[nearnameinitial] [political_union_outcast]</li>
+				<li>r_name(p=3)->The [political_union_outcast] of [nearnameinitial]</li>
+				<li>r_name(p=2)->[political_adjective_outcast] [political_union_outcast] of [nearnameinitial]</li>
+				<li>r_name(p=1)->[nearnameinitial] [political_adjective_outcast] [political_union_outcast]</li>
+
+				<li>nearnameinitial(p=3)->[PlaceOutlander]</li>
+				<li>nearnameinitial->[Direction] [PlaceOutlander]</li>
+			</rulesStrings>
+			<rulesFiles>
+				<li>political_union_outcast->Words/Nouns/PoliticalUnions_Outcast</li>
+				<li>political_adjective_outcast->Words/Adjectives/PoliticalAdjectives_Outcast</li>
+				<li>provisional_government->Words/Nouns/GovernmentTypes_Provisional</li>
+				<li>provisional_adjective->Words/Adjectives/GovernmentAdjectives_Provisional</li>
+				<li>socialist_government->Words/Nouns/GovernmentTypes_Socialist</li>
+				<li>socialist_adjective->Words/Adjectives/GovernmentAdjectives_Socialist</li>
+			</rulesFiles>
+		</rulePack>
+	</RulePackDef>
+
+	<RulePackDef>
+		<defName>DITN_Settlement_Outcast</defName>
+		<include>
+			<li>OutlanderPlaceNameUtility</li>
+		</include>
+		<rulePack>
+			<rulesStrings>
+				<li>r_name(p=4)->New [ghosttown]</li>
+				<li>r_name(p=3)->New [concept_outcast]</li>
+				<li>r_name(p=2)->New [PlaceOutlander]</li>
+
+				<li>r_name(p=3)->[Character]grad</li>
+				<li>r_name(p=2)->New [Character]grad</li>
+				<li>r_name(p=2)->[Character]burg</li>
+				<li>r_name(p=1)->Port [Character]</li>
+
+				<li>r_name(p=1)->[concept_outcast]</li>
+				<li>r_name(p=3)->[concept_outcast] [community_term]</li>
+				<li>r_name(p=2)->Port [concept_outcast]</li>
+
+				<li>r_name(p=6)->[ghosttown]</li>
+				<li>r_name(p=3)->Fort [ghosttown]</li>
+				<li>r_name(p=2)->Old [ghosttown]</li>
+				<li>r_name(p=3)->[townname_wordgen]</li>
+				<li>r_name(p=2)->[townname_fixed]</li>
+				<li>r_name(p=2)->[townname_combo]</li>
+
+				<li>r_name(p=2)->[Character]'s Crossing</li>
+				<li>r_name(p=2)->[Character]'s Landing</li>
+				<li>r_name(p=1)->[Character]'s Haven</li>
+				<li>r_name(p=1)->[Character]'s Reach</li>
+
+				<li>townname_wordgen(p=2)->[SylE][SylE]</li>
+				<li>townname_wordgen->[SylE][townend]</li>
+
+				<li>townname_combo->[Character]'s [Community]</li>
+				<li>townname_combo->[concept_positive] [Community]</li>
+
+				<li>townend->ville</li>
+				<li>townend->ton</li>
+				<li>townend->dale</li>
+				<li>townend->mere</li>
+				<li>townend->well</li>
+				<li>townend->wood</li>
+				<li>townend->land</li>
+			</rulesStrings>
+			<rulesFiles>
+				<li>townname_fixed->Names/OutlanderTown</li>
+				<li>concept_positive->Words/Nouns/Concepts_Positive</li>
+				<li>ghosttown->Names/DITN_GhostTowns</li>
+				<li>concept_outcast->Words/Nouns/Concepts_Outcast</li>
+				<li>community_term->Words/Nouns/CommunityTerms_Outcast</li>
+			</rulesFiles>
+		</rulePack>
+	</RulePackDef>
+
+	<RulePackDef>
+		<defName>DITN_Faction_Freebooters</defName>
+		<rulePack>
+			<rulesStrings>
+				<li>r_name(p=2)->[NamePerson]'s Free Company</li>
+				<li>r_name(p=2)->[NamePerson]'s [freecompanyunit]</li>
+				<li>r_name->[NamePerson]'s [groupname]</li>
+				<li>r_name(p=0.5)->[NamePerson]'s [Weapon]s</li>
+				<li>r_name(p=2)->The [ColorBadass] [freecompanyunit]</li>
+				<li>r_name->The [ColorBadass] Free Company</li>
+				<li>r_name(p=0.5)->The [ColorBadass] [groupname]</li>
+				<li>r_name(p=0.5)->The [ColorBadass] [Weapon]s</li>
+				<li>r_name->The [AdjectiveBadass] [freecompanyunit]</li>
+				<li>r_name(p=0.5)->The [AdjectiveBadass] [groupname]</li>
+				<li>r_name(p=0.5)->The [Weapon] [freecompanyunit]</li>
+			</rulesStrings>
+			<rulesFiles>
+				<li>groupname->Words/Nouns/GroupNames</li>
+				<li>freecompanyunit->Words/Nouns/FreeCompanyUnits</li>
+			</rulesFiles>
+		</rulePack>
+	</RulePackDef>
+
+	<RulePackDef>
+		<defName>DITN_Settlement_Freebooters</defName>
+		<rulePack>
+			<rulesStrings>
+				<li>r_name(p=4)->[townname_combo]</li>
+				<li>r_name(p=3)->[townname_freebooter]</li>
+				<li>r_name(p=1)->[townname_wordgen]</li>
+
+				<li>townname_freebooter->[NamePerson]'s [campterm]</li>
+				<li>townname_freebooter->Fort [NamePerson]</li>
+				<li>townname_freebooter->Camp [ConceptBadass]</li>
+				<li>townname_freebooter->Outpost [ConceptBadass]</li>
+
+				<li>townname_combo->[AnimalBadass] [TerrainFeature]</li>
+				<li>townname_combo->[ConceptBadass] [TerrainFeature]</li>
+				<li>townname_combo->[PersonBadass]'s [TerrainFeature]</li>
+				<li>townname_combo->[ColorBadass] [TerrainFeature]</li>
+				<li>townname_combo->[Weapon]'s [TerrainFeature]</li>
+
+				<li>townname_wordgen(p=2)->[SylE][SylE]</li>
+				<li>townname_wordgen->[SylE][townendevil]</li>
+
+				<li>townendevil->vast</li>
+				<li>townendevil->burn</li>
+				<li>townendevil->sear</li>
+				<li>townendevil->shank</li>
+				<li>townendevil->lock</li>
+				<li>townendevil->vix</li>
+				<li>townendevil->tor</li>
+			</rulesStrings>
+			<rulesFiles>
+				<li>campterm->Words/Nouns/CampTerms_Freebooter</li>
+			</rulesFiles>
+		</rulePack>
+	</RulePackDef>
+
+</Defs>

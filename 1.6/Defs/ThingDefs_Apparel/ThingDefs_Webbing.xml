@@ -3,7 +3,7 @@
   <ThingDef ParentName="ApparelMakeableBase">
     <defName>DITN_Webbing_Infantry</defName>
     <label>Infantry Webbing</label>
-    <description>A standard load-bearing harness worn by Ringer infantry. Distributes the weight of ammunition and field kit across the torso. Issued to most front-line personnel.</description>
+    <description>A standard load-bearing harness worn by Outcast infantry. Distributes the weight of ammunition and field kit across the torso. Issued to most front-line personnel.</description>
     <graphicData>
       <texPath>Things/Pawn/Humanlike/Accessories/InfantryPouches/InfantryPouches</texPath>
       <graphicClass>Graphic_Single</graphicClass>

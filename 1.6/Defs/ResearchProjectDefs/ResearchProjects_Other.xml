@@ -3,8 +3,8 @@
 
 	<ResearchProjectDef>
 		<defName>DITN_FabricationBench</defName>
-		<label>Ringer Fabricator</label>
-		<description>Build the Ringer Fabricator workbench needed to produce Ringer equipment.</description>
+		<label>Outcast Fabricator</label>
+		<description>Build the Outcast Fabricator workbench needed to produce Outcast equipment.</description>
 		<baseCost>1000</baseCost>
 		<tab>DITN_ResearchTab</tab>
 		<techLevel>Spacer</techLevel>

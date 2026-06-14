@@ -2,8 +2,8 @@
 <Defs>
   <ThingDef ParentName="ApparelMakeableBase">
     <defName>DITN_OfficerUniform</defName>
-    <label>Ringer Officer Uniform</label>
-    <description>A tailored duty uniform worn by commissioned Ringer officers. Cut to be presentable in formal settings while remaining durable enough for field use.</description>
+    <label>Outcast Officer Uniform</label>
+    <description>A tailored duty uniform worn by commissioned Outcast officers. Cut to be presentable in formal settings while remaining durable enough for field use.</description>
     <graphicData>
       <graphicClass>Graphic_Single</graphicClass>
       <texPath>Things/Pawn/Humanlike/Clothes/OfficerUniform/OfficerUniform</texPath>
@@ -84,8 +84,8 @@
 
 	<ThingDef ParentName="HatMakeableBase">
     <defName>DITN_OfficerHat</defName>
-    <label>Ringer Officer Headwear</label>
-    <description>A structured cap worn by Ringer Officers. Bears rank and unit markings, allowing the wearer to be identified quickly as command personnel during engagements.</description>
+    <label>Outcast Officer Headwear</label>
+    <description>A structured cap worn by Outcast Officers. Bears rank and unit markings, allowing the wearer to be identified quickly as command personnel during engagements.</description>
     <graphicData>
       <texPath>Things/Pawn/Humanlike/Headgear/OfficerCap/OfficerCap</texPath>
       <graphicClass>Graphic_Single</graphicClass>
@@ -162,7 +162,7 @@
 
 	<ThingDef ParentName="ApparelMakeableBase">
     <defName>DITN_OfficerUniform_SuperCold</defName>
-    <label>Ringer Officer Uniform (Tundra)</label>
+    <label>Outcast Officer Uniform (Tundra)</label>
     <description>An officer's duty uniform insulated for extreme cold. Thermal lining and sealed cuffs allow command personnel to function in conditions that would otherwise be debilitating.</description>
     <graphicData>
       <graphicClass>Graphic_Single</graphicClass>
@@ -247,7 +247,7 @@
 
 	<ThingDef ParentName="HatMakeableBase">
     <defName>DITN_OfficerHat_SuperCold</defName>
-    <label>Ringer Officer Headwear (Tundra)</label>
+    <label>Outcast Officer Headwear (Tundra)</label>
     <description>An officer's cap insulated for extreme cold. Full brow and ear coverage protects against frostbite without obscuring the rank markings that identify command personnel.</description>
     <graphicData>
       <texPath>Things/Pawn/Humanlike/Headgear/OfficerCapArctic/OfficerCapArctic</texPath>

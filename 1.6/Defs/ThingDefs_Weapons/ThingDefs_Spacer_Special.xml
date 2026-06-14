@@ -74,7 +74,7 @@
 			</li>
 		</verbs>
 		<weaponTags>
-			<li>DITN_RingerHeavyGun</li>
+			<li>DITN_OutcastHeavyGun</li>
 		</weaponTags>
 		<tools>
 			<li>
@@ -108,7 +108,7 @@
 		<label>autoloader cannon shell</label>
 		<graphicData>
 			<graphicClass>Graphic_Single</graphicClass>
-			<texPath>Things/Projectile/Bullet_Big</texPath>
+			<texPath>Things/Projectile/bullet_autocannon</texPath>
 			<drawSize>0.9</drawSize>
 		</graphicData>
 		<projectile>
@@ -155,7 +155,7 @@
 			<AccuracyShort>0.35</AccuracyShort>
 			<AccuracyMedium>0.70</AccuracyMedium>
 			<AccuracyLong>0.90</AccuracyLong>
-			<RangedWeapon_Cooldown>5.5</RangedWeapon_Cooldown>
+			<RangedWeapon_Cooldown>3.0</RangedWeapon_Cooldown>
 		</statBases>
 		<equippedStatOffsets>
 			<MoveSpeed>-0.45</MoveSpeed>
@@ -165,18 +165,17 @@
 				<verbClass>Verb_Shoot</verbClass>
 				<hasStandardCommand>true</hasStandardCommand>
 				<defaultProjectile>DITN_Shell_AutoloaderCannon</defaultProjectile>
-				<warmupTime>5.0</warmupTime>
-				<range>58.0</range>
-				<range>48.0</range>
+				<warmupTime>2.9</warmupTime>
+				<range>54.0</range>
 				<burstShotCount>2</burstShotCount>
 				<ticksBetweenBurstShots>5</ticksBetweenBurstShots>
-				<soundCast>ChargeLance_Fire</soundCast>
+				<soundCast>Shot_SniperRifle</soundCast>
 				<soundCastTail>GunTail_Heavy</soundCastTail>
 				<muzzleFlashScale>14</muzzleFlashScale>
 			</li>
 		</verbs>
 		<weaponTags>
-			<li>DITN_RingerHeavyGun</li>
+			<li>DITN_OutcastHeavyGun</li>
 		</weaponTags>
 		<tools>
 			<li>
@@ -268,14 +267,14 @@
 				<hasStandardCommand>true</hasStandardCommand>
 				<defaultProjectile>DITN_Bullet_HydraAMR</defaultProjectile>
 				<warmupTime>3.4</warmupTime>
-				<range>48.0</range>
+				<range>82.0</range>
 				<soundCast>Shot_SniperRifle</soundCast>
 				<soundCastTail>GunTail_Heavy</soundCastTail>
 				<muzzleFlashScale>13</muzzleFlashScale>
 			</li>
 		</verbs>
 		<weaponTags>
-			<li>DITN_RingerMarksmanGun</li>
+			<li>DITN_OutcastMarksmanGun</li>
 		</weaponTags>
 		<tools>
 			<li>

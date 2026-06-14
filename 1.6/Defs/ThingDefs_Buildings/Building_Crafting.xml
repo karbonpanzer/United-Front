@@ -3,8 +3,8 @@
 
   <ThingDef ParentName="BenchBase">
     <defName>DITN_FabricationBench</defName>
-    <label>Ringer Fabricator</label>
-    <description>A workbench using proprietary equipment and tools for the manufacturing of Ringer technologies. Requires a Ringer Decoder to unlock.</description>
+    <label>Outcast Fabricator</label>
+    <description>A workbench using proprietary equipment and tools for the manufacturing of Outcast technologies. Requires a Outcast Decoder to unlock.</description>
     <thingClass>Building_WorkTable</thingClass>
     <graphicData>
       <texPath>Things/Building/Production/RFabricator</texPath>

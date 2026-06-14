@@ -2,7 +2,7 @@
 <Defs>
 
   <TraderKindDef>
-    <defName>Caravan_Ringer_BulkGoods</defName>
+    <defName>Caravan_Outcast_BulkGoods</defName>
     <label>bulk goods trader</label>
     <stockGenerators>
 
@@ -174,7 +174,7 @@
 
   <!--======================================================================================-->
   <TraderKindDef>
-    <defName>Caravan_Ringer_ArmsDealer</defName>
+    <defName>Caravan_Outcast_ArmsDealer</defName>
     <label>arms dealer</label>
     <stockGenerators>
 
@@ -274,7 +274,7 @@
 
   <!--======================================================================================-->
   <TraderKindDef>
-    <defName>Caravan_Ringer_Exotic</defName>
+    <defName>Caravan_Outcast_Exotic</defName>
     <label>black market trader</label>
     <stockGenerators>
 

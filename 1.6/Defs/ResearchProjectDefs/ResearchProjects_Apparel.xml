@@ -60,8 +60,8 @@
 
 	<!--Apparel-->
 	<ResearchProjectDef>
-		<defName>DITN_RingerUniforms</defName>
-		<label>Ringer Uniforms</label>
+		<defName>DITN_OutcastUniforms</defName>
+		<label>Outcast Uniforms</label>
 		<description>Tailor garments that provide light protection and insulation for a variety of climates.</description>
 		<baseCost>1200</baseCost>
 		<tab>DITN_ResearchTab</tab>
@@ -82,7 +82,7 @@
 		<tab>DITN_ResearchTab</tab>
 		<techLevel>Spacer</techLevel>
 		<prerequisites>
-			<li>DITN_RingerUniforms</li>
+			<li>DITN_OutcastUniforms</li>
 		</prerequisites>
 		<researchViewX>2</researchViewX>
 		<researchViewY>2.8</researchViewY>
@@ -97,7 +97,7 @@
 		<tab>DITN_ResearchTab</tab>
 		<techLevel>Spacer</techLevel>
 		<prerequisites>
-			<li>DITN_RingerUniforms</li>
+			<li>DITN_OutcastUniforms</li>
 		</prerequisites>
 		<researchViewX>2</researchViewX>
 		<researchViewY>3.5</researchViewY>

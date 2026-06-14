@@ -2,26 +2,26 @@
 <Defs>
 	<ThingCategoryDef>
 		<defName>DITN_Uniforms</defName>
-		<label>Ringer Apparel</label>
+		<label>Outcast Apparel</label>
 		<parent>Apparel</parent>
 	</ThingCategoryDef>
 
 	<ThingCategoryDef>
 		<defName>DITN_Headgear</defName>
-		<label>Ringer Headgear</label>
+		<label>Outcast Headgear</label>
 		<parent>DITN_Uniforms</parent>
 	</ThingCategoryDef>
 
 	<ThingCategoryDef>
 		<defName>DITN_Accessories</defName>
-		<label>Ringer Accessories</label>
+		<label>Outcast Accessories</label>
 		<parent>DITN_Uniforms</parent>
 	</ThingCategoryDef>
 
 	<!-- Armor Directory-->
 	<ThingCategoryDef>
 		<defName>DITN_Armor</defName>
-		<label>Ringer Armor</label>
+		<label>Outcast Armor</label>
 		<parent>DITN_Uniforms</parent>
 	</ThingCategoryDef>
 
