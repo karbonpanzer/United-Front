@@ -3,15 +3,15 @@
 
 	<FactionDef ParentName="PlayerFactionBase">
 		<defName>UFR_Player</defName>
-		<label>Outcast refugees</label>
+		<label>Lost citizens</label>
 		<description>A small group of war refugees displaced from a fallen industrial world. Armed with whatever military gear they could salvage during the evacuation, they have arrived on this rimworld with the desperate hope of building a stable new home.</description>
 		<colorSpectrum>
             <li>(0, 0.737, 0.847)</li>
 		</colorSpectrum>
 		<isPlayer>true</isPlayer>
 		<basicMemberKind>UFR_Player</basicMemberKind>
-		<pawnSingular>outcast</pawnSingular>
-		<pawnsPlural>outcasts</pawnsPlural>
+		<pawnSingular>citizen</pawnSingular>
+		<pawnsPlural>citizens</pawnsPlural>
 		<techLevel>Spacer</techLevel>
 		<allowedCultures>
 			<li>Astropolitan</li>
@@ -42,10 +42,10 @@
 
 	<FactionDef ParentName="FactionBase">
 		<defName>UFR_Civil</defName>
-		<label>Outcast refugees</label>
+		<label>Front citizens</label>
 		<description>A decentralized faction of war refugees whose industrial homeworld was overrun by mechanoids. Abandoned to their fate, these survivors scattered across the rim seeking stability they no longer had.\n\nThough they carry advanced military weapons and composite armor, they lack the manufacturing base to replace what breaks. They rely on the discipline and cooperative spirit of their former society to survive. They are generally willing to trade and ally with outsiders who prove themselves trustworthy, but will fiercely defend their provisional settlements against any threat.</description>
-		<pawnSingular>outcast</pawnSingular>
-		<pawnsPlural>outcasts</pawnsPlural>
+		<pawnSingular>citizen</pawnSingular>
+		<pawnsPlural>citizens</pawnsPlural>
 		<listOrderPriority>13</listOrderPriority>
 		<settlementGenerationWeight>1</settlementGenerationWeight>
 		<requiredCountAtGameStart>1</requiredCountAtGameStart>
@@ -132,14 +132,10 @@
 					<UFR_Civil_Veteran_Melee>5</UFR_Civil_Veteran_Melee>
 					<UFR_Civil_Sergeant>4</UFR_Civil_Sergeant>
 					<UFR_Civil_Ranger>7</UFR_Civil_Ranger>
-					<UFR_Civil_GrenadierFrag>3</UFR_Civil_GrenadierFrag>
-					<UFR_Civil_GrenadierEMP>3</UFR_Civil_GrenadierEMP>
-					<UFR_Civil_GrenadierFire>3</UFR_Civil_GrenadierFire>
-					<UFR_Civil_GrenadierFire MayRequire="Ludeon.RimWorld.Biotech">3</UFR_Civil_GrenadierFire>
+					<UFR_Civil_Grenadier>3</UFR_Civil_Grenadier>
 					<UFR_Civil_Shocktrooper>2</UFR_Civil_Shocktrooper>
 					<UFR_Civil_Medic>3</UFR_Civil_Medic>
 					<UFR_Civil_Engineer>3</UFR_Civil_Engineer>
-					<UFR_Civil_Warden>2</UFR_Civil_Warden>
 					<UFR_Civil_Officer>3</UFR_Civil_Officer>
 				</options>
 			</li>
@@ -336,14 +332,10 @@
 					<UFR_Rough_Veteran_Melee>5</UFR_Rough_Veteran_Melee>
 					<UFR_Rough_Sergeant>4</UFR_Rough_Sergeant>
 					<UFR_Rough_Ranger>7</UFR_Rough_Ranger>
-					<UFR_Rough_GrenadierFrag>3</UFR_Rough_GrenadierFrag>
-					<UFR_Rough_GrenadierEMP>3</UFR_Rough_GrenadierEMP>
-					<UFR_Rough_GrenadierFire>3</UFR_Rough_GrenadierFire>
-					<UFR_Rough_GrenadierFire MayRequire="Ludeon.RimWorld.Biotech">3</UFR_Rough_GrenadierFire>
+					<UFR_Rough_Grenadier>3</UFR_Rough_Grenadier>
 					<UFR_Rough_Shocktrooper>2</UFR_Rough_Shocktrooper>
 					<UFR_Rough_Medic>3</UFR_Rough_Medic>
 					<UFR_Rough_Engineer>3</UFR_Rough_Engineer>
-					<UFR_Rough_Warden>2</UFR_Rough_Warden>
 					<UFR_Rough_Officer>3</UFR_Rough_Officer>
 				</options>
 			</li>

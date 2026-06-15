@@ -3,7 +3,7 @@
   <ThingDef ParentName="ResourceBase">
     <defName>UFR_Decoder</defName>
     <label>Decoder</label>
-    <description>A digital decoder which provides a means to decode Ringer schematics. Available only via trade or scenario start, it must be analyzed to unlock the Ringer research tree.</description>
+    <description>A digital decoder which provides a means to decode United Front technologies. Available only via trade or scenario start, it must be analyzed to unlock the Ringer research tree.</description>
     <graphicData>
       <texPath>Things/Item/Resource/Decoder/Decoder</texPath>
       <graphicClass>Graphic_Single</graphicClass>
@@ -24,6 +24,9 @@
     </thingCategories>
     <drawGUIOverlay>false</drawGUIOverlay>
     <techLevel>Spacer</techLevel>
+    <thingSetMakerTags>
+      <li>RewardStandardCore</li>
+    </thingSetMakerTags>    
     <tradeTags>
       <li>ExoticMisc</li>
     </tradeTags>

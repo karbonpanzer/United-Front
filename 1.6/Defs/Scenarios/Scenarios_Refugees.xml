@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Defs>
 	<ScenarioDef ParentName="ScenarioBase">
-		<defName>UFR_Prospectors</defName>
-		<label>Outcast refugees</label>
-		<description>You arrived, following the dream of many, you are the first of your ship to set foot on this world. The fresh air is the first you have breathed in years, you are here now. Many of your family and friends could not make it but you did.. What will you do with your freedom?</description>
+		<defName>UFR_LostCitizens</defName>
+		<label>Lost Citizens</label>
+		<description>Your government walked away from the people generations before the mechanoids came, and the homeworld fell. Five of you slept the long sublight passage in a refugee cryoship. Now you wake to a new sky, the cause of the United Front still in your hands. More sleepers wait aboard.</description>
 
 		<scenario>
-			<summary>A group of settlers from a fallen world seeking security.</summary>
+			<summary>A small group of sublight refugees from a fallen industrial world, carrying forward the cause of the United Front.</summary>
 			<playerFaction>
 				<def>PlayerFaction</def>
 				<factionDef>UFR_Player</factionDef>
@@ -15,7 +15,7 @@
 			<parts>
 				<li Class="ScenPart_GameStartDialog">
 					<def>GameStartDialog</def>
-					<text>You arrived, following the dream of many, you are the first of your ship to set foot on this world.\n\nThe fresh air is the first you have breathed in years, you are here now. Many of your family and friends could not make it but you did.\n\nWhat will you do with your freedom?</text>
+					<text>Your government walked away from the people generations before the mechanoids came, and the homeworld fell.\n\nFive of you slept the long sublight passage in a refugee cryoship.\n\nNow you wake to a new sky, the cause of the United Front is still in your hands.\n\nMore sleepers wait aboard. The work begins.</text>
 					<closeSound>GameStartSting</closeSound>
 				</li>
 
