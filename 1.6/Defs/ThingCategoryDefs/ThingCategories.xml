@@ -2,41 +2,42 @@
 <Defs>
 	<ThingCategoryDef>
 		<defName>UFR_Uniforms</defName>
-		<label>Outcast Apparel</label>
+		<label>UFR Apparel</label>
 		<parent>Apparel</parent>
 	</ThingCategoryDef>
-
 	<ThingCategoryDef>
 		<defName>UFR_Headgear</defName>
-		<label>Outcast Headgear</label>
-		<parent>UFR_Uniforms</parent>
+		<label>UFR Headgear</label>
+		<parent>Headgear</parent>
 	</ThingCategoryDef>
-
 	<ThingCategoryDef>
 		<defName>UFR_Accessories</defName>
-		<label>Outcast Accessories</label>
-		<parent>UFR_Uniforms</parent>
+		<label>UFR Accessories</label>
+		<parent>ApparelUtility</parent>
 	</ThingCategoryDef>
 
-	<!-- Armor Directory-->
+	<!-- Armor -->
 	<ThingCategoryDef>
 		<defName>UFR_Armor</defName>
-		<label>Outcast Armor</label>
-		<parent>UFR_Uniforms</parent>
+		<label>UFR Armor</label>
+		<parent>ApparelArmor</parent>
 	</ThingCategoryDef>
-
-	<!-- Helmet Subdirectory-->
 	<ThingCategoryDef>
 		<defName>UFR_Helmets</defName>
-		<label>Helmets</label>
-		<parent>UFR_Armor</parent>
+		<label>UFR Helmets</label>
+		<parent>ArmorHeadgear</parent>
 	</ThingCategoryDef>
 
-	<!-- Armor Accessories-->
-	<ThingCategoryDef>
-		<defName>UFR_ArmorAccessories</defName>
-		<label>Armor Accessories</label>
-		<parent>UFR_Armor</parent>
+	<!-- Weapons -->
+	<!--ThingCategoryDef>
+		<defName>UFR_MeleeWeapons</defName>
+		<label>UFR Melee Weapons</label>
+		<parent>WeaponsMelee</parent>
 	</ThingCategoryDef>
+	<ThingCategoryDef>
+		<defName>UFR_RangedWeapons</defName>
+		<label>UFR Ranged Weapons</label>
+		<parent>WeaponsRanged</parent>
+	</ThingCategoryDef-->
 
 </Defs>

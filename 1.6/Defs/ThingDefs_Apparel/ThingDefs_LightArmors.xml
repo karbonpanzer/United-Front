@@ -1,9 +1,9 @@
 <?xml version='1.0' encoding='utf-8'?>
 <Defs>
   <ThingDef ParentName="ArmorMachineableBase">
-    <defName>UFR_MarauderArmor</defName>
-    <label>Marauder Armor</label>
-    <description>A hardened armor set with segmented Marauder plates bonded over a ballistic underlayer. Covers the torso and upper arms. Used by Ringer infantry who expect direct fire contact.</description>
+    <defName>UFR_BulwarkArmor</defName>
+    <label>Bulwark Armor</label>
+    <description>A hardened armor set with segmented Bulwark plates bonded over a ballistic underlayer. Covers the torso and upper arms. Used by Ringer infantry who expect direct fire contact.</description>
     <graphicData>
       <texPath>Things/Pawn/Humanlike/Armor/LightArmor/LightArmor</texPath>
       <graphicClass>Graphic_Single</graphicClass>
@@ -18,7 +18,7 @@
       </options>
     </colorGenerator>
     <recipeMaker>
-      <researchPrerequisite>UFR_MarauderArmor</researchPrerequisite>
+      <researchPrerequisite>UFR_BulwarkArmor</researchPrerequisite>
       <unfinishedThingDef>UnfinishedTechArmor</unfinishedThingDef>
       <skillRequirements>
         <Crafting>5</Crafting>
@@ -115,9 +115,9 @@
     <uiIconScale>1.15</uiIconScale>
   </ThingDef>
   <ThingDef ParentName="ArmorMachineableBase">
-    <defName>UFR_MarauderHelmet</defName>
-    <label>Marauder Helmet</label>
-    <description>A hard-shell combat helmet with a Marauder outer layer and ballistic liner. Covers the skull and upper face. Standard head protection for Ringer combat personnel.</description>
+    <defName>UFR_BulwarkHelmet</defName>
+    <label>Bulwark Helmet</label>
+    <description>A hard-shell combat helmet with a Bulwark outer layer and ballistic liner. Covers the skull and upper face. Standard head protection for Ringer combat personnel.</description>
     <graphicData>
       <texPath>Things/Pawn/Humanlike/Helmets/LightHelmet/LightHelmet</texPath>
       <graphicClass>Graphic_Single</graphicClass>
@@ -132,7 +132,7 @@
       </options>
     </colorGenerator>
     <recipeMaker>
-      <researchPrerequisite>UFR_MarauderArmor</researchPrerequisite>
+      <researchPrerequisite>UFR_BulwarkArmor</researchPrerequisite>
       <unfinishedThingDef>UnfinishedTechArmor</unfinishedThingDef>
       <skillRequirements>
         <Crafting>5</Crafting>
@@ -210,9 +210,9 @@
     <uiIconScale>1.15</uiIconScale>
   </ThingDef>
   <ThingDef ParentName="ArmorMachineableBase">
-    <defName>UFR_MarauderHelmet_Insulated</defName>
-    <label>Marauder Helmet (Insulated)</label>
-    <description>A Marauder helmet with thermal lining added to the interior. Provides the same ballistic protection as the standard configuration in climates that would otherwise affect the wearer's effectiveness.</description>
+    <defName>UFR_BulwarkHelmet_Insulated</defName>
+    <label>Bulwark Helmet (Insulated)</label>
+    <description>A Bulwark helmet with thermal lining added to the interior. Provides the same ballistic protection as the standard configuration in climates that would otherwise affect the wearer's effectiveness.</description>
     <graphicData>
       <texPath>Things/Pawn/Humanlike/Helmets/LightHelmetThermal/LightHelmetThermal</texPath>
       <graphicClass>Graphic_Single</graphicClass>
@@ -227,7 +227,7 @@
       </options>
     </colorGenerator>
     <recipeMaker>
-      <researchPrerequisite>UFR_MarauderArmor</researchPrerequisite>
+      <researchPrerequisite>UFR_BulwarkArmor</researchPrerequisite>
       <unfinishedThingDef>UnfinishedTechArmor</unfinishedThingDef>
       <skillRequirements>
         <Crafting>5</Crafting>
@@ -309,9 +309,9 @@
     <uiIconScale>1.15</uiIconScale>
   </ThingDef>
   <ThingDef ParentName="ArmorMachineableBase">
-    <defName>UFR_MarauderHelmet_Shield</defName>
-    <label>Marauder Helmet (Reinforced)</label>
-    <description>A Marauder helmet with an additional ballistic plate bonded to the front. Heavier than the standard configuration, but more resistant to direct frontal impacts.</description>
+    <defName>UFR_BulwarkHelmet_Shield</defName>
+    <label>Bulwark Helmet (Reinforced)</label>
+    <description>A Bulwark helmet with an additional ballistic plate bonded to the front. Heavier than the standard configuration, but more resistant to direct frontal impacts.</description>
     <graphicData>
       <texPath>Things/Pawn/Humanlike/Helmets/LightHelmetMasked/LightHelmetMasked</texPath>
       <graphicClass>Graphic_Single</graphicClass>
@@ -326,7 +326,7 @@
       </options>
     </colorGenerator>
     <recipeMaker>
-      <researchPrerequisite>UFR_MarauderArmor</researchPrerequisite>
+      <researchPrerequisite>UFR_BulwarkArmor</researchPrerequisite>
       <unfinishedThingDef>UnfinishedTechArmor</unfinishedThingDef>
       <skillRequirements>
         <Crafting>5</Crafting>
@@ -411,9 +411,9 @@
     <uiIconScale>1.15</uiIconScale>
   </ThingDef>
   <ThingDef ParentName="ArmorMachineableBase">
-    <defName>UFR_MarauderHelmet_Gasmask</defName>
-    <label>Marauder Helmet (Gasmask)</label>
-    <description>A Marauder helmet fitted with an integrated filtration mask. Protects the skull and seals the airway against chemical agents and toxic particulates.</description>
+    <defName>UFR_BulwarkHelmet_Gasmask</defName>
+    <label>Bulwark Helmet (Gasmask)</label>
+    <description>A Bulwark helmet fitted with an integrated filtration mask. Protects the skull and seals the airway against chemical agents and toxic particulates.</description>
     <graphicData>
       <texPath>Things/Pawn/Humanlike/Helmets/LightHelmetGasmask/LightHelmetGasmask</texPath>
       <graphicClass>Graphic_Single</graphicClass>
@@ -428,7 +428,7 @@
       </options>
     </colorGenerator>
     <recipeMaker>
-      <researchPrerequisite>UFR_MarauderArmor</researchPrerequisite>
+      <researchPrerequisite>UFR_BulwarkArmor</researchPrerequisite>
       <unfinishedThingDef>UnfinishedTechArmor</unfinishedThingDef>
       <skillRequirements>
         <Crafting>5</Crafting>

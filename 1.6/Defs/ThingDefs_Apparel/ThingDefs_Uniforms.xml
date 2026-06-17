@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Defs>
   <ThingDef ParentName="ApparelMakeableBase">
-    <defName>UFR_OutcastUniform_SuperHot</defName>
+    <defName>UFR_UFUniform_SuperHot</defName>
     <label>Outcast Uniform (Desert)</label>
     <description>A standard Outcast duty uniform adapted for extreme heat. Stripped to the minimum needed for function, with a light weave that resists heat buildup.</description>
     <graphicData>
@@ -58,7 +58,7 @@
         <li>OnSkin</li>
       </layers>
       <tags>
-        <li>UFR_OutcastUniform</li>
+        <li>UFR_UFUniform</li>
       </tags>
       <defaultOutfitTags>
         <li>Soldier</li>
@@ -76,7 +76,7 @@
   </ThingDef>
 
 	<ThingDef ParentName="HatMakeableBase">
-    <defName>UFR_OutcastHat_Hot</defName>
+    <defName>UFR_UFHat_Hot</defName>
     <label>Outcast Uniform Headwear (Steppe)</label>
     <description>A wide-brimmed field cap worn by Outcast personnel in desert postings. Shades the face and neck from direct sun.</description>
     <graphicData>
@@ -128,7 +128,7 @@
         <li>Overhead</li>
       </layers>
       <tags>
-        <li>UFR_OutcastUniform</li>
+        <li>UFR_UFUniform</li>
       </tags>
       <defaultOutfitTags>
         <li>Soldier</li>
@@ -150,7 +150,7 @@
   </ThingDef>
 
 	<ThingDef ParentName="ApparelMakeableBase">
-    <defName>UFR_OutcastUniform_Hot</defName>
+    <defName>UFR_UFUniform_Hot</defName>
     <label>Outcast Uniform (Steppe)</label>
     <description>A standard Outcast duty uniform adapted for Steppe and desert postings. Loose-weave fabric reduces heat absorption and allows some airflow.</description>
     <graphicData>
@@ -176,7 +176,7 @@
       </options>
     </colorGenerator>
     <recipeMaker>
-      <researchPrerequisite>UFR_OutcastUniforms</researchPrerequisite>
+      <researchPrerequisite>UFR_UFUniforms</researchPrerequisite>
     </recipeMaker>
     <stuffCategories>
       <li>Fabric</li>
@@ -207,7 +207,7 @@
         <li>OnSkin</li>
       </layers>
       <tags>
-        <li>UFR_OutcastUniform</li>
+        <li>UFR_UFUniform</li>
       </tags>
       <defaultOutfitTags>
         <li>Soldier</li>
@@ -225,7 +225,7 @@
   </ThingDef>
 
 	<ThingDef ParentName="HatMakeableBase">
-    <defName>UFR_OutcastHat_SuperHot</defName>
+    <defName>UFR_UFHat_SuperHot</defName>
     <label>Field Hat (Arid)</label>
     <description>Based on an Old Earth design from the 3rd Era of Imperialism. This headgear is designed to protect the wearer from the worst heat they can find in the Rim. Providing not only cool headwear but also protecting the wearer from the worst that the sun can provide. Originally designed for usage on Spiceworld Regiments, it is now found in more worlds than the uniform that it came from.</description>
     <graphicData>
@@ -251,7 +251,7 @@
       </options>
     </colorGenerator>
     <recipeMaker>
-      <researchPrerequisite>UFR_OutcastUniforms</researchPrerequisite>
+      <researchPrerequisite>UFR_UFUniforms</researchPrerequisite>
     </recipeMaker>
     <stuffCategories>
       <li>Fabric</li>
@@ -277,7 +277,7 @@
         <li>Overhead</li>
       </layers>
       <tags>
-        <li>UFR_OutcastUniform</li>
+        <li>UFR_UFUniform</li>
       </tags>
       <defaultOutfitTags>
         <li>Soldier</li>
@@ -299,7 +299,7 @@
   </ThingDef>
 
 	<ThingDef ParentName="ApparelMakeableBase">
-    <defName>UFR_OutcastUniform_Temperate</defName>
+    <defName>UFR_UFUniform_Temperate</defName>
     <label>Outcast Uniform (Temperate)</label>
     <description>The standard Outcast duty uniform, balanced for moderate climates. Worn by most deployed Outcast personnel across a wide range of postings.</description>
     <graphicData>
@@ -329,7 +329,7 @@
       </options>
     </colorGenerator>
     <recipeMaker>
-      <researchPrerequisite>UFR_OutcastUniforms</researchPrerequisite>
+      <researchPrerequisite>UFR_UFUniforms</researchPrerequisite>
     </recipeMaker>
     <stuffCategories>
       <li>Fabric</li>
@@ -360,7 +360,7 @@
         <li>OnSkin</li>
       </layers>
       <tags>
-        <li>UFR_OutcastUniform</li>
+        <li>UFR_UFUniform</li>
       </tags>
       <defaultOutfitTags>
         <li>Soldier</li>
@@ -378,7 +378,7 @@
   </ThingDef>
 
 	<ThingDef ParentName="HatMakeableBase">
-    <defName>UFR_OutcastHat_Temperate</defName>
+    <defName>UFR_UFHat_Temperate</defName>
     <label>Outcast Uniform Headwear (Temperate)</label>
     <description>A standard Outcast field cap, worn across most postings. Provides modest weather protection and carries unit markings.</description>
     <graphicData>
@@ -408,7 +408,7 @@
       </options>
     </colorGenerator>
     <recipeMaker>
-      <researchPrerequisite>UFR_OutcastUniforms</researchPrerequisite>
+      <researchPrerequisite>UFR_UFUniforms</researchPrerequisite>
     </recipeMaker>
     <stuffCategories>
       <li>Fabric</li>
@@ -434,7 +434,7 @@
         <li>Overhead</li>
       </layers>
       <tags>
-        <li>UFR_OutcastUniform</li>
+        <li>UFR_UFUniform</li>
       </tags>
       <defaultOutfitTags>
         <li>Soldier</li>
@@ -456,7 +456,7 @@
   </ThingDef>
 
 	<ThingDef ParentName="ApparelMakeableBase">
-    <defName>UFR_OutcastUniform_Cold</defName>
+    <defName>UFR_UFUniform_Cold</defName>
     <label>Outcast Uniform (Boreal)</label>
     <description>A standard Outcast duty uniform layered for cold forest climates. Thick enough to retain warmth, flexible enough for movement through difficult terrain.</description>
     <graphicData>
@@ -486,7 +486,7 @@
       </options>
     </colorGenerator>
     <recipeMaker>
-      <researchPrerequisite>UFR_OutcastUniforms</researchPrerequisite>
+      <researchPrerequisite>UFR_UFUniforms</researchPrerequisite>
     </recipeMaker>
     <stuffCategories>
       <li>Fabric</li>
@@ -517,7 +517,7 @@
         <li>OnSkin</li>
       </layers>
       <tags>
-        <li>UFR_OutcastUniform</li>
+        <li>UFR_UFUniform</li>
       </tags>
       <defaultOutfitTags>
         <li>Soldier</li>
@@ -535,7 +535,7 @@
   </ThingDef>
 
 	<ThingDef ParentName="HatMakeableBase">
-    <defName>UFR_OutcastHat_Cold</defName>
+    <defName>UFR_UFHat_Cold</defName>
     <label>Outcast Uniform Headwear (Boreal)</label>
     <description>A mid-weight field cap with insulated lining, worn by Outcast personnel in cold forest postings. Covers the ears without significantly restricting peripheral vision.</description>
     <graphicData>
@@ -565,7 +565,7 @@
       </options>
     </colorGenerator>
     <recipeMaker>
-      <researchPrerequisite>UFR_OutcastUniforms</researchPrerequisite>
+      <researchPrerequisite>UFR_UFUniforms</researchPrerequisite>
     </recipeMaker>
     <stuffCategories>
       <li>Fabric</li>
@@ -591,7 +591,7 @@
         <li>Overhead</li>
       </layers>
       <tags>
-        <li>UFR_OutcastUniform</li>
+        <li>UFR_UFUniform</li>
       </tags>
       <defaultOutfitTags>
         <li>Soldier</li>
@@ -613,7 +613,7 @@
   </ThingDef>
 
 	<ThingDef ParentName="ApparelMakeableBase">
-    <defName>UFR_OutcastUniform_SuperCold</defName>
+    <defName>UFR_UFUniform_SuperCold</defName>
     <label>Outcast Uniform (Tundra)</label>
     <description>A standard Outcast duty uniform insulated for extreme cold. Reinforced seams and sealed cuffs keep heat in when outside temperatures become dangerous.</description>
     <graphicData>
@@ -674,7 +674,7 @@
         <li>OnSkin</li>
       </layers>
       <tags>
-        <li>UFR_OutcastUniform</li>
+        <li>UFR_UFUniform</li>
       </tags>
       <defaultOutfitTags>
         <li>Soldier</li>
@@ -692,7 +692,7 @@
   </ThingDef>
 
 	<ThingDef ParentName="HatMakeableBase">
-    <defName>UFR_OutcastHat_SuperCold</defName>
+    <defName>UFR_UFHat_SuperCold</defName>
     <label>Outcast Uniform Headwear (Tundra)</label>
     <description>A fully insulated field cap worn by Outcast personnel in extreme cold. Covers the ears, brow, and most of the face to prevent frostbite in subzero conditions.</description>
     <graphicData>
@@ -748,7 +748,7 @@
         <li>Overhead</li>
       </layers>
       <tags>
-        <li>UFR_OutcastUniform</li>
+        <li>UFR_UFUniform</li>
       </tags>
       <defaultOutfitTags>
         <li>Soldier</li>

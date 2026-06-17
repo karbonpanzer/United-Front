@@ -74,7 +74,7 @@
 			</li>
 		</verbs>
 		<weaponTags>
-			<li>UFR_OutcastHeavyGun</li>
+			<li>UFR_UFHeavyGun</li>
 		</weaponTags>
 		<tools>
 			<li>
@@ -175,7 +175,7 @@
 			</li>
 		</verbs>
 		<weaponTags>
-			<li>UFR_OutcastHeavyGun</li>
+			<li>UFR_UFHeavyGun</li>
 		</weaponTags>
 		<tools>
 			<li>
@@ -274,7 +274,7 @@
 			</li>
 		</verbs>
 		<weaponTags>
-			<li>UFR_OutcastMarksmanGun</li>
+			<li>UFR_UFMarksmanGun</li>
 		</weaponTags>
 		<tools>
 			<li>

@@ -3,14 +3,14 @@
 <Defs> 	
 		
 		<ResearchProjectDef>
-			<defName>UFR_OrbitalMarauderArmor</defName>
-			<label>Orbital Marauder Armor and Helmet</label>
-			<description>Craft Marauder Armor for usage in orbit.</description>
+			<defName>UFR_OrbitalBulwarkArmor</defName>
+			<label>Orbital Bulwark Armor and Helmet</label>
+			<description>Craft Bulwark Armor for usage in orbit.</description>
 			<baseCost>500</baseCost>
 			<tab>UFR_ResearchTab</tab>
 			<techLevel>Spacer</techLevel>
 			<prerequisites>
-				<li>UFR_MarauderArmor</li>
+				<li>UFR_BulwarkArmor</li>
 				<li MayRequire="Ludeon.RimWorld.Odyssey">OrbitalTech</li>
 			</prerequisites>
 			<researchViewX>4</researchViewX>

@@ -65,8 +65,8 @@
 			</li>
 		</tools>
 		<weaponTags>
-			<li>UFR_OutcastMelee</li>
-			<li>UFR_OutcastEliteMelee</li>
+			<li>UFR_UFMelee</li>
+			<li>UFR_UFEliteMelee</li>
 		</weaponTags>
 		<thingSetMakerTags>
 			<li>RewardHighTech</li>
@@ -138,8 +138,8 @@
 			</li>
 		</tools>
 		<weaponTags>
-			<li>UFR_OutcastMelee</li>
-			<li>UFR_OutcastEliteMelee</li>
+			<li>UFR_UFMelee</li>
+			<li>UFR_UFEliteMelee</li>
 		</weaponTags>
 		<thingSetMakerTags>
 			<li>RewardHighTech</li>
@@ -214,7 +214,7 @@
 			</li>
 		</tools>
 		<weaponTags>
-			<li>UFR_OutcastMelee</li>
+			<li>UFR_UFMelee</li>
 		</weaponTags>
 		<thingSetMakerTags>
 			<li>RewardStandardHighTech</li>

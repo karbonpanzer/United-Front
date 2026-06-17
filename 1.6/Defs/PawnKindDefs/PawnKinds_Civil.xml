@@ -32,7 +32,7 @@
             </subOptionsChooseOne>
         </inventoryOptions>
         <weaponTags>
-            <li>UFR_OutcastSidearm</li>
+            <li>UFR_UFSidearm</li>
         </weaponTags>
     </PawnKindDef>
 
@@ -54,7 +54,7 @@
         <initialWillRange>2~4</initialWillRange>
         <initialResistanceRange>15~25</initialResistanceRange>
         <weaponTags>
-            <li>UFR_OutcastSidearm</li>
+            <li>UFR_UFSidearm</li>
         </weaponTags>
     </PawnKindDef>
 
@@ -93,8 +93,8 @@
             </subOptionsChooseOne>
         </inventoryOptions>
         <weaponTags>
-            <li>UFR_OutcastSidearm</li>
-            <li>UFR_OutcastHeavyPistol</li>
+            <li>UFR_UFSidearm</li>
+            <li>UFR_UFHeavyPistol</li>
         </weaponTags>
     </PawnKindDef>
 
@@ -136,8 +136,8 @@
         <apparelMoney>600~900</apparelMoney>
         <apparelAllowHeadgearChance>0.5</apparelAllowHeadgearChance>
         <weaponTags>
-            <li>UFR_OutcastSidearm</li>
-            <li>UFR_OutcastSMG</li>
+            <li>UFR_UFSidearm</li>
+            <li>UFR_UFSMG</li>
         </weaponTags>
         <weaponMoney>1000~1500</weaponMoney>
         <techHediffsChance>0.02</techHediffsChance>
@@ -162,7 +162,7 @@
         <apparelMoney>600~900</apparelMoney>
         <apparelAllowHeadgearChance>0.5</apparelAllowHeadgearChance>
         <weaponTags>
-            <li>UFR_OutcastMelee</li>
+            <li>UFR_UFMelee</li>
         </weaponTags>
         <weaponMoney>2000~2500</weaponMoney>
         <techHediffsChance>0.02</techHediffsChance>
@@ -183,7 +183,7 @@
         <apparelMoney>1000~1500</apparelMoney>
         <apparelAllowHeadgearChance>0.7</apparelAllowHeadgearChance>
         <weaponTags>
-            <li>UFR_OutcastRifle</li>
+            <li>UFR_UFRifle</li>
         </weaponTags>
         <weaponMoney>3200~4500</weaponMoney>
         <techHediffsChance>0.05</techHediffsChance>
@@ -207,7 +207,7 @@
         <apparelMoney>1000~1500</apparelMoney>
         <apparelAllowHeadgearChance>0.7</apparelAllowHeadgearChance>
         <weaponTags>
-            <li>UFR_OutcastMelee</li>
+            <li>UFR_UFMelee</li>
         </weaponTags>
         <weaponMoney>2000~2800</weaponMoney>
         <techHediffsChance>0.05</techHediffsChance>
@@ -228,8 +228,8 @@
         <apparelMoney>1200~1700</apparelMoney>
         <apparelAllowHeadgearChance>0.75</apparelAllowHeadgearChance>
         <weaponTags>
-            <li>UFR_OutcastCarbine</li>
-            <li>UFR_OutcastHeavyPistol</li>
+            <li>UFR_UFCarbine</li>
+            <li>UFR_UFHeavyPistol</li>
         </weaponTags>
         <weaponMoney>1800~2400</weaponMoney>
         <techHediffsChance>0.08</techHediffsChance>
@@ -254,8 +254,8 @@
         <apparelMoney>1200~1700</apparelMoney>
         <apparelAllowHeadgearChance>0.75</apparelAllowHeadgearChance>
         <weaponTags>
-            <li>UFR_OutcastMelee</li>
-            <li>UFR_OutcastEliteMelee</li>
+            <li>UFR_UFMelee</li>
+            <li>UFR_UFEliteMelee</li>
         </weaponTags>
         <weaponMoney>1800~2400</weaponMoney>
         <techHediffsChance>0.08</techHediffsChance>
@@ -294,10 +294,10 @@
             <li>Brawler</li>
         </disallowedTraits>
         <weaponTags>
-            <li>UFR_OutcastRifle</li>
-            <li>UFR_OutcastEliteShotgun</li>
-            <li>UFR_OutcastMarksmanGun</li>
-            <li>UFR_OutcastHeavyGun</li>
+            <li>UFR_UFRifle</li>
+            <li>UFR_UFEliteShotgun</li>
+            <li>UFR_UFMarksmanGun</li>
+            <li>UFR_UFHeavyGun</li>
         </weaponTags>
     </PawnKindDef>
 
@@ -320,7 +320,7 @@
             </li>
         </skills>
         <weaponTags>
-            <li>UFR_OutcastEliteMelee</li>
+            <li>UFR_UFEliteMelee</li>
         </weaponTags>
     </PawnKindDef>
 
@@ -332,8 +332,8 @@
         <minGenerationAge>25</minGenerationAge>
         <maxGenerationAge>45</maxGenerationAge>
         <weaponTags>
-            <li>UFR_OutcastRifle</li>
-            <li>UFR_OutcastHeavyPistol</li>
+            <li>UFR_UFRifle</li>
+            <li>UFR_UFHeavyPistol</li>
         </weaponTags>
         <weaponMoney>1800~2400</weaponMoney>
         <techHediffsChance>0.07</techHediffsChance>
@@ -387,8 +387,8 @@
             <li>Brawler</li>
         </disallowedTraits>
         <weaponTags>
-            <li>UFR_OutcastRifle</li>
-            <li>UFR_OutcastEliteShotgun</li>
+            <li>UFR_UFRifle</li>
+            <li>UFR_UFEliteShotgun</li>
         </weaponTags>
     </PawnKindDef>
 
@@ -397,10 +397,10 @@
         <apparelMoney>1000~1500</apparelMoney>
         <apparelAllowHeadgearChance>0.7</apparelAllowHeadgearChance>
         <weaponTags>
-            <li>UFR_OutcastSidearm</li>
-            <li>UFR_OutcastSMG</li>
-            <li>UFR_OutcastCarbine</li>
-            <li>UFR_OutcastShotgun</li>
+            <li>UFR_UFSidearm</li>
+            <li>UFR_UFSMG</li>
+            <li>UFR_UFCarbine</li>
+            <li>UFR_UFShotgun</li>
         </weaponTags>
         <weaponMoney>1500~2100</weaponMoney>
         <techHediffsChance>0.06</techHediffsChance>
@@ -423,8 +423,8 @@
         <apparelMoney>1200~1800</apparelMoney>
         <apparelAllowHeadgearChance>0.9</apparelAllowHeadgearChance>
         <weaponTags>
-            <li>UFR_OutcastCarbine</li>
-            <li>UFR_OutcastHeavyPistol</li>
+            <li>UFR_UFCarbine</li>
+            <li>UFR_UFHeavyPistol</li>
         </weaponTags>
         <weaponMoney>3600~4500</weaponMoney>
         <techHediffsChance>0.15</techHediffsChance>
@@ -472,8 +472,8 @@
             <li>Brawler</li>
         </disallowedTraits>
         <weaponTags>
-            <li>UFR_OutcastSidearm</li>
-            <li>UFR_OutcastSMG</li>
+            <li>UFR_UFSidearm</li>
+            <li>UFR_UFSMG</li>
         </weaponTags>
     </PawnKindDef>
 
@@ -503,7 +503,7 @@
             </li>
         </skills>
         <weaponTags>
-            <li>UFR_OutcastHeavyPistol</li>
+            <li>UFR_UFHeavyPistol</li>
         </weaponTags>
     </PawnKindDef>
 
@@ -544,7 +544,7 @@
             <li>Brawler</li>
         </disallowedTraits>
         <apparelTags Inherit="False">
-            <li>UFR_OutcastUniform</li>
+            <li>UFR_UFUniform</li>
         </apparelTags>
         <apparelAllowHeadgearChance>0.5</apparelAllowHeadgearChance>
     </PawnKindDef>
@@ -584,7 +584,7 @@
             <li>Brawler</li>
         </disallowedTraits>
         <apparelTags Inherit="False">
-            <li>UFR_OutcastUniform</li>
+            <li>UFR_UFUniform</li>
         </apparelTags>
         <apparelAllowHeadgearChance>0.5</apparelAllowHeadgearChance>
     </PawnKindDef>
@@ -612,7 +612,7 @@
             <li>Brawler</li>
         </disallowedTraits>
         <apparelTags Inherit="False">
-            <li>UFR_OutcastUniform</li>
+            <li>UFR_UFUniform</li>
         </apparelTags>
         <apparelAllowHeadgearChance>0.3</apparelAllowHeadgearChance>
     </PawnKindDef>
@@ -662,7 +662,7 @@
             <li>Brawler</li>
         </disallowedTraits>
         <apparelTags Inherit="False">
-            <li>UFR_OutcastUniform</li>
+            <li>UFR_UFUniform</li>
         </apparelTags>
         <apparelAllowHeadgearChance>0.7</apparelAllowHeadgearChance>
     </PawnKindDef>
@@ -690,7 +690,7 @@
             <li>UFR_Webbing_Infantry</li>
         </apparelRequired>
         <apparelTags Inherit="False">
-            <li>UFR_OutcastUniform</li>
+            <li>UFR_UFUniform</li>
         </apparelTags>
         <apparelAllowHeadgearChance>0.7</apparelAllowHeadgearChance>
     </PawnKindDef>
@@ -714,7 +714,7 @@
             <li>UFR_Webbing_Infantry</li>
         </apparelRequired>
         <apparelTags Inherit="False">
-            <li>UFR_OutcastUniform</li>
+            <li>UFR_UFUniform</li>
         </apparelTags>
         <apparelAllowHeadgearChance>0.7</apparelAllowHeadgearChance>
     </PawnKindDef>
@@ -732,10 +732,10 @@
         </modExtensions>
         <apparelRequired>
             <li>UFR_Webbing_Infantry</li>
-            <li>UFR_MarauderArmor</li>
+            <li>UFR_BulwarkArmor</li>
         </apparelRequired>
         <apparelTags Inherit="False">
-            <li>UFR_OutcastUniform</li>
+            <li>UFR_UFUniform</li>
             <li>UFR_LightHelmet</li>
         </apparelTags>
         <apparelAllowHeadgearChance>1.0</apparelAllowHeadgearChance>
@@ -754,10 +754,10 @@
         </modExtensions>
         <apparelRequired>
             <li>UFR_Webbing_Infantry</li>
-            <li>UFR_MarauderArmor</li>
+            <li>UFR_BulwarkArmor</li>
         </apparelRequired>
         <apparelTags Inherit="False">
-            <li>UFR_OutcastUniform</li>
+            <li>UFR_UFUniform</li>
             <li>UFR_LightHelmet</li>
         </apparelTags>
         <apparelAllowHeadgearChance>1.0</apparelAllowHeadgearChance>
@@ -776,10 +776,10 @@
         </modExtensions>
         <apparelRequired>
             <li>UFR_Webbing_Infantry</li>
-            <li>UFR_MarauderArmor</li>
+            <li>UFR_BulwarkArmor</li>
         </apparelRequired>
         <apparelTags Inherit="False">
-            <li>UFR_OutcastUniform</li>
+            <li>UFR_UFUniform</li>
             <li>UFR_LightHelmet</li>
         </apparelTags>
         <apparelAllowHeadgearChance>1.0</apparelAllowHeadgearChance>
@@ -793,10 +793,10 @@
         <minGenerationAge>30</minGenerationAge>
         <maxGenerationAge>50</maxGenerationAge>
         <weaponTags Inherit="False">
-            <li>UFR_OutcastRifle</li>
-            <li>UFR_OutcastEliteShotgun</li>
-            <li>UFR_OutcastMarksmanGun</li>
-            <li>UFR_OutcastDMR</li>              
+            <li>UFR_UFRifle</li>
+            <li>UFR_UFEliteShotgun</li>
+            <li>UFR_UFMarksmanGun</li>
+            <li>UFR_UFDMR</li>              
         </weaponTags>
         <modExtensions>
             <li Class="UnitedFront.DecalKindExtension">
@@ -806,10 +806,10 @@
         </modExtensions>
         <apparelRequired>
             <li>UFR_Webbing_Infantry</li>
-            <li>UFR_HeavyMarauderArmor</li>
+            <li>UFR_HeavyBulwarkArmor</li>
         </apparelRequired>
         <apparelTags Inherit="False">
-            <li>UFR_OutcastUniform</li>
+            <li>UFR_UFUniform</li>
             <li>UFR_HeavyHelmet</li>
         </apparelTags>
         <apparelAllowHeadgearChance>1.0</apparelAllowHeadgearChance>
@@ -823,7 +823,7 @@
         <minGenerationAge>30</minGenerationAge>
         <maxGenerationAge>50</maxGenerationAge>
         <weaponTags Inherit="False">
-            <li>UFR_OutcastEliteMelee</li>
+            <li>UFR_UFEliteMelee</li>
         </weaponTags>
         <modExtensions>
             <li Class="UnitedFront.DecalKindExtension">
@@ -833,10 +833,10 @@
         </modExtensions>
         <apparelRequired>
             <li>UFR_Webbing_Infantry</li>
-            <li>UFR_HeavyMarauderArmor</li>
+            <li>UFR_HeavyBulwarkArmor</li>
         </apparelRequired>
         <apparelTags Inherit="False">
-            <li>UFR_OutcastUniform</li>
+            <li>UFR_UFUniform</li>
             <li>UFR_HeavyHelmet</li>
         </apparelTags>
         <apparelAllowHeadgearChance>1.0</apparelAllowHeadgearChance>
@@ -848,9 +848,9 @@
         <labelPlural>rangers</labelPlural>
         <combatPower>110</combatPower>
         <weaponTags Inherit="False">
-            <li>UFR_OutcastCarbine</li>
-            <li>UFR_OutcastHeavyPistol</li>
-            <li>UFR_OutcastDMR</li>            
+            <li>UFR_UFCarbine</li>
+            <li>UFR_UFHeavyPistol</li>
+            <li>UFR_UFDMR</li>            
         </weaponTags>
         <weaponMoney>1950~2550</weaponMoney>
         <apparelMoney>1100~1600</apparelMoney>
@@ -872,10 +872,10 @@
         </modExtensions>
         <apparelRequired>
             <li>UFR_Webbing_Scout</li>
-            <li>UFR_ScoutMarauderArmor</li>
+            <li>UFR_ScoutBulwarkArmor</li>
         </apparelRequired>
         <apparelTags Inherit="False">
-            <li>UFR_OutcastUniform</li>
+            <li>UFR_UFUniform</li>
         </apparelTags>
         <apparelAllowHeadgearChance>0.7</apparelAllowHeadgearChance>
     </PawnKindDef>
@@ -915,15 +915,15 @@
             </li>
         </modExtensions>
         <weaponTags Inherit="False">
-            <li>UFR_OutcastSidearm</li>
-            <li>UFR_OutcastSMG</li>
+            <li>UFR_UFSidearm</li>
+            <li>UFR_UFSMG</li>
         </weaponTags>
         <apparelRequired>
             <li>UFR_Webbing_Medic</li>
-            <li>UFR_MarauderArmor</li>
+            <li>UFR_BulwarkArmor</li>
         </apparelRequired>
         <apparelTags Inherit="False">
-            <li>UFR_OutcastUniform</li>
+            <li>UFR_UFUniform</li>
             <li>UFR_LightHelmet</li>
         </apparelTags>
         <apparelAllowHeadgearChance>1.0</apparelAllowHeadgearChance>
@@ -955,15 +955,15 @@
             </li>
         </modExtensions>
         <weaponTags Inherit="False">
-            <li>UFR_OutcastCarbine</li>
-            <li>UFR_OutcastShotgun</li>
+            <li>UFR_UFCarbine</li>
+            <li>UFR_UFShotgun</li>
         </weaponTags>
         <apparelRequired>
             <li>UFR_Webbing_Engineer</li>
-            <li>UFR_MarauderArmor</li>
+            <li>UFR_BulwarkArmor</li>
         </apparelRequired>
         <apparelTags Inherit="False">
-            <li>UFR_OutcastUniform</li>
+            <li>UFR_UFUniform</li>
             <li>UFR_LightHelmet</li>
         </apparelTags>
         <apparelAllowHeadgearChance>1.0</apparelAllowHeadgearChance>
@@ -975,8 +975,8 @@
         <labelPlural>grenadiers</labelPlural>
         <combatPower>100</combatPower>
         <weaponTags Inherit="False">
-            <li>UFR_OutcastSidearm</li>
-            <li>UFR_OutcastSMG</li>
+            <li>UFR_UFSidearm</li>
+            <li>UFR_UFSMG</li>
         </weaponTags>
         <modExtensions>
             <li Class="UnitedFront.DecalKindExtension">
@@ -985,10 +985,10 @@
             </li>
         </modExtensions>
         <apparelRequired>
-            <li>UFR_MarauderArmor</li>
+            <li>UFR_BulwarkArmor</li>
         </apparelRequired>
         <apparelTags Inherit="False">
-            <li>UFR_OutcastUniform</li>
+            <li>UFR_UFUniform</li>
             <li>UFR_LightHelmet</li>
             <li>UFR_Accessories_Grenadier</li>
         </apparelTags>
@@ -1003,7 +1003,7 @@
         <minGenerationAge>25</minGenerationAge>
         <maxGenerationAge>40</maxGenerationAge>
         <weaponTags Inherit="False">
-            <li>UFR_OutcastHeavyPistol</li>
+            <li>UFR_UFHeavyPistol</li>
         </weaponTags>
         <modExtensions>
             <li Class="UnitedFront.DecalKindExtension">
@@ -1013,11 +1013,11 @@
         </modExtensions>
         <apparelRequired>
             <li>UFR_Webbing_Shocktrooper</li>
-            <li>UFR_HeavyMarauderArmor</li>
-            <li>UFR_HeavyMarauderHelmet_Shielded</li>
+            <li>UFR_HeavyBulwarkArmor</li>
+            <li>UFR_HeavyBulwarkHelmet_Shielded</li>
         </apparelRequired>
         <apparelTags Inherit="False">
-            <li>UFR_OutcastUniform</li>
+            <li>UFR_UFUniform</li>
         </apparelTags>
         <apparelAllowHeadgearChance>1.0</apparelAllowHeadgearChance>
     </PawnKindDef>
@@ -1059,7 +1059,7 @@
             </li>
         </modExtensions>
         <apparelRequired>
-            <li>UFR_OfficerMarauderArmor</li>
+            <li>UFR_OfficerBulwarkArmor</li>
         </apparelRequired>
         <apparelTags Inherit="False">
             <li>UFR_OfficerUniform</li>

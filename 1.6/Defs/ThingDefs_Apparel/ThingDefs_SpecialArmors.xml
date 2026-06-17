@@ -1,9 +1,9 @@
 <?xml version='1.0' encoding='utf-8'?>
 <Defs>
   <ThingDef ParentName="ArmorMachineableBase">
-    <defName>UFR_OfficerMarauderArmor</defName>
-    <label>Officer Marauder Armor</label>
-    <description>A Marauder armor set finished for officer-grade wear. Offers equivalent protection to standard Marauder while maintaining the appearance expected of command personnel.</description>
+    <defName>UFR_OfficerBulwarkArmor</defName>
+    <label>Officer Bulwark Armor</label>
+    <description>A Bulwark armor set finished for officer-grade wear. Offers equivalent protection to standard Bulwark while maintaining the appearance expected of command personnel.</description>
     <graphicData>
       <texPath>Things/Pawn/Humanlike/Armor/OfficerArmor/OfficerArmor</texPath>
       <graphicClass>Graphic_Single</graphicClass>
@@ -18,7 +18,7 @@
       </options>
     </colorGenerator>
     <recipeMaker>
-      <researchPrerequisite>UFR_OfficerMarauderArmor</researchPrerequisite>
+      <researchPrerequisite>UFR_OfficerBulwarkArmor</researchPrerequisite>
       <unfinishedThingDef>UnfinishedTechArmor</unfinishedThingDef>
       <skillRequirements>
         <Crafting>7</Crafting>
@@ -116,9 +116,9 @@
     <uiIconScale>1.15</uiIconScale>
   </ThingDef>
   <ThingDef ParentName="ArmorMachineableBase">
-    <defName>UFR_OfficerMarauderArmor_Scout</defName>
-    <label>Officer Marauder Armor (Scout)</label>
-    <description>A lighter Marauder armor set worn by officers who operate close to or ahead of their unit. Trimmed for mobility while retaining markings that identify the wearer as command personnel.</description>
+    <defName>UFR_OfficerBulwarkArmor_Scout</defName>
+    <label>Officer Bulwark Armor (Scout)</label>
+    <description>A lighter Bulwark armor set worn by officers who operate close to or ahead of their unit. Trimmed for mobility while retaining markings that identify the wearer as command personnel.</description>
     <graphicData>
       <texPath>Things/Pawn/Humanlike/Armor/OfficerScoutArmor/OfficerScoutArmor</texPath>
       <graphicClass>Graphic_Single</graphicClass>
@@ -133,7 +133,7 @@
       </options>
     </colorGenerator>
     <recipeMaker>
-      <researchPrerequisite>UFR_OfficerMarauderArmor</researchPrerequisite>
+      <researchPrerequisite>UFR_OfficerBulwarkArmor</researchPrerequisite>
       <unfinishedThingDef>UnfinishedTechArmor</unfinishedThingDef>
       <skillRequirements>
         <Crafting>7</Crafting>
@@ -229,9 +229,9 @@
     <uiIconScale>1.15</uiIconScale>
   </ThingDef>
   <ThingDef ParentName="ArmorMachineableBase">
-    <defName>UFR_ScoutMarauderArmor</defName>
-    <label>Scout Marauder Armor</label>
-    <description>A reduced Marauder armor set designed for reconnaissance personnel. Coverage is trimmed to allow faster movement and quieter operation well ahead of the main force.</description>
+    <defName>UFR_ScoutBulwarkArmor</defName>
+    <label>Scout Bulwark Armor</label>
+    <description>A reduced Bulwark armor set designed for reconnaissance personnel. Coverage is trimmed to allow faster movement and quieter operation well ahead of the main force.</description>
     <graphicData>
       <texPath>Things/Pawn/Humanlike/Armor/ScoutArmor/ScoutArmor</texPath>
       <graphicClass>Graphic_Single</graphicClass>
@@ -246,7 +246,7 @@
       </options>
     </colorGenerator>
     <recipeMaker>
-      <researchPrerequisite>UFR_MarauderArmor</researchPrerequisite>
+      <researchPrerequisite>UFR_BulwarkArmor</researchPrerequisite>
       <unfinishedThingDef>UnfinishedTechArmor</unfinishedThingDef>
       <skillRequirements>
         <Crafting>5</Crafting>
@@ -341,9 +341,9 @@
     <uiIconScale>1.15</uiIconScale>
   </ThingDef>
   <ThingDef ParentName="ArmorMachineableBase">
-    <defName>UFR_RiotMarauderArmor</defName>
-    <label>Riot Marauder Armor</label>
-    <description>A Marauder armor set reinforced for crowd control operations. Additional blunt-trauma protection on the front panel helps absorb impacts common in suppression engagements.</description>
+    <defName>UFR_RiotBulwarkArmor</defName>
+    <label>Riot Bulwark Armor</label>
+    <description>A Bulwark armor set reinforced for crowd control operations. Additional blunt-trauma protection on the front panel helps absorb impacts common in suppression engagements.</description>
     <graphicData>
       <texPath>Things/Pawn/Humanlike/Armor/RiotArmor/RiotArmor</texPath>
       <graphicClass>Graphic_Single</graphicClass>

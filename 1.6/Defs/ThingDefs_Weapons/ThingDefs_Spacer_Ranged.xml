@@ -69,7 +69,7 @@
 			</li>
 		</verbs>
 		<weaponTags>
-			<li>UFR_OutcastHeavyPistol</li>
+			<li>UFR_UFHeavyPistol</li>
 		</weaponTags>
 		<tools>
 			<li>
@@ -127,7 +127,7 @@
 		<techLevel>Spacer</techLevel>
 		<soundInteract>Interact_Autopistol</soundInteract>
 		<recipeMaker>
-			<researchPrerequisite>UFR_OutcastWeaponry</researchPrerequisite>
+			<researchPrerequisite>UFR_UFWeaponry</researchPrerequisite>
 			<skillRequirements>
 				<Crafting>7</Crafting>
 			</skillRequirements>
@@ -164,7 +164,7 @@
 			</li>
 		</verbs>
 		<weaponTags>
-			<li>UFR_OutcastSidearm</li>
+			<li>UFR_UFSidearm</li>
 		</weaponTags>
 		<tools>
 			<li>
@@ -262,7 +262,7 @@
 			</li>
 		</verbs>
 		<weaponTags>
-			<li>UFR_OutcastSMG</li>
+			<li>UFR_UFSMG</li>
 		</weaponTags>
 		<tools>
 			<li>
@@ -358,7 +358,7 @@
 			</li>
 		</verbs>
 		<weaponTags>
-			<li>UFR_OutcastHeavyPistol</li>
+			<li>UFR_UFHeavyPistol</li>
 		</weaponTags>
 		<tools>
 			<li>
@@ -457,7 +457,7 @@
 			</li>
 		</verbs>
 		<weaponTags>
-			<li>UFR_OutcastRifle</li>
+			<li>UFR_UFRifle</li>
 		</weaponTags>
 		<tools>
 			<li>
@@ -515,7 +515,7 @@
 		<techLevel>Spacer</techLevel>
 		<soundInteract>Interact_Rifle</soundInteract>
 		<recipeMaker>
-			<researchPrerequisite>UFR_OutcastWeaponry</researchPrerequisite>
+			<researchPrerequisite>UFR_UFWeaponry</researchPrerequisite>
 			<skillRequirements>
 				<Crafting>6</Crafting>
 			</skillRequirements>
@@ -553,7 +553,7 @@
 			</li>
 		</verbs>
 		<weaponTags>
-			<li>UFR_OutcastCarbine</li>
+			<li>UFR_UFCarbine</li>
 		</weaponTags>
 		<tools>
 			<li>
@@ -647,7 +647,7 @@
 			</li>
 		</verbs>
 		<weaponTags>
-			<li>UFR_OutcastDMR</li>
+			<li>UFR_UFDMR</li>
 		</weaponTags>
 		<tools>
 			<li>
@@ -748,7 +748,7 @@
 			</li>
 		</verbs>
 		<weaponTags>
-			<li>UFR_OutcastHeavyGun</li>
+			<li>UFR_UFHeavyGun</li>
 		</weaponTags>
 		<tools>
 			<li>
@@ -848,7 +848,7 @@
 			</li>
 		</verbs>
 		<weaponTags>
-			<li>UFR_OutcastEliteShotgun</li>
+			<li>UFR_UFEliteShotgun</li>
 		</weaponTags>
 		<tools>
 			<li>
@@ -946,7 +946,7 @@
 			</li>
 		</verbs>
 		<weaponTags>
-			<li>UFR_OutcastShotgun</li>
+			<li>UFR_UFShotgun</li>
 		</weaponTags>
 		<tools>
 			<li>

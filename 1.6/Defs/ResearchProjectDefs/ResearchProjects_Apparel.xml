@@ -3,8 +3,8 @@
 
 	<!--Armor-->
 	<ResearchProjectDef>
-		<defName>UFR_MarauderArmor</defName>
-		<label>Marauder Armor and Helmets</label>
+		<defName>UFR_BulwarkArmor</defName>
+		<label>Bulwark Armor and Helmets</label>
 		<description>Craft armor and helmets that provide stronger protection than flak gear and cover more of the body.</description>
 		<baseCost>1600</baseCost>
 		<tab>UFR_ResearchTab</tab>
@@ -17,28 +17,28 @@
 	</ResearchProjectDef>
 
 	<ResearchProjectDef>
-		<defName>UFR_HeavyMarauderArmor</defName>
-		<label>Heavy Marauder Armor and Helmets</label>
+		<defName>UFR_HeavyBulwarkArmor</defName>
+		<label>Heavy Bulwark Armor and Helmets</label>
 		<description>Craft heavy armor and helmets that add additional plating for improved protection at increased material cost.</description>
 		<baseCost>2000</baseCost>
 		<tab>UFR_ResearchTab</tab>
 		<techLevel>Spacer</techLevel>
 		<prerequisites>
-			<li>UFR_MarauderArmor</li>
+			<li>UFR_BulwarkArmor</li>
 		</prerequisites>
 		<researchViewX>3</researchViewX>
 		<researchViewY>0</researchViewY>
 	</ResearchProjectDef>
 
 	<ResearchProjectDef>
-		<defName>UFR_OfficerMarauderArmor</defName>
-		<label>Officer Marauder Armor</label>
+		<defName>UFR_OfficerBulwarkArmor</defName>
+		<label>Officer Bulwark Armor</label>
 		<description>Craft officer armor that adds protection and prestige with increased material cost.</description>
 		<baseCost>2400</baseCost>
 		<tab>UFR_ResearchTab</tab>
 		<techLevel>Spacer</techLevel>
 		<prerequisites>
-			<li>UFR_MarauderArmor</li>
+			<li>UFR_BulwarkArmor</li>
 		</prerequisites>
 		<researchViewX>3</researchViewX>
 		<researchViewY>0.7</researchViewY>
@@ -52,7 +52,7 @@
 		<tab>UFR_ResearchTab</tab>
 		<techLevel>Spacer</techLevel>
 		<prerequisites>
-			<li>UFR_MarauderArmor</li>
+			<li>UFR_BulwarkArmor</li>
 		</prerequisites>
 		<researchViewX>3</researchViewX>
 		<researchViewY>1.4</researchViewY>
@@ -60,8 +60,8 @@
 
 	<!--Apparel-->
 	<ResearchProjectDef>
-		<defName>UFR_OutcastUniforms</defName>
-		<label>Outcast Uniforms</label>
+		<defName>UFR_UFUniforms</defName>
+		<label>United Front Uniforms</label>
 		<description>Tailor garments that provide light protection and insulation for a variety of climates.</description>
 		<baseCost>1200</baseCost>
 		<tab>UFR_ResearchTab</tab>
@@ -82,7 +82,7 @@
 		<tab>UFR_ResearchTab</tab>
 		<techLevel>Spacer</techLevel>
 		<prerequisites>
-			<li>UFR_OutcastUniforms</li>
+			<li>UFR_UFUniforms</li>
 		</prerequisites>
 		<researchViewX>2</researchViewX>
 		<researchViewY>2.8</researchViewY>
@@ -97,7 +97,7 @@
 		<tab>UFR_ResearchTab</tab>
 		<techLevel>Spacer</techLevel>
 		<prerequisites>
-			<li>UFR_OutcastUniforms</li>
+			<li>UFR_UFUniforms</li>
 		</prerequisites>
 		<researchViewX>2</researchViewX>
 		<researchViewY>3.5</researchViewY>

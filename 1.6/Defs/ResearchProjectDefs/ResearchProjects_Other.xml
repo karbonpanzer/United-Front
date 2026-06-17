@@ -3,8 +3,8 @@
 
 	<ResearchProjectDef>
 		<defName>UFR_FabricationBench</defName>
-		<label>Outcast Fabricator</label>
-		<description>Build the Outcast Fabricator workbench needed to produce Outcast equipment.</description>
+		<label>United Front Fabricator</label>
+		<description>Build the United Front Fabricator workbench needed to produce United Front equipment.</description>
 		<baseCost>1000</baseCost>
 		<tab>UFR_ResearchTab</tab>
 		<techLevel>Spacer</techLevel>

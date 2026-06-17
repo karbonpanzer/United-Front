@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Defs>
 	<ScenarioDef ParentName="ScenarioBase">
-		<defName>UFR_LostCitizens</defName>
-		<label>Lost Citizens</label>
+		<defName>UFR_ExiledCitizens</defName>
+		<label>Exiled Citizens</label>
 		<description>Your government walked away from the people generations before the mechanoids came, and the homeworld fell. Five of you slept the long sublight passage in a refugee cryoship. Now you wake to a new sky, the cause of the United Front still in your hands. More sleepers wait aboard.</description>
 
 		<scenario>
@@ -64,14 +64,14 @@
 
 				<li Class="ScenPart_StartingThing_Defined">
 					<def>StartingThing_Defined</def>
-					<thingDef>UFR_MarauderArmor</thingDef>
+					<thingDef>UFR_BulwarkArmor</thingDef>
 					<count>1</count>
 					<quality>Normal</quality>
 				</li>
 
 				<li Class="ScenPart_StartingThing_Defined">
 					<def>StartingThing_Defined</def>
-					<thingDef>UFR_MarauderHelmet</thingDef>
+					<thingDef>UFR_BulwarkHelmet</thingDef>
 					<count>1</count>
 					<quality>Normal</quality>
 				</li>
@@ -126,7 +126,7 @@
 
 				<li Class="ScenPart_StartingResearch">
 					<def>StartingResearch</def>
-					<project>UFR_OutcastUniforms</project>
+					<project>UFR_UFUniforms</project>
 				</li>				
 
 				 <!-- Scatter some things near player start -->

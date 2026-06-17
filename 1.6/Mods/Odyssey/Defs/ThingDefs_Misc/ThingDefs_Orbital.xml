@@ -1,12 +1,12 @@
 <?xml version='1.0' encoding='utf-8'?>
 <Defs>
   <ThingDef ParentName="ArmorHelmetMakeableBase">
-    <defName>UFR_OrbitalMarauderHelmet</defName>
-    <label>Orbital Marauder Helmet</label>
-    <description>A fully sealed Marauder helmet rated for low-pressure environments. Integrated visor and pressure-lock collar allow short-duration operations in vacuum or near-vacuum conditions.</description>
+    <defName>UFR_OrbitalBulwarkHelmet</defName>
+    <label>Orbital Bulwark Helmet</label>
+    <description>A fully sealed Bulwark helmet rated for low-pressure environments. Integrated visor and pressure-lock collar allow short-duration operations in vacuum or near-vacuum conditions.</description>
     <techLevel>Spacer</techLevel>
     <recipeMaker>
-      <researchPrerequisite>UFR_OrbitalMarauderArmor</researchPrerequisite>
+      <researchPrerequisite>UFR_OrbitalBulwarkArmor</researchPrerequisite>
       <recipeUsers>
         <li>TableMachining</li>
       </recipeUsers>
@@ -111,12 +111,12 @@
   </ThingDef>
 
   <ThingDef ParentName="ApparelMakeableBase">
-    <defName>UFR_OrbitalMarauderArmor</defName>
-    <label>Orbital Marauder Armor</label>
+    <defName>UFR_OrbitalBulwarkArmor</defName>
+    <label>Orbital Bulwark Armor</label>
     <techLevel>Spacer</techLevel>
-    <description>A vacuum-rated variant of standard Marauder armor, with sealed joints and passive pressure retention. Used by personnel conducting boarding actions or operations in low-pressure environments.</description>
+    <description>A vacuum-rated variant of standard Bulwark armor, with sealed joints and passive pressure retention. Used by personnel conducting boarding actions or operations in low-pressure environments.</description>
     <recipeMaker>
-      <researchPrerequisite>UFR_OrbitalMarauderArmor</researchPrerequisite>
+      <researchPrerequisite>UFR_OrbitalBulwarkArmor</researchPrerequisite>
     </recipeMaker>
     <graphicData>
       <graphicClass>Graphic_Single</graphicClass>

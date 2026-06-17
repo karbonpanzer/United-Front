@@ -1,9 +1,9 @@
 <?xml version='1.0' encoding='utf-8'?>
 <Defs>
   <ThingDef ParentName="ArmorMachineableBase">
-    <defName>UFR_HeavyMarauderArmor</defName>
-    <label>Heavy Marauder Armor</label>
-    <description>A reinforced Marauder armor set with additional plating over the standard configuration. Heavier and slower than Marauder armor, but substantially more resistant to incoming fire. Used by assault troops expected to absorb significant punishment.</description>
+    <defName>UFR_HeavyBulwarkArmor</defName>
+    <label>Heavy Bulwark Armor</label>
+    <description>A reinforced Bulwark armor set with additional plating over the standard configuration. Heavier and slower than Bulwark armor, but substantially more resistant to incoming fire. Used by assault troops expected to absorb significant punishment.</description>
     <graphicData>
       <graphicClass>Graphic_Single</graphicClass>
       <shaderType>CutoutComplex</shaderType>
@@ -18,7 +18,7 @@
       </options>
     </colorGenerator>
     <recipeMaker>
-      <researchPrerequisite>UFR_HeavyMarauderArmor</researchPrerequisite>
+      <researchPrerequisite>UFR_HeavyBulwarkArmor</researchPrerequisite>
       <unfinishedThingDef>UnfinishedTechArmor</unfinishedThingDef>
       <skillRequirements>
         <Crafting>7</Crafting>
@@ -119,9 +119,9 @@
   </ThingDef>
 
   <ThingDef ParentName="ArmorMachineableBase">
-    <defName>UFR_HeavyMarauderHelmet</defName>
-    <label>Heavy Marauder Helmet</label>
-    <description>A reinforced Marauder helmet with additional plating across the crown and rear. Substantially more protective than the standard configuration. Used by assault personnel expecting sustained fire.</description>
+    <defName>UFR_HeavyBulwarkHelmet</defName>
+    <label>Heavy Bulwark Helmet</label>
+    <description>A reinforced Bulwark helmet with additional plating across the crown and rear. Substantially more protective than the standard configuration. Used by assault personnel expecting sustained fire.</description>
     <graphicData>
       <texPath>Things/Pawn/Humanlike/Helmets/HeavyHelmet/HeavyHelmet</texPath>
       <graphicClass>Graphic_Single</graphicClass>
@@ -136,7 +136,7 @@
       </options>
     </colorGenerator>
     <recipeMaker>
-      <researchPrerequisite>UFR_HeavyMarauderArmor</researchPrerequisite>
+      <researchPrerequisite>UFR_HeavyBulwarkArmor</researchPrerequisite>
       <unfinishedThingDef>UnfinishedTechArmor</unfinishedThingDef>
       <skillRequirements>
         <Crafting>7</Crafting>
@@ -214,9 +214,9 @@
     <uiIconScale>1.15</uiIconScale>
   </ThingDef>
   <ThingDef ParentName="ArmorMachineableBase">
-    <defName>UFR_HeavyMarauderHelmet_Insulated</defName>
-    <label>Heavy Marauder Helmet (Insulated)</label>
-    <description>A heavy Marauder helmet with thermal lining for extreme temperature operations. Provides the same protection as the standard heavy configuration in conditions that would otherwise impair the wearer.</description>
+    <defName>UFR_HeavyBulwarkHelmet_Insulated</defName>
+    <label>Heavy Bulwark Helmet (Insulated)</label>
+    <description>A heavy Bulwark helmet with thermal lining for extreme temperature operations. Provides the same protection as the standard heavy configuration in conditions that would otherwise impair the wearer.</description>
     <graphicData>
       <texPath>Things/Pawn/Humanlike/Helmets/HeavyHelmetThermal/HeavyHelmetThermal</texPath>
       <graphicClass>Graphic_Single</graphicClass>
@@ -231,7 +231,7 @@
       </options>
     </colorGenerator>
     <recipeMaker>
-      <researchPrerequisite>UFR_HeavyMarauderArmor</researchPrerequisite>
+      <researchPrerequisite>UFR_HeavyBulwarkArmor</researchPrerequisite>
       <unfinishedThingDef>UnfinishedTechArmor</unfinishedThingDef>
       <skillRequirements>
         <Crafting>7</Crafting>
@@ -313,9 +313,9 @@
     <uiIconScale>1.15</uiIconScale>
   </ThingDef>
   <ThingDef ParentName="ArmorMachineableBase">
-    <defName>UFR_HeavyMarauderHelmet_Shielded</defName>
-    <label>Heavy Marauder Helmet (Reinforced)</label>
-    <description>A heavy Marauder helmet with extra armor bonded across the faceplate and brow. The most protective variant of the Marauder helmet series.</description>
+    <defName>UFR_HeavyBulwarkHelmet_Shielded</defName>
+    <label>Heavy Bulwark Helmet (Reinforced)</label>
+    <description>A heavy Bulwark helmet with extra armor bonded across the faceplate and brow. The most protective variant of the Bulwark helmet series.</description>
     <graphicData>
       <texPath>Things/Pawn/Humanlike/Helmets/HeavyHelmetMasked/HeavyHelmetMasked</texPath>
       <graphicClass>Graphic_Single</graphicClass>
@@ -330,7 +330,7 @@
       </options>
     </colorGenerator>
     <recipeMaker>
-      <researchPrerequisite>UFR_HeavyMarauderArmor</researchPrerequisite>
+      <researchPrerequisite>UFR_HeavyBulwarkArmor</researchPrerequisite>
       <unfinishedThingDef>UnfinishedTechArmor</unfinishedThingDef>
       <skillRequirements>
         <Crafting>7</Crafting>
@@ -416,9 +416,9 @@
     <uiIconScale>1.15</uiIconScale>
   </ThingDef>
   <ThingDef ParentName="ArmorMachineableBase">
-    <defName>UFR_HeavyMarauderHelmet_Gasmask</defName>
-    <label>Heavy Marauder Helmet (Gasmask)</label>
-    <description>A heavy Marauder helmet with a full-face filtration system integrated into the shell. Seals completely against airborne threats while retaining the ballistic protection of the heavy platform.</description>
+    <defName>UFR_HeavyBulwarkHelmet_Gasmask</defName>
+    <label>Heavy Bulwark Helmet (Gasmask)</label>
+    <description>A heavy Bulwark helmet with a full-face filtration system integrated into the shell. Seals completely against airborne threats while retaining the ballistic protection of the heavy platform.</description>
     <graphicData>
       <texPath>Things/Pawn/Humanlike/Helmets/HeavyHelmetGasmask/HeavyHelmetGasmask</texPath>
       <graphicClass>Graphic_Single</graphicClass>
@@ -433,7 +433,7 @@
       </options>
     </colorGenerator>
     <recipeMaker>
-      <researchPrerequisite>UFR_HeavyMarauderArmor</researchPrerequisite>
+      <researchPrerequisite>UFR_HeavyBulwarkArmor</researchPrerequisite>
       <unfinishedThingDef>UnfinishedTechArmor</unfinishedThingDef>
       <skillRequirements>
         <Crafting>5</Crafting>

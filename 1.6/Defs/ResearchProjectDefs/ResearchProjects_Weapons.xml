@@ -2,9 +2,9 @@
 <Defs>
 
 	<ResearchProjectDef>
-		<defName>UFR_OutcastWeaponry</defName>
-		<label>Outcast Weapon Manufacturing</label>
-		<description>Construct advanced weaponry used by Outcast settlers. Note that these also require advanced components.</description>
+		<defName>UFR_UFWeaponry</defName>
+		<label>United Front Weapon Manufacturing</label>
+		<description>Construct advanced weaponry used by United Front settlers. Note that these also require advanced components.</description>
 		<baseCost>1600</baseCost>
 		<tab>UFR_ResearchTab</tab>
 		<techLevel>Spacer</techLevel>
@@ -18,12 +18,12 @@
 	<ResearchProjectDef>
 		<defName>UFR_MercenaryWeaponry</defName>
 		<label>Mercenary Armaments</label>
-		<description>Construct advanced weaponry favored by Outcast pirates and mercenaries. Note that these also require advanced components.</description>
+		<description>Construct advanced weaponry favored by United Front pirates and mercenaries. Note that these also require advanced components.</description>
 		<baseCost>2000</baseCost>
 		<tab>UFR_ResearchTab</tab>
 		<techLevel>Spacer</techLevel>
 		<prerequisites>
-			<li>UFR_OutcastWeaponry</li>
+			<li>UFR_UFWeaponry</li>
 		</prerequisites>
 		<researchViewX>4</researchViewX>
 		<researchViewY>2.8</researchViewY>
@@ -37,7 +37,7 @@
 		<tab>UFR_ResearchTab</tab>
 		<techLevel>Spacer</techLevel>
 		<prerequisites>
-			<li>UFR_OutcastWeaponry</li>
+			<li>UFR_UFWeaponry</li>
 		</prerequisites>
 		<researchViewX>4</researchViewX>
 		<researchViewY>2.1</researchViewY>
@@ -51,7 +51,7 @@
 		<tab>UFR_ResearchTab</tab>
 		<techLevel>Spacer</techLevel>
 		<prerequisites>
-			<li>UFR_OutcastWeaponry</li>
+			<li>UFR_UFWeaponry</li>
 		</prerequisites>
 		<researchViewX>4</researchViewX>
 		<researchViewY>1.4</researchViewY>

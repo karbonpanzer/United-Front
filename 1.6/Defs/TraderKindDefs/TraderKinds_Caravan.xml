@@ -351,10 +351,10 @@
       <!-- Special / prestige armor -->
       <li Class="StockGenerator_MultiDef">
         <thingDefs>
-          <li>UFR_OfficerMarauderArmor</li>
-          <li>UFR_OfficerMarauderArmor_Scout</li>
-          <li>UFR_ScoutMarauderArmor</li>
-          <li>UFR_RiotMarauderArmor</li>
+          <li>UFR_OfficerBulwarkArmor</li>
+          <li>UFR_OfficerBulwarkArmor_Scout</li>
+          <li>UFR_ScoutBulwarkArmor</li>
+          <li>UFR_RiotBulwarkArmor</li>
         </thingDefs>
         <countRange>0~2</countRange>
       </li>
