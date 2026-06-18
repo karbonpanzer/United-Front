@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+
+  <RecipeDef ParentName="MakeStoneBlocksBase">
+    <defName>UFR_Make_BlocksCeramitum</defName>
+    <label>make ceramitum blocks</label>
+    <description>Cuts ceramitum chunks into usable blocks.</description>
+    <ingredients>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>UFR_Ceramitum</li>
+          </thingDefs>
+        </filter>
+        <count>1</count>
+      </li>
+    </ingredients>
+    <fixedIngredientFilter>
+      <thingDefs>
+        <li>UFR_Ceramitum</li>
+      </thingDefs>
+    </fixedIngredientFilter>
+    <products>
+      <UFR_BlocksCeramitum>20</UFR_BlocksCeramitum>
+    </products>
+  </RecipeDef>
+
+  <RecipeDef>
+    <defName>UFR_Make_Ceramite</defName>
+    <label>refine ceramite</label>
+    <description>Refine raw ceramitum into ceramite plate using steel and components.</description>
+    <jobString>Refining ceramite plate.</jobString>
+    <workSpeedStat>GeneralLaborSpeed</workSpeedStat>
+    <effectWorking>Smith</effectWorking>
+    <soundWorking>Recipe_Smith</soundWorking>
+    <workSkill>Crafting</workSkill>
+    <ingredients>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>UFR_Ceramitum</li>
+          </thingDefs>
+        </filter>
+        <count>30</count>
+      </li>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>Steel</li>
+          </thingDefs>
+        </filter>
+        <count>15</count>
+      </li>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>ComponentIndustrial</li>
+          </thingDefs>
+        </filter>
+        <count>2</count>
+      </li>
+    </ingredients>
+    <fixedIngredientFilter>
+      <thingDefs>
+        <li>UFR_Ceramitum</li>
+        <li>Steel</li>
+        <li>ComponentIndustrial</li>
+      </thingDefs>
+    </fixedIngredientFilter>
+    <products>
+      <UFR_Ceramite>15</UFR_Ceramite>
+    </products>
+    <workAmount>4500</workAmount>
+    <recipeUsers>
+      <li>UFR_FabricationBench</li>
+    </recipeUsers>
+    <skillRequirements>
+      <Crafting>6</Crafting>
+    </skillRequirements>
+  </RecipeDef>
+
+</Defs>

@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+
+  <ThingDef ParentName="PlantBase">
+    <defName>UFR_Plant_Ovisyium</defName>
+    <label>ovisyium</label>
+    <description>A genetically engineered hybrid of cotton and an animal-fiber-bearing crop. Bears soft, dense wool inside protective bolls along the stalk. Slow-growing and demanding of soil quality, but the fiber is unmatched for thermal insulation.</description>
+    <statBases>
+      <MaxHitPoints>85</MaxHitPoints>
+      <Nutrition>0.2</Nutrition>
+    </statBases>
+    <graphicData>
+      <texPath>Things/Plant/Ovisyium</texPath>
+      <graphicClass>Graphic_Random</graphicClass>
+    </graphicData>
+    <selectable>true</selectable>
+    <pathCost>14</pathCost>
+    <ingestible />
+    <plant>
+      <fertilityMin>0.80</fertilityMin>
+      <fertilitySensitivity>0.7</fertilitySensitivity>
+      <sowWork>300</sowWork>
+      <harvestWork>900</harvestWork>
+      <growDays>25</growDays>
+      <harvestYield>2</harvestYield>
+      <harvestedThingDef>UFR_Wool</harvestedThingDef>
+      <harvestTag>Standard</harvestTag>
+      <sowMinSkill>6</sowMinSkill>
+      <sowTags>
+        <li>Ground</li>
+        <li>Hydroponic</li>
+      </sowTags>
+      <topWindExposure>0.2</topWindExposure>
+      <visualSizeRange>0.45~1.05</visualSizeRange>
+      <wildOrder>2</wildOrder>
+      <dieIfLeafless>false</dieIfLeafless>
+      <purpose>Beauty</purpose>
+    </plant>
+  </ThingDef>
+
+</Defs>

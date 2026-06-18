@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+
+  <ThingDef ParentName="ResourceBase">
+    <defName>UFR_Ceramitum</defName>
+    <label>ceramitum</label>
+    <description>A dense ceramic mineral with embedded metallic lattices. Mined in compacted deposits. Must be cut into blocks for construction, or refined into ceramite for armor manufacture.</description>
+    <graphicData>
+      <texPath>Things/Item/Resource/Ceramitum</texPath>
+      <graphicClass>Graphic_StackCount</graphicClass>
+    </graphicData>
+    <soundInteract>Stone_Drop</soundInteract>
+    <soundDrop>Stone_Drop</soundDrop>
+    <useHitPoints>true</useHitPoints>
+    <statBases>
+      <MaxHitPoints>100</MaxHitPoints>
+      <MarketValue>5.5</MarketValue>
+      <Mass>0.5</Mass>
+      <Flammability>0</Flammability>
+      <DeteriorationRate>0</DeteriorationRate>
+      <Beauty>1</Beauty>
+    </statBases>
+    <thingCategories>
+      <li>StoneChunks</li>
+    </thingCategories>
+    <stackLimit>75</stackLimit>
+    <healthAffectsPrice>false</healthAffectsPrice>
+  </ThingDef>
+
+  <ThingDef ParentName="StoneBlocksBase">
+    <defName>UFR_BlocksCeramitum</defName>
+    <label>ceramitum blocks</label>
+    <description>Blocks of ceramitum, cut for construction. Mid-tier as a general building material but unusually capable as armor stuff thanks to the embedded metallic lattices.</description>
+    <graphicData>
+      <color>(190,180,160)</color>
+    </graphicData>
+    <statBases>
+      <Mass>1.0</Mass>
+      <SharpDamageMultiplier>0.75</SharpDamageMultiplier>
+      <BluntDamageMultiplier>1.0</BluntDamageMultiplier>
+      <StuffPower_Armor_Sharp>0.85</StuffPower_Armor_Sharp>
+      <StuffPower_Armor_Blunt>0.70</StuffPower_Armor_Blunt>
+      <StuffPower_Armor_Heat>0.55</StuffPower_Armor_Heat>
+      <StuffPower_Insulation_Cold>4</StuffPower_Insulation_Cold>
+      <StuffPower_Insulation_Heat>3</StuffPower_Insulation_Heat>
+    </statBases>
+    <stuffProps>
+      <color>(190,180,160)</color>
+      <soundImpactBullet>BulletImpact_Ground</soundImpactBullet>
+      <soundMeleeHitSharp>MeleeHit_Stone</soundMeleeHitSharp>
+      <soundMeleeHitBlunt>MeleeHit_Stone</soundMeleeHitBlunt>
+      <soundImpactMelee>Pawn_Melee_Punch_HitBuilding_Stone</soundImpactMelee>
+      <stuffAdjective>ceramitum</stuffAdjective>
+      <statFactors>
+        <MaxHitPoints>1.5</MaxHitPoints>
+      </statFactors>
+      <canSuggestUseDefaultStuff>true</canSuggestUseDefaultStuff>
+    </stuffProps>
+  </ThingDef>
+
+  <ThingDef ParentName="ResourceBase">
+    <defName>UFR_Ceramite</defName>
+    <label>ceramite</label>
+    <description>Refined armor stock manufactured from ceramitum, steel, and electronic components. Layered ceramic-metallic plate sized for spacer-tier armor assembly. Not usable as a general construction material.</description>
+    <graphicData>
+      <texPath>Things/Item/Resource/Ceramite</texPath>
+      <graphicClass>Graphic_StackCount</graphicClass>
+    </graphicData>
+    <soundInteract>Standard_Drop</soundInteract>
+    <soundDrop>Standard_Drop</soundDrop>
+    <useHitPoints>true</useHitPoints>
+    <statBases>
+      <MaxHitPoints>120</MaxHitPoints>
+      <MarketValue>14</MarketValue>
+      <Mass>0.5</Mass>
+      <Flammability>0.1</Flammability>
+      <DeteriorationRate>0</DeteriorationRate>
+    </statBases>
+    <thingCategories>
+      <li>Manufactured</li>
+    </thingCategories>
+    <stackLimit>75</stackLimit>
+    <healthAffectsPrice>false</healthAffectsPrice>
+  </ThingDef>
+
+  <ThingDef ParentName="ResourceBase">
+    <defName>UFR_Wool</defName>
+    <label>wool</label>
+    <description>Soft, dense fiber harvested from a genetically engineered cotton-wool hybrid. Exceptional thermal insulation against both heat and cold, but provides minimal protection against weapons. Best suited for climate-specialized uniforms.</description>
+    <graphicData>
+      <texPath>Things/Item/Resource/Cloth</texPath>
+      <graphicClass>Graphic_StackCount</graphicClass>
+    </graphicData>
+    <soundInteract>Standard_Drop</soundInteract>
+    <soundDrop>Standard_Drop</soundDrop>
+    <useHitPoints>true</useHitPoints>
+    <statBases>
+      <MaxHitPoints>50</MaxHitPoints>
+      <MarketValue>3.4</MarketValue>
+      <Mass>0.008</Mass>
+      <Flammability>1.0</Flammability>
+      <DeteriorationRate>4</DeteriorationRate>
+      <StuffPower_Armor_Sharp>0.20</StuffPower_Armor_Sharp>
+      <StuffPower_Armor_Blunt>0</StuffPower_Armor_Blunt>
+      <StuffPower_Insulation_Cold>28</StuffPower_Insulation_Cold>
+      <StuffPower_Insulation_Heat>26</StuffPower_Insulation_Heat>
+    </statBases>
+    <thingCategories>
+      <li>Textiles</li>
+    </thingCategories>
+    <stuffProps>
+      <categories>
+        <li>Fabric</li>
+      </categories>
+      <commonality>0.2</commonality>
+      <color>(240,230,210)</color>
+      <statFactors>
+        <Flammability>1.0</Flammability>
+        <WorkToMake>0.8</WorkToMake>
+        <Beauty>1.0</Beauty>
+      </statFactors>
+    </stuffProps>
+    <stackLimit>75</stackLimit>
+    <healthAffectsPrice>false</healthAffectsPrice>
+    <comps>
+      <li>
+        <compClass>CompColorable</compClass>
+      </li>
+    </comps>
+  </ThingDef>
+
+</Defs>
