@@ -2,15 +2,17 @@
 <Defs>
 
   <ThingDef ParentName="PlantBase">
-    <defName>UFR_Plant_Ovisyium</defName>
-    <label>ovisyium</label>
-    <description>A genetically engineered hybrid of cotton and an animal-fiber-bearing crop. Bears soft, dense wool inside protective bolls along the stalk. Slow-growing and demanding of soil quality, but the fiber is unmatched for thermal insulation.</description>
+    <defName>UFR_OvisypiumPlant</defName>
+    <label>ovisypium plant</label>
+    <description>This plant was genetically engineered from cotton plants by vegan groups to produce a dense wool for usage on their colonies. While it takes a long time to grow, the wool it produces is great for both extreme heat and cold.
+
+Despite its origins, it has approximately 1.5% sheep DNA. Making the harvesting of it technically non-vegan.</description>
     <statBases>
       <MaxHitPoints>85</MaxHitPoints>
       <Nutrition>0.2</Nutrition>
     </statBases>
     <graphicData>
-      <texPath>Things/Plant/Ovisyium</texPath>
+      <texPath>Things/Plant/CottonPlant</texPath>
       <graphicClass>Graphic_Random</graphicClass>
     </graphicData>
     <selectable>true</selectable>
@@ -23,7 +25,7 @@
       <harvestWork>900</harvestWork>
       <growDays>25</growDays>
       <harvestYield>2</harvestYield>
-      <harvestedThingDef>UFR_Wool</harvestedThingDef>
+      <harvestedThingDef>UFR_OvisypiumWool</harvestedThingDef>
       <harvestTag>Standard</harvestTag>
       <sowMinSkill>6</sowMinSkill>
       <sowTags>

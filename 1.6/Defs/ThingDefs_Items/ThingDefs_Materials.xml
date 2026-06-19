@@ -2,66 +2,58 @@
 <Defs>
 
   <ThingDef ParentName="ResourceBase">
-    <defName>UFR_Ceramitum</defName>
-    <label>ceramitum</label>
-    <description>A dense ceramic mineral with embedded metallic lattices. Mined in compacted deposits. Must be cut into blocks for construction, or refined into ceramite for armor manufacture.</description>
+    <defName>UFR_Ceramium</defName>
+    <label>ceramium</label>
+    <description>A manufactured ceramic compound. While not ideal for structures, some though prefer it for its simplicity in the field of art. Its primary usage is the construction of ceramite.</description>
     <graphicData>
-      <texPath>Things/Item/Resource/Ceramitum</texPath>
+      <texPath>Things/Item/Resource/Ceramium</texPath>
       <graphicClass>Graphic_StackCount</graphicClass>
     </graphicData>
     <soundInteract>Stone_Drop</soundInteract>
     <soundDrop>Stone_Drop</soundDrop>
     <useHitPoints>true</useHitPoints>
     <statBases>
-      <MaxHitPoints>100</MaxHitPoints>
-      <MarketValue>5.5</MarketValue>
+      <MaxHitPoints>80</MaxHitPoints>
+      <MarketValue>4.5</MarketValue>
       <Mass>0.5</Mass>
       <Flammability>0</Flammability>
       <DeteriorationRate>0</DeteriorationRate>
       <Beauty>1</Beauty>
+      <StuffPower_Armor_Sharp>0.60</StuffPower_Armor_Sharp>
+      <StuffPower_Armor_Blunt>0.50</StuffPower_Armor_Blunt>
+      <StuffPower_Armor_Heat>0.50</StuffPower_Armor_Heat>
+      <StuffPower_Insulation_Cold>3</StuffPower_Insulation_Cold>
+      <StuffPower_Insulation_Heat>2</StuffPower_Insulation_Heat>
     </statBases>
     <thingCategories>
-      <li>StoneChunks</li>
+      <li>ResourcesRaw</li>
     </thingCategories>
-    <stackLimit>75</stackLimit>
-    <healthAffectsPrice>false</healthAffectsPrice>
-  </ThingDef>
-
-  <ThingDef ParentName="StoneBlocksBase">
-    <defName>UFR_BlocksCeramitum</defName>
-    <label>ceramitum blocks</label>
-    <description>Blocks of ceramitum, cut for construction. Mid-tier as a general building material but unusually capable as armor stuff thanks to the embedded metallic lattices.</description>
-    <graphicData>
-      <color>(190,180,160)</color>
-    </graphicData>
-    <statBases>
-      <Mass>1.0</Mass>
-      <SharpDamageMultiplier>0.75</SharpDamageMultiplier>
-      <BluntDamageMultiplier>1.0</BluntDamageMultiplier>
-      <StuffPower_Armor_Sharp>0.85</StuffPower_Armor_Sharp>
-      <StuffPower_Armor_Blunt>0.70</StuffPower_Armor_Blunt>
-      <StuffPower_Armor_Heat>0.55</StuffPower_Armor_Heat>
-      <StuffPower_Insulation_Cold>4</StuffPower_Insulation_Cold>
-      <StuffPower_Insulation_Heat>3</StuffPower_Insulation_Heat>
-    </statBases>
     <stuffProps>
+      <categories>
+        <li>Stony</li>
+      </categories>
+      <commonality>0.2</commonality>
       <color>(190,180,160)</color>
       <soundImpactBullet>BulletImpact_Ground</soundImpactBullet>
       <soundMeleeHitSharp>MeleeHit_Stone</soundMeleeHitSharp>
       <soundMeleeHitBlunt>MeleeHit_Stone</soundMeleeHitBlunt>
       <soundImpactMelee>Pawn_Melee_Punch_HitBuilding_Stone</soundImpactMelee>
-      <stuffAdjective>ceramitum</stuffAdjective>
+      <stuffAdjective>ceramium</stuffAdjective>
       <statFactors>
-        <MaxHitPoints>1.5</MaxHitPoints>
+        <MaxHitPoints>0.85</MaxHitPoints>
+        <Beauty>1.0</Beauty>
+        <WorkToMake>0.9</WorkToMake>
       </statFactors>
-      <canSuggestUseDefaultStuff>true</canSuggestUseDefaultStuff>
+      <canSuggestUseDefaultStuff>false</canSuggestUseDefaultStuff>
     </stuffProps>
+    <stackLimit>75</stackLimit>
+    <healthAffectsPrice>false</healthAffectsPrice>
   </ThingDef>
 
   <ThingDef ParentName="ResourceBase">
     <defName>UFR_Ceramite</defName>
     <label>ceramite</label>
-    <description>Refined armor stock manufactured from ceramitum, steel, and electronic components. Layered ceramic-metallic plate sized for spacer-tier armor assembly. Not usable as a general construction material.</description>
+    <description>A ceramo-metal compound often seen on Industrial worlds. Ceramite is widely used in architecture, infrastructure, and even military purposes owing to its versatility Tough, heat resistant, and able to be produced at a large scale from ceramic and steel.</description>
     <graphicData>
       <texPath>Things/Item/Resource/Ceramite</texPath>
       <graphicClass>Graphic_StackCount</graphicClass>
@@ -84,9 +76,9 @@
   </ThingDef>
 
   <ThingDef ParentName="ResourceBase">
-    <defName>UFR_Wool</defName>
-    <label>wool</label>
-    <description>Soft, dense fiber harvested from a genetically engineered cotton-wool hybrid. Exceptional thermal insulation against both heat and cold, but provides minimal protection against weapons. Best suited for climate-specialized uniforms.</description>
+    <defName>UFR_OvisypiumWool</defName>
+    <label>ovisypium wool</label>
+    <description>A plant grown wool with a soft feel, provides good insulation but not as durable as high-end wools and fibers.</description>
     <graphicData>
       <texPath>Things/Item/Resource/Cloth</texPath>
       <graphicClass>Graphic_StackCount</graphicClass>

@@ -2,12 +2,12 @@
 <Defs>
 
   <ThingDef ParentName="BenchBase">
-    <defName>UFR_FlashDryer</defName>
-    <label>flash dryer</label>
-    <description>An electric food processor that uses rapid dehydration and pressure cycling to convert raw foodstuffs into long-shelf-life preserves. Slow but reliable. Produces dried meat, dried fruit, and pickled vegetables that remain edible and can also be used as cooking ingredients.</description>
+    <defName>UFR_Dehydrator</defName>
+    <label>food vac-desiccator</label>
+    <description>A advanced food desiccator and vacuum sealer commonly used by spacers to preserve food indefinitely. Quickly flashing most ingredients, the lack of moisture creates food which is considered unpalatable by itself.</description>
     <thingClass>Building_WorkTable</thingClass>
     <graphicData>
-      <texPath>Things/Building/Production/FlashDryer</texPath>
+      <texPath>Things/Building/Production/Dehydrator</texPath>
       <graphicClass>Graphic_Multi</graphicClass>
       <shaderType>CutoutComplex</shaderType>
       <drawSize>(2,2)</drawSize>

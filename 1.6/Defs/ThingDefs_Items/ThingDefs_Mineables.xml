@@ -1,52 +1,27 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Defs>
 
-  <ThingDef>
-    <defName>UFR_MineableCeramitum</defName>
-    <label>ceramitum deposit</label>
-    <description>A vein of dense ceramic mineral. Mining yields ceramitum.</description>
-    <thingClass>Mineable</thingClass>
-    <category>Building</category>
+  <ThingDef ParentName="RockBase">
+    <defName>UFR_MineableCeramium</defName>
+    <label>ceramium deposit</label>
+    <description>Ancient building material, compacted over time. Can be mined for ceramium.</description>
     <graphicData>
-      <texPath>Things/Building/Linked/MineableCeramitum_Atlas</texPath>
+      <texPath>Things/Building/Linked/RockFlecked_Atlas</texPath>
       <graphicClass>Graphic_Single</graphicClass>
-      <linkType>CornerFiller</linkType>
-      <linkFlags>
-        <li>Rock</li>
-        <li>MapEdge</li>
-      </linkFlags>
-      <damageData>
-        <enabled>false</enabled>
-      </damageData>
+      <shaderType>CutoutComplex</shaderType>
+      <color>(180,170,150)</color>
+      <colorTwo>(210,195,165)</colorTwo>
     </graphicData>
-    <altitudeLayer>Building</altitudeLayer>
-    <passability>Impassable</passability>
-    <pathCost>100</pathCost>
-    <blockWind>true</blockWind>
-    <fillPercent>1</fillPercent>
-    <coversFloor>true</coversFloor>
-    <neverMultiSelect>true</neverMultiSelect>
-    <rotatable>false</rotatable>
-    <saveCompressible>true</saveCompressible>
-    <holdsRoof>true</holdsRoof>
-    <staticSunShadowHeight>1.0</staticSunShadowHeight>
-    <blockLight>true</blockLight>
-    <mineable>true</mineable>
-    <drawerType>MapMeshOnly</drawerType>
-    <selectable>true</selectable>
     <statBases>
-      <MaxHitPoints>1200</MaxHitPoints>
-      <Flammability>0</Flammability>
+      <MaxHitPoints>2000</MaxHitPoints>
     </statBases>
     <building>
-      <isInert>true</isInert>
-      <isNaturalRock>true</isNaturalRock>
       <isResourceRock>true</isResourceRock>
-      <claimable>false</claimable>
-      <mineableThing>UFR_Ceramitum</mineableThing>
+      <mineableThing>UFR_Ceramium</mineableThing>
       <mineableYield>30</mineableYield>
-      <mineableScatterCommonality>0.30</mineableScatterCommonality>
-      <mineableScatterLumpSizeRange>1~4</mineableScatterLumpSizeRange>
+      <mineableScatterCommonality>0.10</mineableScatterCommonality>
+      <mineableScatterLumpSizeRange>2~8</mineableScatterLumpSizeRange>
+      <veinMineable>true</veinMineable>
     </building>
   </ThingDef>
 

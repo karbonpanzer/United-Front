@@ -1,34 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Defs>
 
-  <RecipeDef ParentName="MakeStoneBlocksBase">
-    <defName>UFR_Make_BlocksCeramitum</defName>
-    <label>make ceramitum blocks</label>
-    <description>Cuts ceramitum chunks into usable blocks.</description>
-    <ingredients>
-      <li>
-        <filter>
-          <thingDefs>
-            <li>UFR_Ceramitum</li>
-          </thingDefs>
-        </filter>
-        <count>1</count>
-      </li>
-    </ingredients>
-    <fixedIngredientFilter>
-      <thingDefs>
-        <li>UFR_Ceramitum</li>
-      </thingDefs>
-    </fixedIngredientFilter>
-    <products>
-      <UFR_BlocksCeramitum>20</UFR_BlocksCeramitum>
-    </products>
-  </RecipeDef>
-
   <RecipeDef>
     <defName>UFR_Make_Ceramite</defName>
     <label>refine ceramite</label>
-    <description>Refine raw ceramitum into ceramite plate using steel and components.</description>
+    <description>Refine ceramite plate from raw ceramium and steel.</description>
     <jobString>Refining ceramite plate.</jobString>
     <workSpeedStat>GeneralLaborSpeed</workSpeedStat>
     <effectWorking>Smith</effectWorking>
@@ -38,10 +14,10 @@
       <li>
         <filter>
           <thingDefs>
-            <li>UFR_Ceramitum</li>
+            <li>UFR_Ceramium</li>
           </thingDefs>
         </filter>
-        <count>30</count>
+        <count>20</count>
       </li>
       <li>
         <filter>
@@ -51,20 +27,11 @@
         </filter>
         <count>15</count>
       </li>
-      <li>
-        <filter>
-          <thingDefs>
-            <li>ComponentIndustrial</li>
-          </thingDefs>
-        </filter>
-        <count>2</count>
-      </li>
     </ingredients>
     <fixedIngredientFilter>
       <thingDefs>
-        <li>UFR_Ceramitum</li>
+        <li>UFR_Ceramium</li>
         <li>Steel</li>
-        <li>ComponentIndustrial</li>
       </thingDefs>
     </fixedIngredientFilter>
     <products>
