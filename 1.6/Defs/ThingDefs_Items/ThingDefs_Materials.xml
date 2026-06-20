@@ -33,7 +33,7 @@
         <li>Stony</li>
       </categories>
       <commonality>0.2</commonality>
-      <color>(190,180,160)</color>
+      <color>(95,110,125)</color>
       <soundImpactBullet>BulletImpact_Ground</soundImpactBullet>
       <soundMeleeHitSharp>MeleeHit_Stone</soundMeleeHitSharp>
       <soundMeleeHitBlunt>MeleeHit_Stone</soundMeleeHitBlunt>
@@ -75,50 +75,21 @@
     <healthAffectsPrice>false</healthAffectsPrice>
   </ThingDef>
 
-  <ThingDef ParentName="ResourceBase">
+  <ThingDef ParentName="WoolBase">
     <defName>UFR_OvisypiumWool</defName>
     <label>ovisypium wool</label>
     <description>A plant grown wool with a soft feel, provides good insulation but not as durable as high-end wools and fibers.</description>
-    <graphicData>
-      <texPath>Things/Item/Resource/Cloth</texPath>
-      <graphicClass>Graphic_StackCount</graphicClass>
-    </graphicData>
-    <soundInteract>Standard_Drop</soundInteract>
-    <soundDrop>Standard_Drop</soundDrop>
-    <useHitPoints>true</useHitPoints>
+    <possessionCount>30</possessionCount>
     <statBases>
-      <MaxHitPoints>50</MaxHitPoints>
-      <MarketValue>3.4</MarketValue>
-      <Mass>0.008</Mass>
-      <Flammability>1.0</Flammability>
-      <DeteriorationRate>4</DeteriorationRate>
-      <StuffPower_Armor_Sharp>0.20</StuffPower_Armor_Sharp>
-      <StuffPower_Armor_Blunt>0</StuffPower_Armor_Blunt>
       <StuffPower_Insulation_Cold>28</StuffPower_Insulation_Cold>
-      <StuffPower_Insulation_Heat>26</StuffPower_Insulation_Heat>
+      <StuffPower_Insulation_Heat>28</StuffPower_Insulation_Heat>
     </statBases>
-    <thingCategories>
-      <li>Textiles</li>
-    </thingCategories>
+    <graphicData>
+      <color>(198,198,198)</color>
+    </graphicData>
     <stuffProps>
-      <categories>
-        <li>Fabric</li>
-      </categories>
-      <commonality>0.2</commonality>
-      <color>(240,230,210)</color>
-      <statFactors>
-        <Flammability>1.0</Flammability>
-        <WorkToMake>0.8</WorkToMake>
-        <Beauty>1.0</Beauty>
-      </statFactors>
+      <color>(198,198,198)</color>
     </stuffProps>
-    <stackLimit>75</stackLimit>
-    <healthAffectsPrice>false</healthAffectsPrice>
-    <comps>
-      <li>
-        <compClass>CompColorable</compClass>
-      </li>
-    </comps>
   </ThingDef>
 
 </Defs>

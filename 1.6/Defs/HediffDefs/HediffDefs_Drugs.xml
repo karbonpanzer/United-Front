@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+
+  <HediffDef>
+    <defName>UFR_RipentorHigh</defName>
+    <hediffClass>Hediff_High</hediffClass>
+    <label>ripentor</label>
+    <labelNoun>a ripentor rush</labelNoun>
+    <description>The effects of a ripentor injection. Pain is muted, the body moves fast, and the heart hammers hard enough that any cut bleeds out faster than the user expects. Kidneys and liver work overtime to clear the synthetic load.</description>
+    <defaultLabelColor>(0.6, 0.7, 1.0)</defaultLabelColor>
+    <scenarioCanAdd>true</scenarioCanAdd>
+    <maxSeverity>1.0</maxSeverity>
+    <isBad>false</isBad>
+    <comps>
+      <li Class="HediffCompProperties_SeverityPerDay">
+        <severityPerDay>-3.0</severityPerDay>
+      </li>
+    </comps>
+    <stages>
+      <li>
+        <statOffsets>
+          <PainShockThreshold>0.40</PainShockThreshold>
+        </statOffsets>
+        <statFactors>
+          <MoveSpeed>1.20</MoveSpeed>
+        </statFactors>
+        <capMods>
+          <li>
+            <capacity>BloodPumping</capacity>
+            <offset>0.50</offset>
+          </li>
+          <li>
+            <capacity>BloodFiltration</capacity>
+            <offset>-0.30</offset>
+          </li>
+        </capMods>
+        <hediffGivers>
+          <li Class="HediffGiver_Random">
+            <hediff>ChemicalDamageModerate</hediff>
+            <mtbDays>20</mtbDays>
+            <partsToAffect>
+              <li>Liver</li>
+              <li>Kidney</li>
+            </partsToAffect>
+            <canAffectAnyLivePart>false</canAffectAnyLivePart>
+          </li>
+        </hediffGivers>
+      </li>
+    </stages>
+  </HediffDef>
+
+  <HediffDef>
+    <defName>UFR_RipentorTolerance</defName>
+    <hediffClass>Hediff_High</hediffClass>
+    <label>ripentor tolerance</label>
+    <labelNoun>a ripentor tolerance</labelNoun>
+    <description>Repeated ripentor use has worn down filtration capacity. The synthetic load accumulates faster than the body can clear it.</description>
+    <defaultLabelColor>(0.85, 0.45, 0.45)</defaultLabelColor>
+    <maxSeverity>1.0</maxSeverity>
+    <isBad>true</isBad>
+    <comps>
+      <li Class="HediffCompProperties_SeverityPerDay">
+        <severityPerDay>-0.025</severityPerDay>
+      </li>
+    </comps>
+    <stages>
+      <li>
+        <minSeverity>0</minSeverity>
+        <becomeVisible>false</becomeVisible>
+      </li>
+      <li>
+        <minSeverity>0.30</minSeverity>
+        <label>mild</label>
+        <capMods>
+          <li>
+            <capacity>BloodFiltration</capacity>
+            <offset>-0.10</offset>
+          </li>
+        </capMods>
+      </li>
+      <li>
+        <minSeverity>0.60</minSeverity>
+        <label>severe</label>
+        <capMods>
+          <li>
+            <capacity>BloodFiltration</capacity>
+            <offset>-0.25</offset>
+          </li>
+        </capMods>
+      </li>
+    </stages>
+  </HediffDef>
+
+  <HediffDef>
+    <defName>UFR_PopperHigh</defName>
+    <hediffClass>Hediff_High</hediffClass>
+    <label>salite popper</label>
+    <labelNoun>a salite popper</labelNoun>
+    <description>The effects of a salite popper. Consciousness is sharply elevated, the patient walks faster and is more alert, and the buffer gives them headroom to absorb injury without slipping under. Wounds mend slower while the drug is active because the body is being driven, not rested, and circulation runs hot enough that open wounds bleed faster.</description>
+    <defaultLabelColor>(1.0, 0.8, 0.3)</defaultLabelColor>
+    <scenarioCanAdd>true</scenarioCanAdd>
+    <maxSeverity>1.0</maxSeverity>
+    <isBad>false</isBad>
+    <comps>
+      <li Class="HediffCompProperties_SeverityPerDay">
+        <severityPerDay>-1.6</severityPerDay>
+      </li>
+    </comps>
+    <stages>
+      <li>
+        <statFactors>
+          <MoveSpeed>1.15</MoveSpeed>
+          <InjuryHealingFactor>0.65</InjuryHealingFactor>
+        </statFactors>
+        <capMods>
+          <li>
+            <capacity>Consciousness</capacity>
+            <offset>0.40</offset>
+          </li>
+          <li>
+            <capacity>BloodPumping</capacity>
+            <offset>0.30</offset>
+          </li>
+        </capMods>
+      </li>
+    </stages>
+  </HediffDef>
+
+  <HediffDef>
+    <defName>UFR_PopperTolerance</defName>
+    <hediffClass>Hediff_High</hediffClass>
+    <label>salite tolerance</label>
+    <labelNoun>a salite tolerance</labelNoun>
+    <description>Repeated salite popper use has dulled the patient's baseline consciousness. Each subsequent dose lifts them less, and from lower ground.</description>
+    <defaultLabelColor>(0.85, 0.70, 0.40)</defaultLabelColor>
+    <maxSeverity>1.0</maxSeverity>
+    <isBad>true</isBad>
+    <comps>
+      <li Class="HediffCompProperties_SeverityPerDay">
+        <severityPerDay>-0.040</severityPerDay>
+      </li>
+    </comps>
+    <stages>
+      <li>
+        <minSeverity>0</minSeverity>
+        <becomeVisible>false</becomeVisible>
+      </li>
+      <li>
+        <minSeverity>0.30</minSeverity>
+        <label>mild</label>
+        <capMods>
+          <li>
+            <capacity>Consciousness</capacity>
+            <offset>-0.05</offset>
+          </li>
+        </capMods>
+      </li>
+      <li>
+        <minSeverity>0.60</minSeverity>
+        <label>severe</label>
+        <capMods>
+          <li>
+            <capacity>Consciousness</capacity>
+            <offset>-0.15</offset>
+          </li>
+        </capMods>
+      </li>
+    </stages>
+  </HediffDef>
+
+</Defs>

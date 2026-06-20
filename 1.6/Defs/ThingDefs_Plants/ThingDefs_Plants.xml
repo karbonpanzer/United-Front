@@ -4,15 +4,13 @@
   <ThingDef ParentName="PlantBase">
     <defName>UFR_OvisypiumPlant</defName>
     <label>ovisypium plant</label>
-    <description>This plant was genetically engineered from cotton plants by vegan groups to produce a dense wool for usage on their colonies. While it takes a long time to grow, the wool it produces is great for both extreme heat and cold.
-
-Despite its origins, it has approximately 1.5% sheep DNA. Making the harvesting of it technically non-vegan.</description>
+    <description>This plant was genetically engineered from cotton plants by vegan groups to produce a dense wool for usage on their colonies. While it takes a long time to grow, the wool it produces is great for both extreme heat and cold.\n\nDespite its origins, it has approximately 1.5% sheep DNA. Making the harvesting of it technically non-vegan.</description>
     <statBases>
       <MaxHitPoints>85</MaxHitPoints>
       <Nutrition>0.2</Nutrition>
     </statBases>
     <graphicData>
-      <texPath>Things/Plant/CottonPlant</texPath>
+      <texPath>Things/Plant/Ovisypium</texPath>
       <graphicClass>Graphic_Random</graphicClass>
     </graphicData>
     <selectable>true</selectable>
@@ -34,9 +32,9 @@ Despite its origins, it has approximately 1.5% sheep DNA. Making the harvesting 
       </sowTags>
       <topWindExposure>0.2</topWindExposure>
       <visualSizeRange>0.45~1.05</visualSizeRange>
+      <immatureGraphicPath>Things/Plant/Ovisypium_immature</immatureGraphicPath>      
       <wildOrder>2</wildOrder>
       <dieIfLeafless>false</dieIfLeafless>
-      <purpose>Beauty</purpose>
     </plant>
   </ThingDef>
 

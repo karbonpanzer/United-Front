@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+
+  <ThingDef ParentName="MakeableDrugBase">
+    <defName>UFR_Ripentor</defName>
+    <label>ripentor</label>
+    <description>A combat stimulant favored on Industrial worlds. The drug improves movement and pain thresholds, allowing users to fight longer and harder, but also increases blood flow and decreases blood filtration.
+
+Ripentor can be produced at drug benches and are often kept in autoinjectors for ease of usage.</description>
+    <descriptionHyperlinks>
+      <HediffDef>UFR_RipentorHigh</HediffDef>
+      <HediffDef>UFR_RipentorTolerance</HediffDef>
+    </descriptionHyperlinks>
+    <graphicData>
+      <texPath>Things/Item/Drug/Ripentor</texPath>
+      <graphicClass>Graphic_StackCount</graphicClass>
+    </graphicData>
+    <rotatable>false</rotatable>
+    <stackLimit>28</stackLimit>
+    <statBases>
+      <WorkToMake>700</WorkToMake>
+      <MarketValue>50</MarketValue>
+      <Mass>0.01</Mass>
+    </statBases>
+    <techLevel>Spacer</techLevel>
+    <ingestible>
+      <drugCategory>Hard</drugCategory>
+      <foodType>Processed, Fluid</foodType>
+      <baseIngestTicks>120</baseIngestTicks>
+      <joyKind>Chemical</joyKind>
+      <joy>0.5</joy>
+      <nurseable>true</nurseable>
+      <ingestSound>Ingest_Inject</ingestSound>
+      <ingestCommandString>Take {0}</ingestCommandString>
+      <ingestReportString>Taking {0}.</ingestReportString>
+      <outcomeDoers>
+        <li Class="IngestionOutcomeDoer_GiveHediff">
+          <hediffDef>UFR_RipentorHigh</hediffDef>
+          <severity>1.0</severity>
+        </li>
+        <li Class="IngestionOutcomeDoer_GiveHediff">
+          <hediffDef>UFR_RipentorTolerance</hediffDef>
+          <severity>0.06</severity>
+          <divideByBodySize>true</divideByBodySize>
+        </li>
+      </outcomeDoers>
+    </ingestible>
+    <recipeMaker>
+      <workSpeedStat>DrugSynthesisSpeed</workSpeedStat>
+      <workSkill>Intellectual</workSkill>
+      <effectWorking>Cook</effectWorking>
+      <soundWorking>Recipe_Drug</soundWorking>
+      <recipeUsers>
+        <li>DrugLab</li>
+      </recipeUsers>
+      <bulkRecipeCount>4</bulkRecipeCount>
+      <researchPrerequisite>DrugProduction</researchPrerequisite>
+    </recipeMaker>
+    <costList>
+      <Neutroamine>1</Neutroamine>
+      <PsychoidLeaves>2</PsychoidLeaves>
+    </costList>
+    <comps>
+      <li Class="CompProperties_Drug">
+        <listOrder>130</listOrder>
+      </li>
+    </comps>
+  </ThingDef>
+
+  <ThingDef ParentName="MakeableDrugBase">
+    <defName>UFR_Popper</defName>
+    <label>salite popper</label>
+    <description>A synthetic stimulant commonly used after medical procedures for patient recovery. Salite poppers increase consciousness and movement but causes a longer recovery time due to the increase in activity. Though not addictive, the high production costs prohibits production but for a very special few.</description>
+    <descriptionHyperlinks>
+      <HediffDef>UFR_PopperHigh</HediffDef>
+      <HediffDef>UFR_PopperTolerance</HediffDef>
+    </descriptionHyperlinks>
+    <graphicData>
+      <texPath>Things/Item/Drug/Popper</texPath>
+      <graphicClass>Graphic_StackCount</graphicClass>
+    </graphicData>
+    <stackLimit>28</stackLimit>
+    <rotatable>false</rotatable>
+    <statBases>
+      <WorkToMake>2000</WorkToMake>
+      <MarketValue>140</MarketValue>
+      <Mass>0.01</Mass>
+    </statBases>
+    <techLevel>Spacer</techLevel>
+    <ingestible>
+      <drugCategory>Medical</drugCategory>
+      <foodType>Processed, Fluid</foodType>
+      <baseIngestTicks>120</baseIngestTicks>
+      <nurseable>true</nurseable>
+      <ingestSound>Ingest_Inject</ingestSound>
+      <ingestCommandString>Administer {0}</ingestCommandString>
+      <ingestReportString>Administering {0}.</ingestReportString>
+      <outcomeDoers>
+        <li Class="IngestionOutcomeDoer_GiveHediff">
+          <hediffDef>UFR_PopperHigh</hediffDef>
+          <severity>1.0</severity>
+        </li>
+        <li Class="IngestionOutcomeDoer_GiveHediff">
+          <hediffDef>UFR_PopperTolerance</hediffDef>
+          <severity>0.10</severity>
+          <divideByBodySize>true</divideByBodySize>
+        </li>
+      </outcomeDoers>
+    </ingestible>
+    <recipeMaker>
+      <workSpeedStat>DrugSynthesisSpeed</workSpeedStat>
+      <workSkill>Intellectual</workSkill>
+      <effectWorking>Cook</effectWorking>
+      <soundWorking>Recipe_Drug</soundWorking>
+      <recipeUsers>
+        <li>DrugLab</li>
+      </recipeUsers>
+      <skillRequirements>
+        <Intellectual>8</Intellectual>
+      </skillRequirements>
+      <researchPrerequisite>DrugProduction</researchPrerequisite>
+    </recipeMaker>
+    <costList>
+      <Neutroamine>2</Neutroamine>
+      <MedicineIndustrial>1</MedicineIndustrial>
+    </costList>
+    <comps>
+      <li Class="CompProperties_Drug">
+        <listOrder>220</listOrder>
+      </li>
+    </comps>
+  </ThingDef>
+
+</Defs>
