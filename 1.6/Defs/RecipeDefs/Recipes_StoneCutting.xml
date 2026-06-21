@@ -2,10 +2,10 @@
 <Defs>
 
   <RecipeDef>
-    <defName>UFR_Make_Ceramite</defName>
-    <label>refine ceramite</label>
-    <description>Refine ceramite plate from raw ceramium and steel.</description>
-    <jobString>Refining ceramite plate.</jobString>
+    <defName>UFR_Make_DuramiumAlloy</defName>
+    <label>refine duramium alloy</label>
+    <description>Refine duramium alloy plate from raw duramite and steel.</description>
+    <jobString>Refining duramium alloy plate.</jobString>
     <workSpeedStat>GeneralLaborSpeed</workSpeedStat>
     <effectWorking>Smith</effectWorking>
     <soundWorking>Recipe_Smith</soundWorking>
@@ -14,7 +14,7 @@
       <li>
         <filter>
           <thingDefs>
-            <li>UFR_Ceramium</li>
+            <li>UFR_Duramite</li>
           </thingDefs>
         </filter>
         <count>20</count>
@@ -30,12 +30,12 @@
     </ingredients>
     <fixedIngredientFilter>
       <thingDefs>
-        <li>UFR_Ceramium</li>
+        <li>UFR_Duramite</li>
         <li>Steel</li>
       </thingDefs>
     </fixedIngredientFilter>
     <products>
-      <UFR_Ceramite>15</UFR_Ceramite>
+      <UFR_DuramiumAlloy>15</UFR_DuramiumAlloy>
     </products>
     <workAmount>4500</workAmount>
     <recipeUsers>

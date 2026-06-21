@@ -59,12 +59,7 @@
 		<settlementNameMaker>UFR_Settlement_Outcast</settlementNameMaker>
 		<colorSpectrum>
 			<li>(0.80, 0.80, 0.95)</li>
-		</colorSpectrum>
-		<apparelStuffFilter>
-			<thingDefs>
-				<li>UFR_OvisypiumWool</li>
-			</thingDefs>
-		</apparelStuffFilter>		
+		</colorSpectrum>		
 		<permanentEnemy>false</permanentEnemy>
 		<techLevel>Spacer</techLevel>
 		<allowedCultures>
@@ -266,12 +261,7 @@
 		<settlementNameMaker>UFR_Settlement_Freebooters</settlementNameMaker>
 		<colorSpectrum>
 			<li>(0.60, 0.15, 0.15)</li>
-		</colorSpectrum>
-		<apparelStuffFilter>
-			<thingDefs>
-				<li>UFR_OvisypiumWool</li>
-			</thingDefs>
-		</apparelStuffFilter>			
+		</colorSpectrum>		
 		<permanentEnemy>true</permanentEnemy>
 		<techLevel>Spacer</techLevel>
 		<allowedCultures>

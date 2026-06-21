@@ -2,12 +2,13 @@
 <Defs>
 
   <ThingDef ParentName="ResourceBase">
-    <defName>UFR_Ceramium</defName>
-    <label>ceramium</label>
-    <description>A manufactured ceramic compound. While not ideal for structures, some though prefer it for its simplicity in the field of art. Its primary usage is the construction of ceramite.</description>
+    <defName>UFR_Duramite</defName>
+    <label>duramite</label>
+    <description>A manufactured ceramic compound. While not ideal for structures, some though prefer it for its simplicity in the field of art. Its primary usage is the construction of duramium alloy.</description>
     <graphicData>
-      <texPath>Things/Item/Resource/Ceramium</texPath>
-      <graphicClass>Graphic_StackCount</graphicClass>
+      <texPath>Things/Item/Resource/Duramite</texPath>
+      <graphicClass>Graphic_Random</graphicClass>
+      <color>(85,78,68)</color>
     </graphicData>
     <soundInteract>Stone_Drop</soundInteract>
     <soundDrop>Stone_Drop</soundDrop>
@@ -33,12 +34,12 @@
         <li>Stony</li>
       </categories>
       <commonality>0.2</commonality>
-      <color>(95,110,125)</color>
+      <color>(85,78,68)</color>
       <soundImpactBullet>BulletImpact_Ground</soundImpactBullet>
       <soundMeleeHitSharp>MeleeHit_Stone</soundMeleeHitSharp>
       <soundMeleeHitBlunt>MeleeHit_Stone</soundMeleeHitBlunt>
       <soundImpactMelee>Pawn_Melee_Punch_HitBuilding_Stone</soundImpactMelee>
-      <stuffAdjective>ceramium</stuffAdjective>
+      <stuffAdjective>duramite</stuffAdjective>
       <statFactors>
         <MaxHitPoints>0.85</MaxHitPoints>
         <Beauty>1.0</Beauty>
@@ -51,45 +52,74 @@
   </ThingDef>
 
   <ThingDef ParentName="ResourceBase">
-    <defName>UFR_Ceramite</defName>
-    <label>ceramite</label>
-    <description>A ceramo-metal compound often seen on Industrial worlds. Ceramite is widely used in architecture, infrastructure, and even military purposes owing to its versatility Tough, heat resistant, and able to be produced at a large scale from ceramic and steel.</description>
+    <defName>UFR_DuramiumAlloy</defName>
+    <label>duramium alloy</label>
+    <description>A ceramo-metal compound often seen on Industrial worlds. Duramium alloy is widely used in architecture, infrastructure, and even military purposes owing to its versatility. Tough, heat resistant, and able to be produced at a large scale from ceramic and steel.</description>
     <graphicData>
-      <texPath>Things/Item/Resource/Ceramite</texPath>
+      <texPath>Things/Item/Resource/DuramiumAlloy</texPath>
       <graphicClass>Graphic_StackCount</graphicClass>
+      <color>(110,102,90)</color>
     </graphicData>
     <soundInteract>Standard_Drop</soundInteract>
     <soundDrop>Standard_Drop</soundDrop>
     <useHitPoints>true</useHitPoints>
     <statBases>
-      <MaxHitPoints>120</MaxHitPoints>
+      <MaxHitPoints>180</MaxHitPoints>
       <MarketValue>14</MarketValue>
       <Mass>0.5</Mass>
       <Flammability>0.1</Flammability>
       <DeteriorationRate>0</DeteriorationRate>
+      <Beauty>2</Beauty>
+      <StuffPower_Armor_Sharp>0.95</StuffPower_Armor_Sharp>
+      <StuffPower_Armor_Blunt>0.85</StuffPower_Armor_Blunt>
+      <StuffPower_Armor_Heat>0.95</StuffPower_Armor_Heat>
+      <StuffPower_Insulation_Cold>4</StuffPower_Insulation_Cold>
+      <StuffPower_Insulation_Heat>6</StuffPower_Insulation_Heat>
     </statBases>
     <thingCategories>
       <li>Manufactured</li>
     </thingCategories>
+    <stuffProps>
+      <categories>
+        <li>Stony</li>
+      </categories>
+      <commonality>0.1</commonality>
+      <color>(110,102,90)</color>
+      <soundImpactBullet>BulletImpact_Metal</soundImpactBullet>
+      <soundMeleeHitSharp>MeleeHit_Metal_Sharp</soundMeleeHitSharp>
+      <soundMeleeHitBlunt>MeleeHit_Metal_Blunt</soundMeleeHitBlunt>
+      <soundImpactMelee>Pawn_Melee_Punch_HitBuilding_Metal</soundImpactMelee>
+      <stuffAdjective>duramium</stuffAdjective>
+      <statFactors>
+        <MaxHitPoints>1.5</MaxHitPoints>
+        <Beauty>1.2</Beauty>
+        <WorkToMake>0.8</WorkToMake>
+        <Flammability>0.6</Flammability>
+      </statFactors>
+      <canSuggestUseDefaultStuff>false</canSuggestUseDefaultStuff>
+    </stuffProps>
     <stackLimit>75</stackLimit>
     <healthAffectsPrice>false</healthAffectsPrice>
   </ThingDef>
 
   <ThingDef ParentName="WoolBase">
-    <defName>UFR_OvisypiumWool</defName>
-    <label>ovisypium wool</label>
-    <description>A plant grown wool with a soft feel, provides good insulation but not as durable as high-end wools and fibers.</description>
+    <defName>UFR_FlufflonWool</defName>
+    <label>flufflon wool</label>
+    <description>Dense engineered wool sheared from a flufflon. Exceptional insulation at both temperature extremes, with enough structural fiber to serve as armor material. The standard textile of the United Front colonies.</description>
     <possessionCount>30</possessionCount>
     <statBases>
-      <StuffPower_Insulation_Cold>28</StuffPower_Insulation_Cold>
-      <StuffPower_Insulation_Heat>28</StuffPower_Insulation_Heat>
+      <MarketValue>4.5</MarketValue>
+      <StuffPower_Armor_Blunt>0.15</StuffPower_Armor_Blunt>
+      <StuffPower_Insulation_Cold>32</StuffPower_Insulation_Cold>
+      <StuffPower_Insulation_Heat>30</StuffPower_Insulation_Heat>
     </statBases>
-    <graphicData>
-      <color>(83,83,84)</color>
-    </graphicData>
     <stuffProps>
-      <color>(83,83,84)</color>
+      <color>(105,110,115)</color>
+      <commonality>0.20</commonality>
     </stuffProps>
+    <graphicData>
+      <color>(105,110,115)</color>     
+    </graphicData>
   </ThingDef>
 
 </Defs>

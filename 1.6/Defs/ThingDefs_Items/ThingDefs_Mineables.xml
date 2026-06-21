@@ -2,22 +2,22 @@
 <Defs>
 
   <ThingDef ParentName="RockBase">
-    <defName>UFR_MineableCeramium</defName>
-    <label>ceramium deposit</label>
-    <description>Ancient building material, compacted over time. Can be mined for ceramium.</description>
+    <defName>UFR_MineableDuramite</defName>
+    <label>duramite deposit</label>
+    <description>Ancient building material, compacted over time. Can be mined for duramite.</description>
     <graphicData>
       <texPath>Things/Building/Linked/RockFlecked_Atlas</texPath>
       <graphicClass>Graphic_Single</graphicClass>
       <shaderType>CutoutComplex</shaderType>
-      <color>(95,110,125)</color>      
-      <colorTwo>(105,130,145)</colorTwo>
+      <color>(75,68,58)</color>
+      <colorTwo>(115,105,88)</colorTwo>
     </graphicData>
     <statBases>
       <MaxHitPoints>2000</MaxHitPoints>
     </statBases>
     <building>
       <isResourceRock>true</isResourceRock>
-      <mineableThing>UFR_Ceramium</mineableThing>
+      <mineableThing>UFR_Duramite</mineableThing>
       <mineableYield>30</mineableYield>
       <mineableScatterCommonality>0.10</mineableScatterCommonality>
       <mineableScatterLumpSizeRange>2~8</mineableScatterLumpSizeRange>
