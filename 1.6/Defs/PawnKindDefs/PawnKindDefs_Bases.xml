@@ -1,0 +1,258 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+    <PawnKindDef Name="UFR_MilitaryBase" Abstract="True">
+        <race>Human</race>
+        <invNutrition>2.55</invNutrition>
+        <chemicalAddictionChance>0</chemicalAddictionChance>
+        <backstoryCryptosleepCommonality>0.08</backstoryCryptosleepCommonality>
+        <itemQuality>Normal</itemQuality>
+        <gearHealthRange>1~1</gearHealthRange>
+        <minGenerationAge>20</minGenerationAge>
+        <maxGenerationAge>35</maxGenerationAge>
+        <combatEnhancingDrugsChance>0</combatEnhancingDrugsChance>
+        <isFighter>true</isFighter>
+        <initialWillRange>3~5</initialWillRange>
+        <initialResistanceRange>7~11</initialResistanceRange>
+        <apparelMoney>99999~99999</apparelMoney>
+        <xenotypeSet Inherit="False">
+            <xenotypeChances>
+                <Baseliner MayRequire="Ludeon.RimWorld.Biotech">999</Baseliner>
+            </xenotypeChances>
+        </xenotypeSet>
+        <useFactionXenotypes>false</useFactionXenotypes>
+        <inventoryOptions>
+            <skipChance>0.9</skipChance>
+            <subOptionsChooseOne>
+                <li>
+                    <thingDef>MedicineIndustrial</thingDef>
+                    <countRange>2~3</countRange>
+                </li>
+            </subOptionsChooseOne>
+        </inventoryOptions>
+        <disallowedTraits>
+            <li>Nudist</li>
+        </disallowedTraits>
+    </PawnKindDef>
+
+    <PawnKindDef Name="UFR_LineFighterBase" ParentName="UFR_MilitaryBase" Abstract="True">
+        <techHediffsTags>
+            <li>Simple</li>
+        </techHediffsTags>
+    </PawnKindDef>
+
+    <PawnKindDef Name="UFR_LineRecruitBase" ParentName="UFR_LineFighterBase" Abstract="True">
+        <itemQuality>Poor</itemQuality>
+        <apparelAllowHeadgearChance>0.5</apparelAllowHeadgearChance>
+        <weaponMoney>1000~1500</weaponMoney>
+        <techHediffsChance>0.02</techHediffsChance>
+        <techHediffsMoney>400~700</techHediffsMoney>
+        <minGenerationAge>18</minGenerationAge>
+        <maxGenerationAge>25</maxGenerationAge>
+    </PawnKindDef>
+
+    <PawnKindDef Name="UFR_LineInfantryBase" ParentName="UFR_LineFighterBase" Abstract="True">
+        <apparelAllowHeadgearChance>0.7</apparelAllowHeadgearChance>
+        <weaponMoney>3200~4500</weaponMoney>
+        <techHediffsChance>0.05</techHediffsChance>
+        <techHediffsMoney>800~1200</techHediffsMoney>
+    </PawnKindDef>
+
+    <PawnKindDef Name="UFR_LineVeteranBase" ParentName="UFR_LineFighterBase" Abstract="True">
+        <itemQuality>Good</itemQuality>
+        <apparelAllowHeadgearChance>0.9</apparelAllowHeadgearChance>
+        <weaponMoney>2400~3200</weaponMoney>
+        <techHediffsChance>0.15</techHediffsChance>
+        <techHediffsMoney>1500~2200</techHediffsMoney>
+        <techHediffsTags>
+            <li>Simple</li>
+            <li>Advanced</li>
+        </techHediffsTags>
+    </PawnKindDef>
+
+    <PawnKindDef Name="UFR_LeaderBase" ParentName="UFR_MilitaryBase" Abstract="True">
+        <itemQuality>Good</itemQuality>
+        <gearHealthRange>1.0~1.0</gearHealthRange>
+        <minGenerationAge>28</minGenerationAge>
+        <maxGenerationAge>50</maxGenerationAge>
+        <apparelAllowHeadgearChance>0.85</apparelAllowHeadgearChance>
+        <techHediffsChance>0.10</techHediffsChance>
+        <techHediffsMoney>1300~1800</techHediffsMoney>
+        <techHediffsTags>
+            <li>Simple</li>
+            <li>Advanced</li>
+        </techHediffsTags>
+        <initialWillRange>4~6</initialWillRange>
+        <initialResistanceRange>25~35</initialResistanceRange>
+        <disallowedTraits>
+            <li>Brawler</li>
+            <li>Nudist</li>
+        </disallowedTraits>
+    </PawnKindDef>
+
+    <PawnKindDef Name="UFR_SupportBase" ParentName="UFR_MilitaryBase" Abstract="True">
+        <apparelAllowHeadgearChance>0.7</apparelAllowHeadgearChance>
+        <weaponTags>
+            <li>UFR_UFSidearm</li>
+            <li>UFR_UFSMG</li>
+            <li>UFR_UFCarbine</li>
+            <li>UFR_UFShotgun</li>
+        </weaponTags>
+        <weaponMoney>1500~2100</weaponMoney>
+        <techHediffsChance>0.06</techHediffsChance>
+        <techHediffsMoney>900~1400</techHediffsMoney>
+        <techHediffsTags>
+            <li>Simple</li>
+            <li>Advanced</li>
+        </techHediffsTags>
+        <disallowedTraits>
+            <li>Brawler</li>
+            <li>Nudist</li>
+        </disallowedTraits>
+    </PawnKindDef>
+
+    <PawnKindDef Name="UFR_ScoutBase" ParentName="UFR_MilitaryBase" Abstract="True">
+        <apparelAllowHeadgearChance>0.75</apparelAllowHeadgearChance>
+        <weaponTags>
+            <li>UFR_UFCarbine</li>
+            <li>UFR_UFHeavyPistol</li>
+        </weaponTags>
+        <weaponMoney>1800~2400</weaponMoney>
+        <techHediffsChance>0.08</techHediffsChance>
+        <techHediffsMoney>1000~1500</techHediffsMoney>
+        <techHediffsTags>
+            <li>Simple</li>
+            <li>Advanced</li>
+        </techHediffsTags>
+        <skills>
+            <li>
+                <skill>Shooting</skill>
+                <range>6~12</range>
+            </li>
+        </skills>
+        <disallowedTraits>
+            <li>Brawler</li>
+            <li>Nudist</li>
+        </disallowedTraits>
+    </PawnKindDef>
+    <PawnKindDef Name="UFR_ShocktrooperBase" ParentName="UFR_MilitaryBase" Abstract="True">
+        <itemQuality>Good</itemQuality>
+        <apparelAllowHeadgearChance>0.95</apparelAllowHeadgearChance>
+        <weaponTags>
+            <li>UFR_UFHeavyPistol</li>
+        </weaponTags>
+        <weaponMoney>2600~3400</weaponMoney>
+        <combatEnhancingDrugsChance>0.15</combatEnhancingDrugsChance>
+        <techHediffsChance>0.18</techHediffsChance>
+        <techHediffsMoney>1700~2500</techHediffsMoney>
+        <techHediffsTags>
+            <li>Simple</li>
+            <li>Advanced</li>
+        </techHediffsTags>
+        <initialWillRange>6~8</initialWillRange>
+        <initialResistanceRange>40~50</initialResistanceRange>
+        <skills>
+            <li>
+                <skill>Shooting</skill>
+                <range>7~13</range>
+            </li>
+            <li>
+                <skill>Melee</skill>
+                <range>7~13</range>
+            </li>
+        </skills>
+    </PawnKindDef>
+
+    <PawnKindDef Name="UFR_CivilianBase" Abstract="True">
+        <race>Human</race>
+        <invNutrition>2.55</invNutrition>
+        <chemicalAddictionChance>0.05</chemicalAddictionChance>
+        <backstoryCryptosleepCommonality>0.08</backstoryCryptosleepCommonality>
+        <itemQuality>Normal</itemQuality>
+        <gearHealthRange>0.7~1.5</gearHealthRange>
+        <minGenerationAge>18</minGenerationAge>
+        <maxGenerationAge>50</maxGenerationAge>
+        <combatEnhancingDrugsChance>0</combatEnhancingDrugsChance>
+        <isFighter>false</isFighter>
+        <initialWillRange>2~4</initialWillRange>
+        <initialResistanceRange>15~25</initialResistanceRange>
+        <xenotypeSet Inherit="False">
+            <xenotypeChances>
+                <Baseliner MayRequire="Ludeon.RimWorld.Biotech">999</Baseliner>
+            </xenotypeChances>
+        </xenotypeSet>
+        <useFactionXenotypes>false</useFactionXenotypes>
+        <inventoryOptions>
+            <skipChance>0.95</skipChance>
+            <subOptionsChooseOne>
+                <li>
+                    <thingDef>MedicineIndustrial</thingDef>
+                    <countRange>1~2</countRange>
+                </li>
+            </subOptionsChooseOne>
+        </inventoryOptions>
+        <weaponTags>
+            <li>UFR_UFSidearm</li>
+        </weaponTags>
+        <disallowedTraits>
+            <li>Brawler</li>
+        </disallowedTraits>
+    </PawnKindDef>
+
+    <PawnKindDef Name="UFR_LaborerBase" ParentName="UFR_CivilianBase" Abstract="True">
+        <combatPower>25</combatPower>
+        <itemQuality>Poor</itemQuality>
+        <gearHealthRange>0.3~1.5</gearHealthRange>
+        <maxGenerationAge>60</maxGenerationAge>
+        <apparelMoney>150~300</apparelMoney>
+        <apparelAllowHeadgearChance>0.3</apparelAllowHeadgearChance>
+        <weaponMoney>500~1000</weaponMoney>
+        <techHediffsChance>0.01</techHediffsChance>
+        <techHediffsMoney>200~400</techHediffsMoney>
+        <techHediffsTags>
+            <li>Simple</li>
+        </techHediffsTags>
+    </PawnKindDef>
+
+    <PawnKindDef Name="UFR_LeadershipBase" Abstract="True">
+        <race>Human</race>
+        <invNutrition>2.55</invNutrition>
+        <chemicalAddictionChance>0</chemicalAddictionChance>
+        <backstoryCryptosleepCommonality>0.08</backstoryCryptosleepCommonality>
+        <itemQuality>Good</itemQuality>
+        <gearHealthRange>1.0~1.0</gearHealthRange>
+        <minGenerationAge>30</minGenerationAge>
+        <maxGenerationAge>60</maxGenerationAge>
+        <combatEnhancingDrugsChance>0</combatEnhancingDrugsChance>
+        <isFighter>false</isFighter>
+        <initialWillRange>4~6</initialWillRange>
+        <initialResistanceRange>25~35</initialResistanceRange>
+        <xenotypeSet Inherit="False">
+            <xenotypeChances>
+                <Baseliner MayRequire="Ludeon.RimWorld.Biotech">999</Baseliner>
+            </xenotypeChances>
+        </xenotypeSet>
+        <useFactionXenotypes>false</useFactionXenotypes>
+        <inventoryOptions>
+            <skipChance>0.85</skipChance>
+            <subOptionsChooseOne>
+                <li>
+                    <thingDef>MedicineIndustrial</thingDef>
+                    <countRange>2~3</countRange>
+                </li>
+                <li>
+                    <thingDef>MedicineUltratech</thingDef>
+                    <countRange>1</countRange>
+                </li>
+            </subOptionsChooseOne>
+        </inventoryOptions>
+        <weaponTags>
+            <li>UFR_UFSidearm</li>
+            <li>UFR_UFHeavyPistol</li>
+        </weaponTags>
+        <disallowedTraits>
+            <li>Brawler</li>
+        </disallowedTraits>
+    </PawnKindDef>
+
+</Defs>

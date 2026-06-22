@@ -7,7 +7,7 @@
     <description>A manufactured ceramic compound. While not ideal for structures, some though prefer it for its simplicity in the field of art. Its primary usage is the construction of duramium alloy.</description>
     <graphicData>
       <texPath>Things/Item/Resource/Duramite</texPath>
-      <graphicClass>Graphic_Random</graphicClass>
+      <graphicClass>Graphic_StackCount</graphicClass>
       <color>(85,78,68)</color>
     </graphicData>
     <soundInteract>Stone_Drop</soundInteract>
@@ -86,8 +86,8 @@
       <commonality>0.1</commonality>
       <color>(110,102,90)</color>
       <soundImpactBullet>BulletImpact_Metal</soundImpactBullet>
-      <soundMeleeHitSharp>MeleeHit_Metal_Sharp</soundMeleeHitSharp>
-      <soundMeleeHitBlunt>MeleeHit_Metal_Blunt</soundMeleeHitBlunt>
+      <soundMeleeHitSharp>MeleeHit_Metal</soundMeleeHitSharp>
+      <soundMeleeHitBlunt>MeleeHit_Metal</soundMeleeHitBlunt>
       <soundImpactMelee>Pawn_Melee_Punch_HitBuilding_Metal</soundImpactMelee>
       <stuffAdjective>duramium</stuffAdjective>
       <statFactors>
@@ -105,7 +105,7 @@
   <ThingDef ParentName="WoolBase">
     <defName>UFR_FlufflonWool</defName>
     <label>flufflon wool</label>
-    <description>Dense engineered wool sheared from a flufflon. Exceptional insulation at both temperature extremes, with enough structural fiber to serve as armor material. The standard textile of the United Front colonies.</description>
+    <description>Surprisingly soft wool of a flufflon. It is a great insulator and fetches a high price.</description>
     <possessionCount>30</possessionCount>
     <statBases>
       <MarketValue>4.5</MarketValue>
@@ -118,8 +118,34 @@
       <commonality>0.20</commonality>
     </stuffProps>
     <graphicData>
-      <color>(105,110,115)</color>     
+      <texPath>Things/Item/Resource/Wool</texPath>
+      <color>(105,110,115)</color>
     </graphicData>
+  </ThingDef>
+
+  <ThingDef ParentName="LeatherBase">
+    <defName>UFR_FlufflonLeather</defName>
+    <label>flufflon hide</label>
+    <description>Tanned, dried, and scraped flufflon skin. Tough but lacking in insulation.</description>
+    <possessionCount>20</possessionCount>
+    <graphicData>
+      <color>(105,110,115)</color>
+    </graphicData>
+    <statBases>
+      <MarketValue>2.8</MarketValue>
+      <StuffPower_Armor_Sharp>1.10</StuffPower_Armor_Sharp>
+      <StuffPower_Armor_Blunt>0.30</StuffPower_Armor_Blunt>
+      <StuffPower_Insulation_Cold>8</StuffPower_Insulation_Cold>
+      <StuffPower_Insulation_Heat>8</StuffPower_Insulation_Heat>
+    </statBases>
+    <stuffProps>
+      <color>(105,110,115)</color>
+      <commonality>0.05</commonality>
+      <statFactors>
+        <MaxHitPoints>1.3</MaxHitPoints>
+        <Beauty>1.2</Beauty>
+      </statFactors>
+    </stuffProps>
   </ThingDef>
 
 </Defs>

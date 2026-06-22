@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+
+  <ThingDef ParentName="AnimalThingBase">
+    <defName>UFR_Flufflon</defName>
+    <label>flufflon</label>
+    <description>A unique genetically modified animal that was favored on industrial worlds due to their high production of wool and ease of tending compared to other fur farming animals. Their fast production of wool makes them slow, large, and posessing a powerful metabolism. The wool though is often considered worth it for those on the frontier.\n\nFlufflons are know for their loveability, being the softest hug you can find in existence.</description>
+    <statBases>
+      <MoveSpeed>2.8</MoveSpeed>
+      <MarketValue>650</MarketValue>
+      <ComfyTemperatureMin>-30</ComfyTemperatureMin>
+      <ComfyTemperatureMax>25</ComfyTemperatureMax>
+      <FilthRate>12</FilthRate>
+      <Wildness>0.05</Wildness>
+    </statBases>
+    <uiIconScale>1.1</uiIconScale>
+    <comps>
+      <li Class="CompProperties_Shearable">
+        <woolDef>UFR_FlufflonWool</woolDef>
+        <shearIntervalDays>10</shearIntervalDays>
+        <woolAmount>120</woolAmount>
+      </li>
+      <li Class="CompProperties_Milkable">
+        <milkDef>Milk</milkDef>
+        <milkIntervalDays>2</milkIntervalDays>
+        <milkAmount>6</milkAmount>
+      </li>
+    </comps>
+    <race>
+      <herdAnimal>true</herdAnimal>
+      <nuzzleMtbHours>24</nuzzleMtbHours>
+      <body>QuadrupedAnimalWithHooves</body>
+      <baseBodySize>1.0</baseBodySize>
+      <baseHealthScale>0.85</baseHealthScale>
+      <baseHungerRate>1.80</baseHungerRate>
+      <foodType>VegetarianRoughAnimal</foodType>
+      <leatherDef>UFR_FlufflonLeather</leatherDef>
+      <gestationPeriodDays>10</gestationPeriodDays>
+      <litterSizeCurve>
+        <points>
+          <li>(0.5, 0)</li>
+          <li>(1, 1)</li>
+          <li>(1.7, 0.8)</li>
+          <li>(2.0, 0)</li>
+        </points>
+      </litterSizeCurve>
+      <roamMtbDays>5</roamMtbDays>
+      <trainability>None</trainability>
+      <lifeExpectancy>15</lifeExpectancy>
+      <lifeStageAges>
+        <li>
+          <def>AnimalBaby</def>
+          <minAge>0</minAge>
+        </li>
+        <li>
+          <def>AnimalJuvenile</def>
+          <minAge>0.25</minAge>
+        </li>
+        <li>
+          <def>AnimalAdult</def>
+          <minAge>0.50</minAge>
+          <soundWounded>Pawn_Sheep_Wounded</soundWounded>
+          <soundDeath>Pawn_Sheep_Death</soundDeath>
+          <soundCall>Pawn_Sheep_Call</soundCall>
+          <soundAngry>Pawn_Sheep_Angry</soundAngry>
+        </li>
+      </lifeStageAges>
+      <soundMeleeHitPawn>Pawn_Melee_BigBash_HitPawn</soundMeleeHitPawn>
+      <soundMeleeHitBuilding>Pawn_Melee_BigBash_HitBuilding</soundMeleeHitBuilding>
+      <soundMeleeMiss>Pawn_Melee_BigBash_Miss</soundMeleeMiss>
+      <soundEating>Herbivore_Eat</soundEating>
+    </race>
+    <tradeTags>
+      <li>AnimalExotic</li>
+      <li>AnimalFarm</li>
+    </tradeTags>
+    <tools>
+      <li>
+        <label>head</label>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>8</power>
+        <cooldownTime>3.0</cooldownTime>
+        <linkedBodyPartsGroup>HeadAttackTool</linkedBodyPartsGroup>
+        <ensureLinkedBodyPartsGroupAlwaysUsable>true</ensureLinkedBodyPartsGroupAlwaysUsable>
+      </li>
+      <li>
+        <capacities>
+          <li>Bite</li>
+        </capacities>
+        <power>5</power>
+        <cooldownTime>2.5</cooldownTime>
+        <linkedBodyPartsGroup>Teeth</linkedBodyPartsGroup>
+        <chanceFactor>0.5</chanceFactor>
+      </li>
+    </tools>
+  </ThingDef>
+
+  <PawnKindDef ParentName="AnimalKindBase">
+    <defName>UFR_Flufflon</defName>
+    <label>flufflon</label>
+    <labelPlural>flufflons</labelPlural>
+    <race>UFR_Flufflon</race>
+    <combatPower>40</combatPower>
+    <ecoSystemWeight>0.6</ecoSystemWeight>
+    <lifeStages>
+      <li>
+        <bodyGraphicData>
+          <texPath>Things/Pawn/Animals/Fluffron/Flufflon_Female</texPath>
+          <drawSize>0.7</drawSize>
+          <shadowData>
+            <volume>(0.45, 0.35, 0.35)</volume>
+            <offset>(0,0,-0.15)</offset>
+          </shadowData>
+        </bodyGraphicData>
+        <dessicatedBodyGraphicData>
+          <texPath>Things/Pawn/Animals/Fluffron/DessicatedFlufflon_Female</texPath>
+          <drawSize>0.7</drawSize>
+        </dessicatedBodyGraphicData>
+      </li>
+      <li>
+        <bodyGraphicData>
+          <texPath>Things/Pawn/Animals/Fluffron/Flufflon_Male</texPath>
+          <drawSize>1.40</drawSize>
+          <shadowData>
+            <volume>(0.65, 0.5, 0.5)</volume>
+            <offset>(0,0,-0.2)</offset>
+          </shadowData>
+        </bodyGraphicData>
+        <femaleGraphicData>
+          <texPath>Things/Pawn/Animals/Fluffron/Flufflon_Female</texPath>
+          <drawSize>1.40</drawSize>
+          <shadowData>
+            <volume>(0.65, 0.5, 0.5)</volume>
+            <offset>(0,0,-0.2)</offset>
+          </shadowData>
+        </femaleGraphicData>
+        <dessicatedBodyGraphicData>
+          <texPath>Things/Pawn/Animals/Fluffron/DessicatedFlufflon_Male</texPath>
+          <drawSize>1.40</drawSize>
+        </dessicatedBodyGraphicData>
+        <femaleDessicatedBodyGraphicData>
+          <texPath>Things/Pawn/Animals/Fluffron/DessicatedFlufflon_Female</texPath>
+          <drawSize>1.40</drawSize>
+        </femaleDessicatedBodyGraphicData>
+      </li>
+      <li>
+        <bodyGraphicData>
+          <texPath>Things/Pawn/Animals/Fluffron/Flufflon_Male</texPath>
+          <drawSize>1.85</drawSize>
+          <shadowData>
+            <volume>(0.7, 0.55, 0.55)</volume>
+            <offset>(0,0,-0.2)</offset>
+          </shadowData>
+        </bodyGraphicData>
+        <femaleGraphicData>
+          <texPath>Things/Pawn/Animals/Fluffron/Flufflon_Female</texPath>
+          <drawSize>1.80</drawSize>
+          <shadowData>
+            <volume>(0.7, 0.55, 0.55)</volume>
+            <offset>(0,0,-0.2)</offset>
+          </shadowData>
+        </femaleGraphicData>
+        <dessicatedBodyGraphicData>
+          <texPath>Things/Pawn/Animals/Fluffron/DessicatedFlufflon_Male</texPath>
+          <drawSize>1.85</drawSize>
+        </dessicatedBodyGraphicData>
+        <femaleDessicatedBodyGraphicData>
+          <texPath>Things/Pawn/Animals/Fluffron/DessicatedFlufflon_Female</texPath>
+          <drawSize>1.80</drawSize>
+        </femaleDessicatedBodyGraphicData>
+      </li>
+    </lifeStages>
+  </PawnKindDef>
+
+</Defs>
