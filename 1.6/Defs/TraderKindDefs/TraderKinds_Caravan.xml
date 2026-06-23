@@ -1,11 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Defs>
-
   <TraderKindDef>
     <defName>Caravan_Outcast_BulkGoods</defName>
     <label>bulk goods trader</label>
     <stockGenerators>
-
       <!-- Resources -->
       <li Class="StockGenerator_SingleDef">
         <thingDef>Silver</thingDef>
@@ -45,7 +43,7 @@
       </li>
       <li Class="StockGenerator_SingleDef">
         <thingDef>MedicineUltratech</thingDef>
-        <countRange>-3~2</countRange> <!-- ~30% chance to stock 1-2 -->
+        <countRange>-3~2</countRange>
       </li>
       <li Class="StockGenerator_SingleDef">
         <thingDef>Beer</thingDef>
@@ -62,7 +60,23 @@
       <li Class="StockGenerator_ReinforcedBarrels">
         <countRange>1~4</countRange>
       </li>
-
+      <!-- Faction bulk materials -->
+      <li Class="StockGenerator_SingleDef">
+        <thingDef>UFR_Duramite</thingDef>
+        <countRange>80~200</countRange>
+      </li>
+      <li Class="StockGenerator_SingleDef">
+        <thingDef>UFR_DuramiumAlloy</thingDef>
+        <countRange>40~120</countRange>
+      </li>
+      <li Class="StockGenerator_SingleDef">
+        <thingDef>UFR_FlufflonWool</thingDef>
+        <countRange>60~150</countRange>
+      </li>
+      <li Class="StockGenerator_SingleDef">
+        <thingDef>UFR_FlufflonLeather</thingDef>
+        <countRange>40~100</countRange>
+      </li>
       <!-- Food -->
       <li Class="StockGenerator_Category">
         <categoryDef>FoodRaw</categoryDef>
@@ -79,7 +93,6 @@
           <li>Pemmican</li>
         </thingDefs>
       </li>
-
       <!-- Textiles -->
       <li Class="StockGenerator_Category">
         <categoryDef>Textiles</categoryDef>
@@ -87,18 +100,15 @@
           <li MayRequire="Ludeon.RimWorld.Anomaly">Leather_Dread</li>
         </excludedThingDefs>
       </li>
-
       <!-- Drugs -->
       <li Class="StockGenerator_Category">
         <categoryDef>Drugs</categoryDef>
       </li>
-
       <!-- Decoders -->
       <li Class="StockGenerator_SingleDef">
         <thingDef>UFR_Decoder</thingDef>
         <countRange>1~1</countRange>
       </li>
-
       <!-- Books -->
       <li Class="StockGenerator_SingleDef">
         <thingDef>TextBook</thingDef>
@@ -112,7 +122,6 @@
         <thingDef>Novel</thingDef>
         <countRange>1~1</countRange>
       </li>
-
       <!-- Apparel -->
       <li Class="StockGenerator_MarketValue">
         <tradeTag>BasicClothing</tradeTag>
@@ -126,14 +135,12 @@
         <tradeTag>UFR_Uniforms</tradeTag>
         <countRange>6~10</countRange>
       </li>
-
       <!-- Buildings -->
       <li Class="StockGenerator_Category">
         <categoryDef>BuildingsFurniture</categoryDef>
         <thingDefCountRange>3~3</thingDefCountRange>
         <countRange>1~1</countRange>
       </li>
-
       <!-- Animals -->
       <li Class="StockGenerator_Animals">
         <maxWildness>0.70</maxWildness>
@@ -149,7 +156,6 @@
           <li>AnimalFarm</li>
         </createMatingPair>
       </li>
-
       <!-- Cultist apparel -->
       <li MayRequire="Ludeon.RimWorld.Anomaly" Class="StockGenerator_SingleDef">
         <thingDef>Apparel_CultistMask</thingDef>
@@ -159,7 +165,6 @@
         <thingDef>Apparel_CeremonialCultistMask</thingDef>
         <countRange>-1~2</countRange>
       </li>
-
       <!-- Buying -->
       <li Class="StockGenerator_BuyExpensiveSimple" />
       <li Class="StockGenerator_BuyTradeTag">
@@ -168,16 +173,13 @@
       <li Class="StockGenerator_BuyTradeTag">
         <tag>MusicalInstrument</tag>
       </li>
-
     </stockGenerators>
   </TraderKindDef>
-
   <!--======================================================================================-->
   <TraderKindDef>
     <defName>Caravan_Outcast_ArmsDealer</defName>
     <label>arms dealer</label>
     <stockGenerators>
-
       <!-- Resources -->
       <li Class="StockGenerator_SingleDef">
         <thingDef>Silver</thingDef>
@@ -195,7 +197,16 @@
         <thingDef>MedicineUltratech</thingDef>
         <countRange>1~5</countRange>
       </li>
-
+      <!-- Faction armor material -->
+      <li Class="StockGenerator_SingleDef">
+        <thingDef>UFR_DuramiumAlloy</thingDef>
+        <countRange>50~150</countRange>
+      </li>
+      <!-- Combat drug -->
+      <li Class="StockGenerator_SingleDef">
+        <thingDef>UFR_Ripentor</thingDef>
+        <countRange>15~35</countRange>
+      </li>
       <!-- Techprints -->
       <li Class="StockGenerator_Techprints">
         <countChances>
@@ -205,7 +216,6 @@
           </li>
         </countChances>
       </li>
-
       <!-- Weapons -->
       <li Class="StockGenerator_Tag">
         <tradeTag>WeaponRanged</tradeTag>
@@ -227,7 +237,6 @@
           <li MayRequire="Ludeon.RimWorld.Anomaly">Shell_Deadlife</li>
         </excludedThingDefs>
       </li>
-
       <!-- Apparel -->
       <li Class="StockGenerator_Tag">
         <tradeTag>Armor</tradeTag>
@@ -244,13 +253,11 @@
         <tradeTag>UFR_Uniforms</tradeTag>
         <countRange>4~8</countRange>
       </li>
-
       <!-- Genepacks -->
       <li MayRequire="Ludeon.RimWorld.Biotech" Class="StockGenerator_SingleDef">
         <thingDef>Genepack</thingDef>
         <countRange>1~1</countRange>
       </li>
-
       <!-- Buying -->
       <li Class="StockGenerator_BuyExpensiveSimple" />
       <li Class="StockGenerator_BuyTradeTag">
@@ -268,16 +275,13 @@
       <li Class="StockGenerator_BuyTradeTag">
         <tag>HoraxWeapon</tag>
       </li>
-
     </stockGenerators>
   </TraderKindDef>
-
   <!--======================================================================================-->
   <TraderKindDef>
     <defName>Caravan_Outcast_Exotic</defName>
     <label>black market trader</label>
     <stockGenerators>
-
       <!-- Resources -->
       <li Class="StockGenerator_SingleDef">
         <thingDef>Silver</thingDef>
@@ -303,13 +307,21 @@
         <thingDef>MedicineUltratech</thingDef>
         <countRange>4~12</countRange>
       </li>
-
+      <!-- Premium medical drug -->
+      <li Class="StockGenerator_SingleDef">
+        <thingDef>UFR_Popper</thingDef>
+        <countRange>6~18</countRange>
+      </li>
+      <!-- Premium hide -->
+      <li Class="StockGenerator_SingleDef">
+        <thingDef>UFR_FlufflonLeather</thingDef>
+        <countRange>30~80</countRange>
+      </li>
       <!-- Decoders -->
       <li Class="StockGenerator_SingleDef">
         <thingDef>UFR_Decoder</thingDef>
         <countRange>1~1</countRange>
       </li>
-
       <!-- Techprints -->
       <li Class="StockGenerator_Techprints">
         <countChances>
@@ -319,7 +331,6 @@
           </li>
         </countChances>
       </li>
-
       <!-- Books -->
       <li Class="StockGenerator_SingleDef">
         <thingDef>TextBook</thingDef>
@@ -336,7 +347,6 @@
       <li MayRequire="Ludeon.RimWorld.Anomaly" Class="StockGenerator_Tomes">
         <countRange>0~1</countRange>
       </li>
-
       <!-- Exotic weapons -->
       <li Class="StockGenerator_MultiDef">
         <thingDefs>
@@ -347,7 +357,6 @@
         </thingDefs>
         <countRange>0~2</countRange>
       </li>
-
       <!-- Special / prestige armor -->
       <li Class="StockGenerator_MultiDef">
         <thingDefs>
@@ -358,14 +367,12 @@
         </thingDefs>
         <countRange>0~2</countRange>
       </li>
-
       <!-- Implants -->
       <li Class="StockGenerator_Tag">
         <tradeTag>TechHediff</tradeTag>
         <thingDefCountRange>3</thingDefCountRange>
         <countRange>1</countRange>
       </li>
-
       <!-- Buildings -->
       <li Class="StockGenerator_Tag">
         <tradeTag>Television</tradeTag>
@@ -376,7 +383,11 @@
         <thingDef>Telescope</thingDef>
         <countRange>0~1</countRange>
       </li>
-
+      <!-- Faction prestige building -->
+      <li Class="StockGenerator_SingleDef">
+        <thingDef>UFR_Gamesphere</thingDef>
+        <countRange>0~2</countRange>
+      </li>
       <!-- Exotic misc -->
       <li Class="StockGenerator_Tag">
         <tradeTag>ExoticMisc</tradeTag>
@@ -398,13 +409,11 @@
         <thingDefCountRange>2~2</thingDefCountRange>
         <countRange>1~1</countRange>
       </li>
-
       <!-- Genepacks -->
       <li MayRequire="Ludeon.RimWorld.Biotech" Class="StockGenerator_SingleDef">
         <thingDef>Genepack</thingDef>
         <countRange>3~4</countRange>
       </li>
-
       <!-- Serums -->
       <li MayRequire="Ludeon.RimWorld.Anomaly" Class="StockGenerator_Tag">
         <tradeTag>Serum</tradeTag>
@@ -414,7 +423,6 @@
           <li>VoidsightSerum</li>
         </excludedThingDefs>
       </li>
-
       <!-- Animals -->
       <li Class="StockGenerator_Animals">
         <tradeTagsSell>
@@ -432,19 +440,16 @@
           <li>AnimalFarm</li>
         </createMatingPair>
       </li>
-
       <!-- Archite capsule -->
       <li MayRequire="Ludeon.RimWorld.Biotech" Class="StockGenerator_SingleDef">
         <thingDef>ArchiteCapsule</thingDef>
         <countRange>-8~1</countRange>
       </li>
-
       <!-- Deathrest capacity serum -->
       <li MayRequire="Ludeon.RimWorld.Biotech" Class="StockGenerator_SingleDef">
         <thingDef>DeathrestCapacitySerum</thingDef>
         <countRange>0~1</countRange>
       </li>
-
       <!-- Buying -->
       <li Class="StockGenerator_BuyExpensiveSimple" />
       <li Class="StockGenerator_BuyTradeTag">
@@ -483,10 +488,8 @@
       <li Class="StockGenerator_BuySingleDef" MayRequire="Ludeon.RimWorld.Anomaly">
         <thingDef>RevenantSpine</thingDef>
       </li>
-
     </stockGenerators>
   </TraderKindDef>
-
   <!--======================================================================================-->
   <TraderKindDef>
     <defName>Caravan_Rough_PirateMerchant</defName>
@@ -501,7 +504,6 @@
       </points>
     </commonalityMultFromPopulationIntent>
     <stockGenerators>
-
       <!-- Resources -->
       <li Class="StockGenerator_SingleDef">
         <thingDef>Silver</thingDef>
@@ -509,7 +511,7 @@
       </li>
       <li Class="StockGenerator_SingleDef">
         <thingDef>ComponentSpacer</thingDef>
-        <countRange>-2~3</countRange> 
+        <countRange>-2~3</countRange>
       </li>
       <li Class="StockGenerator_SingleDef">
         <thingDef>MedicineIndustrial</thingDef>
@@ -517,16 +519,19 @@
       </li>
       <li Class="StockGenerator_SingleDef">
         <thingDef>MedicineUltratech</thingDef>
-        <countRange>-3~2</countRange> 
+        <countRange>-3~2</countRange>
       </li>
-
       <!-- Drugs -->
       <li Class="StockGenerator_Category">
         <categoryDef>Drugs</categoryDef>
         <thingDefCountRange>2~4</thingDefCountRange>
         <totalPriceRange>600~1000</totalPriceRange>
       </li>
-
+      <!-- Combat drug stock -->
+      <li Class="StockGenerator_SingleDef">
+        <thingDef>UFR_Ripentor</thingDef>
+        <countRange>20~50</countRange>
+      </li>
       <!-- Food -->
       <li Class="StockGenerator_MultiDef">
         <thingDefs>
@@ -535,7 +540,6 @@
         </thingDefs>
         <countRange>10~25</countRange>
       </li>
-
       <!-- Weapons -->
       <li Class="StockGenerator_Tag">
         <tradeTag>WeaponRanged</tradeTag>
@@ -557,25 +561,21 @@
           <li MayRequire="Ludeon.RimWorld.Anomaly">Shell_Deadlife</li>
         </excludedThingDefs>
       </li>
-
       <!-- Armor -->
       <li Class="StockGenerator_Tag">
         <tradeTag>UFR_Armor</tradeTag>
         <thingDefCountRange>2~4</thingDefCountRange>
         <countRange>1~3</countRange>
       </li>
-
       <!-- Genepacks -->
       <li MayRequire="Ludeon.RimWorld.Biotech" Class="StockGenerator_SingleDef">
         <thingDef>Genepack</thingDef>
         <countRange>1~1</countRange>
       </li>
-
       <!-- Slaves -->
       <li Class="StockGenerator_Slaves">
         <countRange>2~4</countRange>
       </li>
-
       <!-- Fighter animals -->
       <li Class="StockGenerator_Animals">
         <tradeTagsSell>
@@ -588,13 +588,11 @@
         <kindCountRange>1~2</kindCountRange>
         <countRange>1~3</countRange>
       </li>
-
       <!-- Pack turret apparel (Anomaly) -->
       <li MayRequire="Ludeon.RimWorld.Anomaly" Class="StockGenerator_SingleDef">
         <thingDef>Apparel_PackTurret</thingDef>
         <countRange>-1~2</countRange>
       </li>
-
       <!-- Cultist apparel (Anomaly) -->
       <li MayRequire="Ludeon.RimWorld.Anomaly" Class="StockGenerator_SingleDef">
         <thingDef>Apparel_CultistMask</thingDef>
@@ -604,7 +602,6 @@
         <thingDef>Apparel_CeremonialCultistMask</thingDef>
         <countRange>-1~2</countRange>
       </li>
-
       <!-- Buying -->
       <li Class="StockGenerator_BuyExpensiveSimple" />
       <li Class="StockGenerator_BuyTradeTag">
@@ -616,8 +613,6 @@
       <li Class="StockGenerator_BuyTradeTag">
         <tag>Drugs</tag>
       </li>
-
     </stockGenerators>
   </TraderKindDef>
-
 </Defs>

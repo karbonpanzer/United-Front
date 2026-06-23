@@ -298,7 +298,6 @@
                 <Pigskin MayRequire="Ludeon.RimWorld.Biotech">0.08</Pigskin>
                 <Impid MayRequire="Ludeon.RimWorld.Biotech">0.08</Impid>
                 <Waster MayRequire="Ludeon.RimWorld.Biotech">0.10</Waster>
-                <Sanguophage MayRequire="Ludeon.RimWorld.Biotech">0.02</Sanguophage>
             </xenotypeChances>
         </xenotypeSet>
         <allowedArrivalTemperatureRange>-40~50</allowedArrivalTemperatureRange>

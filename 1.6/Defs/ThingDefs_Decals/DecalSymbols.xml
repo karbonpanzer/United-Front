@@ -296,9 +296,9 @@
   </UnitedFront.Decal.DecalSymbol>
 
   <UnitedFront.Decal.DecalSymbol>
-    <defName>UFR_Decal_None</defName>
+    <defName>UFR_Decal_none</defName>
     <label>None</label>
-    <Path>Things/Decals/None</Path>
+    <Path>Things/Decals/none</Path>
   </UnitedFront.Decal.DecalSymbol>
 
   <UnitedFront.Decal.DecalSymbol>
@@ -468,5 +468,35 @@
     <label>Wrench</label>
     <Path>Things/Decals/wrench</Path>
   </UnitedFront.Decal.DecalSymbol>
+
+  <UnitedFront.Decal.DecalSymbol>
+    <defName>UFR_Decal_cogothon</defName>
+    <label>Cogothon</label>
+    <Path>Things/Decals/cogothon</Path>
+  </UnitedFront.Decal.DecalSymbol>  
+
+  <UnitedFront.Decal.DecalSymbol>
+    <defName>UFR_Decal_cogandcircle</defName>
+    <label>Cog and Circle</label>
+    <Path>Things/Decals/cogandcircle</Path>
+  </UnitedFront.Decal.DecalSymbol>  
+
+  <UnitedFront.Decal.DecalSymbol>
+    <defName>UFR_Decal_cogstar</defName>
+    <label>Cog and Star</label>
+    <Path>Things/Decals/cogstar</Path>
+  </UnitedFront.Decal.DecalSymbol>  
+  
+  <UnitedFront.Decal.DecalSymbol>
+    <defName>UFR_Decal_uf</defName>
+    <label>United Front</label>
+    <Path>Things/Decals/uf</Path>
+  </UnitedFront.Decal.DecalSymbol>  
+  
+  <UnitedFront.Decal.DecalSymbol>
+    <defName>UFR_Decal_skullcog</defName>
+    <label>Cog and Skull</label>
+    <Path>Things/Decals/skullcog</Path>
+  </UnitedFront.Decal.DecalSymbol>    
 
 </Defs>

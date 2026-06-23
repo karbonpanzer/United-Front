@@ -1,11 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Defs>
-
   <TraderKindDef>
     <defName>Visitor_Outcast_Standard</defName>
     <label>trader</label>
     <stockGenerators>
-
       <!-- Resources -->
       <li Class="StockGenerator_SingleDef">
         <thingDef>Silver</thingDef>
@@ -17,7 +15,7 @@
       </li>
       <li Class="StockGenerator_SingleDef">
         <thingDef>ComponentSpacer</thingDef>
-        <countRange>-3~2</countRange> <!-- ~30% chance for 1-2 -->
+        <countRange>-3~2</countRange>
       </li>
       <li Class="StockGenerator_SingleDef">
         <thingDef>MedicineIndustrial</thingDef>
@@ -33,7 +31,11 @@
           <li>Chocolate</li>
         </thingDefs>
       </li>
-
+      <!-- Small faction wool stock -->
+      <li Class="StockGenerator_SingleDef">
+        <thingDef>UFR_FlufflonWool</thingDef>
+        <countRange>10~40</countRange>
+      </li>
       <!-- Drugs -->
       <li Class="StockGenerator_Category">
         <categoryDef>Drugs</categoryDef>
@@ -41,7 +43,6 @@
         <thingDefCountRange>-1~1</thingDefCountRange>
         <totalPriceRange>200~400</totalPriceRange>
       </li>
-
       <!-- Techprints -->
       <li Class="StockGenerator_Techprints">
         <countChances>
@@ -51,7 +52,6 @@
           </li>
         </countChances>
       </li>
-
       <!-- Weapons -->
       <li Class="StockGenerator_MarketValue">
         <maxTechLevelGenerate>Spacer</maxTechLevelGenerate>
@@ -63,7 +63,6 @@
         <categoryDef>WeaponsMelee</categoryDef>
         <countRange>0~1</countRange>
       </li>
-
       <!-- Apparel -->
       <li Class="StockGenerator_MarketValue">
         <countRange>0~1</countRange>
@@ -77,9 +76,8 @@
       <li Class="StockGenerator_Tag">
         <tradeTag>UFR_Armor</tradeTag>
         <thingDefCountRange>1~2</thingDefCountRange>
-        <countRange>-2~1</countRange> <!-- ~30% chance for a single armor piece -->
+        <countRange>-2~1</countRange>
       </li>
-
       <!-- Buying -->
       <li Class="StockGenerator_BuyExpensiveSimple" />
       <li Class="StockGenerator_BuyTradeTag">
@@ -88,8 +86,6 @@
       <li Class="StockGenerator_BuyTradeTag">
         <tag>MusicalInstrument</tag>
       </li>
-
     </stockGenerators>
   </TraderKindDef>
-
 </Defs>

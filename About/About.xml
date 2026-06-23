@@ -4,18 +4,11 @@
   <author>karbonpanzer</author>
   <name>The United Front</name>
   <description>Adds the United Front, refugees from a distant Industrial world which fell centuries ago to the Mechanoids. Includes new weapons, armor, and a starting scenario.</description>
-  <modVersion>1.0.0</modVersion>
+  <modVersion>0.0.0</modVersion>
   <supportedVersions>
 	  <li>1.6</li>	  
   </supportedVersions>
-  <modDependencies>
-    <li>
-      <packageId>brrainz.harmony</packageId>
-      <displayName>Harmony</displayName>
-      <downloadUrl>https://github.com/pardeike/HarmonyRimWorld/releases/latest</downloadUrl>
-      <steamWorkshopUrl>https://steamcommunity.com/workshop/filedetails/?id=2009463077</steamWorkshopUrl>
-    </li>
-  </modDependencies>
+
   <loadAfter>
     <li>Ludeon.RimWorld</li>
     <li>Ludeon.RimWorld.Royalty</li>

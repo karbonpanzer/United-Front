@@ -1,12 +1,21 @@
 using System.Collections.Generic;
 using RimWorld;
+using UnitedFront.UI;
 using UnityEngine;
 using Verse;
 
 namespace UnitedFront.Decal
 {
+    [StaticConstructorOnStartup]
     public sealed class CompEditDecalMarker : ThingComp
     {
+        private static readonly Texture2D GizmoIcon;
+
+        static CompEditDecalMarker()
+        {
+            GizmoIcon = ContentFinder<Texture2D>.Get("UI/CustomizeDecal");
+        }
+
         public DecalProfileSet ProfileSet = DecalProfileSet.Default;
 
         public override void PostExposeData()
@@ -39,6 +48,31 @@ namespace UnitedFront.Decal
                     return;
             }
             WorldComponentDecalPawns.Instance?.Unregister(pawn);
+        }
+
+        public override IEnumerable<Gizmo> CompGetWornGizmosExtra()
+        {
+            Apparel? apparel = parent as Apparel;
+            Pawn? pawn = apparel?.Wearer;
+            if (pawn == null) yield break;
+            if (pawn.Faction != Faction.OfPlayerSilentFail) yield break;
+            
+            List<Apparel> worn = pawn.apparel.WornApparel;
+            for (int i = 0; i < worn.Count; i++)
+            {
+                var other = worn[i].TryGetComp<CompEditDecalMarker>();
+                if (other == null) continue;
+                if (other != this) yield break;
+                break;
+            }
+
+            yield return new Command_Action
+            {
+                defaultLabel = "UnitedFront_StyleDecalsGizmo".Translate(pawn.LabelCap),
+                defaultDesc  = "UnitedFront_StyleDecalsDesc".Translate(),
+                icon         = GizmoIcon,
+                action       = () => Find.WindowStack.Add(new DialogEditDecals(pawn))
+            };
         }
 
         private void TryApplyKindDefaults(Pawn pawn)

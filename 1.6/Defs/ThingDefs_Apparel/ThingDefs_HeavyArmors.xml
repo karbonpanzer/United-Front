@@ -1,6 +1,6 @@
 <?xml version='1.0' encoding='utf-8'?>
 <Defs>
-  <ThingDef ParentName="ArmorMachineableBase">
+  <ThingDef ParentName="UFR_DecalBodyArmor_Heavy">
     <defName>UFR_HeavyBulwarkArmor</defName>
     <label>Heavy Bulwark Armor</label>
     <description>A reinforced Bulwark armor set with additional plating over the standard configuration. Heavier and slower than Bulwark armor, but substantially more resistant to incoming fire. Used by assault troops expected to absorb significant punishment.</description>
@@ -71,42 +71,7 @@
       <tags Inherit="False">
         <li>UFR_Armor</li>
       </tags>
-      <renderNodeProperties>
-        <li Class="UnitedFront.Render.PawnRenderNodePropertiesDecal">
-          <nodeClass>UnitedFront.Render.PawnRenderNodeDecal</nodeClass>
-          <workerClass>UnitedFront.Render.PawnRenderNodeWorkerDecal</workerClass>
-          <parentTagDef>ApparelBody</parentTagDef>
-          <baseLayer>16</baseLayer>
-          <texPaths>
-            <li>Things/Decals/ringer</li>
-          </texPaths>
-          <visibleFacing>
-            <li>South</li>
-            <li>North</li>
-          </visibleFacing>
-          <drawData>
-            <scale>0.110</scale>
-            <defaultData>
-              <layer>82</layer>
-              <offset>(0,0,-0.155)</offset>
-            </defaultData>
-            <dataNorth>
-              <layer>92</layer>
-              <offset>(0,0,-0.148)</offset>
-            </dataNorth>
-            <bodyTypeScales>
-              <Hulk>1.35</Hulk>
-              <Fat>1.1</Fat>
-              <Thin>0.9</Thin>
-              <Female>1.05</Female>
-            </bodyTypeScales>
-          </drawData>
-        </li>
-      </renderNodeProperties>
     </apparel>
-    <comps>
-      <li Class="UnitedFront.Decal.CompPropertiesEditDecalMarker" />
-    </comps>
     <techLevel>Spacer</techLevel>
     <thingCategories>
       <li>UFR_Armor</li>
@@ -118,7 +83,7 @@
     <uiIconScale>1.15</uiIconScale>
   </ThingDef>
 
-  <ThingDef ParentName="ArmorMachineableBase">
+  <ThingDef ParentName="UFR_DecalHelmet_Heavy">
     <defName>UFR_HeavyBulwarkHelmet</defName>
     <label>Heavy Bulwark Helmet</label>
     <description>A reinforced Bulwark helmet with additional plating across the crown and rear. Substantially more protective than the standard configuration. Used by assault personnel expecting sustained fire.</description>
@@ -177,32 +142,7 @@
       <tags>
         <li>UFR_HeavyHelmet</li>
       </tags>
-      <renderNodeProperties>
-        <li Class="UnitedFront.Render.PawnRenderNodePropertiesDecal">
-          <nodeClass>UnitedFront.Render.PawnRenderNodeDecal</nodeClass>
-          <workerClass>UnitedFront.Render.PawnRenderNodeWorkerDecalHead</workerClass>
-          <parentTagDef>ApparelHead</parentTagDef>
-          <baseLayer>92</baseLayer>
-          <texPaths>
-            <li>Things/Decals/ringer</li>
-          </texPaths>
-          <visibleFacing>
-            <li>South</li>
-            <li>North</li>
-          </visibleFacing>
-          <drawData>
-            <scale>0.100</scale>
-            <defaultData>
-              <layer>75</layer>
-              <offset>(0,0,0.17)</offset>
-            </defaultData>
-          </drawData>
-        </li>
-      </renderNodeProperties>
     </apparel>
-    <comps>
-      <li Class="UnitedFront.Decal.CompPropertiesEditDecalMarker" />
-    </comps>
     <techLevel>Spacer</techLevel>
     <thingCategories>
       <li>UFR_Helmets</li>
@@ -214,7 +154,7 @@
     <uiIconScale>1.15</uiIconScale>
   </ThingDef>
 
-  <ThingDef ParentName="ArmorMachineableBase">
+  <ThingDef ParentName="UFR_DecalHelmet_Heavy">
     <defName>UFR_HeavyBulwarkHelmet_Insulated</defName>
     <label>Heavy Bulwark Helmet (Insulated)</label>
     <description>A heavy Bulwark helmet with thermal lining for extreme temperature operations. Provides the same protection as the standard heavy configuration in conditions that would otherwise impair the wearer.</description>
@@ -274,35 +214,10 @@
       <tags Inherit="False">
         <li>UFR_Armor</li>
       </tags>
-      <renderNodeProperties>
-        <li Class="UnitedFront.Render.PawnRenderNodePropertiesDecal">
-          <nodeClass>UnitedFront.Render.PawnRenderNodeDecal</nodeClass>
-          <workerClass>UnitedFront.Render.PawnRenderNodeWorkerDecalHead</workerClass>
-          <parentTagDef>ApparelHead</parentTagDef>
-          <baseLayer>92</baseLayer>
-          <texPaths>
-            <li>Things/Decals/ringer</li>
-          </texPaths>
-          <visibleFacing>
-            <li>South</li>
-            <li>North</li>
-          </visibleFacing>
-          <drawData>
-            <scale>0.100</scale>
-            <defaultData>
-              <layer>75</layer>
-              <offset>(0,0,0.17)</offset>
-            </defaultData>
-          </drawData>
-        </li>
-      </renderNodeProperties>
       <tags>
         <li>UFR_HeavyHelmet</li>
       </tags>
     </apparel>
-    <comps>
-      <li Class="UnitedFront.Decal.CompPropertiesEditDecalMarker" />
-    </comps>
     <techLevel>Spacer</techLevel>
     <thingCategories>
       <li>UFR_Helmets</li>
@@ -314,7 +229,7 @@
     <uiIconScale>1.15</uiIconScale>
   </ThingDef>
 
-  <ThingDef ParentName="ArmorMachineableBase">
+  <ThingDef ParentName="UFR_DecalHelmet_Heavy">
     <defName>UFR_HeavyBulwarkHelmet_Shielded</defName>
     <label>Heavy Bulwark Helmet (Reinforced)</label>
     <description>A heavy Bulwark helmet with extra armor bonded across the faceplate and brow. The most protective variant of the Bulwark helmet series.</description>
@@ -377,35 +292,10 @@
       <tags Inherit="False">
         <li>UFR_Armor</li>
       </tags>
-      <renderNodeProperties>
-        <li Class="UnitedFront.Render.PawnRenderNodePropertiesDecal">
-          <nodeClass>UnitedFront.Render.PawnRenderNodeDecal</nodeClass>
-          <workerClass>UnitedFront.Render.PawnRenderNodeWorkerDecalHead</workerClass>
-          <parentTagDef>ApparelHead</parentTagDef>
-          <baseLayer>92</baseLayer>
-          <texPaths>
-            <li>Things/Decals/ringer</li>
-          </texPaths>
-          <visibleFacing>
-            <li>South</li>
-            <li>North</li>
-          </visibleFacing>
-          <drawData>
-            <scale>0.100</scale>
-            <defaultData>
-              <layer>75</layer>
-              <offset>(0,0,0.17)</offset>
-            </defaultData>
-          </drawData>
-        </li>
-      </renderNodeProperties>
       <tags>
         <li>UFR_HeavyHelmet_Shielded</li>
       </tags>
     </apparel>
-    <comps>
-      <li Class="UnitedFront.Decal.CompPropertiesEditDecalMarker" />
-    </comps>
     <techLevel>Spacer</techLevel>
     <thingCategories>
       <li>UFR_Helmets</li>
@@ -417,7 +307,7 @@
     <uiIconScale>1.15</uiIconScale>
   </ThingDef>
 
-  <ThingDef ParentName="ArmorMachineableBase">
+  <ThingDef ParentName="UFR_DecalHelmet_Heavy">
     <defName>UFR_HeavyBulwarkHelmet_Gasmask</defName>
     <label>Heavy Bulwark Helmet (Gasmask)</label>
     <description>A heavy Bulwark helmet with a full-face filtration system integrated into the shell. Seals completely against airborne threats while retaining the ballistic protection of the heavy platform.</description>
@@ -481,35 +371,10 @@
       <tags Inherit="False">
         <li>UFR_Armor</li>
       </tags>
-      <renderNodeProperties>
-        <li Class="UnitedFront.Render.PawnRenderNodePropertiesDecal">
-          <nodeClass>UnitedFront.Render.PawnRenderNodeDecal</nodeClass>
-          <workerClass>UnitedFront.Render.PawnRenderNodeWorkerDecalHead</workerClass>
-          <parentTagDef>ApparelHead</parentTagDef>
-          <baseLayer>92</baseLayer>
-          <texPaths>
-            <li>Things/Decals/ringer</li>
-          </texPaths>
-          <visibleFacing>
-            <li>South</li>
-            <li>North</li>
-          </visibleFacing>
-          <drawData>
-            <scale>0.100</scale>
-            <defaultData>
-              <layer>75</layer>
-              <offset>(0,0,0.17)</offset>
-            </defaultData>
-          </drawData>
-        </li>
-      </renderNodeProperties>
       <tags>
         <li>UFR_HeavyHelmet</li>
       </tags>
     </apparel>
-    <comps>
-      <li Class="UnitedFront.Decal.CompPropertiesEditDecalMarker" />
-    </comps>
     <techLevel>Spacer</techLevel>
     <thingCategories>
       <li>UFR_Helmets</li>
@@ -520,5 +385,5 @@
     </tradeTags>
     <uiIconScale>1.15</uiIconScale>
   </ThingDef>
-  
+
 </Defs>

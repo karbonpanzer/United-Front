@@ -1,6 +1,6 @@
 <?xml version='1.0' encoding='utf-8'?>
 <Defs>
-  <ThingDef ParentName="ArmorMachineableBase">
+  <ThingDef ParentName="UFR_DecalBodyArmor_Officer">
     <defName>UFR_OfficerBulwarkArmor</defName>
     <label>Officer Bulwark Armor</label>
     <description>A Bulwark armor set finished for officer-grade wear. Offers equivalent protection to standard Bulwark while maintaining the appearance expected of command personnel.</description>
@@ -69,42 +69,7 @@
       <tags Inherit="False">
         <li>UFR_Armor</li>
       </tags>
-      <renderNodeProperties>
-        <li Class="UnitedFront.Render.PawnRenderNodePropertiesDecal">
-          <nodeClass>UnitedFront.Render.PawnRenderNodeDecal</nodeClass>
-          <workerClass>UnitedFront.Render.PawnRenderNodeWorkerDecal</workerClass>
-          <parentTagDef>ApparelBody</parentTagDef>
-          <baseLayer>92</baseLayer>
-          <texPaths>
-            <li>Things/Decals/commander</li>
-          </texPaths>
-          <visibleFacing>
-            <li>South</li>
-            <li>North</li>
-          </visibleFacing>
-          <drawData>
-            <scale>0.110</scale>
-            <defaultData>
-              <layer>72</layer>
-              <offset>(0,0,-0.155)</offset>
-            </defaultData>
-            <dataNorth>
-              <layer>92</layer>
-              <offset>(0,0,-0.148)</offset>
-            </dataNorth>
-            <bodyTypeScales>
-              <Hulk>1.35</Hulk>
-              <Fat>1.1</Fat>
-              <Thin>0.9</Thin>
-              <Female>1.05</Female>
-            </bodyTypeScales>
-          </drawData>
-        </li>
-      </renderNodeProperties>
     </apparel>
-    <comps>
-      <li Class="UnitedFront.Decal.CompPropertiesEditDecalMarker" />
-    </comps>
     <techLevel>Spacer</techLevel>
     <thingCategories>
       <li>UFR_Armor</li>
@@ -115,7 +80,8 @@
     </tradeTags>
     <uiIconScale>1.15</uiIconScale>
   </ThingDef>
-  <ThingDef ParentName="ArmorMachineableBase">
+
+  <ThingDef ParentName="UFR_DecalBodyArmor_Officer">
     <defName>UFR_OfficerBulwarkArmor_Scout</defName>
     <label>Officer Bulwark Armor (Scout)</label>
     <description>A lighter Bulwark armor set worn by officers who operate close to or ahead of their unit. Trimmed for mobility while retaining markings that identify the wearer as command personnel.</description>
@@ -182,42 +148,7 @@
       <tags Inherit="False">
         <li>UFR_Armor</li>
       </tags>
-      <renderNodeProperties>
-        <li Class="UnitedFront.Render.PawnRenderNodePropertiesDecal">
-          <nodeClass>UnitedFront.Render.PawnRenderNodeDecal</nodeClass>
-          <workerClass>UnitedFront.Render.PawnRenderNodeWorkerDecal</workerClass>
-          <parentTagDef>ApparelBody</parentTagDef>
-          <baseLayer>92</baseLayer>
-          <texPaths>
-            <li>Things/Decals/commander</li>
-          </texPaths>
-          <visibleFacing>
-            <li>South</li>
-            <li>North</li>
-          </visibleFacing>
-          <drawData>
-            <scale>0.110</scale>
-            <defaultData>
-              <layer>72</layer>
-              <offset>(0,0,-0.155)</offset>
-            </defaultData>
-            <dataNorth>
-              <layer>92</layer>
-              <offset>(0,0,-0.148)</offset>
-            </dataNorth>
-            <bodyTypeScales>
-              <Hulk>1.35</Hulk>
-              <Fat>1.1</Fat>
-              <Thin>0.9</Thin>
-              <Female>1.05</Female>
-            </bodyTypeScales>
-          </drawData>
-        </li>
-      </renderNodeProperties>
     </apparel>
-    <comps>
-      <li Class="UnitedFront.Decal.CompPropertiesEditDecalMarker" />
-    </comps>
     <techLevel>Spacer</techLevel>
     <thingCategories>
       <li>UFR_Armor</li>
@@ -228,7 +159,8 @@
     </tradeTags>
     <uiIconScale>1.15</uiIconScale>
   </ThingDef>
-  <ThingDef ParentName="ArmorMachineableBase">
+
+  <ThingDef ParentName="UFR_DecalBodyArmor_Scout">
     <defName>UFR_ScoutBulwarkArmor</defName>
     <label>Scout Bulwark Armor</label>
     <description>A reduced Bulwark armor set designed for reconnaissance personnel. Coverage is trimmed to allow faster movement and quieter operation well ahead of the main force.</description>
@@ -294,42 +226,7 @@
         <li>UFR_Armor</li>
         <li>UFR_Armor_Conscript</li>
       </tags>
-      <renderNodeProperties>
-        <li Class="UnitedFront.Render.PawnRenderNodePropertiesDecal">
-          <nodeClass>UnitedFront.Render.PawnRenderNodeDecal</nodeClass>
-          <workerClass>UnitedFront.Render.PawnRenderNodeWorkerDecal</workerClass>
-          <parentTagDef>ApparelBody</parentTagDef>
-          <baseLayer>92</baseLayer>
-          <texPaths>
-            <li>Things/Decals/ringer</li>
-          </texPaths>
-          <visibleFacing>
-            <li>South</li>
-            <li>North</li>
-          </visibleFacing>
-          <drawData>
-            <scale>0.110</scale>
-            <defaultData>
-              <layer>72</layer>
-              <offset>(0,0,-0.155)</offset>
-            </defaultData>
-            <dataNorth>
-              <layer>92</layer>
-              <offset>(0,0,-0.148)</offset>
-            </dataNorth>
-            <bodyTypeScales>
-              <Hulk>1.35</Hulk>
-              <Fat>1.1</Fat>
-              <Thin>0.9</Thin>
-              <Female>1.05</Female>
-            </bodyTypeScales>
-          </drawData>
-        </li>
-      </renderNodeProperties>
     </apparel>
-    <comps>
-      <li Class="UnitedFront.Decal.CompPropertiesEditDecalMarker" />
-    </comps>
     <techLevel>Spacer</techLevel>
     <thingCategories>
       <li>UFR_Armor</li>
@@ -340,7 +237,8 @@
     </tradeTags>
     <uiIconScale>1.15</uiIconScale>
   </ThingDef>
-  <ThingDef ParentName="ArmorMachineableBase">
+
+  <ThingDef ParentName="UFR_DecalBodyArmor_Riot">
     <defName>UFR_RiotBulwarkArmor</defName>
     <label>Riot Bulwark Armor</label>
     <description>A Bulwark armor set reinforced for crowd control operations. Additional blunt-trauma protection on the front panel helps absorb impacts common in suppression engagements.</description>
@@ -409,42 +307,7 @@
       <soundWear>Wear_PowerArmor</soundWear>
       <soundRemove>Remove_PowerArmor</soundRemove>
       <useDeflectMetalEffect>true</useDeflectMetalEffect>
-      <renderNodeProperties>
-        <li Class="UnitedFront.Render.PawnRenderNodePropertiesDecal">
-          <nodeClass>UnitedFront.Render.PawnRenderNodeDecal</nodeClass>
-          <workerClass>UnitedFront.Render.PawnRenderNodeWorkerDecal</workerClass>
-          <parentTagDef>ApparelBody</parentTagDef>
-          <baseLayer>92</baseLayer>
-          <texPaths>
-            <li>Things/Decals/tinstar</li>
-          </texPaths>
-          <visibleFacing>
-            <li>South</li>
-            <li>North</li>
-          </visibleFacing>
-          <drawData>
-            <scale>0.110</scale>
-            <defaultData>
-              <layer>72</layer>
-              <offset>(0,0,-0.155)</offset>
-            </defaultData>
-            <dataNorth>
-              <layer>92</layer>
-              <offset>(0,0,-0.148)</offset>
-            </dataNorth>
-            <bodyTypeScales>
-              <Hulk>1.35</Hulk>
-              <Fat>1.1</Fat>
-              <Thin>0.9</Thin>
-              <Female>1.05</Female>
-            </bodyTypeScales>
-          </drawData>
-        </li>
-      </renderNodeProperties>
     </apparel>
-    <comps>
-      <li Class="UnitedFront.Decal.CompPropertiesEditDecalMarker" />
-    </comps>
     <techLevel>Spacer</techLevel>
     <thingCategories>
       <li>UFR_Armor</li>
