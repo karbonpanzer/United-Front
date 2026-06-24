@@ -41,10 +41,12 @@ namespace UnitedFront.Decal
         public override void Notify_Unequipped(Pawn pawn)
         {
             base.Notify_Unequipped(pawn);
-            List<Apparel> wornApparel = pawn.apparel.WornApparel;
-            for (int i = 0; i < wornApparel.Count; i++)
+
+            List<Apparel> worn = pawn.apparel.WornApparel;
+            for (int i = 0; i < worn.Count; i++)
             {
-                if (wornApparel[i].def.HasComp<CompEditDecalMarker>())
+                if (worn[i] == parent) continue;
+                if (worn[i].def.HasComp<CompEditDecalMarker>())
                     return;
             }
             WorldComponentDecalPawns.Instance?.Unregister(pawn);
@@ -56,7 +58,7 @@ namespace UnitedFront.Decal
             Pawn? pawn = apparel?.Wearer;
             if (pawn == null) yield break;
             if (pawn.Faction != Faction.OfPlayerSilentFail) yield break;
-            
+
             List<Apparel> worn = pawn.apparel.WornApparel;
             for (int i = 0; i < worn.Count; i++)
             {

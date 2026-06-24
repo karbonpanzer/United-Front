@@ -1,59 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Defs>
-
-  <ThingDef ParentName="ResourceBase">
-    <defName>UFR_Duramite</defName>
-    <label>duramite</label>
-    <description>A manufactured ceramic compound. While not ideal for structures, some though prefer it for its simplicity in the field of art. Its primary usage is the construction of duramium alloy.</description>
-    <graphicData>
-      <texPath>Things/Item/Resource/Duramite</texPath>
-      <graphicClass>Graphic_StackCount</graphicClass>
-    </graphicData>
-    <soundInteract>Stone_Drop</soundInteract>
-    <soundDrop>Stone_Drop</soundDrop>
-    <useHitPoints>true</useHitPoints>
-    <statBases>
-      <MaxHitPoints>80</MaxHitPoints>
-      <MarketValue>4.5</MarketValue>
-      <Mass>0.5</Mass>
-      <Flammability>0</Flammability>
-      <DeteriorationRate>0</DeteriorationRate>
-      <Beauty>1</Beauty>
-      <StuffPower_Armor_Sharp>0.60</StuffPower_Armor_Sharp>
-      <StuffPower_Armor_Blunt>0.50</StuffPower_Armor_Blunt>
-      <StuffPower_Armor_Heat>0.50</StuffPower_Armor_Heat>
-      <StuffPower_Insulation_Cold>3</StuffPower_Insulation_Cold>
-      <StuffPower_Insulation_Heat>2</StuffPower_Insulation_Heat>
-    </statBases>
-    <thingCategories>
-      <li>ResourcesRaw</li>
-    </thingCategories>
-    <stuffProps>
-      <categories>
-        <li>Stony</li>
-      </categories>
-      <commonality>0.2</commonality>
-      <color>(85,78,68)</color>
-      <soundImpactBullet>BulletImpact_Ground</soundImpactBullet>
-      <soundMeleeHitSharp>MeleeHit_Stone</soundMeleeHitSharp>
-      <soundMeleeHitBlunt>MeleeHit_Stone</soundMeleeHitBlunt>
-      <soundImpactMelee>Pawn_Melee_Punch_HitBuilding_Stone</soundImpactMelee>
-      <stuffAdjective>duramite</stuffAdjective>
-      <statFactors>
-        <MaxHitPoints>0.85</MaxHitPoints>
-        <Beauty>1.0</Beauty>
-        <WorkToMake>0.9</WorkToMake>
-      </statFactors>
-      <canSuggestUseDefaultStuff>false</canSuggestUseDefaultStuff>
-    </stuffProps>
-    <stackLimit>75</stackLimit>
-    <healthAffectsPrice>false</healthAffectsPrice>
-  </ThingDef>
-
   <ThingDef ParentName="ResourceBase">
     <defName>UFR_DuramiumAlloy</defName>
     <label>duramium alloy</label>
-    <description>A ceramo-metal compound often seen on Industrial worlds. Duramium alloy is widely used in architecture, infrastructure, and even military purposes owing to its versatility. Tough, heat resistant, and able to be produced at a large scale from ceramic and steel.</description>
+    <description>A ceramo-metal compound often seen on Industrial worlds, found in naturally occurring ore veins. Duramium alloy is widely used in architecture, infrastructure, and even military purposes owing to its versatility. Tough, heat resistant, and quarried directly from spacer-era mineral deposits.</description>
     <graphicData>
       <texPath>Things/Item/Resource/DuramiumAlloy</texPath>
       <graphicClass>Graphic_StackCount</graphicClass>
@@ -75,7 +25,7 @@
       <StuffPower_Insulation_Heat>6</StuffPower_Insulation_Heat>
     </statBases>
     <thingCategories>
-      <li>Manufactured</li>
+      <li>ResourcesRaw</li>
     </thingCategories>
     <stuffProps>
       <categories>
@@ -145,5 +95,4 @@
       </statFactors>
     </stuffProps>
   </ThingDef>
-
 </Defs>

@@ -11,6 +11,7 @@
           <nodeClass>UnitedFront.Render.PawnRenderNodeDecal</nodeClass>
           <workerClass>UnitedFront.Render.PawnRenderNodeWorkerDecal</workerClass>
           <parentTagDef>ApparelBody</parentTagDef>
+          <ExplicitSlot>Armor</ExplicitSlot>
           <baseLayer>16</baseLayer>
           <texPaths>
             <li>Things/Decals/none</li>
@@ -51,6 +52,7 @@
           <nodeClass>UnitedFront.Render.PawnRenderNodeDecal</nodeClass>
           <workerClass>UnitedFront.Render.PawnRenderNodeWorkerDecal</workerClass>
           <parentTagDef>ApparelBody</parentTagDef>
+          <ExplicitSlot>Armor</ExplicitSlot>
           <baseLayer>72</baseLayer>
           <texPaths>
             <li>Things/Decals/none</li>
@@ -91,6 +93,7 @@
           <nodeClass>UnitedFront.Render.PawnRenderNodeDecal</nodeClass>
           <workerClass>UnitedFront.Render.PawnRenderNodeWorkerDecal</workerClass>
           <parentTagDef>ApparelBody</parentTagDef>
+          <ExplicitSlot>Armor</ExplicitSlot>
           <baseLayer>92</baseLayer>
           <texPaths>
             <li>Things/Decals/commander</li>
@@ -131,6 +134,7 @@
           <nodeClass>UnitedFront.Render.PawnRenderNodeDecal</nodeClass>
           <workerClass>UnitedFront.Render.PawnRenderNodeWorkerDecal</workerClass>
           <parentTagDef>ApparelBody</parentTagDef>
+          <ExplicitSlot>Armor</ExplicitSlot>
           <baseLayer>92</baseLayer>
           <texPaths>
             <li>Things/Decals/none</li>
@@ -171,6 +175,7 @@
           <nodeClass>UnitedFront.Render.PawnRenderNodeDecal</nodeClass>
           <workerClass>UnitedFront.Render.PawnRenderNodeWorkerDecal</workerClass>
           <parentTagDef>ApparelBody</parentTagDef>
+          <ExplicitSlot>Armor</ExplicitSlot>
           <baseLayer>92</baseLayer>
           <texPaths>
             <li>Things/Decals/tinstar</li>
@@ -211,6 +216,7 @@
           <nodeClass>UnitedFront.Render.PawnRenderNodeDecal</nodeClass>
           <workerClass>UnitedFront.Render.PawnRenderNodeWorkerDecalHead</workerClass>
           <parentTagDef>ApparelHead</parentTagDef>
+          <ExplicitSlot>Helmet</ExplicitSlot>
           <baseLayer>55</baseLayer>
           <texPaths>
             <li>Things/Decals/none</li>
@@ -241,6 +247,7 @@
           <nodeClass>UnitedFront.Render.PawnRenderNodeDecal</nodeClass>
           <workerClass>UnitedFront.Render.PawnRenderNodeWorkerDecalHead</workerClass>
           <parentTagDef>ApparelHead</parentTagDef>
+          <ExplicitSlot>Helmet</ExplicitSlot>
           <baseLayer>92</baseLayer>
           <texPaths>
             <li>Things/Decals/none</li>

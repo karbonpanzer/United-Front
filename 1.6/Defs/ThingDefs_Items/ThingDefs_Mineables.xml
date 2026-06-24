@@ -1,28 +1,34 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Defs>
-
   <ThingDef ParentName="RockBase">
-    <defName>UFR_MineableDuramite</defName>
-    <label>duramite deposit</label>
-    <description>Ancient building material, compacted over time. Can be mined for duramite.</description>
+    <defName>UFR_MineableDuramium</defName>
+    <label>compact duramium</label>
+    <description>A vein of natural duramium alloy ore. Mining this dense ceramo-metal deposit yields refined duramium alloy directly, ready for construction or further processing.</description>
     <graphicData>
       <texPath>Things/Building/Linked/RockFlecked_Atlas</texPath>
       <graphicClass>Graphic_Single</graphicClass>
+      <linkType>CornerFiller</linkType>
+      <linkFlags>
+        <li>Rock</li>
+        <li>MapEdge</li>
+      </linkFlags>
+      <damageData>
+        <rect>(0,0.05,1,0.9)</rect>
+      </damageData>
       <shaderType>CutoutComplex</shaderType>
       <color>(75,68,58)</color>
       <colorTwo>(115,105,88)</colorTwo>
     </graphicData>
-    <statBases>
-      <MaxHitPoints>2000</MaxHitPoints>
-    </statBases>
     <building>
       <isResourceRock>true</isResourceRock>
-      <mineableThing>UFR_Duramite</mineableThing>
+      <mineableThing>UFR_DuramiumAlloy</mineableThing>
       <mineableYield>30</mineableYield>
-      <mineableScatterCommonality>0.10</mineableScatterCommonality>
-      <mineableScatterLumpSizeRange>2~8</mineableScatterLumpSizeRange>
-      <veinMineable>true</veinMineable>
+      <mineableScatterCommonality>0.40</mineableScatterCommonality>
+      <mineableScatterLumpSizeRange>4~9</mineableScatterLumpSizeRange>
+      <mineableYieldWasteable>true</mineableYieldWasteable>
     </building>
+    <statBases>
+      <MaxHitPoints>500</MaxHitPoints>
+    </statBases>
   </ThingDef>
-
 </Defs>

@@ -62,12 +62,8 @@
       </li>
       <!-- Faction bulk materials -->
       <li Class="StockGenerator_SingleDef">
-        <thingDef>UFR_Duramite</thingDef>
-        <countRange>80~200</countRange>
-      </li>
-      <li Class="StockGenerator_SingleDef">
         <thingDef>UFR_DuramiumAlloy</thingDef>
-        <countRange>40~120</countRange>
+        <countRange>80~180</countRange>
       </li>
       <li Class="StockGenerator_SingleDef">
         <thingDef>UFR_FlufflonWool</thingDef>

@@ -41,27 +41,15 @@ namespace UnitedFront.Decal
             pawn.Drawer.renderer.SetAllGraphicsDirty();
         }
 
-        private static CompEditDecalMarker? GetMarker(Pawn pawn)
+        private static CompEditDecalMarker? GetMarker(Pawn? pawn)
         {
             if (pawn?.apparel == null) return null;
 
-            var registry = WorldComponentDecalPawns.Instance;
-            if (registry != null)
+            List<Apparel> worn = pawn.apparel.WornApparel;
+            for (int i = 0; i < worn.Count; i++)
             {
-                var cached = registry.GetComp(pawn);
-                if (cached != null) return cached;
-                if (registry.HasDecalApparel(pawn)) registry.Unregister(pawn);
-            }
-
-            List<Apparel> wornApparel = pawn.apparel.WornApparel;
-            for (int i = 0; i < wornApparel.Count; i++)
-            {
-                var comp = wornApparel[i].TryGetComp<CompEditDecalMarker>();
-                if (comp != null)
-                {
-                    registry?.Register(pawn);
-                    return comp;
-                }
+                var comp = worn[i].TryGetComp<CompEditDecalMarker>();
+                if (comp != null) return comp;
             }
             return null;
         }
