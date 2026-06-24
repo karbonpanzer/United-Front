@@ -94,10 +94,6 @@
         </excludedThingDefs>
       </li>
       <!-- Faction materials -->
-      <li Class="StockGenerator_SingleDef">
-        <thingDef>UFR_DuramiumAlloy</thingDef>
-        <countRange>50~140</countRange>
-      </li>
       <li Class="StockGenerator_MultiDef">
         <thingDefs>
           <li>UFR_FlufflonWool</li>
