@@ -80,7 +80,7 @@
 	<ThingDef ParentName="BaseMeleeWeapon_Sharp_Quality">
 		<defName>UFR_Vibromaul</defName>
 		<label>Vibromaul</label>
-		<description>A composite sword powered by a small micro-motor which vibrates the blade. Easily able to carve through armor and flesh, the production of it is a closely guarded secret in the Dominion.</description>
+		<description>.</description>
 		<graphicData>
 			<graphicClass>Graphic_Single</graphicClass>
 			<texPath>Things/Item/Equipment/WeaponMelee/vibromaul</texPath>
