@@ -5,15 +5,10 @@ using Verse;
 
 namespace UnitedFront.Render
 {
-    public class PawnRenderNodeDecal : PawnRenderNode
+    public class PawnRenderNodeDecal(Pawn pawn, PawnRenderNodeProperties props, PawnRenderTree tree)
+        : PawnRenderNode(pawn, props, tree)
     {
-        private readonly DecalSlot _slot;
-
-        public PawnRenderNodeDecal(Pawn pawn, PawnRenderNodeProperties props, PawnRenderTree tree)
-            : base(pawn, props, tree)
-        {
-            _slot = DetermineSlot(props);
-        }
+        private readonly DecalSlot _slot = DetermineSlot(props);
 
         protected override string TexPathFor(Pawn pawn)
         {
@@ -33,7 +28,7 @@ namespace UnitedFront.Render
 
         private static DecalSlot DetermineSlot(PawnRenderNodeProperties props)
         {
-            if (props is PawnRenderNodePropertiesDecal decalProps && decalProps.ExplicitSlot.HasValue)
+            if (props is PawnRenderNodePropertiesDecal { ExplicitSlot: not null } decalProps)
                 return decalProps.ExplicitSlot.Value;
 
             if (props.parentTagDef == PawnRenderNodeTagDefOf.ApparelHead)

@@ -5,9 +5,9 @@ namespace UnitedFront.Decal
 {
     public sealed class DecalSymbol : Def
     {
-        public string Path = "";
-        public bool armorOnly = false;
-        public bool helmetOnly = false;
+        public readonly string Path = "";
+        public readonly bool armorOnly = false;
+        public readonly bool helmetOnly = false;
     }
 
     public enum DecalSlot { Helmet, Armor }
@@ -18,7 +18,7 @@ namespace UnitedFront.Decal
         public string SymbolPath;
         public Color SymbolColor;
 
-        public DecalProfile(bool active, string path, Color color)
+        private DecalProfile(bool active, string path, Color color)
         {
             Active = active;
             SymbolPath = path;
@@ -33,7 +33,7 @@ namespace UnitedFront.Decal
         public DecalProfile Helmet;
         public DecalProfile Armor;
 
-        public DecalProfileSet(DecalProfile helmet, DecalProfile armor)
+        private DecalProfileSet(DecalProfile helmet, DecalProfile armor)
         {
             Helmet = helmet;
             Armor = armor;

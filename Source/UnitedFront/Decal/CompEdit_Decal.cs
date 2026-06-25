@@ -43,10 +43,10 @@ namespace UnitedFront.Decal
             base.Notify_Unequipped(pawn);
 
             List<Apparel> worn = pawn.apparel.WornApparel;
-            for (int i = 0; i < worn.Count; i++)
+            foreach (var t in worn)
             {
-                if (worn[i] == parent) continue;
-                if (worn[i].def.HasComp<CompEditDecalMarker>())
+                if (t == parent) continue;
+                if (t.def.HasComp<CompEditDecalMarker>())
                     return;
             }
             WorldComponentDecalPawns.Instance?.Unregister(pawn);
@@ -60,9 +60,9 @@ namespace UnitedFront.Decal
             if (pawn.Faction != Faction.OfPlayerSilentFail) yield break;
 
             List<Apparel> worn = pawn.apparel.WornApparel;
-            for (int i = 0; i < worn.Count; i++)
+            foreach (var t in worn)
             {
-                var other = worn[i].TryGetComp<CompEditDecalMarker>();
+                var other = t.TryGetComp<CompEditDecalMarker>();
                 if (other == null) continue;
                 if (other != this) yield break;
                 break;

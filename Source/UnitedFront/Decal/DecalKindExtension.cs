@@ -5,12 +5,12 @@ namespace UnitedFront.Decal
 {
     public class DecalKindExtension : DefModExtension
     {
-        public string armorDecalPath = "";
+        public readonly string armorDecalPath = "";
         public Color armorDecalColor = new Color(0.2f, 0.2f, 0.2f);
 
-        public string helmetDecalPath = "";
+        public readonly string helmetDecalPath = "";
         public Color helmetDecalColor = new Color(0.2f, 0.2f, 0.2f);
 
-        public bool overrideSaved = false;
+        public readonly bool overrideSaved = false;
     }
 }

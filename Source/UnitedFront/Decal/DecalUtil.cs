@@ -12,7 +12,7 @@ namespace UnitedFront.Decal
         public static DecalProfileSet ReadProfileSetFrom(Pawn pawn)
         {
             var comp = GetMarker(pawn);
-            return comp != null ? comp.ProfileSet : DecalProfileSet.Default;
+            return comp?.ProfileSet ?? DecalProfileSet.Default;
         }
 
         public static DecalProfile ReadProfileFrom(Pawn pawn, DecalSlot slot)
@@ -46,15 +46,15 @@ namespace UnitedFront.Decal
             if (pawn?.apparel == null) return null;
 
             List<Apparel> worn = pawn.apparel.WornApparel;
-            for (int i = 0; i < worn.Count; i++)
+            foreach (var t in worn)
             {
-                var comp = worn[i].TryGetComp<CompEditDecalMarker>();
+                var comp = t.TryGetComp<CompEditDecalMarker>();
                 if (comp != null) return comp;
             }
             return null;
         }
 
-        public static List<DecalSymbol> AllSymbols() => DefDatabase<DecalSymbol>.AllDefsListForReading;
+        private static List<DecalSymbol> AllSymbols() => DefDatabase<DecalSymbol>.AllDefsListForReading;
 
         public static List<DecalSymbol> SymbolsForSlot(DecalSlot slot)
         {
@@ -64,10 +64,10 @@ namespace UnitedFront.Decal
                 {
                     var all = AllSymbols();
                     _cachedArmorSymbols = new List<DecalSymbol>(all.Count);
-                    for (int i = 0; i < all.Count; i++)
+                    foreach (var t in all)
                     {
-                        if (!all[i].helmetOnly)
-                            _cachedArmorSymbols.Add(all[i]);
+                        if (!t.helmetOnly)
+                            _cachedArmorSymbols.Add(t);
                     }
                 }
                 return _cachedArmorSymbols;
@@ -78,10 +78,10 @@ namespace UnitedFront.Decal
                 {
                     var all = AllSymbols();
                     _cachedHelmetSymbols = new List<DecalSymbol>(all.Count);
-                    for (int i = 0; i < all.Count; i++)
+                    foreach (var t in all)
                     {
-                        if (!all[i].armorOnly)
-                            _cachedHelmetSymbols.Add(all[i]);
+                        if (!t.armorOnly)
+                            _cachedHelmetSymbols.Add(t);
                     }
                 }
                 return _cachedHelmetSymbols;

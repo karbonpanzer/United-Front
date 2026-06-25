@@ -72,8 +72,10 @@ namespace UnitedFront.UI
             if (_pawn.Destroyed) { Close(false); return; }
 
             Text.Font = GameFont.Medium;
-            Rect titleRect = new Rect(inRect);
-            titleRect.height = Text.LineHeight * 2f;
+            Rect titleRect = new Rect(inRect)
+            {
+                height = Text.LineHeight * 2f
+            };
             Widgets.Label(titleRect, "UnitedFront_StyleDecalsTitle".Translate(_pawn.Name.ToStringShort));
             Text.Font = GameFont.Small;
             inRect.yMin = titleRect.yMax + 4f;
