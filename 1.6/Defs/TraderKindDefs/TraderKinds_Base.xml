@@ -184,10 +184,9 @@
       <!-- Faction exotic weapons -->
       <li Class="StockGenerator_MultiDef">
         <thingDefs>
-          <li>UFR_HydraRifle</li>
-          <li>UFR_AutoloaderCannon</li>
-          <li>UFR_SalvoGrenadeLauncher</li>
-          <li>UFR_ServiceLMG</li>
+          <li>UFR_TriCoilHeavyRifle</li>
+          <li>UFR_CoilCannon</li>
+          <li>UFR_CoilMG</li>
         </thingDefs>
         <countRange>0~2</countRange>
       </li>

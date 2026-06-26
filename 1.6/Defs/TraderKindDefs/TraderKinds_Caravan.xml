@@ -189,6 +189,7 @@
         <thingDef>MedicineUltratech</thingDef>
         <countRange>1~5</countRange>
       </li>
+      <!-- Faction armor material -->
       <!-- Combat drug -->
       <li Class="StockGenerator_SingleDef">
         <thingDef>UFR_Ripentor</thingDef>
@@ -337,10 +338,9 @@
       <!-- Exotic weapons -->
       <li Class="StockGenerator_MultiDef">
         <thingDefs>
-          <li>UFR_HydraRifle</li>
-          <li>UFR_AutoloaderCannon</li>
-          <li>UFR_SalvoGrenadeLauncher</li>
-          <li>UFR_ServiceLMG</li>
+          <li>UFR_TriCoilHeavyRifle</li>
+          <li>UFR_CoilCannon</li>
+          <li>UFR_CoilMG</li>
         </thingDefs>
         <countRange>0~2</countRange>
       </li>

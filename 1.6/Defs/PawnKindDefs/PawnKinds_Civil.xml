@@ -7,7 +7,7 @@
         <labelPlural>settlers</labelPlural>
         <defaultFactionType>UFR_Civil</defaultFactionType>
         <combatPower>35</combatPower>
-        <maxApparelQuality>Poor</maxApparelQuality>
+        <itemQuality>Poor</itemQuality>
         <gearHealthRange>0.2~2.0</gearHealthRange>
         <maxGenerationAge>65</maxGenerationAge>
         <apparelMoney>200~350</apparelMoney>
@@ -42,7 +42,7 @@
         <defaultFactionType>UFR_Civil</defaultFactionType>
         <combatPower>50</combatPower>
         <trader>true</trader>
-        <maxApparelQuality>Normal</maxApparelQuality>
+        <itemQuality>Normal</itemQuality>
         <gearHealthRange>1.0~1.0</gearHealthRange>
         <minGenerationAge>25</minGenerationAge>
         <maxGenerationAge>55</maxGenerationAge>
@@ -100,13 +100,13 @@
 
     <PawnKindDef ParentName="UFR_LeadershipBase">
         <defName>UFR_Civil_Representative</defName>
-        <label>delegate</label>
-        <labelPlural>delegates</labelPlural>
+        <label>representative</label>
+        <labelPlural>representatives</labelPlural>
         <defaultFactionType>UFR_Civil</defaultFactionType>
         <combatPower>80</combatPower>
         <factionLeader>true</factionLeader>
         <trader>true</trader>
-        <maxApparelQuality>Excellent</maxApparelQuality>
+        <itemQuality>Excellent</itemQuality>
         <gearHealthRange>1.0~1.0</gearHealthRange>
         <minGenerationAge>35</minGenerationAge>
         <maxGenerationAge>65</maxGenerationAge>
@@ -151,7 +151,7 @@
         <initialResistanceRange>25~35</initialResistanceRange>
         <weaponTags Inherit="False">
             <li>UFR_UFSidearm</li>
-            <li>UFR_UFSMG</li>
+            <li>UFR_UFCarbine</li>
         </weaponTags>
         <skills>
             <li>
@@ -292,7 +292,7 @@
         <maxGenerationAge>50</maxGenerationAge>
         <weaponTags Inherit="False">
             <li>UFR_UFRifle</li>
-            <li>UFR_UFEliteShotgun</li>
+            <li>UFR_UFShotgun</li>
             <li>UFR_UFMarksmanGun</li>
             <li>UFR_UFDMR</li>
         </weaponTags>
@@ -368,7 +368,7 @@
         <combatPower>105</combatPower>
         <factionLeader>true</factionLeader>
         <trader>true</trader>
-        <maxApparelQuality>Excellent</maxApparelQuality>
+        <itemQuality>Excellent</itemQuality>
         <weaponMoney>3600~4500</weaponMoney>
         <techHediffsChance>0.2</techHediffsChance>
         <techHediffsMoney>1800~2500</techHediffsMoney>
@@ -437,7 +437,7 @@
         </inventoryOptions>
         <weaponTags Inherit="False">
             <li>UFR_UFSidearm</li>
-            <li>UFR_UFSMG</li>
+            <li>UFR_UFCarbine</li>
         </weaponTags>
         <skills>
             <li>

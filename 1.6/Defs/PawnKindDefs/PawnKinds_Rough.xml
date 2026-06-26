@@ -151,7 +151,7 @@
         <initialResistanceRange>25~35</initialResistanceRange>
         <weaponTags Inherit="False">
             <li>UFR_UFSidearm</li>
-            <li>UFR_UFSMG</li>
+            <li>UFR_UFCarbine</li>
         </weaponTags>
         <skills>
             <li>
@@ -292,7 +292,7 @@
         <maxGenerationAge>50</maxGenerationAge>
         <weaponTags Inherit="False">
             <li>UFR_UFRifle</li>
-            <li>UFR_UFEliteShotgun</li>
+            <li>UFR_UFShotgun</li>
             <li>UFR_UFMarksmanGun</li>
             <li>UFR_UFDMR</li>
         </weaponTags>
@@ -437,7 +437,7 @@
         </inventoryOptions>
         <weaponTags Inherit="False">
             <li>UFR_UFSidearm</li>
-            <li>UFR_UFSMG</li>
+            <li>UFR_UFCarbine</li>
         </weaponTags>
         <skills>
             <li>

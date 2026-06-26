@@ -1,164 +1,140 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Defs>
-	<ScenarioDef ParentName="ScenarioBase">
-		<defName>UFR_ExiledCitizens</defName>
-		<label>Exiled Citizens</label>
-		<description>Your government walked away from the people generations before the mechanoids came, and the homeworld fell. Five of you slept the long sublight passage in a refugee cryoship. Now you wake to a new sky, the cause of the United Front still in your hands. More sleepers wait aboard.</description>
-
-		<scenario>
-			<summary>A small group of sublight refugees from a fallen industrial world, carrying forward the cause of the United Front.</summary>
-			<playerFaction>
-				<def>PlayerFaction</def>
-				<factionDef>UFR_Player</factionDef>
-			</playerFaction>
-
-			<parts>
-				<li Class="ScenPart_GameStartDialog">
-					<def>GameStartDialog</def>
-					<text>Your government walked away from the people generations before the mechanoids came, and the homeworld fell.\n\nFive of you slept the long sublight passage in a refugee cryoship.\n\nNow you wake to a new sky, the cause of the United Front is still in your hands.\n\nMore sleepers wait aboard. The work begins.</text>
-					<closeSound>GameStartSting</closeSound>
-				</li>
-
-				<li Class="ScenPart_ConfigPage_ConfigureStartingPawns">
-					<def>ConfigPage_ConfigureStartingPawns</def>
-					<pawnCount>5</pawnCount>
-					<pawnChoiceCount>8</pawnChoiceCount>
-				</li>
-
-				<li Class="ScenPart_PlayerPawnsArriveMethod">
-					<def>PlayerPawnsArriveMethod</def>
-					<method>DropPods</method>
-					<visible>false</visible>
-				</li>
-
-				<li Class="ScenPart_ForcedHediff">
-					<def>ForcedHediff</def>
-					<visible>false</visible>
-					<context>PlayerStarter</context>
-					<chance>0.5</chance>
-					<hediff>CryptosleepSickness</hediff>
-					<hideOffMap>true</hideOffMap>
-					<severityRange>1~1</severityRange>
-				</li>
-
-				<li Class="ScenPart_StartingThing_Defined">
-					<def>StartingThing_Defined</def>
-					<thingDef>UFR_LawbringerShotgun</thingDef>
-					<count>1</count>					
-					<quality>Normal</quality>
-				</li>
-
-				<li Class="ScenPart_StartingThing_Defined">
-					<def>StartingThing_Defined</def>
-					<thingDef>UFR_ServicePistol</thingDef>
-					<count>1</count>
-					<quality>Normal</quality>
-				</li>
-
-				<li Class="ScenPart_StartingThing_Defined">
-					<def>StartingThing_Defined</def>
-					<thingDef>UFR_Vibroblade</thingDef>
-					<count>1</count>
-					<quality>Normal</quality>
-				</li>
-
-				<li Class="ScenPart_StartingThing_Defined">
-					<def>StartingThing_Defined</def>
-					<thingDef>UFR_BulwarkArmor</thingDef>
-					<count>1</count>
-					<quality>Normal</quality>
-				</li>
-
-				<li Class="ScenPart_StartingThing_Defined">
-					<def>StartingThing_Defined</def>
-					<thingDef>UFR_BulwarkHelmet</thingDef>
-					<count>1</count>
-					<quality>Normal</quality>
-				</li>
-
-				<li Class="ScenPart_StartingThing_Defined">
-					<def>StartingThing_Defined</def>
-					<thingDef>Silver</thingDef>
-					<count>400</count>
-				</li>
-
-				<li Class="ScenPart_StartingThing_Defined">
-					<def>StartingThing_Defined</def>
-					<thingDef>MealSurvivalPack</thingDef>
-					<count>150</count>
-				</li>
-
-				<li Class="ScenPart_StartingThing_Defined">
-					<def>StartingThing_Defined</def>
-					<thingDef>ComponentIndustrial</thingDef>
-					<count>40</count>
-				</li>
-
-				<li Class="ScenPart_StartingThing_Defined">
-					<def>StartingThing_Defined</def>
-					<thingDef>ComponentSpacer</thingDef>
-					<count>5</count>
-				</li>				
-
-				<li Class="ScenPart_StartingThing_Defined">
-					<def>StartingThing_Defined</def>
-					<thingDef>MedicineIndustrial</thingDef>
-					<count>60</count>
-				</li>
-
-				<li Class="ScenPart_StartingThing_Defined">
-					<def>StartingThing_Defined</def>
-					<thingDef>Steel</thingDef>
-					<count>200</count>
-				</li>
-
-				<li Class="ScenPart_StartingThing_Defined">
-					<def>StartingThing_Defined</def>
-					<thingDef>WoodLog</thingDef>
-					<count>300</count>
-				</li>
-
-				<!-- Needed for Scenario Start to get Early Research-->
-				<li Class="ScenPart_StartingResearch">
-					<def>StartingResearch</def>
-					<project>UFR_FabricationBench</project>
-				</li>
-
-				<li Class="ScenPart_StartingResearch">
-					<def>StartingResearch</def>
-					<project>UFR_UFUniforms</project>
-				</li>				
-
-				 <!-- Scatter some things near player start -->
-				<li Class="ScenPart_ScatterThingsNearPlayerStart">
-					<def>ScatterThingsNearPlayerStart</def>
-					<thingDef>Steel</thingDef>
-					<count>450</count>
-				</li>
-				<li Class="ScenPart_ScatterThingsNearPlayerStart">
-					<def>ScatterThingsNearPlayerStart</def>
-					<thingDef>WoodLog</thingDef>
-					<count>300</count>
-				</li>      
-
-				<!-- Scatter some things anywhere -->
-				<li Class="ScenPart_ScatterThingsAnywhere">
-				<def>ScatterThingsAnywhere</def>
-					<thingDef>ShipChunk</thingDef>
-					<allowRoofed>false</allowRoofed>
-					<count>3</count>
-				</li>
-				<li Class="ScenPart_ScatterThingsAnywhere">
-					<def>ScatterThingsAnywhere</def>
-					<thingDef>Steel</thingDef>
-					<count>720</count>
-				</li>
-				<li Class="ScenPart_ScatterThingsAnywhere">
-					<def>ScatterThingsAnywhere</def>
-					<thingDef>MealSurvivalPack</thingDef>
-					<count>7</count>
-				</li>
-			</parts>
-		</scenario>
-	</ScenarioDef>
+    <ScenarioDef ParentName="ScenarioBase">
+        <defName>UFR_ExiledCitizens</defName>
+        <label>Exiled Citizens</label>
+        <description>Your government walked away from the people generations before the mechanoids came, and the homeworld fell. Five of you slept the long sublight passage in a refugee cryoship. Now you wake to a new sky, the cause of the United Front still in your hands. More sleepers wait aboard.</description>
+        <scenario>
+            <summary>A small group of sublight refugees from a fallen industrial world, carrying forward the cause of the United Front.</summary>
+            <playerFaction>
+                <def>PlayerFaction</def>
+                <factionDef>UFR_Player</factionDef>
+            </playerFaction>
+            <parts>
+                <li Class="ScenPart_GameStartDialog">
+                    <def>GameStartDialog</def>
+                    <text>Your government walked away from the people generations before the mechanoids came, and the homeworld fell.\n\nFive of you slept the long sublight passage in a refugee cryoship.\n\nNow you wake to a new sky, the cause of the United Front is still in your hands.\n\nMore sleepers wait aboard. The work begins.</text>
+                    <closeSound>GameStartSting</closeSound>
+                </li>
+                <li Class="ScenPart_ConfigPage_ConfigureStartingPawns">
+                    <def>ConfigPage_ConfigureStartingPawns</def>
+                    <pawnCount>5</pawnCount>
+                    <pawnChoiceCount>8</pawnChoiceCount>
+                </li>
+                <li Class="ScenPart_PlayerPawnsArriveMethod">
+                    <def>PlayerPawnsArriveMethod</def>
+                    <method>DropPods</method>
+                    <visible>false</visible>
+                </li>
+                <li Class="ScenPart_ForcedHediff">
+                    <def>ForcedHediff</def>
+                    <visible>false</visible>
+                    <context>PlayerStarter</context>
+                    <chance>0.5</chance>
+                    <hediff>CryptosleepSickness</hediff>
+                    <hideOffMap>true</hideOffMap>
+                    <severityRange>1~1</severityRange>
+                </li>
+                <li Class="ScenPart_StartingThing_Defined">
+                    <def>StartingThing_Defined</def>
+                    <thingDef>UFR_CoilScattergun</thingDef>
+                    <count>1</count>
+                    <quality>Normal</quality>
+                </li>
+                <li Class="ScenPart_StartingThing_Defined">
+                    <def>StartingThing_Defined</def>
+                    <thingDef>UFR_CoilPistol</thingDef>
+                    <count>1</count>
+                    <quality>Normal</quality>
+                </li>
+                <li Class="ScenPart_StartingThing_Defined">
+                    <def>StartingThing_Defined</def>
+                    <thingDef>UFR_Vibroblade</thingDef>
+                    <count>1</count>
+                    <quality>Normal</quality>
+                </li>
+                <li Class="ScenPart_StartingThing_Defined">
+                    <def>StartingThing_Defined</def>
+                    <thingDef>UFR_BulwarkArmor</thingDef>
+                    <count>1</count>
+                    <quality>Normal</quality>
+                </li>
+                <li Class="ScenPart_StartingThing_Defined">
+                    <def>StartingThing_Defined</def>
+                    <thingDef>UFR_BulwarkHelmet</thingDef>
+                    <count>1</count>
+                    <quality>Normal</quality>
+                </li>
+                <li Class="ScenPart_StartingThing_Defined">
+                    <def>StartingThing_Defined</def>
+                    <thingDef>Silver</thingDef>
+                    <count>400</count>
+                </li>
+                <li Class="ScenPart_StartingThing_Defined">
+                    <def>StartingThing_Defined</def>
+                    <thingDef>MealSurvivalPack</thingDef>
+                    <count>150</count>
+                </li>
+                <li Class="ScenPart_StartingThing_Defined">
+                    <def>StartingThing_Defined</def>
+                    <thingDef>ComponentIndustrial</thingDef>
+                    <count>40</count>
+                </li>
+                <li Class="ScenPart_StartingThing_Defined">
+                    <def>StartingThing_Defined</def>
+                    <thingDef>ComponentSpacer</thingDef>
+                    <count>5</count>
+                </li>
+                <li Class="ScenPart_StartingThing_Defined">
+                    <def>StartingThing_Defined</def>
+                    <thingDef>MedicineIndustrial</thingDef>
+                    <count>60</count>
+                </li>
+                <li Class="ScenPart_StartingThing_Defined">
+                    <def>StartingThing_Defined</def>
+                    <thingDef>Steel</thingDef>
+                    <count>200</count>
+                </li>
+                <li Class="ScenPart_StartingThing_Defined">
+                    <def>StartingThing_Defined</def>
+                    <thingDef>WoodLog</thingDef>
+                    <count>300</count>
+                </li>
+                <li Class="ScenPart_StartingResearch">
+                    <def>StartingResearch</def>
+                    <project>UFR_FabricationBench</project>
+                </li>
+                <li Class="ScenPart_StartingResearch">
+                    <def>StartingResearch</def>
+                    <project>UFR_UFUniforms</project>
+                </li>
+                <li Class="ScenPart_ScatterThingsNearPlayerStart">
+                    <def>ScatterThingsNearPlayerStart</def>
+                    <thingDef>Steel</thingDef>
+                    <count>450</count>
+                </li>
+                <li Class="ScenPart_ScatterThingsNearPlayerStart">
+                    <def>ScatterThingsNearPlayerStart</def>
+                    <thingDef>WoodLog</thingDef>
+                    <count>300</count>
+                </li>
+                <li Class="ScenPart_ScatterThingsAnywhere">
+                    <def>ScatterThingsAnywhere</def>
+                    <thingDef>ShipChunk</thingDef>
+                    <allowRoofed>false</allowRoofed>
+                    <count>3</count>
+                </li>
+                <li Class="ScenPart_ScatterThingsAnywhere">
+                    <def>ScatterThingsAnywhere</def>
+                    <thingDef>Steel</thingDef>
+                    <count>720</count>
+                </li>
+                <li Class="ScenPart_ScatterThingsAnywhere">
+                    <def>ScatterThingsAnywhere</def>
+                    <thingDef>MealSurvivalPack</thingDef>
+                    <count>7</count>
+                </li>
+            </parts>
+        </scenario>
+    </ScenarioDef>
 </Defs>
