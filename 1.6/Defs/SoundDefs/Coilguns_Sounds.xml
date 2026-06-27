@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+    <SoundDef>
+        <defName>UFR_Shot_SlugMedium</defName>
+        <context>MapOnly</context>
+        <maxSimultaneous>1</maxSimultaneous>
+        <subSounds>
+            <li>
+            <grains>
+                <li Class="AudioGrain_Folder">
+                <clipFolderPath>Slug_medium</clipFolderPath>
+                </li>
+            </grains>
+            <volumeRange>55.2941~55.2941</volumeRange>
+            <pitchRange>1.091765~2</pitchRange>
+            <sustainLoop>False</sustainLoop>
+            </li>
+        </subSounds>
+    </SoundDef>
+</Defs>

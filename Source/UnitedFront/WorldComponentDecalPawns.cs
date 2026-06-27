@@ -22,7 +22,10 @@ namespace UnitedFront
             Scribe_Collections.Look(ref _pawns, "UnitedFrontDecalPawns", LookMode.Reference);
             if (Scribe.mode == LoadSaveMode.PostLoadInit)
             {
-                _pawns ??= new HashSet<Pawn>();
+                if (_pawns == null)
+                {
+                    _pawns = new HashSet<Pawn>();
+                }
                 if (_pawns.RemoveWhere(x => x == null) != 0)
                 {
                     Log.Error("[UnitedFront] Some decal pawns were null after loading.");
@@ -48,9 +51,9 @@ namespace UnitedFront
                         TMPToRemove.Add(pawn);
                 }
             }
-            foreach (var t in TMPToRemove)
+            for (int i = 0; i < TMPToRemove.Count; i++)
             {
-                _pawns.Remove(t);
+                _pawns.Remove(TMPToRemove[i]);
             }
             TMPToRemove.Clear();
         }
@@ -65,9 +68,9 @@ namespace UnitedFront
         {
             if (!_pawns.Contains(pawn) || pawn.apparel == null) return null;
             List<Apparel> wornApparel = pawn.apparel.WornApparel;
-            foreach (var t in wornApparel)
+            for (int i = 0; i < wornApparel.Count; i++)
             {
-                var comp = t.TryGetComp<CompEditDecalMarker>();
+                var comp = wornApparel[i].TryGetComp<CompEditDecalMarker>();
                 if (comp != null) return comp;
             }
             return null;

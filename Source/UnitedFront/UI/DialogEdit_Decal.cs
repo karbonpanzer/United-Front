@@ -36,9 +36,9 @@ namespace UnitedFront.UI
         private const float PortraitZoom = 1.3f;
         private const float TabMargin = 18f;
         private const float IconSize = 60f;
-        private const float LeftRectPercent = 0.3f;
+        private const float LeftRectPercent = 0.42f;
 
-        public override Vector2 InitialSize => new Vector2(950f, 750f);
+        public override Vector2 InitialSize => new Vector2(1200f, 800f);
 
         public DialogEditDecals(Pawn pawn)
         {
