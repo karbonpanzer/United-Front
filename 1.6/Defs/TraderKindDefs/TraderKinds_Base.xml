@@ -127,15 +127,6 @@
         <thingDefCountRange>3~4</thingDefCountRange>
         <totalPriceRange>700~1500</totalPriceRange>
       </li>
-      <!-- Faction drugs -->
-      <li Class="StockGenerator_SingleDef">
-        <thingDef>UFR_Ripentor</thingDef>
-        <countRange>20~40</countRange>
-      </li>
-      <li Class="StockGenerator_SingleDef">
-        <thingDef>UFR_Popper</thingDef>
-        <countRange>4~12</countRange>
-      </li>
       <!-- Techprints & Decoders -->
       <li Class="StockGenerator_Techprints">
         <countChances>

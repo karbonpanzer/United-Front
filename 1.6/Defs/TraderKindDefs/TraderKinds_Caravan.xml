@@ -189,12 +189,6 @@
         <thingDef>MedicineUltratech</thingDef>
         <countRange>1~5</countRange>
       </li>
-      <!-- Faction armor material -->
-      <!-- Combat drug -->
-      <li Class="StockGenerator_SingleDef">
-        <thingDef>UFR_Ripentor</thingDef>
-        <countRange>15~35</countRange>
-      </li>
       <!-- Techprints -->
       <li Class="StockGenerator_Techprints">
         <countChances>
@@ -294,11 +288,6 @@
       <li Class="StockGenerator_SingleDef">
         <thingDef>MedicineUltratech</thingDef>
         <countRange>4~12</countRange>
-      </li>
-      <!-- Premium medical drug -->
-      <li Class="StockGenerator_SingleDef">
-        <thingDef>UFR_Popper</thingDef>
-        <countRange>6~18</countRange>
       </li>
       <!-- Premium hide -->
       <li Class="StockGenerator_SingleDef">
@@ -513,11 +502,6 @@
         <categoryDef>Drugs</categoryDef>
         <thingDefCountRange>2~4</thingDefCountRange>
         <totalPriceRange>600~1000</totalPriceRange>
-      </li>
-      <!-- Combat drug stock -->
-      <li Class="StockGenerator_SingleDef">
-        <thingDef>UFR_Ripentor</thingDef>
-        <countRange>20~50</countRange>
       </li>
       <!-- Food -->
       <li Class="StockGenerator_MultiDef">
