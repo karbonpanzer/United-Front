@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+  <!-- Devoured Refugee Quest -->
+  <QuestScriptDef>
+    <defName>UFR_OpportunitySite_DevouredRefugee</defName>
+    <rootSelectionWeight>0.5</rootSelectionWeight>
+    <rootMinPoints>0</rootMinPoints>
+    <rootIncreasesPopulation>true</rootIncreasesPopulation>
+    <autoAccept>true</autoAccept>
+    <questNameRules>
+      <rulesStrings>
+        <li>questName->Swallowed Whole: [refugee_nameDef]</li>
+        <li>questName->[refugee_nameDef] in the Belly of the Beast</li>
+        <li>questName->Devoured: [refugee_nameDef]</li>
+        <li>questName->Cutting [refugee_nameDef] Free</li>
+      </rulesStrings>
+    </questNameRules>
+    <questDescriptionRules>
+      <rulesStrings>
+        <li>questDescription(askerIsNull==true)->A garbled distress signal comes through from [refugee_nameDef]. Between screams, you piece together what happened: [refugee_pronoun] was swallowed whole by a devourer. The beast has entered a torpid digestion state, and [refugee_nameDef] is still alive inside it, for now.
+\n[refugee_nameDef] is a [refugee_age]-year-old [refugee_title]. If you can kill the beast and cut [refugee_objective] free before digestion completes, [refugee_pronoun] promises to join you.[pawnInvolvedInQuestInfo]</li>
+
+        <li>questDescription(asker_factionLeader==True)->[asker_nameDef], [asker_faction_leaderTitle] of [asker_faction_name], sends you a desperate message. [asker_possessive] friend [refugee_nameDef], a [refugee_age]-year-old [refugee_title], was swallowed whole by a devourer while traveling. The beast has gone torpid to digest its meal, and [refugee_nameDef] is still alive inside it.
+\n[asker_nameDef] has nobody to spare. If you can kill the beast and cut [refugee_nameDef] free before digestion completes, [refugee_pronoun] will join you.[pawnInvolvedInQuestInfo]</li>
+
+        <li>pawnInvolvedInQuestInfo(priority=1)->[refugee_pawnInvolvedInQuestInfo]</li>
+        <li>pawnInvolvedInQuestInfo-></li>
+      </rulesStrings>
+    </questDescriptionRules>
+    <root Class="QuestNode_Sequence">
+      <nodes>
+        <li Class="QuestNode_SubScript">
+          <def>Util_RandomizePointsChallengeRating</def>
+          <parms>
+            <pointsFactorTwoStar>1.5</pointsFactorTwoStar>
+            <pointsFactorThreeStar>2</pointsFactorThreeStar>
+          </parms>
+        </li>
+        <li Class="QuestNode_SubScript">
+          <def>Util_GetDefaultRewardValueFromPoints</def>
+        </li>
+        <li Class="QuestNode_SubScript">
+          <def>Util_AdjustPointsForDistantFight</def>
+        </li>
+
+        <li Class="QuestNode_GetMap">
+          <canBeSpace>false</canBeSpace>
+        </li>
+
+        <li Class="QuestNode_RandomNode">
+          <nodes>
+            <li Class="QuestNode_Set">
+              <name>askerIsNull</name>
+              <value>true</value>
+              <selectionWeight>0.2</selectionWeight>
+            </li>
+            <li Class="QuestNode_GetPawn">
+              <storeAs>asker</storeAs>
+              <mustBeFactionLeader>true</mustBeFactionLeader>
+              <mustBeNonHostileToPlayer>true</mustBeNonHostileToPlayer>
+              <hostileWeight>0.15</hostileWeight>
+              <selectionWeight>0.3</selectionWeight>
+            </li>
+          </nodes>
+        </li>
+
+        <li Class="QuestNode_GetSiteTile">
+          <storeAs>siteTile</storeAs>
+          <preferCloserTiles>true</preferCloserTiles>
+        </li>
+
+        <li Class="QuestNode_GetSitePartDefsByTagsAndFaction">
+          <storeAs>sitePartDefs</storeAs>
+          <storeFactionAs>siteFaction</storeFactionAs>
+          <sitePartsTags>
+            <li>
+              <tag>UFR_DevouredRefugee</tag>
+            </li>
+          </sitePartsTags>
+        </li>
+
+        <li Class="QuestNode_GetDefaultSitePartsParams">
+          <tile>$siteTile</tile>
+          <faction>$siteFaction</faction>
+          <sitePartDefs>$sitePartDefs</sitePartDefs>
+          <storeSitePartsParamsAs>sitePartsParams</storeSitePartsParamsAs>
+        </li>
+
+        <li Class="QuestNode_SubScript">
+          <def>Util_GenerateSite</def>
+          <parms>
+            <hiddenSitePartsPossible>true</hiddenSitePartsPossible>
+          </parms>
+        </li>
+
+        <li Class="QuestNode_SpawnWorldObjects">
+          <worldObjects>$site</worldObjects>
+        </li>
+
+        <li Class="QuestNode_WorldObjectTimeout">
+          <worldObject>$site</worldObject>
+          <isQuestTimeout>true</isQuestTimeout>
+          <delayTicks>$(randInt(4,7)*60000)</delayTicks>
+          <inSignalDisable>site.MapGenerated</inSignalDisable>
+          <node Class="QuestNode_Sequence">
+            <nodes>
+              <li Class="QuestNode_Letter">
+                <label TKey="LetterLabelQuestExpired">Quest expired: [resolvedQuestName]</label>
+                <text TKey="LetterTextQuestExpired">[refugee_nameDef]'s signal has gone silent. The devourer has finished its meal. The quest [resolvedQuestName] has expired.</text>
+              </li>
+              <li Class="QuestNode_End">
+                <outcome>Fail</outcome>
+              </li>
+            </nodes>
+          </node>
+        </li>
+
+        <li Class="QuestNode_Signal">
+          <inSignal>refugee.Killed</inSignal>
+          <node Class="QuestNode_Sequence">
+            <nodes>
+              <li Class="QuestNode_Letter">
+                <label TKey="LetterLabelRefugeeDigested">Digested: [refugee_nameDef]</label>
+                <text TKey="LetterTextRefugeeDigested">[refugee_nameDef] has died inside the devourer. The rescue has failed.</text>
+                <letterDef>NegativeEvent</letterDef>
+              </li>
+              <li Class="QuestNode_End">
+                <outcome>Fail</outcome>
+              </li>
+            </nodes>
+          </node>
+        </li>
+
+        <li Class="QuestNode_AddPawnReward">
+          <pawn>$refugee</pawn>
+          <inSignalChoiceUsed>site.MapGenerated</inSignalChoiceUsed>
+          <rewardDetailsHidden>true</rewardDetailsHidden>
+        </li>
+
+        <li Class="QuestNode_NoWorldObject">
+          <worldObject>$site</worldObject>
+          <node Class="QuestNode_End" />
+        </li>
+      </nodes>
+    </root>
+  </QuestScriptDef>
+
+</Defs>

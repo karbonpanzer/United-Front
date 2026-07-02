@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<LanguageData>
+
+  <UFR_GorgedDevourerKindMissing>[UFR] GenStepDevouredRefugee: PawnKindDef 'UFR_GorgedDevourer' not found in DefDatabase.</UFR_GorgedDevourerKindMissing>
+  <UFR_GorgedDevourerCompMissing>[UFR] GenStepDevouredRefugee: spawned gorged devourer has no CompDevourer.</UFR_GorgedDevourerCompMissing>
+
+</LanguageData>

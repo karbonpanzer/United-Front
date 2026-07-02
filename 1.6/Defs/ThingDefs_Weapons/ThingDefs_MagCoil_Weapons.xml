@@ -61,7 +61,7 @@
                 <defaultProjectile>UFR_Slug_HeavyCoilPistol</defaultProjectile>
                 <warmupTime>0.85</warmupTime>
                 <range>19.9</range>
-                <soundCast>Shot_ChargeRifle</soundCast>
+                <soundCast>UFR_Shot_SlugSmall</soundCast>
                 <soundCastTail>GunTail_Medium</soundCastTail>
                 <muzzleFlashScale>11</muzzleFlashScale>
             </li>
@@ -158,7 +158,7 @@
                 <defaultProjectile>UFR_Slug_CoilPistol</defaultProjectile>
                 <warmupTime>0.65</warmupTime>
                 <range>21.9</range>
-                <soundCast>Shot_ChargeRifle</soundCast>
+                <soundCast>UFR_Shot_SlugSmall</soundCast>
                 <soundCastTail>GunTail_Medium</soundCastTail>
                 <muzzleFlashScale>9</muzzleFlashScale>
             </li>
@@ -257,7 +257,7 @@
                 <range>34.9</range>
                 <burstShotCount>2</burstShotCount>
                 <ticksBetweenBurstShots>8</ticksBetweenBurstShots>
-                <soundCast>Shot_ChargeRifle</soundCast>
+                <soundCast>UFR_Shot_SlugMedium</soundCast>
                 <soundCastTail>GunTail_Medium</soundCastTail>
                 <muzzleFlashScale>10</muzzleFlashScale>
             </li>
@@ -356,7 +356,7 @@
                 <range>27.9</range>
                 <burstShotCount>2</burstShotCount>
                 <ticksBetweenBurstShots>10</ticksBetweenBurstShots>
-                <soundCast>Shot_ChargeRifle</soundCast>
+                <soundCast>UFR_Shot_SlugMedium</soundCast>
                 <soundCastTail>GunTail_Medium</soundCastTail>
                 <muzzleFlashScale>9</muzzleFlashScale>
             </li>
@@ -449,7 +449,7 @@
                 <defaultProjectile>UFR_Slug_HeavyCoilRifle</defaultProjectile>
                 <warmupTime>1.4</warmupTime>
                 <range>41.9</range>
-                <soundCast>Shot_ChargeBlaster</soundCast>
+                <soundCast>UFR_Shot_SlugMedium</soundCast>
                 <soundCastTail>GunTail_Heavy</soundCastTail>
                 <muzzleFlashScale>10</muzzleFlashScale>
             </li>
@@ -551,7 +551,7 @@
                 <range>29.9</range>
                 <burstShotCount>4</burstShotCount>
                 <ticksBetweenBurstShots>10</ticksBetweenBurstShots>
-                <soundCast>Shot_ChargeRifle</soundCast>
+                <soundCast>UFR_Shot_SlugMedium</soundCast>
                 <soundCastTail>GunTail_Medium</soundCastTail>
                 <muzzleFlashScale>10</muzzleFlashScale>
             </li>
@@ -651,7 +651,7 @@
                 <burstShotCount>2</burstShotCount>
                 <ticksBetweenBurstShots>18</ticksBetweenBurstShots>
                 <range>21.9</range>
-                <soundCast>Shot_ChargeBlaster</soundCast>
+                <soundCast>UFR_Shot_SlugScatter</soundCast>
                 <soundCastTail>GunTail_Heavy</soundCastTail>
                 <muzzleFlashScale>11</muzzleFlashScale>
             </li>
@@ -754,7 +754,7 @@
                 <range>53.9</range>
                 <burstShotCount>2</burstShotCount>
                 <ticksBetweenBurstShots>5</ticksBetweenBurstShots>
-                <soundCast>Shot_ChargeBlaster</soundCast>
+                <soundCast>UFR_Shot_Slugmassive</soundCast>
                 <soundCastTail>GunTail_Heavy</soundCastTail>
                 <muzzleFlashScale>14</muzzleFlashScale>
             </li>
@@ -854,7 +854,7 @@
                 <defaultProjectile>UFR_Slug_Tricoil</defaultProjectile>
                 <warmupTime>3.6</warmupTime>
                 <range>81.9</range>
-                <soundCast>Shot_ChargeBlaster</soundCast>
+                <soundCast>UFR_Shot_SlugBig</soundCast>
                 <soundCastTail>GunTail_Heavy</soundCastTail>
                 <muzzleFlashScale>13</muzzleFlashScale>
             </li>

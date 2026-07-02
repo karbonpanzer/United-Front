@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+  <SitePartDef>
+    <defName>UFR_DevouredRefugee</defName>
+    <label>swallowed refugee</label>
+    <description>A refugee swallowed whole by a devourer, still alive inside the beast's gullet.</description>
+    <workerClass>UnitedFront.Quests.SitePartWorkerDevouredRefugee</workerClass>
+    <siteTexture>World/WorldObjects/Sites/GenericSite</siteTexture>
+    <expandingIconTexture>World/WorldObjects/Expanding/Sites/DownedRefugee</expandingIconTexture>
+    <forceExitAndRemoveMapCountdownDurationDays>16</forceExitAndRemoveMapCountdownDurationDays>
+    <increasesPopulation>true</increasesPopulation>
+    <handlesWorldObjectTimeoutInspectString>true</handlesWorldObjectTimeoutInspectString>
+    <gravShipsCanLandOn>true</gravShipsCanLandOn>
+    <tags>
+      <li>UFR_DevouredRefugee</li>
+    </tags>
+  </SitePartDef>
+
+  <GenStepDef>
+    <defName>UFR_DevouredRefugee</defName>
+    <linkWithSite>UFR_DevouredRefugee</linkWithSite>
+    <order>1600</order>
+    <genStep Class="UnitedFront.Quests.GenStepDevouredRefugee">
+      <count>1</count>
+      <nearMapCenter>true</nearMapCenter>
+    </genStep>
+  </GenStepDef>
+
+</Defs>
